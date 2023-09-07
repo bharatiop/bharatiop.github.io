@@ -1,7 +1,7 @@
 ---
-title: "Allan Lab - Home"
+title: "Nuclear Astrophysics Lan"
 layout: homelay
-excerpt: "Allan Lab at Leiden University &rarr; LMU."
+excerpt: "Nuclear Astrophysics Lab @ NIT Rourkela"
 sitemap: false
 permalink: /
 ---
