@@ -73,6 +73,6 @@ Our research group is committed to pushing the boundaries of knowledge in these 
 
 
 <figure class="fourth">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/nitrlogo.svg" style="width: 210px">
+  <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/nitrlogo.svg" style="width: 110px">
   <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/serblogo.png" style="width: 110px">
 </figure>
