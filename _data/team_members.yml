@@ -14,7 +14,7 @@
   email: routaraypinku@gmail.com 
   number_educ: 2
   education1: MSc, Berhampur University
-  education2: PhD Title: Dark Matter
+  education2: "PhD Title:" Dark Matter
 
 - name: Sayantan Ghosh
   photo: sayantan_pic.png
@@ -22,7 +22,7 @@
   email: sayantanghosh1999@gmail.com 
   number_educ: 2
   education1: MSc, Banaras Hindu University 
-  education2: PhD Title: Quasinormal Modes in Neutron Stars
+  education2: "PhD Title:" Quasinormal Modes in Neutron Stars
 
 - name: Probit J Kalita
   photo: probit_pic.png
@@ -30,7 +30,7 @@
   email: sayantanghosh1999@gmail.com 
   number_educ: 2
   education1: MSc, Tezpur University 
-  education2: PhD Title: Compositions of Neutron Stars
+  education2: "PhD Title:" Compositions of Neutron Stars
 
 - name: Sunitarani Pani
   photo: sunita_pic.jpeg
@@ -38,7 +38,7 @@
   email: 922ph5001@nitrkl.ac.in 
   number_educ: 2
   education1: MSc, Sambalpur University
-  education2: PhD Title: Constraining Symmetry Energy of Finite Nuclei
+  education2: "PhD Title:" Constraining Symmetry Energy of Finite Nuclei
 
 
 - name: "This could be you !"
