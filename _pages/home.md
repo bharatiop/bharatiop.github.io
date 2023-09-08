@@ -1,5 +1,5 @@
 ---
-title: "Nuclear Astrophysics Lan"
+title: "Nuclear Astrophysics Lab"
 layout: homelay
 excerpt: "Nuclear Astrophysics Lab @ NIT Rourkela"
 sitemap: false
