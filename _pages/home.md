@@ -1,7 +1,7 @@
 ---
-title: "Nuclear Astrophysics Lab"
+title: "NAP Lab"
 layout: homelay
-excerpt: "Nuclear Astrophysics Lab @ NIT Rourkela"
+excerpt: "NAP Lab @ NIT Rourkela"
 sitemap: false
 permalink: /
 ---
