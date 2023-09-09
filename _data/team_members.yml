@@ -1,10 +1,7 @@
-- name: Bharat Kumar
+- name: Bharat Kumar [[CV](/downloads/CV.pdf)]
   photo: bk_pic.jpeg
   info: Assistant professor, started June 2020
   email: kumarbh@nitrkl.ac.in
-  number_addit: 2
-  addit1: <a href="../downloads/CV.pdf">CV</a>
-  addit2: <a href="https://scholar.google.com/citations?hl=en&user=4498IKgAAAAJ&view_op=list_works&sortby=pubdate">Scholar</a>
   number_educ: 4
   education1: Master from <a href="https://www.amu.ac.in/department/physics">Department of Physics</a>, Aligarh Muslim University, Aligarh
   education2: PhD with <a href="https://www.iopb.res.in/members/patra">Prof S K Patra</a>, <a href="https://www.iopb.res.in/index">IOP Bhubaneswar</a>
@@ -15,9 +12,10 @@
   photo: sayantan_pic.png
   info: PhD, started July 2022
   email: sayantanghosh1999@gmail.com 
-  number_educ: 2
+  number_educ: 1
   education1: MSc, Banaras Hindu University
-  education2: PhD Topic, Quasinormal Modes in Neutron Stars
+  number_addit: 1
+  addit1: "PhD Topic:Quasinormal Modes in Neutron Stars"
 
 - name: Probit J Kalita
   photo: probit_pic.png
