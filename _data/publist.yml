@@ -14,7 +14,7 @@
   authors: Bharat Kumar and Philippe Landry
   link:
     url: https://journals.aps.org/prd/abstract/10.1103/PhysRevD.99.123026
-    display: Phys. Rev. D 99, 123026 (2019) [PDF]({{ site.baseurl }}/downloads/1_key publication.pdf)
+    display: Phys. Rev. D 99, 123026 (2019) {[PDF]}({{ site.baseurl }}/downloads/1_key_publication.pdf)
   highlight: 1
   news2: 
 
