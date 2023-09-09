@@ -8,17 +8,17 @@
 #  education3:
 #  education4:
 
-- name: Ilse Kuijf 
-  photo: rock.jpg
-  info: Master student
-  email: m.ortego.larrazabal@umail.leidenuniv.nl
+- name: Kanika Karan 
+  photo: kanika_pic.jpg
+  info: Doing MSc thesis project on Quasinormal modes in neutron stars
+  email: kanikakakran05062001@gmail.com 
   number_educ: 0
   education1:
 
-- name: Tessa Van der Ent
-  photo: rock.jpg
-  info: Master student
-  email: m.ortego.larrazabal@umail.leidenuniv.nl
+- name: shubhajit Saha
+  photo: Subhojit_pic.jpg
+  info: Doing MSc thesis project on Quakyonic Matter
+  email: shubhajitsaha80@gmail.com 
   number_educ: 0
   education1:
 
