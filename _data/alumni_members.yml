@@ -1,94 +1,58 @@
 - name: Khokan Singhao
   photo: khokan_pic.jpeg
-  info: Postdoc
-  duration: In the Allan Lab May 2017 to June 2019, now assistant professor at Yonsei University
-  email: cho@physics.leidenuniv.nl
-  number_educ: 4
-  education1: B.S. Yonsei University, Korea
-  education2: PhD Yonsei University, Korea with <a href="http://web.yonsei.ac.kr/nano/%ED%95%99%EA%B3%BC%EC%86%8C%EA%B0%9C.htm">In-Whan Lyo</a>
-  education3: Postdoc POSTECH with <a href="http://caldes.ibs.re.kr/html/caldes_en/">Han Woong Yeom</a>
-  education4: Postdoc Rutgers with <a href="http://rcem.rutgers.edu/">Sang-Wook Cheong</a>
-
+  info: MSc project based on Exploring the impact of Delta-Baryons on the Properties of Neutron Stars
+  duration: In the NAP Lab 2022-2023 
+  email: 421ph2133@nitrkl.ac.in 
+  
 - name: Mrityunjoy Singha
   photo: muru_pic.jpeg
-  info: PhD Student, shared with the <a href="http://www.groeblacherlab.tudelft.nl">Groeblacher lab</a> at TU Delft under a NanoFront grant.
-  email: M.Leeuwenhoek@tudelft.nl
-  duration: In the Allan Lab December 2015 to February 2020, now design engineer at ASML
-  number_educ: 1
-  education1: Master Leiden University with Milan Allan
-  education2:
-  education3:
-  education4:
+  info: MSc project based on Dark Compact Objects
+  duration: In the NAP Lab 2022-2023
+  email: 421ph2190@nitrkl.ac.in
+  
 
 - name: Sailesh Ranjan Mohanty
   photo: sailesh_pic.jpeg
-  info: Fine mechanical engineer (also associated with the FMD)
-  email: Groenewoud@physics.leidenuniv.nl
-  number_educ: 2
-  duration: In the Allan Lab 2018 - 2020
-  education1: Leidse Instrumentmaker School
-  education2: Mechanical Engineer , Hogeschool  Delft
-  education3:
-  education4:
+  info: IMSc project based on Impact of Anisotropy on Neutron Star Properties: Insights from Non-adiabatic Gravitational Collapse
+  duration: In the NAP Lab 2022-2023
+  email: 418ph5026@nitrkl.ac.in 
+  
 
 - name: Shahebaj Hasan Shaikh
   photo: shahbaj_pic.jpeg
-  info: PhD Student, started December 2017
-  duration: In the Allan Lab Dec 2017 - Dec 2021, now at Rabobank
-  email: chatzopoulos@Physics.LeidenUniv.nl
-  number_educ: 2
-  education1: Bachelor National and Kapodistrian University of Athens with D Syvridis
-  education2: Master TU Delft with <a href="http://vanderzantlab.tudelft.nl/">Herre van der Zant</a>
-  education3:
-
+  info: MSc project based on Finite temperature dependent EoS for nucleonic core of neutron stars
+  duration: In the NAP Lab 2022-2023
+  email: 421ph2139@nitrkl.ac.in
+ 
 - name: Souhardya Sen 
   photo: sen_pic.jpeg
-  info: NWO Veni fellow, collaborating with us and stationed in the <a href="https://ottelab.tudelft.nl">Otte Lab</a>
-  duration: In the Allan Lab from 2015 - 2023 as a MSc student, then PhD (cum laude, Ehrenfest-Afanassjewa prize), and postdoc.
-  email: Bastiaans@Physics.LeidenUniv.nl
-  number_educ: 4
-  education1: Postdoc in the Otte Lab, Leiden University
-  education2: Postdoc in the Allan Lab, Leiden University
-  education3: PhD with Milan Allan, Leiden University (prize for best physics PhD in the Netherlands)
-  education4: Master Leiden University with Milan Allan
+  info: MSc project based on Radial Oscillations in Neutron Stars from Unified EoS
+  duration: In the NAP Lab 2021-2022
+  email: 419ph2148@nitrkl.ac.in 
   
 - name: Athul K P
   photo: athul_pic.png
-  info: PhD student
-  duration: In the Allan Lab Jan 2015 to June 2019, now R&D scientist at Nearfield Instruments
-  email: Battisti@Physics.LeidenUniv.nl
-  number_educ: 3
-  education1: Master Padova University
-  education2: Master thesis at Leiden University with <a href="https://www.physics.leidenuniv.nl/vanruitenbeek">Jan van Ruitenbeek</a>
-  education3: PhD Leiden University, prize for reseacher of the year at the Science faculty
-
+  info: MSc project based on Impact of the EoS on f- and p-mode oscillations of neutron stars
+  duration: In the NAP Lab 2021-2022, now doing PhD from FSU, USA
+  email: 420ph2159@nitrkl.ac.in 
+  
 - name: Soumya Prakash Behera 
   photo: soumya_pic.png
-  info: PhD Student, started September 2018
-  duration: In the Allan Lab 2018 - 2022
-  email: WTromp@physics.leidenuniv.nl
-  number_educ: 1
-  education1: Master Leiden University with Felix Baumberger, Milan Allan
-  education2:
-  education3:
-  education4:
+  info: IMSc project based on Nuclear constraints on gravitational waves from deformed pulsars 
+  duration: In the NAP Lab 2020-2021
+  email: 416ph5041@nitrkl.ac.in 
+  
 
 - name: Vikram Singh Khati
   photo: vikram_pic.png
-  info: NWO Veni fellow, collaborating with us and the <a href="https://www.tudelft.nl/en/faculty-of-applied-sciences/about-faculty/departments/quantum-nanoscience/van-der-sar-lab/">van der Sar lab</a>
-  duration: In the Allan Lab for a short time in 2022 as a Veni fellow, before starting his group.
-  email: Bastiaans@Physics.LeidenUniv.nl
-  number_educ: 3
-  education1: Postdoc in the Aarts Lab, Leiden University
-  education2: PhD with Jan Aarts
-  education3: Master KU Leuven
-
+  info: MSc project based on Presence of dark matter in the core of Neutron star
+  duration: In the NAP Lab 2020-2021
+  email: 419ph2112@nitrkl.ac.in 
+  
 
 - name: Pritam Kumar Bishee (IMSc Project)
   photo: preetam_pic.png
-  info: IMSc Project, started July 2021
-  duration: In the Allan Lab from 2021 - 2023 as a postdoc
-  email: jwlee0421@postech.ac.kr
-  number_educ: 2
-  education1: PhD with <a href="https://caldes.ibs.re.kr/html/caldes_en/">Han Woong Yeom</a> Pohang University of Science and Technology (POSTECH)
-  education2: BSc Pohang University of Science and Technology (POSTECH)
+  info: IMSc Project based on Treatment of quark matter in the inner core of Neutron star
+  duration: In the NAP Lab 2020-2021
+  email: 416ph5043@nitrkl.ac.in
+  
