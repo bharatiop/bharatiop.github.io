@@ -8,7 +8,25 @@
   highlight: 1
   news2: 
 
+- title: "Inferring neutron star properties from GW170817 with universal relations"
+  image: tidal1.png
+  description: We have used equation-of-state (EoS) insensitive relations between neutron star (NS) observables to translate the GW170817 canonical tidal deformability measurement into bounds on the properties of all neutron stars. In particular, if we assume a common neutron star  EoS, then GW170817 constrains radii, moment-of-inertia and  tidal deformability for other binary NS and pulsar systems. These quasi-universal relations can further be used to combine separate X-ray and GW observations independently of the EoS, leading to joint constraints on tidal deformability. 
+  authors: Bharat Kumar and Philippe Landry
+  link:
+    url: https://journals.aps.org/prd/abstract/10.1103/PhysRevD.99.123026
+    display: Phys. Rev. D 99, 123026 (2019)
+  highlight: 1
+  news2: 
 
+- title: "New relativistic effective interaction for finite nuclei, infinite nuclear matter, and neutron stars"
+  image: tidal2.png
+  description: We've developed G3 and IOPB-I parameter sets for energy density functions in finite nuclei and infinite nuclear matter, using effective field theory motivated relativistic mean field (ERMF) formalism. Our results align with experimental data, including the neutron-skin thickness of Pb-208 nucleus and neutron star radius from GW170817. Our low-density equation of state for pure neutron matter matches other models, and we also compute maximum mass and tidal deformability in agreement with GW170817 and pulsar data.
+  authors: Bharat Kumar and Philippe Landry
+  link:
+    url: https://journals.aps.org/prc/abstract/10.1103/PhysRevC.97.045806
+    display: Phys. Rev. C 97, 045806 (2018)
+  highlight: 1
+  news2: 
 
 
 
