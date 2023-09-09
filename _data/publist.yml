@@ -28,6 +28,14 @@
   highlight: 1
   news2: 
 
-
+- title: "Constraints on the Moment of Inertia of PSR J0737-3039A from GW170817"
+  image: moi.png
+  description: We found that the tidal deformability strongly correlates with the linear combinations of the slopes of nuclear isoscalar incompressibility and symmetry energy coefficients, all fall-outs of the nuclear equation of state. For the first time, we also found that the tidal deformability is approximately proportional to the sixth power of the radius of neutron star for a wide range of neutron star masses. This relation together with the bounds on the tidal deformability obtained from the GW170817 and its UV/optical/infrared electromagnetic counterparts constrain the radius of the neutron star with canonical mass in the range 11.82 - 13.72 km.
+  authors: Philippe Landry and Bharat Kumar
+  link:
+    url: https://iopscience.iop.org/article/10.3847/2041-8213/aaee76
+    display: ApJ Letter 868, L22 (2018)
+  highlight: 1
+  news2: 
 
 
