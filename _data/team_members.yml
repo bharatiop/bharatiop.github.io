@@ -2,6 +2,9 @@
   photo: bk_pic.jpeg
   info: Assistant professor, started June 2020
   email: kumarbh@nitrkl.ac.in
+  number_addit: 2
+  addit1: <a href="../downloads/CV.pdf">CV</a>
+  addit2: <a href="https://scholar.google.com/citations?hl=en&user=4498IKgAAAAJ&view_op=list_works&sortby=pubdate">Scholar</a>
   number_educ: 4
   education1: Master from <a href="https://www.amu.ac.in/department/physics">Department of Physics</a>, Aligarh Muslim University, Aligarh
   education2: PhD with <a href="https://www.iopb.res.in/members/patra">Prof S K Patra</a>, <a href="https://www.iopb.res.in/index">IOP Bhubaneswar</a>
