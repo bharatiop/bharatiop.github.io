@@ -53,7 +53,7 @@ We are a dynamic research group based at the [National Institute of Technology, 
 </div>
 
 
-Our current research agenda centers on several key aspects:
+At present, our research is primarily centered on the following captivating dimensions:
 
 **1. Equation of State of Neutron Stars:** We delve deep into understanding the fundamental question: What are neutron stars composed of? Our investigations aim to decipher the exotic and dense matter that makes up these celestial objects.
 
