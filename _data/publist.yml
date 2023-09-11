@@ -17,6 +17,15 @@
     display:  Galaxies 11, 60 (2023) [Invited Article] 
   highlight: 0
   news2:
+- title: "Theoretical studies on structural properties and decay modes of Z = 119 isotopes"
+  image:
+ description:
+ authors: Asloob A. Rather, M. Ikram, Ishfaq A. Rather, A. A. Usmani,  Bharat Kumar, K. P.  Santhosh, S. K. Patra
+ link:
+    url: https://arxiv.org/abs/1709.07311
+    display:  Eur. Phys. J. Plus 138, 467 (2023)
+highlight: 0
+news2:
 
 - title: "Impact of the equation of state on f- and p- mode oscillations of neutron stars"
   image: fmode2.png
@@ -27,6 +36,56 @@
     display: Phys. Rev. D 106, 063005 (2022)
   highlight: 1
   news2: 
+
+- title: "Dark Matter Effects on the Compact Star Properties"
+  image:
+ description:
+ authors: H C Das, Ankit Kumar, Bharat Kumar, and S K Patra
+ link:
+    url: https://www.mdpi.com/2075-4434/10/1/14
+    display:  Galaxies 10, 14 (2022) [Invited Review Article] 
+highlight: 0
+news2:
+
+- title: "Universal relations between the quasinormal modes of neutron star and tidal deformability"
+  image:
+ description:
+ authors: Hajime Sotani, and Bharat Kumar
+ link:
+    url: https://arxiv.org/pdf/2109.08145.pdf
+    display:  Phys. Rev. D 104, 123002 (2021)
+highlight: 0
+news2:
+
+- title: "The BigApple force and it's implications to finite nuclei and astrophysical objects"
+  image:
+ description:
+ authors: H C Das, Ankit Kumar, Bharat Kumar, S K Biswal, and S K Patra
+ link:
+    url: https://arxiv.org/abs/2009.10690
+    display: IJMP E 30, 2150088 (2021)
+highlight: 0
+news2:
+
+- title: "Impacts of dark matter on the curvature of the neutron star"
+  image:
+ description:
+ authors: H C Das, Ankit Kumar, Bharat Kumar, S K Biswal, and S K Patra
+ link:
+    url: https://arxiv.org/abs/2007.05382
+    display: JCAP 01, 007 (2021)
+highlight: 0
+news2:
+
+- title: "Warm dense matter and cooling of supernovae remnants"
+  image:
+ description:
+ authors: Ankit Kumar, H C Das, S K Biswal, Bharat Kumar, and S K Patra
+ link:
+    url: https://doi.org/10.1140/epjc/s10052-020-8353-4
+    display: Eur. Phys. J C 80, 775 (2020)
+highlight: 0
+news2:
 
 - title: "Inferring neutron star properties from GW170817 with universal relations"
   image: tidal1.png
