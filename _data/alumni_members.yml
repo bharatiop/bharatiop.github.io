@@ -1,58 +1,72 @@
 - name: Khokan Singhao
   photo: khokan_pic.jpeg
-  info: MSc project based on Exploring the impact of Delta-Baryons on the Properties of Neutron Stars
+  info: MSc thesis project
   duration: In the NAP Lab 2022-2023 
   email: 421ph2133@nitrkl.ac.in 
+  number_addit: 1
+  addit1: "Title: Exploring the impact of Delta-Baryons on the Properties of Neutron Stars"
   
 - name: Mrityunjoy Singha
   photo: muru_pic.jpeg
-  info: MSc project based on Dark Compact Objects
+  info: MSc thesis project
   duration: In the NAP Lab 2022-2023
   email: 421ph2190@nitrkl.ac.in
+  number_addit: 1
+  addit1: "Title: Dark Compact Objects"
   
 
 - name: Sailesh Ranjan Mohanty
   photo: sailesh_pic.jpeg
-  info: IMSc project based on Impact of Anisotropy on Neutron Star Properties; Insights from Non-adiabatic Gravitational Collapse
+  info: IMSc thesis project
   duration: In the NAP Lab 2022-2023
   email: 418ph5026@nitrkl.ac.in 
-  
+  number_addit: 1
+  addit1: "Title: Impact of Anisotropy on Neutron Star Properties: Insights from Non-adiabatic Gravitational Collapse"
 
 - name: Shahebaj Hasan Shaikh
   photo: shahbaj_pic.jpeg
-  info: MSc project based on Finite temperature dependent EoS for nucleonic core of neutron stars
+  info: MSc thesis project 
   duration: In the NAP Lab 2022-2023
   email: 421ph2139@nitrkl.ac.in
- 
+  number_addit: 1
+  addit1: "Title: Finite temperature dependent EoS for nucleonic core of neutron stars"
+  
 - name: Souhardya Sen 
   photo: sen_pic.jpeg
-  info: MSc project based on Radial Oscillations in Neutron Stars from Unified EoS
+  info: MSc thesis project 
   duration: In the NAP Lab 2021-2022
   email: 419ph2148@nitrkl.ac.in 
+  number_addit: 1
+  addit1: "Title: Radial Oscillations in Neutron Stars from Unified EoS"
   
 - name: Athul K P
   photo: athul_pic.png
-  info: MSc project based on Impact of the EoS on f- and p-mode oscillations of neutron stars
+  info: MSc thesis project 
   duration: In the NAP Lab 2021-2022, now doing PhD from FSU, USA
   email: 420ph2159@nitrkl.ac.in 
+  number_addit: 1
+  addit1: "Title: Impact of the EoS on f- and p-mode oscillations of neutron stars"
   
 - name: Soumya Prakash Behera 
   photo: soumya_pic.png
-  info: IMSc project based on Nuclear constraints on gravitational waves from deformed pulsars 
+  info: IMSc thesis project
   duration: In the NAP Lab 2020-2021
   email: 416ph5041@nitrkl.ac.in 
-  
+  number_addit: 1
+  addit1: "Title: Nuclear constraints on gravitational waves from deformed pulsars"
 
 - name: Vikram Singh Khati
   photo: vikram_pic.png
-  info: MSc project based on Presence of dark matter in the core of Neutron star
+  info: MSc thesis project
   duration: In the NAP Lab 2020-2021
   email: 419ph2112@nitrkl.ac.in 
-  
+  number_addit: 1
+  addit1: "Title: Presence of dark matter in the core of Neutron star"
 
-- name: Pritam Kumar Bishee (IMSc Project)
+- name: Pritam Kumar Bishee 
   photo: preetam_pic.png
-  info: IMSc Project based on Treatment of quark matter in the inner core of Neutron star
+  info: IMSc thesis project 
   duration: In the NAP Lab 2020-2021
   email: 416ph5043@nitrkl.ac.in
-  
+  number_addit: 1
+  addit1: "Title: Treatment of quark matter in the inner core of Neutron star"
