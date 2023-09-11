@@ -1,11 +1,11 @@
 - title: "Radial Oscillations of Dark Matter admixed Neutron Stars"
-  image:
-  description:
+  image: fmode1.png
+  description: In our study of dark matter-admixed neutron stars within the relativistic mean-field model, we employ the IOPB-I hadronic equation of state, assuming the presence of fermionic dark matter. Our findings reveal that dark matter softens the equation of state, reducing both maximum mass and radius. Pulsating neutron stars with dark matter exhibit higher frequencies, indicating a linear correlation with the DM Fermi momentum. We also investigate eigenfunctions, stability criteria, and crust effects on frequency separation.
   authors: Pinku Routray, H. C. Das, Souhardya Sen, Bharat Kumar, Grigoris Panotopoulos, and Tianqi Zhao
   link:
     url: https://doi.org/10.48550/arXiv.2211.12808
-    display: Phys. Rev. D 107, 103039 (2023)
-  highlight: 0
+    display: Phys. Rev. D 107, 103039 (2023) [[PDF](/downloads/darkfmode.pdf)]
+  highlight: 1
   news2: 
 
 - title: "Radial oscillations in neutron stars from unified equation of states"
@@ -108,7 +108,7 @@
   authors: Athul Kunjipurayil, Tianqi Zhao, Bharat Kumar, Bijay K. Agrawal, and Madappa Prakash
   link:
     url: https://journals.aps.org/prd/abstract/10.1103/PhysRevD.106.063005
-    display: Phys. Rev. D 106, 063005 (2022)
+    display: Phys. Rev. D 106, 063005 (2022) [[PDF](/downloads/athulkp.pdf)]
   highlight: 1
   news2: 
 
@@ -128,7 +128,7 @@
   authors: Bharat Kumar, S K Patra, and B K Agrawal
   link:
     url: https://journals.aps.org/prc/abstract/10.1103/PhysRevC.97.045806
-    display: Phys. Rev. C 97, 045806 (2018)
+    display: Phys. Rev. C 97, 045806 (2018) [[PDF](/downloads/4_key_publication.pdf)]
   highlight: 1
   news2: 
 
@@ -138,7 +138,7 @@
   authors: Philippe Landry and Bharat Kumar
   link:
     url: https://iopscience.iop.org/article/10.3847/2041-8213/aaee76
-    display: ApJ Letter 868, L22 (2018)
+    display: ApJ Letter 868, L22 (2018) [[PDF](/downloads/2_key_publication.pdf)]
   highlight: 1
   news2: 
   
@@ -148,7 +148,7 @@
   authors: Tuhin Malik, N. Alam, M. Fortin, C. Providencia, B. K. Agrawal, T. K. Jha, Bharat Kumar, and S K Patra
   link:
     url: https://doi.org/10.1103/PhysRevC.98.035804
-    display: Phys. Rev. C 98, 034005 (2018)
+    display: Phys. Rev. C 98, 034005 (2018) [[PDF](/downloads/3_key_publication.pdf)]
   highlight: 0
   news2: 
 
