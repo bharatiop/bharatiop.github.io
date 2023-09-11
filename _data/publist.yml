@@ -87,6 +87,26 @@ news2:
 highlight: 0
 news2:
 
+- title: "GW170817 constraints on the properties of a neutron star in the presence of WIMP dark matter"
+  image:
+ description:
+ authors: Abdul Quddus, Grigorios Panotopoulos, Bharat Kumar, Shakeb Ahmad, and S K Patra
+ link:
+    url: https://doi.org/10.1088/1361-6471/ab9d36
+    display: J. Phys. G  47, 095202 (2020)
+highlight: 0
+news2:
+
+- title: "Effects of dark matter on the nuclear and neutron star matter"
+  image:
+ description:
+ authors: H C Das, Ankit Kumar, Bharat Kumar,S K Biswal, Takashi Nakatsukasa, Ang Li, and S K Patra
+ link:
+    url: https://doi.org/10.1093/mnras/staa1435
+    display: MNRAS 495, 4893 (2020)
+highlight: 0
+news2:
+
 - title: "Inferring neutron star properties from GW170817 with universal relations"
   image: tidal1.png
   description: We have used equation-of-state (EoS) insensitive relations between neutron star (NS) observables to translate the GW170817 canonical tidal deformability measurement into bounds on the properties of all neutron stars. In particular, if we assume a common neutron star  EoS, then GW170817 constrains radii, moment-of-inertia and  tidal deformability for other binary NS and pulsar systems. These quasi-universal relations can further be used to combine separate X-ray and GW observations independently of the EoS, leading to joint constraints on tidal deformability. 
