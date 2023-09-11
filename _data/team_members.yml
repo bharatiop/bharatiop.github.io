@@ -3,11 +3,20 @@
   info: Assistant professor, started June 2020
   email: kumarbh@nitrkl.ac.in
   number_educ: 4
-  education1: Master from <a href="https://www.amu.ac.in/department/physics">Department of Physics</a>, Aligarh Muslim University, Aligarh
+  education1: Master in Physics, AMU, Aligarh
   education2: PhD with <a href="https://www.iopb.res.in/members/patra">Prof S K Patra</a>, <a href="https://www.iopb.res.in/index">IOP Bhubaneswar</a>
   education3: Postdoc with <a href="http://www.gw.iucaa.in/sukanta-bose/">Prof Sukanta Bose</a>, IUCAA, Pune
   education4: Postdoc with <a href="https://www.ccs.tsukuba.ac.jp/eng/research-divisions/division-of-nuclear-physics/">Prof Takashi Nakatsukasa</a>, CCS, University of Tsukuba, Japan
 
+- name: Pinku Routaray
+  photo: pinku_pic.png
+  info: PhD, started July 2022
+  email: routaraypinku@gmail.com  
+  number_educ: 1
+  education1: MSc, Behrampur University
+  number_addit: 1
+  addit1: "PhD Topic: Probing Dark matter in Neutron Stars"
+  
 - name: Sayantan Ghosh
   photo: sayantan_pic.png
   info: PhD, started July 2022
