@@ -1,10 +1,34 @@
+-title: "Radial Oscillations of Dark Matter admixed Neutron Stars"
+ image:
+ description:
+ authors: Pinku Routray, H. C. Das, Souhardya Sen, Bharat Kumar, Grigoris Panotopoulos, and Tianqi Zhao
+ link:
+    url: https://doi.org/10.48550/arXiv.2211.12808
+    display: Phys. Rev. D 107, 103039 (2023)
+    
+-title: "Radial oscillations in neutron stars from unified equation of states"
+image:
+description:
+authors: Souhardya Sen, Shubham Kumar, Athul Kunjipurayil, Pinku Routaray, Sayantan Ghosh, Probit J. Kalita, Tianqi Zhao and  Bharat Kumar 
+link:
+    url: https://arxiv.org/pdf/2205.02076.pdf 
+    display:  Galaxies 11, 60 (2023) [  Invited Article] 
+
+-title: "Theoretical studies on structural properties and decay modes of $^{284 - 375}$119 isotopes"
+ image:
+description:
+authors: Asloob A. Rather, M. Ikram, Ishfaq A. Rather, A. A. Usmani,  Bharat Kumar, K. P. Santhosh, S. K. Patra
+link:
+    url: https://arxiv.org/abs/1709.07311
+    display:  Eur. Phys. J. Plus 138, 467 (2023)
+
 - title: "Impact of the equation of state on f- and p- mode oscillations of neutron stars"
   image: fmode2.png
   description: We investigated neutron star equations of state and their impact on f- and p-mode oscillation frequencies within Cowling and linearized general relativity. We found strong correlations between these frequencies, nuclear matter properties, and the pressure of β-equilibrated matter at or near nuclear saturation density ρ0, regardless of star composition. Notably, the p1-mode frequency in a 1.4 M⊙ star correlated significantly with the slope of symmetry energy (L0) and β-equilibrated pressure at ρ0, shedding light on neutron star intricacies.
   authors: Athul Kunjipurayil, Tianqi Zhao, Bharat Kumar, Bijay K. Agrawal, and Madappa Prakash
   link:
     url: https://journals.aps.org/prd/abstract/10.1103/PhysRevD.106.063005
-    display: Phys. Rev. D 106, 063005 (2023)
+    display: Phys. Rev. D 106, 063005 (2022)
   highlight: 1
   news2: 
 
