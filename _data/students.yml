@@ -10,16 +10,19 @@
 
 - name: Kanika Karan 
   photo: kanika_pic.jpg
-  info: Doing MSc thesis project on Quasinormal modes in neutron stars
+  info: Ongoing MSc thesis project 
   email: kanikakakran05062001@gmail.com 
   number_educ: 0
   education1:
+  number_addit: 1
+  addit1: "Title: Quasinormal modes in neutron stars"
 
 - name: shubhajit Saha
   photo: Subhojit_pic.jpg
-  info: Doing MSc thesis project on Quakyonic Matter
+  info: Ongoing MSc thesis project 
   email: shubhajitsaha80@gmail.com 
   number_educ: 0
   education1:
-
+  number_addit: 1
+  addit1: "Title: Quarkyonic Matter"
 
