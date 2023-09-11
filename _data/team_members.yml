@@ -4,9 +4,9 @@
   email: kumarbh@nitrkl.ac.in
   number_educ: 4
   education1: Master in Physics, AMU, Aligarh
-  education2: PhD with <a href="https://www.iopb.res.in/members/patra">Prof S K Patra</a>, <a href="https://www.iopb.res.in/index">IOP Bhubaneswar</a>
-  education3: Postdoc with <a href="http://www.gw.iucaa.in/sukanta-bose/">Prof Sukanta Bose</a>, IUCAA, Pune
-  education4: Postdoc with <a href="https://www.ccs.tsukuba.ac.jp/eng/research-divisions/division-of-nuclear-physics/">Prof Takashi Nakatsukasa</a>, CCS, University of Tsukuba, Japan
+  education2: PhD with <a href="https://www.iopb.res.in/members/patra">S K Patra</a>, <a href="https://www.iopb.res.in/index">IOP Bhubaneswar</a>
+  education3: Postdoc, LIGO-India Group <a href="http://www.gw.iucaa.in/sukanta-bose/">Sukanta Bose</a> at IUCAA, Pune
+  education4: Postdoc, group of <a href="https://www.ccs.tsukuba.ac.jp/eng/research-divisions/division-of-nuclear-physics/">Takashi Nakatsukasa</a> at University of Tsukuba, Japan
 
 - name: Pinku Routaray
   photo: pinku_pic.png
@@ -24,7 +24,7 @@
   number_educ: 1
   education1: MSc, Banaras Hindu University
   number_addit: 1
-  addit1: "PhD Topic:Quasinormal Modes in Neutron Stars"
+  addit1: "PhD Topic: Quasinormal Modes in Neutron Stars"
 
 - name: Probit J Kalita
   photo: probit_pic.png
@@ -33,7 +33,7 @@
   number_educ: 1
   education1: MSc, Tezpur University 
   number_addit: 1
-  addit1: "PhD Topic:Compositions of Neutron Stars"
+  addit1: "PhD Topic: Compositions of Neutron Stars"
 
 - name: Sunitarani Pani
   photo: sunita_pic.jpeg
@@ -42,5 +42,5 @@
   number_educ: 1
   education1: MSc, Sambalpur University
   number_addit: 1
-  addit1: "PhD Topic:Constraining Symmetry Energy of Finite Nuclei"
+  addit1: "PhD Topic: Constraining Symmetry Energy of Finite Nuclei"
 
