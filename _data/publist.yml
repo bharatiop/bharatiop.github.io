@@ -125,7 +125,7 @@
 - title: "New relativistic effective interaction for finite nuclei, infinite nuclear matter, and neutron stars"
   image: tidal2.png
   description: We've developed G3 and IOPB-I parameter sets for energy density functions in finite nuclei and infinite nuclear matter, using effective field theory motivated relativistic mean field (ERMF) formalism. Our results align with experimental data, including the neutron-skin thickness of Pb-208 nucleus and neutron star radius from GW170817. Our low-density equation of state for pure neutron matter matches other models, and we also compute maximum mass and tidal deformability in agreement with GW170817 and pulsar data.
-  authors: Bharat Kumar and Philippe Landry
+  authors: Bharat Kumar, S K Patra, and B K Agrawal
   link:
     url: https://journals.aps.org/prc/abstract/10.1103/PhysRevC.97.045806
     display: Phys. Rev. C 97, 045806 (2018)
