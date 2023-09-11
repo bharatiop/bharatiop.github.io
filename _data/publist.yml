@@ -141,7 +141,8 @@
     display: ApJ Letter 868, L22 (2018)
   highlight: 1
   news2: 
-- title: "GW170817: Constraining the nuclear matter equation of state from the neutron star tidal deformability"
+  
+- title: "GW170817; Constraining the nuclear matter equation of state from the neutron star tidal deformability"
   image:
   description:
   authors: Tuhin Malik, N. Alam, M. Fortin, C. Providencia, B. K. Agrawal, T. K. Jha, Bharat Kumar, and S K Patra
@@ -171,7 +172,7 @@
   highlight: 0
   news2: 
 
-- title: "New parameterization of the effective field theory motivated relativistic mean field model"
+- title: "New parameterization of the effective field theory motivated relativistic mean-field model"
   image:
   description:
   authors:  Bharat Kumar, S. K. Singh, B. K. Agrawal, and S. K. Patra
