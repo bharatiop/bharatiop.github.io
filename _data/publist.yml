@@ -18,7 +18,7 @@
   highlight: 0
   news2:
 
-- title: "Theoretical studies on structural properties and decay modes of atomic number 119 isotopes"
+- title: "Theoretical studies on structural properties and decay modes of Z= 119 isotopes"
   image:
   description:
   authors: Asloob A. Rather, M. Ikram, Ishfaq A. Rather, A. A. Usmani,  Bharat Kumar, K. P.  Santhosh, S. K. Patra
@@ -271,4 +271,40 @@
     display:  IJMP E 25,1650020 (2016)
   highlight: 0
   news2:
+
+  
+- title: "Examining the stability of thermally fissile Th and U isotopes"
+  image:
+  description:
+  authors:  Bharat Kumar, S. K. Biswal,S. K. Singh and S. K. Patra
+  link:
+    url: https://doi.org/10.1103/PhysRevC.92.054314
+    display:  Phys. Rev. C  92, 054314 (2015)
+  highlight: 0
+  news2:
+
+
+- title: "Properties of superheavy nuclei: Z = 124"
+  image:
+  description:
+  authors:  M. S. Mehta, Harvinder Kaur, Bharat Kumar, and S. K. Patra
+  link:
+    url: https://doi.org/10.1103/PhysRevC.92.054305
+    display:  Phys. Rev. C  92, 054305 (2015)
+  highlight: 0
+  news2:
+
+- title: "Shape co-existence and parity doublet in Zr isotopes"
+  image:
+  description:
+  authors:  Bharat Kumar, S. K. Singh and S. K. Patra  
+  link:
+    url: https://doi.org/10.1142/S0218301315500172
+    display:   IJMP E 24, 1550017 (2015)
+  highlight: 0
+  news2:
+
+
+
+
 
