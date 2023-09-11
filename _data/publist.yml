@@ -5,6 +5,8 @@
  link:
     url: https://doi.org/10.48550/arXiv.2211.12808
     display: Phys. Rev. D 107, 103039 (2023)
+ highlight: 0
+  news2: 
     
 -title: "Radial oscillations in neutron stars from unified equation of states"
 image:
@@ -13,6 +15,8 @@ authors: Souhardya Sen, Shubham Kumar, Athul Kunjipurayil, Pinku Routaray, Sayan
 link:
     url: https://arxiv.org/pdf/2205.02076.pdf 
     display:  Galaxies 11, 60 (2023) [Invited Article] 
+highlight: 0
+  news2:
 
 -title: "Theoretical studies on structural properties and decay modes of Z=119 isotopes"
  image:
@@ -21,6 +25,8 @@ authors: Asloob A. Rather, M. Ikram, Ishfaq A. Rather, A. A. Usmani,  Bharat Kum
 link:
     url: https://arxiv.org/abs/1709.07311
     display:  Eur. Phys. J. Plus 138, 467 (2023)
+highlight: 0
+  news2:
 
 - title: "Impact of the equation of state on f- and p- mode oscillations of neutron stars"
   image: fmode2.png
