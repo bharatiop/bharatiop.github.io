@@ -1,13 +1,3 @@
--title: "Theoretical studies on structural properties and decay modes of Z=119 isotopes"
- image:
-description:
-authors: Asloob A. Rather, M. Ikram, Ishfaq A. Rather, A. A. Usmani,  Bharat Kumar, K. P. Santhosh, S. K. Patra
-link:
-    url: https://arxiv.org/abs/1709.07311
-    display:  Eur. Phys. J. Plus 138, 467 (2023)
-highlight: 0
-  news2:
-
 - title: "Impact of the equation of state on f- and p- mode oscillations of neutron stars"
   image: fmode2.png
   description: We investigated neutron star equations of state and their impact on f- and p-mode oscillation frequencies within Cowling and linearized general relativity. We found strong correlations between these frequencies, nuclear matter properties, and the pressure of β-equilibrated matter at or near nuclear saturation density ρ0, regardless of star composition. Notably, the p1-mode frequency in a 1.4 M⊙ star correlated significantly with the slope of symmetry energy (L0) and β-equilibrated pressure at ρ0, shedding light on neutron star intricacies.
