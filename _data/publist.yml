@@ -1,3 +1,63 @@
+- title: "Probing the Impact of WIMP Dark Matter on Universal Relations, GW170817 Posterior and Radial Oscillations"
+  image: 
+  description: 
+  authors: Pinku Routaray, Abdul Quddus, Kabir Chakravarti, and Bharat Kumar
+  link:
+    url: https://arxiv.org/abs/2202.04364
+    display: 	arXiv [Accepted in MNRAS]
+  highlight: 0
+  news2: 
+  
+- title: "Investigating Dark Matter-Admixed Neutron Stars with NITR Equation of State in Light of PSR J0952-0607"
+  image: 
+  description: 
+  authors: Pinku Routaray, Sailesh Ranjan Mohanty, H.C. Das, Sayantan Ghosh, P.J. Kalita, V. Parmar, and Bharat Kumar
+  link:
+    url: https://arxiv.org/abs/2304.05100
+    display: 	arXiv
+  highlight: 0
+  news2: 
+  
+- title: "The Impact of Anisotropy on Neutron Star Properties; Insights from I-f-C Universal Relations"
+  image: 
+  description: 
+  authors: Sailesh Ranjan Mohanty, Sayantan Ghosh, Pinku Routaray, H. C. Das, and Bharat Kumar
+  link:
+    url: https://arxiv.org/abs/2305.15724
+    display: arXiv
+  highlight: 0
+  news2: 
+  
+- title: "Dark Matter Admixed Neutron Star in the light of HESS J1731-347 and PSR J0952-0607"
+  image: 
+  description: 
+  authors: Pinku Routaray, H C Das, Jeet Amrit Pattnaik, Bharat Kumar
+  link:
+    url: https://arxiv.org/abs/2307.12748
+    display: arXiv
+  highlight: 0
+  news2: 
+
+- title: "Probing the impact of Delta-Baryons on Nuclear Matter and Non-Radial Oscillations in Neutron Stars"
+  image: 
+  description: 
+  authors: Probit Jyoti Kalita, Pinku Routaray, Sayantan Ghosh, Bharat Kumar, and Bijay K. Agrawal
+  link:
+    url: https://arxiv.org/abs/2308.09008
+    display: arXiv
+  highlight: 0
+  news2: 
+  
+- title: "Unstable Anisotropic Neutron Stars; Probing the Limits of Gravitational Collapse"
+  image: 
+  description: 
+  authors: S. R. Mohanty, Sayantan Ghosh, and Bharat Kumar
+  link:
+    url: https://arxiv.org/abs/2304.02439
+    display: 	arXiv
+  highlight: 0
+  news2: 
+  
 - title: "Radial Oscillations of Dark Matter admixed Neutron Stars"
   image: fmode1.png
   description: In our study of dark matter-admixed neutron stars within the relativistic mean-field model, we employ the IOPB-I hadronic equation of state, assuming the presence of fermionic dark matter. Our findings reveal that dark matter softens the equation of state, reducing both maximum mass and radius. Pulsating neutron stars with dark matter exhibit higher frequencies, indicating a linear correlation with the DM Fermi momentum. We also investigate eigenfunctions, stability criteria, and crust effects on frequency separation.
