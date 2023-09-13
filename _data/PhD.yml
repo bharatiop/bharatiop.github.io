@@ -1,0 +1,35 @@
+- name: Pinku Routaray
+  photo: pinku_pic.png
+  info: PhD, started July 2021
+  email: routaraypinku@gmail.com  
+  number_educ: 1
+  education1: MSc, Behrampur University
+  number_addit: 1
+  addit1: "PhD Topic: Probing Dark matter in Neutron Stars"
+  
+- name: Sayantan Ghosh
+  photo: sayantan_pic.png
+  info: PhD, started July 2022
+  email: sayantanghosh1999@gmail.com 
+  number_educ: 1
+  education1: MSc, Banaras Hindu University
+  number_addit: 1
+  addit1: "PhD Topic: Quasinormal Modes in Neutron Stars"
+
+- name: Probit J Kalita
+  photo: probit_pic.png
+  info: PhD, started July 2022
+  email: sayantanghosh1999@gmail.com 
+  number_educ: 1
+  education1: MSc, Tezpur University 
+  number_addit: 1
+  addit1: "PhD Topic: Compositions of Neutron Stars"
+
+- name: Sunitarani Pani
+  photo: sunita_pic.jpeg
+  info: PhD, started July 2022
+  email: 922ph5001@nitrkl.ac.in 
+  number_educ: 1
+  education1: MSc, Sambalpur University
+  number_addit: 1
+  addit1: "PhD Topic: Constraining Symmetry Energy of Finite Nuclei"
