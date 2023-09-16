@@ -18,6 +18,6 @@ To embark on your PhD journey with us, it is imperative that you have received f
 
 
 ### Masters Students
-If you are an undergraduate or graduate student currently enrolled at NIT Rourkela and interested in collaborating on a project with our research group, please send us an email along with your CV, and we can arrange a suitable time for a discussion.iversity looking for a Master project, contact me (or any group member) per email or stop by my office.
+If you are an undergraduate or graduate student currently enrolled at NIT Rourkela and interested in collaborating on a project with our research group, please send us an email along with your CV, and we can arrange a suitable time for a discussion.
 
 
