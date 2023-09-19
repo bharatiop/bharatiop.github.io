@@ -1,14 +1,5 @@
-- title: "Probing the Impact of WIMP Dark Matter on Universal Relations, GW170817 Posterior and Radial Oscillations"
-  image: 
-  description: 
-  authors: Pinku Routaray, Abdul Quddus, Kabir Chakravarti, and Bharat Kumar
-  link:
-    url: https://arxiv.org/abs/2202.04364
-    display: 	arXiv [Accepted in MNRAS]
-  highlight: 0
-  news2: 
-  
-- title: "Investigating Dark Matter-Admixed Neutron Stars with NITR Equation of State in Light of PSR J0952-0607"
+
+  - title: "Investigating Dark Matter-Admixed Neutron Stars with NITR Equation of State in Light of PSR J0952-0607"
   image: 
   description: 
   authors: Pinku Routaray, Sailesh Ranjan Mohanty, H.C. Das, Sayantan Ghosh, P.J. Kalita, V. Parmar, and Bharat Kumar
@@ -55,6 +46,16 @@
   link:
     url: https://arxiv.org/abs/2304.02439
     display: 	arXiv
+  highlight: 0
+  news2: 
+
+- title: "Probing the Impact of WIMP Dark Matter on Universal Relations, GW170817 Posterior and Radial Oscillations"
+  image: 
+  description: 
+  authors: Pinku Routaray, Abdul Quddus, Kabir Chakravarti, and Bharat Kumar
+  link:
+    url: https://arxiv.org/abs/2202.04364
+    display: 	MNRAS 25, 5492 (2023)
   highlight: 0
   news2: 
   
