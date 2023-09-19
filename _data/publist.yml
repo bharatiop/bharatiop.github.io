@@ -1,3 +1,13 @@
+- title: "Probing the Impact of WIMP Dark Matter on Universal Relations, GW170817 Posterior and Radial Oscillations"
+  image: 
+  description:   
+  authors: Pinku Routaray, Abdul Quddus, Kabir Chakravarti, and Bharat Kumar
+  link:
+    url: https://doi.org/10.1093/mnras/stad2628
+    display: MNRAS 25, 5492 (2023)
+  highlight: 0
+  news2: 
+  
 - title: "Radial Oscillations of Dark Matter admixed Neutron Stars"
   image: fmode1.png
   description: In our study of dark matter-admixed neutron stars within the relativistic mean-field model, we employ the IOPB-I hadronic equation of state, assuming the presence of fermionic dark matter. Our findings reveal that dark matter softens the equation of state, reducing both maximum mass and radius. Pulsating neutron stars with dark matter exhibit higher frequencies, indicating a linear correlation with the DM Fermi momentum. We also investigate eigenfunctions, stability criteria, and crust effects on frequency separation.
