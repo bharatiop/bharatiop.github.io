@@ -49,12 +49,12 @@
   news2: 
   
 - title: "Probing the Impact of WIMP Dark Matter on Universal Relations, GW170817 Posterior and Radial Oscillations"
-  image: 
-  description:   
+  image: posterior.jpeg
+  description: In this work, we explored the influence of WIMPs dark matter on neutron stars and universal relations. Investigating the interactions of trapped neutralinos with hadronic matter via Higgs boson exchange within the Next-to-Minimal Supersymmetric Standard Model, the study found that dark matter softened the equation of state, causing shifts in posterior and mass-radius curves. It also maintained C–Λ universality relations, potentially classifying HESS J1731−347 as a dark matter-admixed neutron star. The work unveiled a positive correlation between dark matter mass and radial oscillation frequencies, deepening our understanding of cosmic dynamics.
   authors: Pinku Routaray, Abdul Quddus, Kabir Chakravarti, and Bharat Kumar
   link:
     url: https://doi.org/10.1093/mnras/stad2628
-    display: MNRAS 25, 5492 (2023)
+    display: MNRAS 25, 5492 (2023) [[PDF](/downloads/posterior.pdf)]
   highlight: 0
   news2: 
   
