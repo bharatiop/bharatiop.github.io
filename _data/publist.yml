@@ -28,16 +28,6 @@
   highlight: 0
   news2: 
   
-- title: "Investigating Dark Matter-Admixed Neutron Stars with NITR Equation of State in Light of PSR J0952-0607"
-  image: 
-  description: 
-  authors: Pinku Routaray, Sailesh Ranjan Mohanty, H.C. Das, Sayantan Ghosh, P.J. Kalita, V. Parmar, and Bharat Kumar
-  link:
-    url: https://arxiv.org/abs/2304.05100
-    display: 	arXiv
-  highlight: 0
-  news2: 
-  
 - title: "The Impact of Anisotropy on Neutron Star Properties; Insights from I-f-C Universal Relations"
   image: 
   description: 
@@ -45,6 +35,16 @@
   link:
     url: https://arxiv.org/abs/2305.15724
     display: arXiv
+  highlight: 0
+  news2: 
+  
+- title: "Investigating Dark Matter-Admixed Neutron Stars with NITR Equation of State in Light of PSR J0952-0607"
+  image: 
+  description: 
+  authors: Pinku Routaray, Sailesh Ranjan Mohanty, H.C. Das, Sayantan Ghosh, P.J. Kalita, V. Parmar, and Bharat Kumar
+  link:
+    url: https://iopscience.iop.org/article/10.1088/1475-7516/2023/10/073
+    display: 	JCAP 10, 073 (2023)
   highlight: 0
   news2: 
   
