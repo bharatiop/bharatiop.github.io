@@ -1,29 +1,9 @@
-- title: "The impact of anisotropy on neutron star properties: insights from 𝖨–𝖿–𝖢 universal relations"
-  image: 
-  description: 
-  authors: Sailesh Ranjan Mohanty, Sayantan Ghosh, Pinku Routaray, H C Das, and Bharat Kumar
-  link:
-    url: https://iopscience.iop.org/article/10.1088/1475-7516/2024/03/054
-    display: JCAP 03, 054 (2024) [[PDF](/downloads/Mohanty_2024_JCAP54.pdf)]
-  highlight: 0
-  news2: 
-  
 - title: "Dark Matter Admixed Neutron Star in the light of HESS J1731-347 and PSR J0952-0607"
   image: 
   description: 
   authors: Pinku Routaray, H C Das, Jeet Amrit Pattnaik, Bharat Kumar
   link:
     url: https://arxiv.org/abs/2307.12748
-    display: arXiv
-  highlight: 0
-  news2: 
-
-- title: "Probing the impact of Delta-Baryons on Nuclear Matter and Non-Radial Oscillations in Neutron Stars"
-  image: 
-  description: 
-  authors: Probit Jyoti Kalita, Pinku Routaray, Sayantan Ghosh, Bharat Kumar, and Bijay K. Agrawal
-  link:
-    url: https://arxiv.org/abs/2308.09008
     display: arXiv
   highlight: 0
   news2: 
@@ -37,7 +17,26 @@
     display: 	arXiv
   highlight: 0
   news2: 
+
+- title: "Probing the impact of Delta-Baryons on Nuclear Matter and Non-Radial Oscillations in Neutron Stars"
+  image: 
+  description: 
+  authors: Probit Jyoti Kalita, Pinku Routaray, Sayantan Ghosh, Bharat Kumar, and Bijay K. Agrawal
+  link:
+    url: https://arxiv.org/abs/2308.09008
+    display: In Press JCAP
+  highlight: 0
+  news2: 
   
+  - title: "The impact of anisotropy on neutron star properties: insights from 𝖨–𝖿–𝖢 universal relations"
+  image: 
+  description: 
+  authors: Sailesh Ranjan Mohanty, Sayantan Ghosh, Pinku Routaray, H C Das, and Bharat Kumar
+  link:
+    url: https://iopscience.iop.org/article/10.1088/1475-7516/2024/03/054
+    display: JCAP 03, 054 (2024) [[PDF](/downloads/Mohanty_2024_JCAP54.pdf)]
+  highlight: 0
+  news2: 
   
 - title: "Investigating Dark Matter-Admixed Neutron Stars with NITR Equation of State in Light of PSR J0952-0607"
   image: 
