@@ -8,13 +8,19 @@ permalink: /vacancies
 
 # Open positions
 
-If you have a passion for the questions and challenges in nuclear physics, gravitational waves, and dark matter that our research group is exploring, and you would like to contribute to our work, please reach out to us.
+If you have a passion for the questions and challenges in nuclear physics, gravitational waves, and dark matter that our research group is exploring, and you would like to contribute to our work, please contact us.
 
-### Postdocs
-Postdoc candidates through [SERB-NPDF](https://serbonline.in/SERB/npdf) scheme are also encouraged to directly contact me.
+### For Postdocs
+1. Postdoc candidates through: [SERB-NPDF](https://serbonline.in/SERB/npdf)
+2. DST WISE-PDF scheme is available at: [WISE-PDF](https://online-wosa.gov.in/wosa/aboutUsPDF)
+3. WISE SCOPE Fellowship for Postdoc: [WISE-SCOPE](https://onlinedst.gov.in/Projectproposalformat.aspx?Id=2323)
 
-### PhD Students
-To embark on your PhD journey with us, it is imperative that you have received formal acceptance into the PhD program administered by the Department of Physics and Astronomy at NIT Rourkela. For additional details, kindly consult the following link: [Announcement](https://website.nitrkl.ac.in/Home/Announcement/). If you possess an external fellowship and are keen on pursuing your PhD within our research group, kindly contact us via email at kumarbh@nitrkl.ac.in.
+### For PhD 
+1. DST WISE Fellowship for Ph.D.:[WISE PhD](https://onlinedst.gov.in/Projectproposalformat.aspx)
+2. NIT Rourkela PhD Fellowship: [Announcement](https://website.nitrkl.ac.in/Home/Announcement/).
+
+### Contact
+If you possess an external fellowship and are keen on pursuing your PhD or Postdoc within our research group, kindly contact us via email at kumarbh@nitrkl.ac.in.
 
 
 ### Masters Students
