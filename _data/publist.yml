@@ -1,0 +1,376 @@
+- title: "Exploring the Macroscopic Properties and Nonradial Oscillations of Proto-Neutron Stars: Effects of Temperature, Entropy, and Lepton Fraction"
+  image: 
+  description: 
+  authors:  Sayantan Ghosh, Shahebaj Shaikh, Probit J Kalita, Pinku Routaray, Bharat Kumar, B. K. Agrawal
+  link:
+    url: https://arxiv.org/abs/2307.06892
+    display: arXiv
+  highlight: 0
+  news2: 
+  
+- title: "Exploring Radial Oscillations in Slow Stable and Hybrid Neutron Stars"
+  image: 
+  description: 
+  authors:  Sayantan Ghosh, Sailesh Ranjan Mohanty, Tianqi Zhao, Bharat Kumar
+  link:
+    url: https://arxiv.org/abs/2401.08347
+    display: arXiv
+  highlight: 0
+  news2: 
+
+- title: "Probing the impact of Delta-Baryons on Nuclear Matter and Non-Radial Oscillations in Neutron Stars"
+  image: 
+  description: 
+  authors: Probit Jyoti Kalita, Pinku Routaray, Sayantan Ghosh, Bharat Kumar, and Bijay K. Agrawal
+  link:
+    url: https://iopscience.iop.org/article/10.1088/1475-7516/2024/04/065 
+    display: JCAP 04, 065 (2024) [[PDF](/downloads/Kalita_2024_J._Cosmol._Astropart._Phys._2024_065.pdf)]
+  highlight: 0
+  news2: 
+  
+- title: "Dark Matter Admixed Neutron Star in the light of HESS J1731-347 and PSR J0952-0607"
+  image: 
+  description: 
+  authors: Pinku Routaray, H C Das, Jeet Amrit Pattnaik, Bharat Kumar
+  link:
+    url: https://arxiv.org/abs/2307.12748
+    display: arXiv
+  highlight: 0
+  news2: 
+  
+- title: "Unstable Anisotropic Neutron Stars; Probing the Limits of Gravitational Collapse"
+  image: 
+  description: 
+  authors: S. R. Mohanty, Sayantan Ghosh, and Bharat Kumar
+  link:
+    url: https://arxiv.org/abs/2304.02439
+    display: 	arXiv
+  highlight: 0
+  news2: 
+  
+  - title: "The impact of anisotropy on neutron star properties: insights from 𝖨–𝖿–𝖢 universal relations"
+  image: 
+  description: 
+  authors: Sailesh Ranjan Mohanty, Sayantan Ghosh, Pinku Routaray, H C Das, and Bharat Kumar
+  link:
+    url: https://iopscience.iop.org/article/10.1088/1475-7516/2024/03/054
+    display: JCAP 03, 054 (2024) [[PDF](/downloads/Mohanty_2024_JCAP54.pdf)]
+  highlight: 0
+  news2: 
+  
+- title: "Investigating Dark Matter-Admixed Neutron Stars with NITR Equation of State in Light of PSR J0952-0607"
+  image: 
+  description: 
+  authors: Pinku Routaray, Sailesh Ranjan Mohanty, H.C. Das, Sayantan Ghosh, P.J. Kalita, V. Parmar, and Bharat Kumar
+  link:
+    url: https://iopscience.iop.org/article/10.1088/1475-7516/2023/10/073
+    display: 	JCAP 10, 073 (2023) [[PDF](/downloads/jcap_2023_10_073.pdf)] 
+  highlight: 0
+  news2: 
+  
+- title: "Probing the Impact of WIMP Dark Matter on Universal Relations, GW170817 Posterior and Radial Oscillations"
+  image: posterior.jpeg
+  description: In this work, we explored the influence of WIMPs dark matter on neutron stars and universal relations. Investigating the interactions of trapped neutralinos with hadronic matter via Higgs boson exchange within the Next-to-Minimal Supersymmetric Standard Model, the study found that dark matter softened the equation of state, causing shifts in posterior and mass-radius curves. It also maintained C–Λ universality relations, potentially classifying HESS J1731−347 as a dark matter-admixed neutron star. 
+  authors: Pinku Routaray, Abdul Quddus, Kabir Chakravarti, and Bharat Kumar
+  link:
+    url: https://doi.org/10.1093/mnras/stad2628
+    display: MNRAS 25, 5492 (2023) [[PDF](/downloads/posterior.pdf)]
+  highlight: 1
+  news2: 
+  
+- title: "Radial Oscillations of Dark Matter admixed Neutron Stars"
+  image: fmode1.png
+  description: In our study of dark matter-admixed neutron stars within the relativistic mean-field model, we employ the IOPB-I hadronic equation of state, assuming the presence of fermionic dark matter. Our findings reveal that dark matter softens the equation of state, reducing both maximum mass and radius. Pulsating neutron stars with dark matter exhibit higher frequencies, indicating a linear correlation with the DM Fermi momentum. We also investigate eigenfunctions, stability criteria, and crust effects on frequency separation.
+  authors: Pinku Routray, H. C. Das, Souhardya Sen, Bharat Kumar, Grigoris Panotopoulos, and Tianqi Zhao
+  link:
+    url: https://doi.org/10.48550/arXiv.2211.12808
+    display: Phys. Rev. D 107, 103039 (2023) [[PDF](/downloads/darkfmode.pdf)]
+  highlight: 1
+  news2: 
+
+- title: "Radial oscillations in neutron stars from unified equation of states"
+  image:
+  description:
+  authors: Souhardya Sen, Shubham Kumar, Athul Kunjipurayil, Pinku Routaray, Sayantan Ghosh, Probit J. Kalita, Tianqi Zhao and  Bharat Kumar 
+  link:
+    url: https://arxiv.org/pdf/2205.02076.pdf 
+    display:  Galaxies 11, 60 (2023) [[PDF](/downloads/Sen.pdf)]
+  highlight: 0
+  news2:
+
+- title: "Theoretical studies on structural properties and decay modes of Z= 119 isotopes"
+  image:
+  description:
+  authors: Asloob A. Rather, M. Ikram, Ishfaq A. Rather, A. A. Usmani,  Bharat Kumar, K. P.  Santhosh, S. K. Patra
+  link:
+    url: https://arxiv.org/abs/1709.07311
+    display: Eur. Phys. J. Plus 138, 467 (2023) [[PDF](/downloads/z119.pdf)]
+  highlight: 0
+  news2:
+
+- title: "Dark Matter Effects on the Compact Star Properties"
+  image:
+  description:
+  authors: H C Das, Ankit Kumar, Bharat Kumar, and S K Patra
+  link:
+    url: https://www.mdpi.com/2075-4434/10/1/14
+    display: Galaxies 10, 14 (2022) [Invited Review Article] [[PDF](/downloads/harish2022.pdf)]
+  highlight: 0
+  news2:
+
+- title: "Universal relations between the quasinormal modes of neutron star and tidal deformability"
+  image:
+  description:
+  authors: Hajime Sotani, and Bharat Kumar
+  link:
+    url: https://arxiv.org/pdf/2109.08145.pdf
+    display: Phys. Rev. D 104, 123002 (2021) [[PDF](/downloads/sotani2021.pdf)]
+  highlight: 0
+  news2:
+
+- title: "The BigApple force and it's implications to finite nuclei and astrophysical objects"
+  image:
+  description:
+  authors: H C Das, Ankit Kumar, Bharat Kumar, S K Biswal, and S K Patra
+  link:
+    url: https://arxiv.org/abs/2009.106902
+    display: IJMP E 30, 2150088 (2021) [[PDF](/downloads/bigapple.pdf)]
+  highlight: 0
+  news2:
+
+
+- title: "Impacts of dark matter on the curvature of the neutron star"
+  image:
+  description:
+  authors: H C Das, Ankit Kumar, Bharat Kumar, S K Biswal, and S K Patra
+  link:
+    url: https://arxiv.org/abs/2007.05382
+    display: JCAP 01, 007 (2021) [[PDF](/downloads/curvature.pdf)]
+  highlight: 0
+  news2:
+
+
+
+- title: "Warm dense matter and cooling of supernovae remnants"
+  image:
+  description:
+  authors: Ankit Kumar, H C Das, S K Biswal, Bharat Kumar, and S K Patra
+  link:
+    url: https://doi.org/10.1140/epjc/s10052-020-8353-4
+    display: Eur. Phys. J C 80, 775 (2020) [[PDF](/downloads/ankit.pdf)]
+  highlight: 0
+  news2:
+
+
+- title: "GW170817 constraints on the properties of a neutron star in the presence of WIMP dark matter"
+  image:
+  description:
+  authors: Abdul Quddus, Grigorios Panotopoulos, Bharat Kumar, Shakeb Ahmad, and S K Patra
+  link:
+    url: https://doi.org/10.1088/1361-6471/ab9d36
+    display: J. Phys. G  47, 095202 (2020) [PDF](/downloads/abduldark.pdf)]
+  highlight: 0
+  news2:
+
+
+- title: "Effects of dark matter on the nuclear and neutron star matter"
+  image:
+  description:
+  authors: H C Das, Ankit Kumar, Bharat Kumar,S K Biswal, Takashi Nakatsukasa, Ang Li, and S K Patra
+  link:
+    url: https://doi.org/10.1093/mnras/staa1435
+    display: MNRAS 495, 4893 (2020) [PDF](/downloads/das2020.pdf)]
+  highlight: 0
+  news2: 
+- title: "Impact of the equation of state on f- and p- mode oscillations of neutron stars"
+  image: fmode2.png
+  description: We investigated neutron star equations of state and their impact on f- and p-mode oscillation frequencies within Cowling and linearized general relativity. We found strong correlations between these frequencies, nuclear matter properties, and the pressure of β-equilibrated matter at or near nuclear saturation density ρ0, regardless of star composition. Notably, the p1-mode frequency in a 1.4 M⊙ star correlated significantly with the slope of symmetry energy (L0) and β-equilibrated pressure at ρ0, shedding light on neutron star intricacies.
+  authors: Athul Kunjipurayil, Tianqi Zhao, Bharat Kumar, Bijay K. Agrawal, and Madappa Prakash
+  link:
+    url: https://journals.aps.org/prd/abstract/10.1103/PhysRevD.106.063005
+    display: Phys. Rev. D 106, 063005 (2022) [[PDF](/downloads/athulkp.pdf)]
+  highlight: 1
+  news2: 
+
+- title: "Inferring neutron star properties from GW170817 with universal relations"
+  image: tidal1.png
+  description: We have used equation-of-state (EoS) insensitive relations between neutron star (NS) observables to translate the GW170817 canonical tidal deformability measurement into bounds on the properties of all neutron stars. In particular, if we assume a common neutron star  EoS, then GW170817 constrains radii, moment-of-inertia and  tidal deformability for other binary NS and pulsar systems. These quasi-universal relations can further be used to combine separate X-ray and GW observations independently of the EoS, leading to joint constraints on tidal deformability. 
+  authors: Bharat Kumar and Philippe Landry
+  link:
+    url: https://journals.aps.org/prd/abstract/10.1103/PhysRevD.99.123026
+    display: Phys. Rev. D 99, 123026 (2019) [[PDF](/downloads/1_key_publication.pdf)]
+  highlight: 1
+  news2: 
+
+- title: "New relativistic effective interaction for finite nuclei, infinite nuclear matter, and neutron stars"
+  image: tidal2.png
+  description: We've developed G3 and IOPB-I parameter sets for energy density functions in finite nuclei and infinite nuclear matter, using effective field theory motivated relativistic mean field (ERMF) formalism. Our results align with experimental data, including the neutron-skin thickness of Pb-208 nucleus and neutron star radius from GW170817. Our low-density equation of state for pure neutron matter matches other models, and we also compute maximum mass and tidal deformability in agreement with GW170817 and pulsar data.
+  authors: Bharat Kumar, S K Patra, and B K Agrawal
+  link:
+    url: https://journals.aps.org/prc/abstract/10.1103/PhysRevC.97.045806
+    display: Phys. Rev. C 97, 045806 (2018) [[PDF](/downloads/4_key_publication.pdf)]
+  highlight: 1
+  news2: 
+
+- title: "Constraints on the Moment of Inertia of PSR J0737-3039A from GW170817"
+  image: moi.png
+  description: We found that the tidal deformability strongly correlates with the linear combinations of the slopes of nuclear isoscalar incompressibility and symmetry energy coefficients, all fall-outs of the nuclear equation of state. For the first time, we also found that the tidal deformability is approximately proportional to the sixth power of the radius of neutron star for a wide range of neutron star masses. This relation together with the bounds on the tidal deformability obtained from the GW170817 and its UV/optical/infrared electromagnetic counterparts constrain the radius of the neutron star with canonical mass in the range 11.82 - 13.72 km.
+  authors: Philippe Landry and Bharat Kumar
+  link:
+    url: https://iopscience.iop.org/article/10.3847/2041-8213/aaee76
+    display: ApJ Letter 868, L22 (2018) [[PDF](/downloads/2_key_publication.pdf)]
+  highlight: 1
+  news2: 
+  
+- title: "GW170817 Constraining the nuclear matter equation of state from the neutron star tidal deformability"
+  image:
+  description:
+  authors: Tuhin Malik, N. Alam, M. Fortin, C. Providencia, B. K. Agrawal, T. K. Jha, Bharat Kumar, and S K Patra
+  link:
+    url: https://doi.org/10.1103/PhysRevC.98.035804
+    display: Phys. Rev. C 98, 034005 (2018) [[PDF](/downloads/3_key_publication.pdf)]
+  highlight: 0
+  news2: 
+
+- title: "Decay properties and reaction dynamics of zirconium isotopes"
+  image:
+  description:
+  authors: M. Panigrahi, R. N. Panda, Bharat Kumar, and S K Patra
+  link:
+    url: https://doi.org/10.1142/S021830131850012X
+    display: IJMP E  27, 1850012 (2018) [[PDF](/downloads/decay.pdf)]
+  highlight: 0
+  news2: 
+
+- title: "A Study of Multi-Lambda Hypernuclei within Spherical Relativistic Mean-field Approach"
+  image:
+  description:
+  authors: Asloob A. Rather, M. Ikram, A. A. Usmani, Bharat Kumar, and S. K. Patra
+  link:
+    url: https://doi.org/10.1007/s13538-017-0525-9
+    display:  Braz. J. Phys. 47, 628 (2017) [[PDF](/downloads/Rather2017.pdf)]
+  highlight: 0
+  news2: 
+
+- title: "New parameterization of the effective field theory motivated relativistic mean-field model"
+  image:
+  description:
+  authors:  Bharat Kumar, S. K. Singh, B. K. Agrawal, and S. K. Patra
+  link:
+    url: https://doi.org/10.1016/j.nuclphysa.2017.07.001
+    display:  Nucl. Phys. A 966, 197 (2017) [[PDF](/downloads/G3.pdf)]
+  highlight: 0
+  news2: 
+
+- title: "Relative mass distributions of neutron-rich thermally fissile nuclei within statistical mode"
+  image:
+  description:
+  authors:  Bharat Kumar, M. T. Senthil Kannan, M. Balasubramaniam, B. K. Agrawal, and S. K. Patra
+  link:
+    url: https://doi.org/10.1103/PhysRevC.96.0346231
+    display:  Phys. Rev. C 96, 034623 (2017) [[PDF](/downloads/Relative1.pdf)]
+  highlight: 0
+  news2: 
+
+- title: "Relative fragmentation in ternary systems within the temperature-dependent relativistic mean-field approach"
+  image:
+  description:
+  authors:  M. T. Senthil Kannan, Bharat Kumar, M. Balasubramaniam, B. K. Agrawal, and S. K. Patra
+  link:
+    url: https://doi.org/10.1103/PhysRevC.95.064613
+    display:  Phys. Rev. C 95, 064613 (2017) [[PDF](/downloads/Relative2.pdf)]
+  highlight: 0
+  news2: 
+
+
+- title: "Tidal deformability of neutron and hyperon star with relativistic mean-field equations of state"
+  image:
+  description:
+  authors:  Bharat Kumar, S. K. Biswal and S. K. Patra 
+  link:
+    url: https://doi.org/10.1103/PhysRevC.95.015801
+    display:  Phys. Rev. C  95, 015801 (2017) [[PDF](/downloads/5_key_publication.pdf)]
+  highlight: 0
+  news2:
+
+  - title: "Structural and decay properties of Z=132,138 superheavy nuclei"
+  image:
+  description:
+  authors:  Asloob A. Rather, M. Ikram, A. A. Usmani, Bharat Kumar,  and S. K. Patra 
+  link:
+    url: https://doi.org/10.1140/epja/i2016-16372-x
+    display:  Eur. Phys. J. A  52, 372 (2016) [[PDF](/downloads/decay1.pdf)]
+  highlight: 0
+  news2:
+
+- title: "Quest for magicity in hypernuclei"
+  image:
+  description:
+  authors:  M. Ikram, Bharat Kumar, S. K. Biswal and S. K. Patra
+  link:
+    url: https://doi.org/10.1142/S021830131650103
+    display:   IJMP E 25, 1650103 (2016) [[PDF](/downloads/magicity.pdf)]
+  highlight: 0
+  news2:
+
+- title: "Effects of isovector scalar meson on neutron star both with and without hyperon"
+  image:
+  description:
+  authors:  S. K. Biswal, Bharat Kumar, and S. K. Patra
+  link:
+    url: https://doi.org/10.1142/S0218301316500907
+    display:   IJMP E 25,1650090 (2016) [[PDF](/downloads/delta.pdf)]
+  highlight: 0
+  news2:
+
+- title: "Nuclear structure and decay properties of even–even nuclei in Z = 70-80 drip-line region"
+  image:
+  description:
+  authors:  S. Mahapatro, C. Lahiri, Bharat Kumar, R. N. Mishra and S. K. Patra
+  link:
+    url: https://doi.org/10.1142/S0218301316500622
+    display:  IJMP E 25, 1650062 (2016) [[PDF](/downloads/drip.pdf)]
+  highlight: 0
+  news2:
+
+- title: "Modes of decay in neutron-rich nuclei"
+  image:
+  description:
+  authors:  Bharat Kumar, S. K. Biswal, S. K. Singh, Chirashree Lahiri, and S. K. Patra
+  link:
+    url: https://doi.org/10.1142/S0218301316500208
+    display:  IJMP E 25,1650020 (2016) [[PDF](/downloads/modes.pdf)]
+  highlight: 0
+  news2:
+
+  
+- title: "Examining the stability of thermally fissile Th and U isotopes"
+  image:
+  description:
+  authors:  Bharat Kumar, S. K. Biswal,S. K. Singh and S. K. Patra
+  link:
+    url: https://doi.org/10.1103/PhysRevC.92.054314
+    display:  Phys. Rev. C  92, 054314 (2015) [[PDF](/downloads/Examining.pdf)]
+  highlight: 0
+  news2:
+
+
+- title: "Properties of superheavy nuclei: Z = 124"
+  image:
+  description:
+  authors:  M. S. Mehta, Harvinder Kaur, Bharat Kumar, and S. K. Patra
+  link:
+    url: https://doi.org/10.1103/PhysRevC.92.054305
+    display:  Phys. Rev. C  92, 054305 (2015) [[PDF](/downloads/Z124.pdf)]
+  highlight: 0
+  news2:
+
+- title: "Shape co-existence and parity doublet in Zr isotopes"
+  image:
+  description:
+  authors:  Bharat Kumar, S. K. Singh and S. K. Patra  
+  link:
+    url: https://doi.org/10.1142/S0218301315500172
+    display:   IJMP E 24, 1550017 (2015) [[PDF](/downloads/parity.pdf)]
+  highlight: 0
+  news2:

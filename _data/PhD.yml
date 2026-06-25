@@ -1,0 +1,30 @@
+# ===============================
+#   PhD Students - NAP Lab
+# ===============================
+
+- name: Pinku Routaray
+  photo: pinku_pic.png
+  info: "Ph.D. Student — Joined July 2021"
+  email: "routaraypinku@gmail.com"
+  number_educ: 1
+  education1: "M.Sc. in Physics, Berhampur University"
+  number_addit: 1
+  addit1: "Research Topic: Probing Dark Matter in Neutron Stars"
+
+- name: Sayantan Ghosh
+  photo: sayantan_pic.png
+  info: "Ph.D. Student — Joined July 2022"
+  email: "sayantanghosh1999@gmail.com"
+  number_educ: 1
+  education1: "M.Sc. in Physics, Banaras Hindu University"
+  number_addit: 1
+  addit1: "Research Topic: Quasinormal Modes in Neutron Stars"
+
+- name: Probit J. Kalita
+  photo: probit_pic.png
+  info: "Ph.D. Student — Joined July 2022"
+  email: "probit.kalita@gmail.com"
+  number_educ: 1
+  education1: "M.Sc. in Physics, Tezpur University"
+  number_addit: 1
+  addit1: "Research Topic: Composition and Structure of Neutron Stars"
