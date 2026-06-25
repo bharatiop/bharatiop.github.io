@@ -17,10 +17,9 @@
   --muted:#5a6275;
   --light:#8a92a8;
   --border:#e2e8f0;
-  --accent:#0b1a2e;        /* Deep Navy */
-  --accent2:#00c9b1;       /* Bright Teal/Cyan */
-  --accent3:#7b2cbf;       /* Purple */
-  --card:#ffffff;
+  --accent:#0b1a2e;
+  --accent2:#00c9b1;
+  --accent3:#7b2cbf;
   --alight:#e0f7f4;
   --serif:'DM Serif Display',Georgia,serif;
   --sans:'Inter',system-ui,sans-serif;
@@ -42,6 +41,7 @@ nav{position:sticky;top:0;z-index:200;background:rgba(255,255,255,.95);backdrop-
 .nav-links a:hover{color:var(--accent)}
 .nav-links a.active{color:var(--accent);border-bottom-color:var(--accent2);font-weight:600}
 .hamburger{display:none;background:none;border:none;cursor:pointer;padding:6px;flex-direction:column;gap:5px}
+.hamburger span{display:block;width:22px;height:1.5px;background:var(--text);border-radius:2px}
 
 /* SECTIONS */
 .wrap{max-width:var(--max);margin:0 auto;padding:70px 2rem}
@@ -65,7 +65,6 @@ nav{position:sticky;top:0;z-index:200;background:rgba(255,255,255,.95);backdrop-
 .stats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border-radius:12px;overflow:hidden}
 .stat-box{background:white;padding:24px 16px;text-align:center}
 .stat-n{font-family:var(--serif);font-size:34px;color:var(--accent);line-height:1;margin-bottom:4px}
-.stat-l{font-size:12px;color:var(--muted)}
 
 /* RESEARCH CARDS */
 .r-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px}
@@ -73,6 +72,7 @@ nav{position:sticky;top:0;z-index:200;background:rgba(255,255,255,.95);backdrop-
 .r-card:hover{border-color:var(--accent2);transform:translateY(-4px);box-shadow:0 10px 25px rgba(0,201,177,0.1)}
 .r-icon{width:48px;height:48px;border-radius:10px;background:var(--alight);display:flex;align-items:center;justify-content:center;margin-bottom:18px;font-size:22px}
 .r-card h3{font-size:16px;font-weight:700;color:var(--accent);margin-bottom:10px}
+.r-card p{font-size:13.5px;color:var(--muted);line-height:1.7}
 
 /* PI CARD */
 .pi-card{background:white;border:1px solid var(--border);border-radius:16px;padding:32px;display:flex;gap:30px;align-items:flex-start;flex-wrap:wrap;box-shadow:0 4px 15px rgba(0,0,0,0.05)}
@@ -82,18 +82,19 @@ nav{position:sticky;top:0;z-index:200;background:rgba(255,255,255,.95);backdrop-
 .t-card{background:white;border:1px solid var(--border);border-radius:14px;padding:24px 20px;text-align:center;transition:all .2s}
 .t-card:hover{border-color:var(--accent2);transform:translateY(-3px)}
 
-/* PUBLICATIONS & NEWS */
-.pub-item,.news-item,.ev-card,.op-card{background:white;border:1px solid var(--border);border-radius:12px;transition:all .2s}
-.pub-item:hover,.news-item:hover,.ev-card:hover,.op-card:hover{border-color:var(--accent2);box-shadow:0 6px 20px rgba(0,201,177,0.08)}
+/* PUBLICATIONS */
+.pub-list{display:flex;flex-direction:column;gap:12px}
+.pub-item{background:white;border:1px solid var(--border);border-radius:12px;padding:16px 20px;display:flex;gap:16px;align-items:flex-start;transition:all .2s}
+.pub-item:hover{border-color:var(--accent2)}
 
-/* JOIN US SECTION - IMPROVED */
+/* JOIN US */
 .op-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px}
-.op-card{padding:24px}
+.op-card{background:white;border:1px solid var(--border);border-radius:14px;padding:24px;transition:all .25s}
+.op-card:hover{border-color:var(--accent2);transform:translateY(-3px)}
 .op-type{font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:white;background:var(--accent);padding:4px 10px;border-radius:6px;display:inline-block;margin-bottom:12px}
 .op-card h4{font-size:15.5px;font-weight:700;color:var(--accent);margin-bottom:8px}
 .op-card p{font-size:13.5px;color:var(--muted);line-height:1.65;margin-bottom:14px}
 
-/* INTERNATIONAL SECTION */
 .intl-section{margin-top:50px}
 .intl-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
 .intl-card{background:white;border:1px solid var(--border);border-radius:12px;padding:20px 22px;transition:all .2s}
@@ -106,14 +107,13 @@ footer{border-top:1px solid var(--border);background:#f1f3f8}
 .ft{max-width:var(--max);margin:0 auto;padding:50px 2rem 30px;display:grid;grid-template-columns:2fr 1fr 1fr;gap:3rem}
 .ft-logo{font-family:var(--serif);font-size:22px;color:var(--accent);margin-bottom:12px}
 
-/* RESPONSIVE */
 @media(max-width:900px){.hero{grid-template-columns:1fr;gap:3rem}.ft{grid-template-columns:1fr 1fr}}
 @media(max-width:640px){.nav-links{display:none}.hamburger{display:flex}.op-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 
-<!-- NAV (same as before, slightly improved) -->
+<!-- NAV -->
 <nav>
   <div class="nav-in">
     <a href="/" class="nav-logo">
@@ -132,18 +132,20 @@ footer{border-top:1px solid var(--border);background:#f1f3f8}
   </div>
 </nav>
 
-<!-- HERO (slightly improved) -->
+<!-- HERO -->
 <section class="hero">
   <div>
-    <span class="eye">Nuclear Astrophysics &amp; Physics Lab</span>
+    <span class="hero-eye">Nuclear Astrophysics &amp; Physics Lab</span>
     <h1>Probing the densest objects in the universe</h1>
     <p class="hero-desc">
-      We are a research group at <a href="https://www.nitrkl.ac.in/" style="color:var(--accent2);text-decoration:underline">NIT Rourkela</a>, 
-      working at the intersection of nuclear physics, astrophysics, gravitational waves, and dark matter to understand neutron stars.
+      We are a research group at the 
+      <a href="https://www.nitrkl.ac.in/" style="color:var(--accent2);text-decoration:underline">National Institute of Technology, Rourkela</a>, 
+      India — working at the intersection of nuclear physics, astrophysics, gravitational waves, and dark matter to unravel the mysteries of neutron stars.
     </p>
     <div class="hero-cta">
       <a href="/publications" class="btn btn-p">Publications</a>
       <a href="/team" class="btn btn-s">Meet the Team</a>
+      <a href="https://scholar.google.com/citations?user=YourGoogleScholarID" class="btn btn-s" target="_blank" rel="noopener">Google Scholar ↗</a>
     </div>
   </div>
   <div>
@@ -155,129 +157,351 @@ footer{border-top:1px solid var(--border);background:#f1f3f8}
   </div>
 </section>
 
-<!-- RESEARCH AREAS (kept similar but cleaner) -->
+<!-- RESEARCH AREAS -->
 <section class="wrap">
   <div class="sec-hd">
     <span class="eye">Focus Areas</span>
     <h2 class="stitle">What we study</h2>
   </div>
   <div class="r-grid">
-    <!-- Keep your existing 6 research cards here (they are already good) -->
-    <!-- Paste your original r-card divs here if you want to keep exact text -->
+    <div class="r-card">
+      <div class="r-icon">⭐</div>
+      <h3>Equation of State</h3>
+      <p>Investigating the composition of neutron stars using relativistic mean-field models, constrained by LIGO, NICER, and pulsar timing observations.</p>
+    </div>
+    <div class="r-card">
+      <div class="r-icon">🔮</div>
+      <h3>Hyperons &amp; Exotic Matter</h3>
+      <p>Exploring strangeness-bearing particles — hyperons, delta baryons, and quarkyonic matter — in neutron star cores.</p>
+    </div>
+    <div class="r-card">
+      <div class="r-icon">🌊</div>
+      <h3>Gravitational Waves &amp; Oscillations</h3>
+      <p>Computing quasinormal modes, tidal deformability, and universal relations connected to GW170817 and future detectors.</p>
+    </div>
+    <div class="r-card">
+      <div class="r-icon">🌑</div>
+      <h3>Dark Matter in Neutron Stars</h3>
+      <p>Using neutron stars as cosmic dark matter laboratories to constrain WIMP and fermionic dark matter.</p>
+    </div>
+    <div class="r-card">
+      <div class="r-icon">🌡</div>
+      <h3>Thermal Evolution</h3>
+      <p>Investigating the cooling of isolated and accreting neutron stars and proto-neutron star evolution.</p>
+    </div>
+    <div class="r-card">
+      <div class="r-icon">🔭</div>
+      <h3>Multi-Messenger Astrophysics</h3>
+      <p>Bridging nuclear theory with electromagnetic, gravitational wave, and neutrino observations.</p>
+    </div>
   </div>
 </section>
 
-<!-- PI, TEAM, PUBLICATIONS sections remain mostly the same (you can keep your original content) -->
+<!-- PRINCIPAL INVESTIGATOR -->
+<section class="wrap">
+  <div class="sec-hd">
+    <span class="eye">Principal Investigator</span>
+    <h2 class="stitle">Dr. Bharat Kumar</h2>
+  </div>
+  <div class="pi-card">
+    <div class="pi-ava">
+      <img src="images/teampic/bk_pic.jpeg" alt="Dr. Bharat Kumar" onerror="this.parentElement.style.background='var(--alight)';this.style.display='none'">
+    </div>
+    <div style="flex:1;min-width:220px">
+      <span class="pi-badge" style="background:var(--alight);color:var(--accent);padding:4px 10px;border-radius:6px;font-size:11px;font-weight:700">Principal Investigator</span>
+      <h3 style="font-size:22px;font-weight:700;color:var(--accent);margin:8px 0 6px">Bharat Kumar</h3>
+      <p style="font-size:14px;color:var(--muted);margin-bottom:16px">
+        Assistant Professor · Department of Physics &amp; Astronomy, NIT Rourkela · <em>since June 2020</em>
+      </p>
+      <ul style="list-style:none;font-size:14px;color:var(--muted);line-height:2.1">
+        <li>🎓 M.Sc. Physics · AMU Aligarh</li>
+        <li>🎓 Ph.D. with S K Patra · IOP Bhubaneswar</li>
+        <li>🔬 Postdoc · LIGO-India / Sukanta Bose, IUCAA Pune</li>
+        <li>🔬 Postdoc · Takashi Nakatsukasa, University of Tsukuba, Japan</li>
+      </ul>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:16px">
+        <a href="downloads/CV.pdf" class="btn btn-s btn-sm">CV (PDF)</a>
+        <a href="https://scholar.google.com/citations?user=YourGoogleScholarID" class="btn btn-s btn-sm" target="_blank" rel="noopener">Google Scholar ↗</a>
+        <a href="mailto:kumarbh@nitrkl.ac.in" class="btn btn-s btn-sm">Email</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-<!-- ========== IMPROVED JOIN US SECTION ========== -->
-<section class="wrap" style="background:#f8f9fc; border-radius:16px; padding:60px 2rem; margin:40px auto; max-width:1140px;">
-  <div class="sec-hd" style="text-align:center; margin-bottom:40px;">
-    <span class="eye">Opportunities</span>
-    <h2 class="stitle">Join Us</h2>
-    <p style="max-width:620px;margin:12px auto 0;color:var(--muted);font-size:15px;">
-      We welcome motivated students and researchers interested in neutron star physics, dense matter, gravitational waves, and dark matter.
-    </p>
+<!-- TEAM -->
+<section class="wrap">
+  <div class="sec-hd">
+    <span class="eye">People</span>
+    <h2 class="stitle">Current team members</h2>
   </div>
 
-  <!-- LOCAL OPPORTUNITIES -->
-  <h3 style="font-size:18px;color:var(--accent);margin-bottom:20px;">At NAP Lab – NIT Rourkela</h3>
-  <div class="op-grid">
+  <span class="eye" style="margin-bottom:14px">PhD Students</span>
+  <div class="t-grid" style="margin-bottom:32px">
+    <div class="t-card">
+      <div class="t-ava"><img src="images/teampic/pinku_pic.png" alt="Pinku Routaray" onerror="this.parentElement.className='t-ava init';this.parentElement.textContent='PR'"></div>
+      <h3>Pinku Routaray</h3>
+      <div class="t-role">Ph.D. · joined Jul 2021<br>M.Sc., Berhampur University</div>
+      <span class="tag">Dark Matter in NSs</span>
+    </div>
+    <div class="t-card">
+      <div class="t-ava"><img src="images/teampic/sayantan_pic.png" alt="Sayantan Ghosh" onerror="this.parentElement.className='t-ava init';this.parentElement.textContent='SG'"></div>
+      <h3>Sayantan Ghosh</h3>
+      <div class="t-role">Ph.D. · joined Jul 2022<br>M.Sc., Banaras Hindu University</div>
+      <span class="tag">Quasinormal Modes</span>
+    </div>
+    <div class="t-card">
+      <div class="t-ava"><img src="images/teampic/probit_pic.png" alt="Probit J. Kalita" onerror="this.parentElement.className='t-ava init';this.parentElement.textContent='PK'"></div>
+      <h3>Probit J. Kalita</h3>
+      <div class="t-role">Ph.D. · joined Jul 2022<br>M.Sc., Tezpur University</div>
+      <span class="tag">NS Composition</span>
+    </div>
+  </div>
 
+  <span class="eye" style="margin-bottom:14px">Master Students</span>
+  <div class="t-grid" style="margin-bottom:28px">
+    <div class="t-card">
+      <div class="t-ava"><img src="images/teampic/kanika_pic.jpg" alt="Kanika Karan" onerror="this.parentElement.className='t-ava init';this.parentElement.textContent='KK'"></div>
+      <h3>Kanika Karan</h3>
+      <div class="t-role">MSc Thesis (ongoing)</div>
+      <span class="tag">Quasinormal Modes in NSs</span>
+    </div>
+    <div class="t-card">
+      <div class="t-ava"><img src="images/teampic/Subhojit_pic.jpg" alt="Shubhajit Saha" onerror="this.parentElement.className='t-ava init';this.parentElement.textContent='SS'"></div>
+      <h3>Shubhajit Saha</h3>
+      <div class="t-role">MSc Thesis (ongoing)</div>
+      <span class="tag">Quarkyonic Matter</span>
+    </div>
+  </div>
+
+  <a href="/team" class="btn btn-s">Full team &amp; alumni →</a>
+</section>
+
+<!-- PUBLICATIONS -->
+<section class="wrap">
+  <div class="sec-hd">
+    <span class="eye">Research Output</span>
+    <h2 class="stitle">Selected publications</h2>
+  </div>
+  <div class="pub-list">
+    <div class="pub-item">
+      <span class="py">2024</span>
+      <div>
+        <h4>Probing the Impact of Delta-Baryons on Nuclear Matter and Non-Radial Oscillations in Neutron Stars</h4>
+        <p class="pa">P.J. Kalita, P. Routaray, S. Ghosh, Bharat Kumar, B.K. Agrawal</p>
+      </div>
+    </div>
+    <div class="pub-item">
+      <span class="py">2023</span>
+      <div>
+        <h4>Probing the Impact of WIMP Dark Matter on Universal Relations, GW170817 Posterior and Radial Oscillations</h4>
+        <p class="pa">P. Routaray, A. Quddus, K. Chakravarti, Bharat Kumar</p>
+      </div>
+    </div>
+    <div class="pub-item">
+      <span class="py">2023</span>
+      <div>
+        <h4>Radial Oscillations of Dark Matter Admixed Neutron Stars</h4>
+        <p class="pa">P. Routray et al.</p>
+      </div>
+    </div>
+    <div class="pub-item">
+      <span class="py">2022</span>
+      <div>
+        <h4>Impact of the Equation of State on f- and p-Mode Oscillations of Neutron Stars</h4>
+        <p class="pa">A. Kunjipurayil, T. Zhao, Bharat Kumar et al.</p>
+      </div>
+    </div>
+  </div>
+  <div style="margin-top:24px">
+    <a href="/publications" class="btn btn-s">All publications →</a>
+  </div>
+</section>
+
+<!-- NEWS + EVENTS -->
+<section class="wrap">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem">
+    <div>
+      <div class="sec-hd">
+        <span class="eye">Lab Updates</span>
+        <h2 class="stitle">News</h2>
+      </div>
+      <div class="news-list">
+        <div class="news-item" style="padding:15px 0;border-bottom:1px solid var(--border)">
+          <span style="font-size:12px;color:var(--light)">23 Dec 2024</span>
+          <p style="font-size:14px;color:var(--muted)">Pinku wins <strong>Best Poster Award</strong> at DAE HEP Symposium, BHU.</p>
+        </div>
+        <div class="news-item" style="padding:15px 0;border-bottom:1px solid var(--border)">
+          <span style="font-size:12px;color:var(--light)">Sep 2023</span>
+          <p style="font-size:14px;color:var(--muted)">Pinku's WIMP dark matter paper accepted in MNRAS.</p>
+        </div>
+      </div>
+      <a href="/allnews.html" class="btn btn-s" style="margin-top:16px">All news →</a>
+    </div>
+
+    <div>
+      <div class="sec-hd">
+        <span class="eye">Conferences &amp; Schools</span>
+        <h2 class="stitle">Upcoming events</h2>
+      </div>
+      <div class="news-list">
+        <div class="news-item" style="padding:15px 0;border-bottom:1px solid var(--border)">
+          <span style="font-size:12px;color:var(--light)">Jul 5–11, 2026</span>
+          <p style="font-size:14px;color:var(--muted)"><strong>AGWAM 2026</strong> — Chiang Mai, Thailand</p>
+        </div>
+        <div class="news-item" style="padding:15px 0;border-bottom:1px solid var(--border)">
+          <span style="font-size:12px;color:var(--light)">May 17–23, 2026</span>
+          <p style="font-size:14px;color:var(--muted)"><strong>17th Amaldi Conference on GW</strong> — Elba, Italy</p>
+        </div>
+      </div>
+      <a href="/events" class="btn btn-s" style="margin-top:16px">All events →</a>
+    </div>
+  </div>
+</section>
+
+<!-- IMPROVED JOIN US SECTION -->
+<section class="wrap" style="background:#f8f9fc;border-radius:16px;padding:60px 2rem;margin:40px auto;max-width:1140px">
+  <div class="sec-hd" style="text-align:center;margin-bottom:40px">
+    <span class="eye">Opportunities</span>
+    <h2 class="stitle">Join Us</h2>
+    <p style="max-width:620px;margin:12px auto 0;color:var(--muted)">We welcome motivated students and researchers interested in neutron star physics, dense matter, gravitational waves, and dark matter.</p>
+  </div>
+
+  <h3 style="font-size:18px;color:var(--accent);margin-bottom:20px">At NAP Lab – NIT Rourkela</h3>
+  <div class="op-grid">
     <div class="op-card">
       <span class="op-type">PhD</span>
       <h4>NIT Rourkela PhD Programme</h4>
       <p>Regular PhD positions through institute admission. Strong background in nuclear/particle physics or astrophysics preferred.</p>
       <a href="https://website.nitrkl.ac.in/Home/Announcement/" target="_blank" style="color:var(--accent2);font-weight:600">Check announcements →</a>
     </div>
-
     <div class="op-card">
       <span class="op-type">PhD</span>
       <h4>DST WISE PhD Fellowship</h4>
-      <p>Women scientists can apply for PhD through DST WISE scheme in areas of nuclear astrophysics and gravitational waves.</p>
+      <p>Women scientists can apply for PhD through DST WISE scheme in nuclear astrophysics and gravitational waves.</p>
       <a href="https://onlinedst.gov.in/Projectproposalformat.aspx" target="_blank" style="color:var(--accent2);font-weight:600">Apply via DST →</a>
     </div>
-
     <div class="op-card">
       <span class="op-type">Postdoc</span>
       <h4>SERB-NPDF / WISE-PDF</h4>
-      <p>National Post-Doctoral Fellowship and DST WISE postdoctoral schemes. Contact us for hosting.</p>
+      <p>National Post-Doctoral Fellowship and DST WISE postdoctoral schemes.</p>
       <a href="https://serbonline.in/SERB/npdf" target="_blank" style="color:var(--accent2);font-weight:600">SERB NPDF →</a>
     </div>
-
-    <div class="op-card" style="border:2px solid var(--accent2);">
+    <div class="op-card" style="border:2px solid var(--accent2)">
       <span class="op-type" style="background:var(--accent2);color:white">Any Level</span>
       <h4>Bring Your Own Fellowship</h4>
-      <p>Have your own funding (CSIR, UGC, INSPIRE, Marie Curie, etc.)? We are happy to host you. Topics: DM in NS, oscillations, EOS, multi-messenger.</p>
+      <p>Have your own funding (CSIR, UGC, INSPIRE, Marie Curie, etc.)? We are happy to host you.</p>
       <a href="mailto:kumarbh@nitrkl.ac.in" style="color:var(--accent2);font-weight:600">Email Dr. Bharat Kumar →</a>
     </div>
-
   </div>
 
-  <!-- INTERNATIONAL OPPORTUNITIES (NEW) -->
+  <!-- International -->
   <div class="intl-section">
-    <h3 style="font-size:18px;color:var(--accent);margin:50px 0 20px;">International PhD &amp; Postdoc Opportunities (Worldwide)</h3>
-    <p style="margin-bottom:20px;color:var(--muted);max-width:720px;">
-      Here are some active/recent openings in gravitational waves, neutron stars, and multi-messenger astrophysics. Deadlines change quickly — check the links.
-    </p>
-
+    <h3 style="font-size:18px;color:var(--accent);margin:50px 0 20px">International PhD &amp; Postdoc Opportunities</h3>
+    <p style="margin-bottom:20px;color:var(--muted)">Active/recent openings in gravitational waves, neutron stars, and multi-messenger astrophysics.</p>
     <div class="intl-grid">
-
       <div class="intl-card">
         <h4>MSCA Postdoctoral Fellowships 2026</h4>
-        <p style="font-size:13.5px">Prestigious EU-funded 2-year fellowships. You can apply with <strong>NAP Lab as host</strong>.</p>
+        <p>You can apply with <strong>NAP Lab as host</strong>.</p>
         <div class="deadline">Deadline: 9 September 2026</div>
         <a href="https://marie-sklodowska-curie-actions.ec.europa.eu/actions/postdoctoral-fellowships" target="_blank" style="color:var(--accent3);font-weight:600">Apply →</a>
       </div>
-
       <div class="intl-card">
-        <h4>TIFR Mumbai – Postdoctoral Positions</h4>
-        <p>Postdoc positions in Astronomy &amp; Astrophysics including gravitational waves and multi-messenger astronomy.</p>
+        <h4>TIFR Mumbai – Postdoc Positions</h4>
+        <p>Postdoc positions in gravitational waves and multi-messenger astronomy.</p>
         <div class="deadline">Deadline: ~July 2026</div>
         <a href="https://inspirehep.net/jobs/3162633" target="_blank" style="color:var(--accent3);font-weight:600">Details →</a>
       </div>
-
       <div class="intl-card">
         <h4>University of Birmingham – GW PhD</h4>
-        <p>PhD positions at the Institute for Gravitational Wave Astronomy (excellent group).</p>
+        <p>PhD positions at the Institute for Gravitational Wave Astronomy.</p>
         <a href="http://www.sr.bham.ac.uk/gwgroup/" target="_blank" style="color:var(--accent3);font-weight:600">Check current cycle →</a>
       </div>
-
       <div class="intl-card">
-        <h4>German Center for Astrophysics (DZA) – PhD &amp; Postdoc</h4>
-        <p>Multiple positions in multi-messenger and gravitational wave astrophysics.</p>
+        <h4>German Center for Astrophysics (DZA)</h4>
+        <p>PhD &amp; Postdoc in multi-messenger and gravitational wave astrophysics.</p>
         <a href="https://wiki.ligo.org/LAAC/JobPostings" target="_blank" style="color:var(--accent3);font-weight:600">See LIGO Wiki →</a>
       </div>
-
       <div class="intl-card">
-        <h4>Max Planck Institute (AEI Potsdam) – PhD</h4>
+        <h4>Max Planck Institute AEI Potsdam – PhD</h4>
         <p>IMPRS PhD positions in gravitational-wave astronomy and neutron star physics.</p>
         <a href="https://imprs.aei.mpg.de/" target="_blank" style="color:var(--accent3);font-weight:600">Apply →</a>
       </div>
-
       <div class="intl-card">
         <h4>More Global Opportunities</h4>
-        <p style="font-size:13.5px">LIGO Scientific Collaboration, LISA Consortium, Einstein Telescope groups, and many European/US universities regularly advertise positions.</p>
+        <p>LIGO, LISA Consortium, Einstein Telescope groups regularly advertise positions.</p>
         <a href="https://wiki.ligo.org/LAAC/JobPostings" target="_blank" style="color:var(--accent3);font-weight:600">LIGO Wiki Job Board →</a>
       </div>
-
     </div>
   </div>
 
-  <div style="text-align:center; margin-top:40px;">
-    <a href="mailto:kumarbh@nitrkl.ac.in" class="btn btn-p">Contact Dr. Bharat Kumar for any opportunity</a>
+  <div style="text-align:center;margin-top:40px">
+    <a href="mailto:kumarbh@nitrkl.ac.in" class="btn btn-p">Contact Dr. Bharat Kumar</a>
   </div>
 </section>
-<!-- ========== END IMPROVED JOIN US ========== -->
 
-<!-- Keep your original News, Events, Contact, and Footer sections -->
+<!-- CONTACT -->
+<section class="wrap">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem">
+    <div>
+      <span class="eye" style="margin-bottom:10px">Find us</span>
+      <h2 class="stitle" style="margin-bottom:16px">Contact</h2>
+      <address style="font-style:normal;font-size:14px;color:var(--muted);line-height:2">
+        <strong>Dr. Bharat Kumar</strong><br>
+        MC202, Dept. of Physics &amp; Astronomy<br>
+        National Institute of Technology, Rourkela<br>
+        Odisha 769008, India<br><br>
+        <a href="mailto:kumarbh@nitrkl.ac.in" style="color:var(--accent2)">kumarbh@nitrkl.ac.in</a><br>
+        <a href="https://shorturl.at/hxMY5" target="_blank" style="color:var(--accent2)">Maps ↗</a> · 
+        <a href="https://shorturl.at/bdpv3" target="_blank" style="color:var(--accent2)">Directions ↗</a>
+      </address>
+    </div>
+    <div>
+      <span class="eye" style="margin-bottom:10px">Funding</span>
+      <h2 class="stitle" style="margin-bottom:16px">Support</h2>
+      <p style="font-size:14px;color:var(--muted);line-height:1.8">
+        Supported by the <a href="https://www.serbonline.in/" target="_blank" style="color:var(--accent2)">Science &amp; Engineering Research Board (SERB)</a>, Government of India.<br><br>
+        Affiliated with the <a href="https://website.nitrkl.ac.in/PH/" target="_blank" style="color:var(--accent2)">Department of Physics &amp; Astronomy</a>, NIT Rourkela.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="ft">
+    <div class="ft-brand">
+      <div class="ft-logo">NAP Lab</div>
+      <p class="ft-desc">Nuclear Astrophysics &amp; Physics Laboratory at NIT Rourkela — studying neutron stars, dense matter, dark matter, and multi-messenger astrophysics.</p>
+    </div>
+    <div class="ft-col">
+      <h4 style="font-size:11.5px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--light);margin-bottom:14px">Navigate</h4>
+      <a href="/">Home</a>
+      <a href="/team">Team</a>
+      <a href="/publications">Publications</a>
+      <a href="/events">Events</a>
+      <a href="/vacancies">Join Us</a>
+    </div>
+    <div class="ft-col">
+      <h4 style="font-size:11.5px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--light);margin-bottom:14px">Contact</h4>
+      <address style="font-style:normal;font-size:13.5px;color:var(--muted);line-height:2">
+        MC202, Dept. of Physics &amp; Astronomy<br>
+        NIT Rourkela, Odisha 769008<br>
+        <a href="mailto:kumarbh@nitrkl.ac.in">kumarbh@nitrkl.ac.in</a>
+      </address>
+    </div>
+  </div>
+  <div style="max-width:1140px;margin:0 auto;padding:18px 2rem;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;font-size:12.5px;color:var(--light)">
+    <p>© 2025 NAP Lab, NIT Rourkela · Funded by SERB</p>
+    <div>
+      <a href="https://github.com/bharatiop/bharatiop.github.io" target="_blank">GitHub ↗</a>
+    </div>
+  </div>
+</footer>
 
 <script>
-// Hamburger menu script (same as before)
 const btn = document.getElementById('menuBtn');
 const nav = document.getElementById('navLinks');
-btn.addEventListener('click', () => {
-  nav.classList.toggle('open');
-});
+btn.addEventListener('click', () => { nav.classList.toggle('open'); });
 </script>
 </body>
 </html>
