@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NAP Lab — Nuclear Astrophysics & Physics @ NIT Rourkela</title>
+<meta name="description" content="Nuclear Astrophysics & Physics Lab at NIT Rourkela. Research on neutron stars, equation of state, dark matter, gravitational waves, and multi-messenger astrophysics.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --white:#ffffff;--off-white:#f8f8f6;--bg:#f4f5f2;
+  --border:#e5e5e0;--border-soft:#eeede8;
+  --text:#1a1a18;--muted:#5a5a56;--light:#9a9a96;
+  --accent:#1a3a5c;--mid:#2d5f8e;--alight:#e8f0f8;--ahover:#deeaf6;
+  --green:#1a6b4a;--gbg:#e6f4ee;
+  --serif:'DM Serif Display',Georgia,serif;
+  --sans:'Inter',system-ui,sans-serif;
+  --r:10px;--rs:6px;--max:1100px;
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--text);background:var(--white);line-height:1.65;font-size:15px}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+
+/* ─── NAV ─── */
+nav{position:sticky;top:0;z-index:200;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:.5px solid var(--border)}
+.nav-in{max-width:var(--max);margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 2rem;height:62px}
+.nav-logo{display:flex;align-items:center;gap:10px}
+.logo-name{font-family:var(--serif);font-size:20px;color:var(--accent);line-height:1}
+.logo-sub{font-size:11.5px;color:var(--light);padding-left:10px;border-left:1px solid var(--border)}
+.nav-links{display:flex}
+.nav-links a{font-size:13.5px;color:var(--muted);padding:0 13px;height:62px;display:flex;align-items:center;border-bottom:2px solid transparent;transition:color .15s,border-color .15s;white-space:nowrap}
+.nav-links a:hover{color:var(--text)}
+.nav-links a.active{color:var(--accent);border-bottom-color:var(--accent);font-weight:500}
+.hamburger{display:none;background:none;border:none;cursor:pointer;padding:6px;flex-direction:column;gap:5px}
+.hamburger span{display:block;width:22px;height:1.5px;background:var(--text);border-radius:2px}
+
+/* ─── SECTIONS ─── */
+.wrap{max-width:var(--max);margin:0 auto;padding:64px 2rem}
+.wrap-sm{max-width:var(--max);margin:0 auto;padding:44px 2rem}
+hr.div{border:none;border-top:.5px solid var(--border-soft)}
+.eye{font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--light);margin-bottom:10px;display:block}
+.stitle{font-family:var(--serif);font-size:28px;color:var(--accent);line-height:1.2;margin-bottom:4px}
+.sec-hd{margin-bottom:36px}
+
+/* ─── BUTTONS ─── */
+.btn{display:inline-flex;align-items:center;gap:6px;padding:9px 20px;border-radius:var(--rs);font-size:13.5px;font-weight:500;cursor:pointer;transition:all .15s;font-family:var(--sans);border:1px solid transparent}
+.btn-p{background:var(--accent);color:white;border-color:var(--accent)}
+.btn-p:hover{background:var(--mid);border-color:var(--mid)}
+.btn-s{background:transparent;color:var(--accent);border-color:var(--border)}
+.btn-s:hover{border-color:var(--accent);background:var(--alight)}
+.btn-sm{padding:6px 14px;font-size:12.5px}
+
+/* ─── HERO ─── */
+.hero{max-width:var(--max);margin:0 auto;padding:76px 2rem 60px;display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:center}
+.hero-eye{font-size:11.5px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--mid);margin-bottom:18px;display:block}
+.hero h1{font-family:var(--serif);font-size:clamp(30px,3.5vw,46px);line-height:1.12;color:var(--accent);margin-bottom:20px}
+.hero-desc{font-size:15.5px;color:var(--muted);line-height:1.8}
+.hero-cta{display:flex;gap:10px;margin-top:28px;flex-wrap:wrap}
+.stats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:.5px solid var(--border);border-radius:var(--r);overflow:hidden;margin-bottom:16px}
+.stat-box{background:var(--white);padding:22px 14px;text-align:center}
+.stat-n{font-family:var(--serif);font-size:32px;color:var(--accent);line-height:1;margin-bottom:5px}
+.stat-l{font-size:11.5px;color:var(--muted);line-height:1.3}
+.hero-img{border:.5px solid var(--border);border-radius:var(--r);overflow:hidden;background:var(--off-white)}
+.hero-img img{width:100%;height:210px;object-fit:cover}
+
+/* ─── RESEARCH CARDS ─── */
+.r-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(225px,1fr));gap:16px}
+.r-card{border:.5px solid var(--border);border-radius:var(--r);padding:24px;transition:border-color .15s;position:relative;overflow:hidden}
+.r-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--mid);opacity:0;transition:opacity .2s}
+.r-card:hover{border-color:#b8cfe0}.r-card:hover::before{opacity:1}
+.r-icon{width:40px;height:40px;border-radius:var(--rs);background:var(--alight);display:flex;align-items:center;justify-content:center;margin-bottom:16px;font-size:20px}
+.r-card h3{font-size:15px;font-weight:600;color:var(--text);margin-bottom:8px}
+.r-card p{font-size:13px;color:var(--muted);line-height:1.7}
+
+/* ─── PI CARD ─── */
+.pi-card{border:.5px solid var(--border);border-radius:var(--r);padding:28px;display:flex;gap:26px;align-items:flex-start;flex-wrap:wrap}
+.pi-ava{width:110px;height:110px;border-radius:50%;overflow:hidden;border:2px solid var(--border);flex-shrink:0}
+.pi-ava img{width:100%;height:100%;object-fit:cover}
+.pi-badge{font-size:10px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--accent);background:var(--alight);padding:3px 9px;border-radius:4px;display:inline-block;margin-bottom:10px}
+.scholar-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border-radius:var(--rs);overflow:hidden;margin-top:16px;max-width:340px}
+.sc-stat{background:var(--white);padding:14px 10px;text-align:center}
+.sc-n{font-family:var(--serif);font-size:26px;color:var(--accent);line-height:1}
+.sc-l{font-size:11px;color:var(--muted)}
+
+/* ─── TEAM ─── */
+.t-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(185px,1fr));gap:16px}
+.t-card{border:.5px solid var(--border);border-radius:var(--r);padding:22px 18px;text-align:center;transition:border-color .15s}
+.t-card:hover{border-color:#b8cfe0}
+.t-ava{width:76px;height:76px;border-radius:50%;overflow:hidden;margin:0 auto 14px;border:2px solid var(--border);background:var(--off-white);display:flex;align-items:center;justify-content:center}
+.t-ava img{width:100%;height:100%;object-fit:cover}
+.t-ava.init{font-family:var(--serif);font-size:24px;color:var(--mid);background:var(--alight)}
+.t-card h3{font-size:14px;font-weight:600;color:var(--text);margin-bottom:4px;line-height:1.3}
+.t-role{font-size:12px;color:var(--muted);margin-bottom:10px;line-height:1.4}
+.tag{font-size:11.5px;color:var(--mid);background:#eef3f8;border-radius:4px;padding:3px 9px;display:inline-block;line-height:1.5;transition:background .15s}
+.tag:hover{background:var(--alight)}
+.t-links{display:flex;gap:6px;justify-content:center;flex-wrap:wrap;margin-top:8px}
+
+/* ─── PUBS ─── */
+.pub-list{display:flex;flex-direction:column;gap:12px}
+.pub-item{border:.5px solid var(--border);border-radius:var(--rs);padding:16px 20px;display:flex;gap:16px;align-items:flex-start;transition:border-color .15s}
+.pub-item:hover{border-color:#b8cfe0}
+.pub-hl{border-left:3px solid var(--mid)}
+.py{font-size:11.5px;font-weight:600;color:var(--mid);background:var(--alight);border-radius:4px;padding:3px 8px;white-space:nowrap;flex-shrink:0;margin-top:2px}
+.pi h4{font-size:14px;font-weight:500;color:var(--text);line-height:1.5;margin-bottom:5px}
+.pi .pa{font-size:12.5px;color:var(--muted);margin-bottom:5px}
+.pl{display:flex;gap:8px;flex-wrap:wrap}
+.pl a{font-size:12px;color:var(--mid);padding:2px 8px;border:.5px solid #b8cfe0;border-radius:4px;transition:background .15s}
+.pl a:hover{background:var(--alight)}
+
+/* ─── NEWS ─── */
+.news-list{display:flex;flex-direction:column}
+.news-item{display:grid;grid-template-columns:130px 1fr;gap:16px;padding:15px 0;border-bottom:.5px solid var(--border-soft)}
+.news-item:last-child{border-bottom:none}
+.nd{font-size:12px;color:var(--light);padding-top:2px}
+.nt{font-size:14px;color:var(--muted);line-height:1.65}
+.nt a{color:var(--mid)}.nt a:hover{text-decoration:underline}
+
+/* ─── EVENTS ─── */
+.ev-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:14px}
+.ev-card{border:.5px solid var(--border);border-radius:var(--r);padding:18px 20px;display:flex;gap:16px;align-items:flex-start;transition:border-color .15s}
+.ev-card:hover{border-color:#b8cfe0}
+.ev-badge{background:var(--accent);color:white;border-radius:var(--rs);padding:8px 10px;text-align:center;flex-shrink:0;min-width:50px}
+.ev-badge .mo{font-size:9.5px;font-weight:600;letter-spacing:1px;text-transform:uppercase;line-height:1}
+.ev-badge .dy{font-size:20px;font-weight:600;line-height:1.2}
+.ev-info h4{font-size:14px;font-weight:600;color:var(--text);margin-bottom:4px;line-height:1.4}
+.ev-meta{font-size:12.5px;color:var(--muted);line-height:1.55}
+.ev-info a{color:var(--mid);font-size:12.5px}.ev-info a:hover{text-decoration:underline}
+
+/* ─── OPENINGS ─── */
+.op-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:14px}
+.op-card{border:.5px solid var(--border);border-radius:var(--r);padding:20px}
+.op-type{font-size:10.5px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--accent);background:var(--alight);padding:3px 8px;border-radius:4px;display:inline-block;margin-bottom:10px}
+.op-card h4{font-size:14.5px;font-weight:600;color:var(--text);margin-bottom:7px}
+.op-card p{font-size:13px;color:var(--muted);line-height:1.65;margin-bottom:12px}
+.op-card a{color:var(--mid);font-size:13px}.op-card a:hover{text-decoration:underline}
+
+/* ─── JOIN BANNER ─── */
+.join{background:var(--alight);border:.5px solid #c0d8ee;border-radius:var(--r);padding:28px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.join p{font-size:15px;color:var(--accent);font-weight:500}
+.join span{font-size:13px;color:var(--muted);font-weight:400;display:block;margin-top:4px}
+
+/* ─── 2-COL ─── */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start}
+
+/* ─── FOOTER ─── */
+footer{border-top:.5px solid var(--border);background:var(--off-white)}
+.ft{max-width:var(--max);margin:0 auto;padding:48px 2rem 32px;display:grid;grid-template-columns:2fr 1fr 1fr;gap:3rem}
+.ft-logo{font-family:var(--serif);font-size:20px;color:var(--accent);margin-bottom:10px}
+.ft-desc{font-size:13.5px;color:var(--muted);line-height:1.7;max-width:280px}
+.ft-logos{display:flex;gap:16px;align-items:center;margin-top:16px;flex-wrap:wrap}
+.ft-logos img{height:36px;opacity:.8}
+.ft-col h4{font-size:11.5px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--light);margin-bottom:14px}
+.ft-col a,.ft-col address{font-size:13.5px;color:var(--muted);display:block;line-height:2;font-style:normal}
+.ft-col a:hover{color:var(--accent)}
+.ft-col address a{display:inline}
+.ft-btm{max-width:var(--max);margin:0 auto;padding:18px 2rem;border-top:.5px solid var(--border);display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.ft-btm p,.ft-btm a{font-size:12.5px;color:var(--light)}
+.ft-btm a:hover{color:var(--accent)}
+
+/* ─── RESPONSIVE ─── */
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr;padding:48px 1.5rem 40px}
+  .ft{grid-template-columns:1fr 1fr}
+  .ft-brand{grid-column:1/-1}
+  .two{grid-template-columns:1fr;gap:2rem}
+}
+@media(max-width:640px){
+  .nav-links{display:none;flex-direction:column;position:absolute;top:62px;left:0;right:0;background:white;border-bottom:.5px solid var(--border);padding:8px 0;z-index:300}
+  .nav-links.open{display:flex}
+  .nav-links a{height:44px;padding:0 1.5rem}
+  .hamburger{display:flex}
+  .logo-sub{display:none}
+  .wrap{padding:44px 1.25rem}
+  .news-item{grid-template-columns:1fr;gap:4px}
+  .join{flex-direction:column;align-items:flex-start}
+  .pi-card{flex-direction:column;gap:16px}
+  .ft{grid-template-columns:1fr;gap:2rem}
+  .ft-btm{flex-direction:column;align-items:flex-start}
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════ NAV ═══════ -->
+<nav>
+  <div class="nav-in">
+    <a href="/" class="nav-logo">
+      <span class="logo-name">NAP Lab</span>
+      <span class="logo-sub">@ NIT Rourkela</span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="/" class="active">Home</a>
+      <a href="/team">Team</a>
+      <a href="/publications">Publications</a>
+      <a href="/events">Events</a>
+      <a href="/research">Teaching</a>
+      <a href="/vacancies">Join Us</a>
+    </div>
+    <button class="hamburger" id="menuBtn" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ═══════ HERO ═══════ -->
+<section class="hero" aria-label="Introduction">
+  <div>
+    <span class="hero-eye">Nuclear Astrophysics &amp; Physics Lab</span>
+    <h1>Probing the densest objects in the universe</h1>
+    <p class="hero-desc">
+      We are a research group at the
+      <a href="https://www.nitrkl.ac.in/" style="color:var(--mid);text-decoration:underline">National Institute of Technology, Rourkela</a>,
+      India — working at the intersection of nuclear physics, astrophysics, gravitational waves, and dark matter
+      to unravel the mysteries of neutron stars.
+    </p>
+    <div class="hero-cta">
+      <a href="/publications" class="btn btn-p">Publications</a>
+      <a href="/team" class="btn btn-s">Meet the Team</a>
+      <a href="https://scholar.google.com/citations?user=YourGoogleScholarID" class="btn btn-s" target="_blank" rel="noopener">Google Scholar ↗</a>
+    </div>
+  </div>
+  <div>
+    <div class="stats-grid">
+      <div class="stat-box"><div class="stat-n">30+</div><div class="stat-l">Publications</div></div>
+      <div class="stat-box"><div class="stat-n">3</div><div class="stat-l">PhD Students</div></div>
+      <div class="stat-box"><div class="stat-n">2020</div><div class="stat-l">Founded</div></div>
+    </div>
+    <div class="hero-img">
+      <img src="images/slider7001400/mr1.png"
+           alt="Neutron star mass-radius diagram from NAP Lab research"
+           onerror="this.parentElement.style.display='none'">
+    </div>
+  </div>
+</section>
+
+<hr class="div">
+
+<!-- ═══════ RESEARCH AREAS ═══════ -->
+<section class="wrap" aria-label="Research areas">
+  <div class="sec-hd">
+    <span class="eye">Focus Areas</span>
+    <h2 class="stitle">What we study</h2>
+  </div>
+  <div class="r-grid">
+    <div class="r-card">
+      <div class="r-icon">⭐</div>
+      <h3>Equation of State</h3>
+      <p>Investigating the composition of neutron stars using relativistic mean-field models, constrained by LIGO, NICER, and pulsar timing observations.</p>
+    </div>
+    <div class="r-card">
+      <div class="r-icon">🔮</div>
+      <h3>Hyperons &amp; Exotic Matter</h3>
+      <p>Exploring strangeness-bearing particles — hyperons, delta baryons, and quarkyonic matter — in neutron star cores and their effect on stellar structure.</p>
+    </div>
+    <div class="r-card">
+      <div class="r-icon">🌊</div>
+      <h3>Gravitational Waves &amp; Oscillations</h3>
+      <p>Computing quasinormal modes, tidal deformability, and universal I-Love-Q relations directly connecting to GW170817 and future Einstein Telescope observations.</p>
+    </div>
+    <div class="r-card">
+      <div class="r-icon">🌑</div>
+      <h3>Dark Matter in Neutron Stars</h3>
+      <p>Using neutron stars as cosmic dark matter laboratories — constraining WIMP and fermionic dark matter through mass, radius, and oscillation observables.</p>
+    </div>
+    <div class="r-card">
+      <div class="r-icon">🌡</div>
+      <h3>Thermal Evolution</h3>
+      <p>Investigating the cooling of isolated and accreting neutron stars and proto-neutron star evolution at finite temperature and entropy.</p>
+    </div>
+    <div class="r-card">
+      <div class="r-icon">🔭</div>
+      <h3>Multi-Messenger Astrophysics</h3>
+      <p>Bridging nuclear theory with electromagnetic, gravitational wave, and neutrino observations to constrain the neutron star equation of state.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="div">
+
+<!-- ═══════ PRINCIPAL INVESTIGATOR ═══════ -->
+<section class="wrap" aria-label="Principal Investigator">
+  <div class="sec-hd">
+    <span class="eye">Principal Investigator</span>
+    <h2 class="stitle">Dr. Bharat Kumar</h2>
+  </div>
+  <div class="pi-card">
+    <div class="pi-ava">
+      <img src="images/teampic/bk_pic.jpeg" alt="Dr. Bharat Kumar"
+           onerror="this.parentElement.style.background='var(--alight)';this.style.display='none'">
+    </div>
+    <div style="flex:1;min-width:220px">
+      <span class="pi-badge">Principal Investigator</span>
+      <h3 style="font-size:20px;font-weight:600;color:var(--text);margin-bottom:4px">Bharat Kumar</h3>
+      <p style="font-size:13.5px;color:var(--muted);margin-bottom:14px">
+        Assistant Professor · Dept. of Physics &amp; Astronomy, NIT Rourkela · <em>since June 2020</em>
+      </p>
+      <ul style="list-style:none;font-size:13.5px;color:var(--muted);line-height:2.1">
+        <li>🎓 M.Sc. Physics · AMU Aligarh</li>
+        <li>🎓 Ph.D. with <a href="https://www.iopb.res.in/members/patra" style="color:var(--mid)">S K Patra</a> · IOP Bhubaneswar</li>
+        <li>🔬 Postdoc · LIGO-India / <a href="http://www.gw.iucaa.in/sukanta-bose/" style="color:var(--mid)">Sukanta Bose</a>, IUCAA Pune</li>
+        <li>🔬 Postdoc · <a href="https://www.ccs.tsukuba.ac.jp/eng/" style="color:var(--mid)">Takashi Nakatsukasa</a>, University of Tsukuba, Japan</li>
+      </ul>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:14px">
+        <a href="downloads/CV.pdf" class="btn btn-s btn-sm">CV (PDF)</a>
+        <a href="https://scholar.google.com/citations?user=YourGoogleScholarID" class="btn btn-s btn-sm" target="_blank" rel="noopener">Google Scholar ↗</a>
+        <a href="https://orcid.org/0000-0000-0000-0000" class="btn btn-s btn-sm" target="_blank" rel="noopener">ORCID ↗</a>
+        <a href="https://arxiv.org/search/?searchtype=author&query=Kumar+Bharat" class="btn btn-s btn-sm" target="_blank" rel="noopener">arXiv ↗</a>
+        <a href="mailto:kumarbh@nitrkl.ac.in" class="btn btn-s btn-sm">Email</a>
+      </div>
+      <div class="scholar-stats">
+        <div class="sc-stat"><div class="sc-n">30+</div><div class="sc-l">Papers</div></div>
+        <div class="sc-stat"><div class="sc-n">500+</div><div class="sc-l">Citations</div></div>
+        <div class="sc-stat"><div class="sc-n">—</div><div class="sc-l">h-index</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="div">
+
+<!-- ═══════ TEAM SNAPSHOT ═══════ -->
+<section class="wrap" aria-label="Team">
+  <div class="sec-hd">
+    <span class="eye">People</span>
+    <h2 class="stitle">Current team members</h2>
+  </div>
+
+  <span class="eye" style="margin-bottom:14px">PhD Students</span>
+  <div class="t-grid" style="margin-bottom:32px">
+
+    <div class="t-card">
+      <div class="t-ava">
+        <img src="images/teampic/pinku_pic.png" alt="Pinku Routaray"
+             onerror="this.parentElement.className='t-ava init';this.parentElement.textContent='PR';this.remove()">
+      </div>
+      <h3>Pinku Routaray</h3>
+      <div class="t-role">Ph.D. · joined Jul 2021<br>M.Sc., Berhampur University</div>
+      <span class="tag">Dark Matter in NSs</span>
+      <div class="t-links">
+        <a href="https://arxiv.org/search/?searchtype=author&query=Routaray+Pinku" class="tag" target="_blank" rel="noopener">arXiv ↗</a>
+        <a href="mailto:routaraypinku@gmail.com" class="tag">Email</a>
+      </div>
+      <div style="margin-top:10px;font-size:11.5px;color:var(--light);line-height:1.9">
+        <a href="https://doi.org/10.1093/mnras/stad2628" style="color:var(--mid)" target="_blank">MNRAS 25, 5492 (2023)</a><br>
+        <a href="https://iopscience.iop.org/article/10.1088/1475-7516/2023/10/073" style="color:var(--mid)" target="_blank">JCAP 10, 073 (2023)</a>
+      </div>
+    </div>
+
+    <div class="t-card">
+      <div class="t-ava">
+        <img src="images/teampic/sayantan_pic.png" alt="Sayantan Ghosh"
+             onerror="this.parentElement.className='t-ava init';this.parentElement.textContent='SG';this.remove()">
+      </div>
+      <h3>Sayantan Ghosh</h3>
+      <div class="t-role">Ph.D. · joined Jul 2022<br>M.Sc., Banaras Hindu University</div>
+      <span class="tag">Quasinormal Modes</span>
+      <div class="t-links">
+        <a href="https://arxiv.org/search/?searchtype=author&query=Ghosh+Sayantan" class="tag" target="_blank" rel="noopener">arXiv ↗</a>
+        <a href="mailto:sayantanghosh1999@gmail.com" class="tag">Email</a>
+      </div>
+      <div style="margin-top:10px;font-size:11.5px;color:var(--light);line-height:1.9">
+        <a href="https://arxiv.org/abs/2307.06892" style="color:var(--mid)" target="_blank">arXiv:2307.06892</a><br>
+        <a href="https://arxiv.org/abs/2401.08347" style="color:var(--mid)" target="_blank">arXiv:2401.08347</a>
+      </div>
+    </div>
+
+    <div class="t-card">
+      <div class="t-ava">
+        <img src="images/teampic/probit_pic.png" alt="Probit J. Kalita"
+             onerror="this.parentElement.className='t-ava init';this.parentElement.textContent='PK';this.remove()">
+      </div>
+      <h3>Probit J. Kalita</h3>
+      <div class="t-role">Ph.D. · joined Jul 2022<br>M.Sc., Tezpur University</div>
+      <span class="tag">NS Composition</span>
+      <div class="t-links">
+        <a href="https://arxiv.org/search/?searchtype=author&query=Kalita+Probit" class="tag" target="_blank" rel="noopener">arXiv ↗</a>
+        <a href="mailto:probit.kalita@gmail.com" class="tag">Email</a>
+      </div>
+      <div style="margin-top:10px;font-size:11.5px;color:var(--light);line-height:1.9">
+        <a href="https://iopscience.iop.org/article/10.1088/1475-7516/2024/04/065" style="color:var(--mid)" target="_blank">JCAP 04, 065 (2024)</a>
+      </div>
+    </div>
+  </div>
+
+  <span class="eye" style="margin-bottom:14px">Master Students</span>
+  <div class="t-grid" style="margin-bottom:28px">
+    <div class="t-card">
+      <div class="t-ava">
+        <img src="images/teampic/kanika_pic.jpg" alt="Kanika Karan"
+             onerror="this.parentElement.className='t-ava init';this.parentElement.textContent='KK';this.remove()">
+      </div>
+      <h3>Kanika Karan</h3>
+      <div class="t-role">MSc Thesis (ongoing)</div>
+      <span class="tag">Quasinormal Modes in NSs</span>
+    </div>
+    <div class="t-card">
+      <div class="t-ava">
+        <img src="images/teampic/Subhojit_pic.jpg" alt="Shubhajit Saha"
+             onerror="this.parentElement.className='t-ava init';this.parentElement.textContent='SS';this.remove()">
+      </div>
+      <h3>Shubhajit Saha</h3>
+      <div class="t-role">MSc Thesis (ongoing)</div>
+      <span class="tag">Quarkyonic Matter</span>
+    </div>
+  </div>
+
+  <a href="/team" class="btn btn-s">Full team &amp; alumni →</a>
+</section>
+
+<hr class="div">
+
+<!-- ═══════ PUBLICATIONS ═══════ -->
+<section class="wrap" aria-label="Publications">
+  <div class="sec-hd">
+    <span class="eye">Research Output</span>
+    <h2 class="stitle">Selected publications</h2>
+  </div>
+  <div class="pub-list">
+
+    <div class="pub-item pub-hl">
+      <span class="py">2024</span>
+      <div class="pi">
+        <h4>Probing the Impact of Delta-Baryons on Nuclear Matter and Non-Radial Oscillations in Neutron Stars</h4>
+        <p class="pa">P.J. Kalita, P. Routaray, S. Ghosh, Bharat Kumar, B.K. Agrawal</p>
+        <div class="pl">
+          <a href="https://iopscience.iop.org/article/10.1088/1475-7516/2024/04/065" target="_blank">JCAP 04, 065 (2024)</a>
+          <a href="downloads/Kalita_2024_J._Cosmol._Astropart._Phys._2024_065.pdf">PDF</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pub-item pub-hl">
+      <span class="py">2023</span>
+      <div class="pi">
+        <h4>★ Probing the Impact of WIMP Dark Matter on Universal Relations, GW170817 Posterior and Radial Oscillations</h4>
+        <p class="pa">P. Routaray, A. Quddus, K. Chakravarti, Bharat Kumar</p>
+        <div class="pl">
+          <a href="https://doi.org/10.1093/mnras/stad2628" target="_blank">MNRAS 25, 5492 (2023)</a>
+          <a href="downloads/posterior.pdf">PDF</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pub-item pub-hl">
+      <span class="py">2023</span>
+      <div class="pi">
+        <h4>★ Radial Oscillations of Dark Matter Admixed Neutron Stars</h4>
+        <p class="pa">P. Routray, H.C. Das, S. Sen, Bharat Kumar, G. Panotopoulos, T. Zhao</p>
+        <div class="pl">
+          <a href="https://doi.org/10.48550/arXiv.2211.12808" target="_blank">Phys. Rev. D 107, 103039 (2023)</a>
+          <a href="downloads/darkfmode.pdf">PDF</a>
+          <a href="https://arxiv.org/abs/2211.12808" target="_blank">arXiv</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pub-item pub-hl">
+      <span class="py">2022</span>
+      <div class="pi">
+        <h4>★ Impact of the Equation of State on f- and p-Mode Oscillations of Neutron Stars</h4>
+        <p class="pa">A. Kunjipurayil, T. Zhao, Bharat Kumar, B.K. Agrawal, M. Prakash</p>
+        <div class="pl">
+          <a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.106.063005" target="_blank">Phys. Rev. D 106, 063005 (2022)</a>
+          <a href="downloads/athulkp.pdf">PDF</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pub-item pub-hl">
+      <span class="py">2019</span>
+      <div class="pi">
+        <h4>★ Inferring Neutron Star Properties from GW170817 with Universal Relations</h4>
+        <p class="pa">Bharat Kumar, Philippe Landry</p>
+        <div class="pl">
+          <a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.99.123026" target="_blank">Phys. Rev. D 99, 123026 (2019)</a>
+          <a href="downloads/1_key_publication.pdf">PDF</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pub-item pub-hl">
+      <span class="py">2018</span>
+      <div class="pi">
+        <h4>★ New Relativistic Effective Interaction for Finite Nuclei, Infinite Nuclear Matter, and Neutron Stars</h4>
+        <p class="pa">Bharat Kumar, S K Patra, B K Agrawal</p>
+        <div class="pl">
+          <a href="https://journals.aps.org/prc/abstract/10.1103/PhysRevC.97.045806" target="_blank">Phys. Rev. C 97, 045806 (2018)</a>
+          <a href="downloads/4_key_publication.pdf">PDF</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div style="margin-top:24px;display:flex;gap:10px;flex-wrap:wrap">
+    <a href="/publications" class="btn btn-s">All publications →</a>
+    <a href="https://scholar.google.com/citations?user=YourGoogleScholarID" class="btn btn-s" target="_blank" rel="noopener">Google Scholar ↗</a>
+    <a href="https://arxiv.org/search/?searchtype=author&query=Kumar+Bharat" class="btn btn-s" target="_blank" rel="noopener">arXiv ↗</a>
+  </div>
+</section>
+
+<hr class="div">
+
+<!-- ═══════ NEWS + EVENTS ═══════ -->
+<section class="wrap" aria-label="News and Events">
+  <div class="two">
+
+    <div>
+      <div class="sec-hd">
+        <span class="eye">Lab Updates</span>
+        <h2 class="stitle">News</h2>
+      </div>
+      <div class="news-list">
+        <div class="news-item">
+          <span class="nd">23 Dec 2024</span>
+          <p class="nt">Pinku wins <strong>Best Poster Award</strong> at DAE HEP Symposium, BHU.
+            <a href="https://indico.cern.ch/event/1426931/" target="_blank">Event ↗</a></p>
+        </div>
+        <div class="news-item">
+          <span class="nd">Oct 2023</span>
+          <p class="nt">New paper on dark matter-admixed NSs published in
+            <a href="https://iopscience.iop.org/article/10.1088/1475-7516/2023/10/073" target="_blank">JCAP ↗</a></p>
+        </div>
+        <div class="news-item">
+          <span class="nd">Sep 2023</span>
+          <p class="nt">Pinku's WIMP dark matter paper accepted in
+            <a href="https://shorturl.at/nBPT3" target="_blank">MNRAS ↗</a></p>
+        </div>
+        <div class="news-item">
+          <span class="nd">Mar 2024</span>
+          <p class="nt">Paper on anisotropy &amp; I–f–C universal relations in
+            <a href="https://iopscience.iop.org/article/10.1088/1475-7516/2024/03/054" target="_blank">JCAP ↗</a></p>
+        </div>
+        <div class="news-item">
+          <span class="nd">Jun 2020</span>
+          <p class="nt">NAP Lab established at NIT Rourkela.</p>
+        </div>
+      </div>
+      <div style="margin-top:20px">
+        <a href="/allnews.html" class="btn btn-s">All news →</a>
+      </div>
+    </div>
+
+    <div>
+      <div class="sec-hd">
+        <span class="eye">Conferences &amp; Schools</span>
+        <h2 class="stitle">Upcoming events</h2>
+      </div>
+      <div class="news-list">
+        <div class="news-item">
+          <span class="nd">May 17–23, 2026</span>
+          <p class="nt"><strong>17th Amaldi Conference on GW</strong> — Elba, Italy.
+            <a href="https://gwic.science/conferences.html" target="_blank">Info ↗</a></p>
+        </div>
+        <div class="news-item">
+          <span class="nd">Jun 8–19, 2026</span>
+          <p class="nt"><strong>ISAPP School: High-Energy Astrophysics</strong> — Paris-Saclay, France.
+            <a href="https://www.lisamission.org/news/conferences/" target="_blank">Info ↗</a></p>
+        </div>
+        <div class="news-item">
+          <span class="nd">Jul 5–11, 2026</span>
+          <p class="nt"><strong>AGWAM 2026</strong> Asian GW Astronomy Meeting — Chiang Mai, Thailand.
+            <a href="https://events.perimeterinstitute.ca/event/2057/" target="_blank">Info ↗</a></p>
+        </div>
+        <div class="news-item">
+          <span class="nd">Aug 10–14, 2026</span>
+          <p class="nt"><strong>IGWN School 2026</strong> — Perimeter Institute, Canada.
+            <a href="https://events.perimeterinstitute.ca/event/2057/" target="_blank">Info ↗</a></p>
+        </div>
+        <div class="news-item">
+          <span class="nd">Aug 30 – Sep 6, 2026</span>
+          <p class="nt"><strong>Zakopane Conference on Nuclear Physics</strong> — "Extremes of the Nuclear Landscape", Poland.</p>
+        </div>
+      </div>
+      <div style="margin-top:20px">
+        <a href="/events" class="btn btn-s">All events →</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<hr class="div">
+
+<!-- ═══════ OPEN POSITIONS ═══════ -->
+<section class="wrap" aria-label="Open positions">
+  <div class="sec-hd">
+    <span class="eye">Opportunities</span>
+    <h2 class="stitle">Join us</h2>
+  </div>
+  <div class="op-grid">
+
+    <div class="op-card">
+      <span class="op-type">PhD</span>
+      <h4>DST WISE PhD Fellowship</h4>
+      <p>Women scientist fellowships for PhD in nuclear/astrophysics — apply via DST WISE.</p>
+      <a href="https://onlinedst.gov.in/Projectproposalformat.aspx" target="_blank">Apply via DST ↗</a>
+    </div>
+
+    <div class="op-card">
+      <span class="op-type">PhD</span>
+      <h4>NIT Rourkela PhD</h4>
+      <p>Regular PhD positions in the Dept. of Physics &amp; Astronomy. Check official announcements.</p>
+      <a href="https://website.nitrkl.ac.in/Home/Announcement/" target="_blank">See announcements ↗</a>
+    </div>
+
+    <div class="op-card">
+      <span class="op-type">PhD</span>
+      <h4>CSIR / UGC / JEST Qualified</h4>
+      <p>If you hold a valid CSIR-NET, UGC-NET, JEST or GATE score, contact Dr. Kumar directly.</p>
+      <a href="mailto:kumarbh@nitrkl.ac.in">Contact Dr. Kumar ↗</a>
+    </div>
+
+    <div class="op-card">
+      <span class="op-type">Postdoc</span>
+      <h4>SERB-NPDF</h4>
+      <p>National Post-Doctoral Fellowship for strong candidates in nuclear/astrophysics fields.</p>
+      <a href="https://serbonline.in/SERB/npdf" target="_blank">Apply via SERB ↗</a>
+    </div>
+
+    <div class="op-card">
+      <span class="op-type">Postdoc</span>
+      <h4>DST WISE-PDF / WISE SCOPE</h4>
+      <p>Postdoctoral fellowships under DST WISE scheme for women scientists.</p>
+      <a href="https://online-wosa.gov.in/wosa/aboutUsPDF" target="_blank">WISE-PDF ↗</a> &nbsp;
+      <a href="https://onlinedst.gov.in/Projectproposalformat.aspx?Id=2323" target="_blank">WISE SCOPE ↗</a>
+    </div>
+
+    <div class="op-card" style="background:var(--alight);border-color:#c0d8ee">
+      <span class="op-type" style="background:var(--accent);color:white">Any Level</span>
+      <h4>Own Fellowship? Join Us</h4>
+      <p>Bring your own fellowship and pursue PhD or Postdoc at NAP Lab. Topics in dark matter, gravitational waves, NS physics.</p>
+      <a href="mailto:kumarbh@nitrkl.ac.in">kumarbh@nitrkl.ac.in ↗</a>
+    </div>
+
+  </div>
+  <div style="margin-top:28px">
+    <a href="/vacancies" class="btn btn-p">All openings &amp; details →</a>
+  </div>
+</section>
+
+<hr class="div">
+
+<!-- ═══════ CONTACT ═══════ -->
+<section class="wrap" aria-label="Contact">
+  <div class="two">
+    <div>
+      <span class="eye" style="margin-bottom:10px">Find us</span>
+      <h2 class="stitle" style="margin-bottom:16px">Contact</h2>
+      <address style="font-style:normal;font-size:13.5px;color:var(--muted);line-height:2">
+        <strong>Dr. Bharat Kumar</strong><br>
+        MC202, Dept. of Physics &amp; Astronomy<br>
+        National Institute of Technology, Rourkela<br>
+        Odisha 769008, India<br><br>
+        <a href="mailto:kumarbh@nitrkl.ac.in" style="color:var(--mid)">kumarbh@nitrkl.ac.in</a><br>
+        <a href="https://shorturl.at/hxMY5" target="_blank" style="color:var(--mid)">Maps ↗</a>
+        &nbsp;·&nbsp;
+        <a href="https://shorturl.at/bdpv3" target="_blank" style="color:var(--mid)">Directions ↗</a>
+      </address>
+    </div>
+    <div>
+      <span class="eye" style="margin-bottom:10px">Funding</span>
+      <h2 class="stitle" style="margin-bottom:16px">Support</h2>
+      <p style="font-size:14px;color:var(--muted);line-height:1.8">
+        Supported by the <a href="https://www.serbonline.in/" target="_blank" style="color:var(--mid)">Science &amp; Engineering Research Board (SERB)</a>, Government of India.<br><br>
+        Affiliated with the <a href="https://website.nitrkl.ac.in/PH/" target="_blank" style="color:var(--mid)">Department of Physics &amp; Astronomy</a>, NIT Rourkela.
+      </p>
+      <div style="display:flex;gap:16px;align-items:center;margin-top:18px;flex-wrap:wrap">
+        <img src="images/logopic/nitrlogo.svg" alt="NIT Rourkela" style="height:44px;opacity:.85" onerror="this.style.display='none'">
+        <img src="images/logopic/serblogo.png" alt="SERB" style="height:40px;opacity:.85" onerror="this.style.display='none'">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ FOOTER ═══════ -->
+<footer>
+  <div class="ft">
+    <div class="ft-brand">
+      <div class="ft-logo">NAP Lab</div>
+      <p class="ft-desc">Nuclear Astrophysics &amp; Physics Laboratory at NIT Rourkela — studying neutron stars, dense matter, dark matter, and multi-messenger astrophysics.</p>
+      <div class="ft-logos">
+        <img src="images/logopic/nitrlogo.svg" alt="NIT Rourkela" onerror="this.style.display='none'">
+        <img src="images/logopic/serblogo.png" alt="SERB" onerror="this.style.display='none'">
+      </div>
+    </div>
+    <div class="ft-col">
+      <h4>Navigate</h4>
+      <a href="/">Home</a>
+      <a href="/team">Team</a>
+      <a href="/publications">Publications</a>
+      <a href="/events">Events</a>
+      <a href="/research">Teaching</a>
+      <a href="/vacancies">Join Us</a>
+      <a href="/allnews.html">All News</a>
+    </div>
+    <div class="ft-col">
+      <h4>Contact</h4>
+      <address>
+        MC202, Dept. of Physics &amp; Astronomy<br>
+        NIT Rourkela, Odisha 769008<br>
+        <a href="mailto:kumarbh@nitrkl.ac.in">kumarbh@nitrkl.ac.in</a><br>
+        <a href="https://scholar.google.com/citations?user=YourGoogleScholarID" target="_blank">Google Scholar ↗</a><br>
+        <a href="https://arxiv.org/search/?searchtype=author&query=Kumar+Bharat" target="_blank">arXiv ↗</a>
+      </address>
+    </div>
+  </div>
+  <div class="ft-btm">
+    <p>© 2025 NAP Lab, NIT Rourkela · Funded by <a href="https://www.serbonline.in/">SERB</a></p>
+    <div style="display:flex;gap:16px">
+      <a href="/aboutwebsite.html">About this site</a>
+      <a href="https://github.com/bharatiop/bharatiop.github.io" target="_blank">GitHub ↗</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+const btn = document.getElementById('menuBtn');
+const nav = document.getElementById('navLinks');
+btn.addEventListener('click', () => {
+  nav.classList.toggle('open');
+  btn.setAttribute('aria-expanded', nav.classList.contains('open'));
+});
+</script>
+</body>
+</html>
