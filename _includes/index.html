@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NAP Lab — Nuclear Astrophysics @ NIT Rourkela</title>
+<meta name="description" content="Nuclear Astrophysics & Physics Lab at NIT Rourkela, India. Research on neutron stars, equation of state, dark matter, and multi-messenger astrophysics.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --white: #ffffff;
+    --off-white: #f8f8f6;
+    --border: #e5e5e0;
+    --border-soft: #eeede8;
+    --text: #1a1a18;
+    --text-muted: #6b6b67;
+    --text-light: #9a9a96;
+    --accent: #1a3a5c;
+    --accent-mid: #2d5f8e;
+    --accent-light: #e8f0f8;
+    --tag-bg: #f0f4f8;
+    --tag-text: #2d5f8e;
+    --serif: 'DM Serif Display', Georgia, serif;
+    --sans: 'Inter', system-ui, sans-serif;
+    --radius: 10px;
+    --radius-sm: 6px;
+  }
+
+  body {
+    font-family: var(--sans);
+    color: var(--text);
+    background: var(--white);
+    line-height: 1.6;
+    font-size: 15px;
+  }
+
+  a { color: inherit; text-decoration: none; }
+
+  /* NAV */
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(255,255,255,0.94);
+    backdrop-filter: blur(8px);
+    border-bottom: 0.5px solid var(--border);
+  }
+  .nav-inner {
+    max-width: 1100px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 2rem; height: 60px;
+  }
+  .nav-logo {
+    font-family: var(--serif);
+    font-size: 18px; letter-spacing: -0.3px;
+    color: var(--accent);
+  }
+  .nav-logo span { color: var(--text-muted); font-size: 13px; font-family: var(--sans); font-weight: 400; margin-left: 6px; }
+  .nav-links { display: flex; gap: 0; }
+  .nav-links a {
+    font-size: 13.5px; font-weight: 400; color: var(--text-muted);
+    padding: 0 14px; height: 60px; display: flex; align-items: center;
+    border-bottom: 2px solid transparent;
+    transition: color 0.15s, border-color 0.15s;
+  }
+  .nav-links a:hover { color: var(--text); }
+  .nav-links a.active { color: var(--accent); border-bottom-color: var(--accent); font-weight: 500; }
+  .hamburger { display: none; background: none; border: none; cursor: pointer; padding: 6px; }
+  .hamburger span { display: block; width: 22px; height: 1.5px; background: var(--text); margin: 4px 0; border-radius: 2px; }
+
+  /* HERO */
+  .hero {
+    max-width: 1100px; margin: 0 auto;
+    padding: 80px 2rem 60px;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;
+  }
+  .hero-label {
+    font-size: 11.5px; font-weight: 600; letter-spacing: 1.4px; text-transform: uppercase;
+    color: var(--accent-mid); margin-bottom: 18px;
+  }
+  .hero h1 {
+    font-family: var(--serif);
+    font-size: clamp(32px, 4vw, 48px);
+    line-height: 1.15;
+    color: var(--accent);
+    margin-bottom: 20px;
+  }
+  .hero p {
+    font-size: 15.5px; color: var(--text-muted); line-height: 1.75;
+    max-width: 500px;
+  }
+  .hero-cta { display: flex; gap: 12px; margin-top: 28px; flex-wrap: wrap; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 9px 20px; border-radius: var(--radius-sm);
+    font-size: 13.5px; font-weight: 500; cursor: pointer;
+    transition: all 0.15s;
+  }
+  .btn-primary {
+    background: var(--accent); color: white;
+    border: 1px solid var(--accent);
+  }
+  .btn-primary:hover { background: var(--accent-mid); border-color: var(--accent-mid); }
+  .btn-secondary {
+    background: transparent; color: var(--accent);
+    border: 1px solid var(--border);
+  }
+  .btn-secondary:hover { border-color: var(--accent); background: var(--accent-light); }
+
+  .hero-stats {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px;
+    background: var(--border); border: 0.5px solid var(--border);
+    border-radius: var(--radius); overflow: hidden;
+  }
+  .stat {
+    background: var(--white);
+    padding: 24px 20px;
+    text-align: center;
+  }
+  .stat-num {
+    font-family: var(--serif);
+    font-size: 34px; color: var(--accent); line-height: 1;
+    margin-bottom: 6px;
+  }
+  .stat-label { font-size: 12px; color: var(--text-muted); font-weight: 400; }
+
+  /* SECTION WRAPPER */
+  .section { max-width: 1100px; margin: 0 auto; padding: 60px 2rem; }
+  .section-divider { border: none; border-top: 0.5px solid var(--border-soft); margin: 0 2rem; }
+  .section-header { margin-bottom: 36px; }
+  .section-eyebrow {
+    font-size: 11px; font-weight: 600; letter-spacing: 1.4px; text-transform: uppercase;
+    color: var(--text-light); margin-bottom: 10px;
+  }
+  .section-title {
+    font-family: var(--serif);
+    font-size: 26px; color: var(--accent); line-height: 1.25;
+  }
+
+  /* RESEARCH AREAS */
+  .research-grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px;
+  }
+  .research-card {
+    border: 0.5px solid var(--border);
+    border-radius: var(--radius);
+    padding: 24px;
+    transition: border-color 0.15s, box-shadow 0.15s;
+    position: relative; overflow: hidden;
+  }
+  .research-card::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0;
+    height: 3px; background: var(--accent-mid);
+    opacity: 0; transition: opacity 0.2s;
+  }
+  .research-card:hover { border-color: #b8cfe0; }
+  .research-card:hover::before { opacity: 1; }
+  .research-icon {
+    width: 38px; height: 38px; border-radius: var(--radius-sm);
+    background: var(--accent-light);
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 16px; font-size: 18px;
+  }
+  .research-card h3 { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 8px; }
+  .research-card p { font-size: 13px; color: var(--text-muted); line-height: 1.65; }
+
+  /* TEAM */
+  .team-grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px;
+  }
+  .team-card {
+    border: 0.5px solid var(--border);
+    border-radius: var(--radius);
+    padding: 24px 20px;
+    text-align: center;
+    transition: border-color 0.15s;
+  }
+  .team-card:hover { border-color: #b8cfe0; }
+  .team-avatar {
+    width: 72px; height: 72px; border-radius: 50%;
+    overflow: hidden; margin: 0 auto 14px;
+    border: 2px solid var(--border);
+    background: var(--off-white);
+  }
+  .team-avatar img { width: 100%; height: 100%; object-fit: cover; }
+  .team-avatar.initials {
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--serif); font-size: 22px; color: var(--accent-mid);
+    background: var(--accent-light);
+  }
+  .team-card h3 { font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 4px; }
+  .team-card .role { font-size: 12px; color: var(--text-muted); margin-bottom: 8px; }
+  .team-card .topic {
+    font-size: 11.5px; color: var(--tag-text);
+    background: var(--tag-bg); border-radius: 4px;
+    padding: 3px 8px; display: inline-block; line-height: 1.5;
+  }
+  .pi-tag {
+    font-size: 10.5px; font-weight: 600; letter-spacing: 0.8px; text-transform: uppercase;
+    color: var(--accent); background: var(--accent-light);
+    padding: 3px 8px; border-radius: 4px; display: inline-block; margin-bottom: 10px;
+  }
+
+  /* NEWS */
+  .news-list { display: flex; flex-direction: column; gap: 0; }
+  .news-item {
+    display: grid; grid-template-columns: 130px 1fr;
+    gap: 16px; align-items: start;
+    padding: 18px 0;
+    border-bottom: 0.5px solid var(--border-soft);
+  }
+  .news-item:last-child { border-bottom: none; }
+  .news-date { font-size: 12px; color: var(--text-light); padding-top: 2px; white-space: nowrap; }
+  .news-text { font-size: 14px; color: var(--text-muted); line-height: 1.6; }
+  .news-text a { color: var(--accent-mid); }
+  .news-text a:hover { text-decoration: underline; }
+
+  /* PUBLICATIONS TEASER */
+  .pub-list { display: flex; flex-direction: column; gap: 12px; }
+  .pub-item {
+    border: 0.5px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 16px 20px;
+    display: flex; gap: 16px; align-items: flex-start;
+  }
+  .pub-year {
+    font-size: 11.5px; font-weight: 600; color: var(--accent-mid);
+    background: var(--accent-light); border-radius: 4px;
+    padding: 2px 8px; white-space: nowrap; margin-top: 2px;
+    flex-shrink: 0;
+  }
+  .pub-info h4 { font-size: 14px; font-weight: 500; color: var(--text); line-height: 1.45; margin-bottom: 4px; }
+  .pub-info p { font-size: 12.5px; color: var(--text-muted); }
+
+  /* FUNDING + CONTACT */
+  .bottom-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;
+  }
+  .info-block h3 { font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 12px; }
+  .info-block p, .info-block address {
+    font-size: 13.5px; color: var(--text-muted); line-height: 1.75; font-style: normal;
+  }
+  .info-block a { color: var(--accent-mid); }
+  .info-block a:hover { text-decoration: underline; }
+
+  /* FOOTER */
+  footer {
+    border-top: 0.5px solid var(--border);
+    padding: 28px 2rem;
+    text-align: center;
+    font-size: 12.5px; color: var(--text-light);
+  }
+  footer a { color: var(--text-muted); }
+  footer a:hover { color: var(--accent); }
+
+  /* JOIN US BANNER */
+  .join-banner {
+    background: var(--accent-light);
+    border: 0.5px solid #c0d8ee;
+    border-radius: var(--radius);
+    padding: 28px 32px;
+    display: flex; align-items: center; justify-content: space-between; gap: 24px;
+    flex-wrap: wrap;
+  }
+  .join-banner p { font-size: 14.5px; color: var(--accent); font-weight: 500; max-width: 520px; }
+  .join-banner span { font-size: 13px; color: var(--text-muted); font-weight: 400; display: block; margin-top: 4px; }
+
+  @media (max-width: 768px) {
+    .hero { grid-template-columns: 1fr; padding: 48px 1.25rem 40px; }
+    .hero p { max-width: 100%; }
+    .hero-stats { margin-top: 8px; }
+    .bottom-grid { grid-template-columns: 1fr; }
+    .nav-links { display: none; flex-direction: column; position: absolute; top: 60px; left: 0; right: 0; background: white; border-bottom: 0.5px solid var(--border); padding: 8px 0; }
+    .nav-links.open { display: flex; }
+    .nav-links a { height: 44px; padding: 0 1.5rem; }
+    .hamburger { display: block; }
+    .section { padding: 44px 1.25rem; }
+    .news-item { grid-template-columns: 1fr; gap: 4px; }
+    .join-banner { flex-direction: column; align-items: flex-start; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">NAP Lab<span>@ NIT Rourkela</span></a>
+    <div class="nav-links" id="navLinks">
+      <a href="/" class="active">Home</a>
+      <a href="/team">Team</a>
+      <a href="/publications">Publications</a>
+      <a href="/research">Teaching</a>
+      <a href="/vacancies">Join Us</a>
+    </div>
+    <button class="hamburger" id="menuBtn" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div>
+    <p class="hero-label">Nuclear Astrophysics &amp; Physics</p>
+    <h1>Probing the densest objects in the universe</h1>
+    <p>We are a research group at the <a href="https://www.nitrkl.ac.in/" style="color:var(--accent-mid);text-decoration:underline">National Institute of Technology, Rourkela</a>, India, studying neutron star physics, dark matter, and multi-messenger astrophysics.</p>
+    <div class="hero-cta">
+      <a href="/research" class="btn btn-primary">Our Research</a>
+      <a href="/publications" class="btn btn-secondary">Publications</a>
+    </div>
+  </div>
+  <div>
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-num">4</div>
+        <div class="stat-label">Research themes</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">3</div>
+        <div class="stat-label">PhD students</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">2020</div>
+        <div class="stat-label">Founded</div>
+      </div>
+    </div>
+    <div style="margin-top:16px; border:0.5px solid var(--border); border-radius:var(--radius); overflow:hidden;">
+      <img src="https://bharatiop.github.io/images/slider7001400/mr1.png"
+           alt="Neutron star mass-radius diagram"
+           style="width:100%; height:220px; object-fit:cover; display:block;"
+           onerror="this.style.display='none'">
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- RESEARCH AREAS -->
+<section class="section">
+  <div class="section-header">
+    <p class="section-eyebrow">Focus Areas</p>
+    <h2 class="section-title">What we study</h2>
+  </div>
+  <div class="research-grid">
+    <div class="research-card">
+      <div class="research-icon">⭐</div>
+      <h3>Equation of State</h3>
+      <p>Deciphering the composition of dense matter inside neutron stars — what they are made of and how matter behaves at nuclear densities.</p>
+    </div>
+    <div class="research-card">
+      <div class="research-icon">🔮</div>
+      <h3>Hyperons in Neutron Stars</h3>
+      <p>Exploring strangeness-bearing particles (hyperons) at the core of massive neutron stars and their effect on stellar properties.</p>
+    </div>
+    <div class="research-card">
+      <div class="research-icon">🌡</div>
+      <h3>Thermal Evolution</h3>
+      <p>Investigating how the internal temperature of isolated and accreting neutron stars evolves over cosmic timescales.</p>
+    </div>
+    <div class="research-card">
+      <div class="research-icon">🌑</div>
+      <h3>Dark Matter Constraints</h3>
+      <p>Using neutron star observations to constrain dark matter — uncovering potential signatures and interactions in these cosmic laboratories.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- TEAM -->
+<section class="section">
+  <div class="section-header">
+    <p class="section-eyebrow">People</p>
+    <h2 class="section-title">Our team</h2>
+  </div>
+
+  <!-- PI -->
+  <div class="team-grid" style="margin-bottom:32px;">
+    <div class="team-card" style="grid-column: span 1; max-width:220px;">
+      <span class="pi-tag">PI</span>
+      <div class="team-avatar">
+        <img src="https://bharatiop.github.io/images/teampic/bk_pic.jpeg" alt="Bharat Kumar" onerror="this.parentElement.classList.add('initials'); this.parentElement.innerHTML='BK'">
+      </div>
+      <h3>Bharat Kumar</h3>
+      <div class="role">Assistant Professor · since 2020</div>
+      <a href="https://bharatiop.github.io/downloads/CV.pdf" class="topic" style="margin-top:6px;">CV ↗</a>
+    </div>
+  </div>
+
+  <p class="section-eyebrow" style="margin-bottom:16px;">PhD Students</p>
+  <div class="team-grid" style="margin-bottom:32px;">
+    <div class="team-card">
+      <div class="team-avatar">
+        <img src="https://bharatiop.github.io/images/teampic/pinku_pic.png" alt="Pinku Routaray" onerror="this.parentElement.classList.add('initials'); this.parentElement.innerHTML='PR'">
+      </div>
+      <h3>Pinku Routaray</h3>
+      <div class="role">PhD Student · joined 2021</div>
+      <span class="topic">Dark Matter in NSs</span>
+    </div>
+    <div class="team-card">
+      <div class="team-avatar">
+        <img src="https://bharatiop.github.io/images/teampic/sayantan_pic.png" alt="Sayantan Ghosh" onerror="this.parentElement.classList.add('initials'); this.parentElement.innerHTML='SG'">
+      </div>
+      <h3>Sayantan Ghosh</h3>
+      <div class="role">PhD Student · joined 2022</div>
+      <span class="topic">Quasinormal Modes</span>
+    </div>
+    <div class="team-card">
+      <div class="team-avatar">
+        <img src="https://bharatiop.github.io/images/teampic/probit_pic.png" alt="Probit J. Kalita" onerror="this.parentElement.classList.add('initials'); this.parentElement.innerHTML='PK'">
+      </div>
+      <h3>Probit J. Kalita</h3>
+      <div class="role">PhD Student · joined 2022</div>
+      <span class="topic">NS Composition</span>
+    </div>
+  </div>
+
+  <p class="section-eyebrow" style="margin-bottom:16px;">Master Students</p>
+  <div class="team-grid">
+    <div class="team-card">
+      <div class="team-avatar initials">KK</div>
+      <h3>Kanika Karan</h3>
+      <div class="role">MSc Thesis</div>
+      <span class="topic">Quasinormal Modes</span>
+    </div>
+    <div class="team-card">
+      <div class="team-avatar initials">SS</div>
+      <h3>Shubhajit Saha</h3>
+      <div class="role">MSc Thesis</div>
+      <span class="topic">Quarkyonic Matter</span>
+    </div>
+  </div>
+
+  <div style="margin-top:28px;">
+    <a href="/team" class="btn btn-secondary">View all team members &amp; alumni →</a>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- NEWS -->
+<section class="section">
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:3rem; align-items:start;">
+
+    <div>
+      <div class="section-header">
+        <p class="section-eyebrow">Updates</p>
+        <h2 class="section-title">News</h2>
+      </div>
+      <div class="news-list">
+        <div class="news-item">
+          <span class="news-date">23 Dec 2024</span>
+          <p class="news-text">Congrats to Pinku for Best Poster Award at DAE High Energy Physics Symposium, BHU — <a href="https://indico.cern.ch/event/1426931/" target="_blank">see event ↗</a></p>
+        </div>
+        <div class="news-item">
+          <span class="news-date">1 Sep 2023</span>
+          <p class="news-text">Pinku's paper accepted in <a href="https://shorturl.at/nBPT3" target="_blank">MNRAS ↗</a></p>
+        </div>
+        <div class="news-item">
+          <span class="news-date">Jun 2020</span>
+          <p class="news-text">NAP Lab established at NIT Rourkela under Dr. Bharat Kumar.</p>
+        </div>
+      </div>
+      <div style="margin-top:20px;">
+        <a href="/allnews.html" class="btn btn-secondary">All news →</a>
+      </div>
+    </div>
+
+    <!-- RECENT PUBS -->
+    <div>
+      <div class="section-header">
+        <p class="section-eyebrow">Selected Output</p>
+        <h2 class="section-title">Recent publications</h2>
+      </div>
+      <div class="pub-list">
+        <div class="pub-item">
+          <span class="pub-year">2024</span>
+          <div class="pub-info">
+            <h4>Dark matter effects on neutron star properties from a relativistic mean-field approach</h4>
+            <p>Routaray, Kumar et al. · MNRAS</p>
+          </div>
+        </div>
+        <div class="pub-item">
+          <span class="pub-year">2023</span>
+          <div class="pub-info">
+            <h4>Quasinormal modes and tidal deformability of neutron stars</h4>
+            <p>Ghosh, Kumar et al.</p>
+          </div>
+        </div>
+        <div class="pub-item">
+          <span class="pub-year">2023</span>
+          <div class="pub-info">
+            <h4>Hyperons and the hyperon puzzle in dense nuclear matter</h4>
+            <p>Kalita, Kumar et al.</p>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top:20px;">
+        <a href="/publications" class="btn btn-secondary">Full publication list →</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- JOIN US -->
+<section class="section">
+  <div class="join-banner">
+    <div>
+      <p>We are looking for passionate PhD and Master students to join the team.
+        <span>Open positions in neutron star physics, dark matter, and nuclear astrophysics.</span>
+      </p>
+    </div>
+    <a href="/vacancies" class="btn btn-primary">See openings →</a>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- CONTACT + FUNDING -->
+<section class="section">
+  <div class="bottom-grid">
+    <div class="info-block">
+      <h3>Contact</h3>
+      <address>
+        MC202, Department of Physics and Astronomy<br>
+        National Institute of Technology, Rourkela<br>
+        Odisha 769008, India<br><br>
+        <a href="mailto:kumarbh@nitrkl.ac.in">kumarbh@nitrkl.ac.in</a><br>
+        <a href="https://shorturl.at/hxMY5" target="_blank">View on Maps ↗</a>
+      </address>
+    </div>
+    <div class="info-block">
+      <h3>Funding &amp; Affiliations</h3>
+      <p>
+        Supported by the <a href="https://www.serbonline.in/SERB/HomePage#call" target="_blank">Science and Engineering Research Board (SERB)</a>, Government of India.<br><br>
+        Part of the <a href="https://website.nitrkl.ac.in/PH/" target="_blank">Department of Physics and Astronomy</a> at NIT Rourkela.
+      </p>
+      <div style="margin-top:18px; display:flex; gap:16px; align-items:center; flex-wrap:wrap;">
+        <img src="https://bharatiop.github.io/images/logopic/nitrlogo.svg" alt="NIT Rourkela" height="40" onerror="this.style.display='none'">
+        <img src="https://bharatiop.github.io/images/logopic/serblogo.png" alt="SERB" height="36" onerror="this.style.display='none'">
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2024 NAP Lab, NIT Rourkela · Built with <a href="https://jekyllrb.com" target="_blank">Jekyll</a> · <a href="/aboutwebsite.html">About this site</a></p>
+</footer>
+
+<script>
+  const btn = document.getElementById('menuBtn');
+  const links = document.getElementById('navLinks');
+  btn.addEventListener('click', () => links.classList.toggle('open'));
+</script>
+
+</body>
+</html>
