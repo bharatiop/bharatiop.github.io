@@ -1,10 +1,3 @@
----
-title: "NAP Lab"
-layout: homelay
-excerpt: "Nuclear Astrophysics & Physics Lab @ NIT Rourkela"
-sitemap: true
-permalink: /
----
 <!DOCTYPE html>
 <html lang="en">
 <head>
