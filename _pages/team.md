@@ -1,7 +1,7 @@
 ---
 title: "Team"
 layout: default
-excerpt: "NAP Lab team members — PI, PhD students, master students, and alumni"
+excerpt: "NAP Lab team — PI, PhD students, master students, and alumni. NIT Rourkela."
 sitemap: true
 permalink: /team/
 ---
@@ -12,7 +12,7 @@ permalink: /team/
     <h1>Group Members</h1>
     <p style="margin-top:10px;font-size:14.5px;color:var(--text-muted);">
       We are looking for passionate new PhD students, Postdocs, and Master students to join the team.
-      <a href="/vacancies" style="color:var(--accent-mid);">See openings →</a>
+      <a href="{{ site.url }}{{ site.baseurl }}/vacancies" style="color:var(--accent-mid);">See openings →</a>
     </p>
   </div>
 </div>
@@ -26,11 +26,11 @@ permalink: /team/
   </div>
 
   <div style="border:0.5px solid var(--border);border-radius:var(--radius);padding:28px;display:flex;gap:28px;align-items:flex-start;margin-bottom:48px;flex-wrap:wrap;">
-    <div style="width:110px;height:110px;border-radius:50%;overflow:hidden;border:2px solid var(--border);flex-shrink:0;">
+    <div style="width:110px;height:110px;border-radius:50%;overflow:hidden;border:2px solid var(--border);flex-shrink:0;background:var(--accent-light);display:flex;align-items:center;justify-content:center;">
       <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/bk_pic.jpeg"
            alt="Dr. Bharat Kumar"
            style="width:100%;height:100%;object-fit:cover;"
-           onerror="this.parentElement.style.background='var(--accent-light)';this.style.display='none'">
+           onerror="this.parentElement.innerHTML='<span style=\'font-family:var(--serif);font-size:30px;color:var(--accent-mid)\'>BK</span>'">
     </div>
     <div style="flex:1;min-width:220px;">
       <span class="pi-badge">Principal Investigator</span>
@@ -39,18 +39,24 @@ permalink: /team/
       <ul style="list-style:none;font-size:13.5px;color:var(--text-muted);line-height:2;">
         <li>🎓 M.Sc. in Physics, AMU Aligarh</li>
         <li>🎓 Ph.D. with <a href="https://www.iopb.res.in/members/patra" style="color:var(--accent-mid)">S K Patra</a>, <a href="https://www.iopb.res.in/index" style="color:var(--accent-mid)">IOP Bhubaneswar</a></li>
-        <li>🔬 Postdoc — LIGO-India Group of <a href="http://www.gw.iucaa.in/sukanta-bose/" style="color:var(--accent-mid)">Sukanta Bose</a>, IUCAA Pune</li>
-        <li>🔬 Postdoc — Group of <a href="https://www.ccs.tsukuba.ac.jp/eng/research-divisions/division-of-nuclear-physics/" style="color:var(--accent-mid)">Takashi Nakatsukasa</a>, University of Tsukuba, Japan</li>
+        <li>🔬 Postdoc — LIGO-India group of <a href="http://www.gw.iucaa.in/sukanta-bose/" style="color:var(--accent-mid)">Sukanta Bose</a>, IUCAA Pune</li>
+        <li>🔬 Postdoc — Group of <a href="https://www.ccs.tsukuba.ac.jp/eng/" style="color:var(--accent-mid)">Takashi Nakatsukasa</a>, University of Tsukuba, Japan</li>
       </ul>
-      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:14px;">
-        <a href="/downloads/CV.pdf" class="btn btn-secondary btn-sm">CV (PDF)</a>
+      <p style="font-size:13.5px;color:var(--text-muted);line-height:1.75;margin-top:10px;margin-bottom:14px;">
+        Research interests: neutron star equation of state, oscillation modes, dark matter in compact stars, multi-messenger astrophysics, gravitational waves, and nuclear structure.
+      </p>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;">
+        <a href="{{ site.url }}{{ site.baseurl }}/downloads/CV.pdf" class="btn btn-secondary btn-sm">CV (PDF)</a>
         <a href="https://scholar.google.com/citations?user=YourGoogleScholarID" class="btn btn-secondary btn-sm" target="_blank" rel="noopener">Google Scholar ↗</a>
         <a href="https://orcid.org/0000-0000-0000-0000" class="btn btn-secondary btn-sm" target="_blank" rel="noopener">ORCID ↗</a>
         <a href="https://arxiv.org/search/?searchtype=author&query=Kumar+Bharat" class="btn btn-secondary btn-sm" target="_blank" rel="noopener">arXiv ↗</a>
+        <a href="https://website.nitrkl.ac.in/PH/FacultyDetails/kumarbh" class="btn btn-secondary btn-sm" target="_blank" rel="noopener">Faculty Page ↗</a>
         <a href="mailto:kumarbh@nitrkl.ac.in" class="btn btn-secondary btn-sm">Email</a>
       </div>
     </div>
   </div>
+
+  <hr class="team-section-divider">
 
   <!-- ===== PhD STUDENTS ===== -->
   <div class="section-header">
@@ -67,15 +73,15 @@ permalink: /team/
       </div>
       <h3>Pinku Routaray</h3>
       <div class="role">Ph.D. Student<br>Joined July 2021<br>M.Sc., Berhampur University</div>
-      <span class="tag">Dark Matter in Neutron Stars</span>
+      <span class="tag">Dark Matter in NSs</span>
       <div class="team-links mt-4">
         <a href="https://arxiv.org/search/?searchtype=author&query=Routaray+Pinku" class="tag" target="_blank" rel="noopener">arXiv ↗</a>
         <a href="mailto:routaraypinku@gmail.com" class="tag">Email</a>
       </div>
-      <div style="margin-top:10px;font-size:12px;color:var(--text-light);">
-        <strong>Recent papers:</strong><br>
-        <a href="https://doi.org/10.1093/mnras/stad2628" style="color:var(--accent-mid);font-size:12px;" target="_blank">MNRAS 25, 5492 (2023)</a><br>
-        <a href="https://iopscience.iop.org/article/10.1088/1475-7516/2023/10/073" style="color:var(--accent-mid);font-size:12px;" target="_blank">JCAP 10, 073 (2023)</a>
+      <div style="margin-top:12px;text-align:left;font-size:12px;color:var(--text-light);line-height:1.65;">
+        <strong style="color:var(--text-muted);">Recent papers:</strong><br>
+        <a href="https://doi.org/10.1093/mnras/stad2628" style="color:var(--accent-mid);" target="_blank">MNRAS 25, 5492 (2023)</a><br>
+        <a href="https://iopscience.iop.org/article/10.1088/1475-7516/2023/10/073" style="color:var(--accent-mid);" target="_blank">JCAP 10, 073 (2023)</a>
       </div>
     </div>
 
@@ -86,15 +92,15 @@ permalink: /team/
       </div>
       <h3>Sayantan Ghosh</h3>
       <div class="role">Ph.D. Student<br>Joined July 2022<br>M.Sc., Banaras Hindu University</div>
-      <span class="tag">Quasinormal Modes in NSs</span>
+      <span class="tag">Quasinormal Modes</span>
       <div class="team-links mt-4">
         <a href="https://arxiv.org/search/?searchtype=author&query=Ghosh+Sayantan" class="tag" target="_blank" rel="noopener">arXiv ↗</a>
         <a href="mailto:sayantanghosh1999@gmail.com" class="tag">Email</a>
       </div>
-      <div style="margin-top:10px;font-size:12px;color:var(--text-light);">
-        <strong>Recent papers:</strong><br>
-        <a href="https://arxiv.org/abs/2307.06892" style="color:var(--accent-mid);font-size:12px;" target="_blank">arXiv:2307.06892 (2023)</a><br>
-        <a href="https://arxiv.org/abs/2401.08347" style="color:var(--accent-mid);font-size:12px;" target="_blank">arXiv:2401.08347 (2024)</a>
+      <div style="margin-top:12px;text-align:left;font-size:12px;color:var(--text-light);line-height:1.65;">
+        <strong style="color:var(--text-muted);">Recent papers:</strong><br>
+        <a href="https://arxiv.org/abs/2307.06892" style="color:var(--accent-mid);" target="_blank">arXiv:2307.06892 (2023)</a><br>
+        <a href="https://arxiv.org/abs/2401.08347" style="color:var(--accent-mid);" target="_blank">arXiv:2401.08347 (2024)</a>
       </div>
     </div>
 
@@ -105,23 +111,25 @@ permalink: /team/
       </div>
       <h3>Probit J. Kalita</h3>
       <div class="role">Ph.D. Student<br>Joined July 2022<br>M.Sc., Tezpur University</div>
-      <span class="tag">Composition &amp; Structure of NSs</span>
+      <span class="tag">NS Composition</span>
       <div class="team-links mt-4">
         <a href="https://arxiv.org/search/?searchtype=author&query=Kalita+Probit" class="tag" target="_blank" rel="noopener">arXiv ↗</a>
         <a href="mailto:probit.kalita@gmail.com" class="tag">Email</a>
       </div>
-      <div style="margin-top:10px;font-size:12px;color:var(--text-light);">
-        <strong>Recent papers:</strong><br>
-        <a href="https://iopscience.iop.org/article/10.1088/1475-7516/2024/04/065" style="color:var(--accent-mid);font-size:12px;" target="_blank">JCAP 04, 065 (2024)</a>
+      <div style="margin-top:12px;text-align:left;font-size:12px;color:var(--text-light);line-height:1.65;">
+        <strong style="color:var(--text-muted);">Recent papers:</strong><br>
+        <a href="https://iopscience.iop.org/article/10.1088/1475-7516/2024/04/065" style="color:var(--accent-mid);" target="_blank">JCAP 04, 065 (2024)</a>
       </div>
     </div>
 
   </div>
 
+  <hr class="team-section-divider">
+
   <!-- ===== MASTER STUDENTS ===== -->
   <div class="section-header">
     <span class="eyebrow">Thesis Projects</span>
-    <h2 class="section-title">Master Students</h2>
+    <h2 class="section-title">Current Master Students</h2>
   </div>
 
   <div class="team-grid" style="margin-bottom:48px;">
@@ -132,7 +140,7 @@ permalink: /team/
              onerror="this.parentElement.classList.add('initials');this.parentElement.textContent='KK';this.remove()">
       </div>
       <h3>Kanika Karan</h3>
-      <div class="role">Ongoing MSc Thesis</div>
+      <div class="role">Ongoing MSc Thesis<br>Dept. of Physics &amp; Astronomy</div>
       <span class="tag">Quasinormal Modes in NSs</span>
       <div class="team-links mt-4">
         <a href="mailto:kanikakakran05062001@gmail.com" class="tag">Email</a>
@@ -145,7 +153,7 @@ permalink: /team/
              onerror="this.parentElement.classList.add('initials');this.parentElement.textContent='SS';this.remove()">
       </div>
       <h3>Shubhajit Saha</h3>
-      <div class="role">Ongoing MSc Thesis</div>
+      <div class="role">Ongoing MSc Thesis<br>Dept. of Physics &amp; Astronomy</div>
       <span class="tag">Quarkyonic Matter</span>
       <div class="team-links mt-4">
         <a href="mailto:shubhajitsaha80@gmail.com" class="tag">Email</a>
@@ -154,15 +162,31 @@ permalink: /team/
 
   </div>
 
-  <hr class="divider" style="margin-bottom:48px;">
+  <hr class="team-section-divider">
 
   <!-- ===== ALUMNI ===== -->
   <div class="section-header">
     <span class="eyebrow">Former Members</span>
-    <h2 class="section-title">Alumni</h2>
+    <h2 class="section-title">Alumni — Where are they now?</h2>
   </div>
 
-  <div class="team-grid" style="margin-bottom:32px;">
+  <div class="team-grid" style="margin-bottom:40px;">
+
+    <div class="team-card">
+      <div class="team-avatar">
+        <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/athul_pic.png" alt="Athul K P"
+             onerror="this.parentElement.classList.add('initials');this.parentElement.textContent='AK';this.remove()">
+      </div>
+      <h3>Athul K P</h3>
+      <div class="role">MSc Thesis · 2021–2022</div>
+      <span class="tag">f- and p-mode Oscillations</span>
+      <div class="mt-4">
+        <span class="tag tag-green" style="font-size:11px;">→ PhD at Florida State University, USA</span>
+      </div>
+      <div class="team-links mt-4">
+        <a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.106.063005" class="tag" target="_blank" rel="noopener">Phys. Rev. D (2022) ↗</a>
+      </div>
+    </div>
 
     <div class="team-card">
       <div class="team-avatar">
@@ -171,7 +195,7 @@ permalink: /team/
       </div>
       <h3>Sailesh Ranjan Mohanty</h3>
       <div class="role">IMSc Thesis · 2022–2023</div>
-      <span class="tag">Anisotropy &amp; Gravitational Collapse</span>
+      <span class="tag">Anisotropy &amp; Collapse</span>
       <div class="team-links mt-4">
         <a href="https://arxiv.org/abs/2304.02439" class="tag" target="_blank" rel="noopener">arXiv ↗</a>
         <a href="https://iopscience.iop.org/article/10.1088/1475-7516/2024/03/054" class="tag" target="_blank" rel="noopener">JCAP 2024 ↗</a>
@@ -213,27 +237,14 @@ permalink: /team/
 
     <div class="team-card">
       <div class="team-avatar">
-        <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/athul_pic.png" alt="Athul K P"
-             onerror="this.parentElement.classList.add('initials');this.parentElement.textContent='AK';this.remove()">
-      </div>
-      <h3>Athul K P</h3>
-      <div class="role">MSc Thesis · 2021–2022<br><span class="tag-green tag" style="font-size:11px;">→ PhD at FSU, USA</span></div>
-      <span class="tag">f- and p-mode Oscillations</span>
-      <div class="team-links mt-4">
-        <a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.106.063005" class="tag" target="_blank" rel="noopener">Phys. Rev. D 2022 ↗</a>
-      </div>
-    </div>
-
-    <div class="team-card">
-      <div class="team-avatar">
         <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/sen_pic.jpeg" alt="Souhardya Sen"
              onerror="this.parentElement.classList.add('initials');this.parentElement.textContent='SS';this.remove()">
       </div>
       <h3>Souhardya Sen</h3>
       <div class="role">MSc Thesis · 2021–2022</div>
-      <span class="tag">Radial Oscillations in NSs</span>
+      <span class="tag">Radial Oscillations</span>
       <div class="team-links mt-4">
-        <a href="https://arxiv.org/pdf/2205.02076.pdf" class="tag" target="_blank" rel="noopener">Galaxies 2023 ↗</a>
+        <a href="https://arxiv.org/pdf/2205.02076.pdf" class="tag" target="_blank" rel="noopener">Galaxies (2023) ↗</a>
       </div>
     </div>
 
@@ -269,13 +280,13 @@ permalink: /team/
 
   </div>
 
-  <!-- JOIN US BANNER -->
+  <!-- JOIN BANNER -->
   <div class="join-banner">
     <div class="join-banner-text">
       <p>Interested in joining the NAP Lab?</p>
       <span>We welcome applications from motivated PhD, Postdoc, and MSc candidates with interest in nuclear physics, astrophysics, gravitational waves, or dark matter.</span>
     </div>
-    <a href="/vacancies" class="btn btn-primary">View open positions →</a>
+    <a href="{{ site.url }}{{ site.baseurl }}/vacancies" class="btn btn-primary">View open positions →</a>
   </div>
 
 </div>
