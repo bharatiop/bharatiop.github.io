@@ -5,12 +5,13 @@
       <span class="nav-logo-sub">@ NIT Rourkela</span>
     </a>
     <div class="nav-links" id="navLinks">
-      <a href="{{ site.url }}{{ site.baseurl }}/" {% if page.permalink == '/' %}class="active"{% endif %}>Home</a>
-      <a href="{{ site.url }}{{ site.baseurl }}/team" {% if page.permalink == '/team/' %}class="active"{% endif %}>Team</a>
-      <a href="{{ site.url }}{{ site.baseurl }}/publications" {% if page.permalink == '/publications/' %}class="active"{% endif %}>Publications</a>
-      <a href="{{ site.url }}{{ site.baseurl }}/events" {% if page.permalink == '/events/' %}class="active"{% endif %}>Events</a>
-      <a href="{{ site.url }}{{ site.baseurl }}/research" {% if page.permalink == '/research/' %}class="active"{% endif %}>Teaching</a>
-      <a href="{{ site.url }}{{ site.baseurl }}/vacancies" {% if page.permalink == '/vacancies/' %}class="active"{% endif %}>Join Us</a>
+      <a href="{{ site.url }}{{ site.baseurl }}/"            {% if page.permalink == '/' %}class="active"{% endif %}>Home</a>
+      <a href="{{ site.url }}{{ site.baseurl }}/research"    {% if page.permalink == '/research/' %}class="active"{% endif %}>Research</a>
+      <a href="{{ site.url }}{{ site.baseurl }}/publications"{% if page.permalink == '/publications/' %}class="active"{% endif %}>Publications</a>
+      <a href="{{ site.url }}{{ site.baseurl }}/team"        {% if page.permalink == '/team/' %}class="active"{% endif %}>Team</a>
+      <a href="{{ site.url }}{{ site.baseurl }}/events"      {% if page.permalink == '/events/' %}class="active"{% endif %}>Events</a>
+      <a href="{{ site.url }}{{ site.baseurl }}/teaching"    {% if page.permalink == '/teaching/' %}class="active"{% endif %}>Teaching</a>
+      <a href="{{ site.url }}{{ site.baseurl }}/vacancies"   {% if page.permalink == '/vacancies/' %}class="active"{% endif %}>Join Us</a>
     </div>
     <button class="hamburger" id="menuBtn" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
       <span></span><span></span><span></span>

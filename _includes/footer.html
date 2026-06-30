@@ -2,7 +2,7 @@
   <div class="footer-inner">
     <div class="footer-brand">
       <div class="footer-logo">NAP Lab</div>
-      <p class="footer-desc">Nuclear Astrophysics & Physics Laboratory at NIT Rourkela. Studying neutron stars, dense matter, dark matter, and multi-messenger astrophysics.</p>
+      <p class="footer-desc">Nuclear Astrophysics &amp; Physics Laboratory at NIT Rourkela. Studying neutron stars, dense matter, dark matter, and multi-messenger astrophysics.</p>
       <div class="footer-logos">
         <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/nitrlogo.svg" alt="NIT Rourkela" onerror="this.style.display='none'">
         <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/serblogo.png" alt="SERB" onerror="this.style.display='none'">
@@ -12,10 +12,11 @@
     <div class="footer-col">
       <h4>Navigate</h4>
       <a href="{{ site.url }}{{ site.baseurl }}/">Home</a>
-      <a href="{{ site.url }}{{ site.baseurl }}/team">Team</a>
+      <a href="{{ site.url }}{{ site.baseurl }}/research">Research</a>
       <a href="{{ site.url }}{{ site.baseurl }}/publications">Publications</a>
+      <a href="{{ site.url }}{{ site.baseurl }}/team">Team</a>
       <a href="{{ site.url }}{{ site.baseurl }}/events">Events</a>
-      <a href="{{ site.url }}{{ site.baseurl }}/research">Teaching</a>
+      <a href="{{ site.url }}{{ site.baseurl }}/teaching">Teaching</a>
       <a href="{{ site.url }}{{ site.baseurl }}/vacancies">Join Us</a>
       <a href="{{ site.url }}{{ site.baseurl }}/allnews.html">All News</a>
     </div>
@@ -23,7 +24,7 @@
     <div class="footer-col">
       <h4>Contact</h4>
       <address>
-        MC202, Dept. of Physics & Astronomy<br>
+        MC202, Dept. of Physics &amp; Astronomy<br>
         NIT Rourkela, Odisha 769008<br>
         India<br>
         <a href="mailto:kumarbh@nitrkl.ac.in">kumarbh@nitrkl.ac.in</a><br>
@@ -34,10 +35,11 @@
   </div>
 
   <div class="footer-bottom">
-    <p>© 2025 NAP Lab, NIT Rourkela · Funded by <a href="https://www.serbonline.in/" target="_blank">SERB</a></p>
+    <p>© <span id="fyear"></span> NAP Lab, NIT Rourkela · Funded by <a href="https://www.serbonline.in/" target="_blank" rel="noopener">SERB</a></p>
     <div style="display:flex;gap:16px;">
       <a href="{{ site.url }}{{ site.baseurl }}/aboutwebsite.html">About this site</a>
       <a href="https://github.com/bharatiop/bharatiop.github.io" target="_blank" rel="noopener">GitHub ↗</a>
     </div>
   </div>
 </footer>
+<script>document.getElementById('fyear').textContent=new Date().getFullYear();</script>
