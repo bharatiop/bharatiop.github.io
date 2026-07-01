@@ -1,0 +1,105 @@
+<!-- LIVE CLOCK + MINI CALENDAR (include — kept out of Markdown to avoid kramdown mangling) -->
+<div class="datetime-widget">
+  <div class="clock-strip">
+    <div class="clock-time" id="clockTime">--:--:--</div>
+    <div class="clock-right">
+      <div class="clock-date" id="clockDate">Loading…</div>
+      <div class="clock-tz">IST (UTC+5:30)</div>
+    </div>
+  </div>
+  <div class="mini-cal">
+    <div class="cal-header">
+      <button class="cal-nav-btn" id="calPrev" type="button">‹</button>
+      <span class="cal-month" id="calMonthLabel"></span>
+      <button class="cal-nav-btn" id="calNext" type="button">›</button>
+    </div>
+    <div class="cal-grid" id="calGrid"></div>
+  </div>
+  <div class="cal-events">
+    <div class="cal-events-title">Upcoming · This Quarter</div>
+    <div class="cal-event-item">
+      <div class="cal-event-dot"></div>
+      <div class="cal-event-text"><strong>GWsNS-2026 School</strong> Jun 28–Jul 3, 2026 · Roscoff, France</div>
+    </div>
+    <div class="cal-event-item">
+      <div class="cal-event-dot"></div>
+      <div class="cal-event-text"><strong>Asian GW Astronomy Meeting</strong> Jul 5–11, 2026 · Chiang Mai</div>
+    </div>
+    <div class="cal-event-item">
+      <div class="cal-event-dot"></div>
+      <div class="cal-event-text"><strong>Multimessenger Astrophysics 2026</strong> Jul 6–14, 2026 · Barcelona</div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  function updateClock() {
+    var now = new Date();
+    var istMs = now.getTime() + (now.getTimezoneOffset()*60000) + (5.5*3600000);
+    var ist = new Date(istMs);
+    var h = String(ist.getHours()).padStart(2,'0');
+    var m = String(ist.getMinutes()).padStart(2,'0');
+    var s = String(ist.getSeconds()).padStart(2,'0');
+    var timeEl = document.getElementById('clockTime');
+    var dateEl = document.getElementById('clockDate');
+    if (!timeEl || !dateEl) return;
+    timeEl.textContent = h+':'+m+':'+s;
+    var days=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+    var months=['January','February','March','April','May','June','July','August','September','October','November','December'];
+    dateEl.textContent = days[ist.getDay()]+', '+ist.getDate()+' '+months[ist.getMonth()]+' '+ist.getFullYear();
+  }
+  updateClock();
+  setInterval(updateClock, 1000);
+
+  var CAL_EVENTS=[{y:2026,m:5,d:28},{y:2026,m:6,d:5},{y:2026,m:6,d:6},{y:2026,m:8,d:16}];
+  var calYear, calMonth;
+
+  function renderCal(){
+    var grid = document.getElementById('calGrid');
+    var label = document.getElementById('calMonthLabel');
+    if (!grid || !label) return;
+    var months=['January','February','March','April','May','June','July','August','September','October','November','December'];
+    label.textContent = months[calMonth]+' '+calYear;
+    grid.innerHTML='';
+    ['Su','Mo','Tu','We','Th','Fr','Sa'].forEach(function(d){
+      var el=document.createElement('div'); el.className='cal-dow'; el.textContent=d; grid.appendChild(el);
+    });
+    var firstDay=new Date(calYear,calMonth,1).getDay();
+    var daysInMonth=new Date(calYear,calMonth+1,0).getDate();
+    var today=new Date();
+    for(var i=0;i<firstDay;i++){
+      var blank=document.createElement('div'); blank.className='cal-day other-month'; grid.appendChild(blank);
+    }
+    for(var d=1; d<=daysInMonth; d++){
+      var el=document.createElement('div'); el.className='cal-day'; el.textContent=d;
+      if(d===today.getDate() && calMonth===today.getMonth() && calYear===today.getFullYear()) el.classList.add('today');
+      var hasEv = CAL_EVENTS.some(function(e){ return e.y===calYear && e.m===calMonth && e.d===d; });
+      if(hasEv && !el.classList.contains('today')) el.classList.add('has-event');
+      grid.appendChild(el);
+    }
+  }
+
+  function initCalendar(){
+    var prevBtn = document.getElementById('calPrev');
+    var nextBtn = document.getElementById('calNext');
+    if (!prevBtn || !nextBtn) return;
+    var now = new Date();
+    calYear = now.getFullYear();
+    calMonth = now.getMonth();
+    renderCal();
+    prevBtn.addEventListener('click', function(){
+      calMonth--; if(calMonth<0){calMonth=11; calYear--;} renderCal();
+    });
+    nextBtn.addEventListener('click', function(){
+      calMonth++; if(calMonth>11){calMonth=0; calYear++;} renderCal();
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initCalendar);
+  } else {
+    initCalendar();
+  }
+})();
+</script>
