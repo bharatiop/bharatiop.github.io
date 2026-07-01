@@ -346,3 +346,40 @@ address a:hover { text-decoration: underline; }
   .clock-time{font-size:26px;}
   .news-feed-grid{grid-template-columns:1fr;}
 }
+
+/* ---- GLOBAL JOBS BANNER (homepage, under Focus Areas) ---- */
+.jobs-banner {
+  margin-top: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  background: var(--accent-light);
+  border: 0.5px solid #c0d8ee;
+  border-radius: var(--radius);
+  padding: 18px 24px;
+}
+.jobs-banner-text {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex: 1;
+  min-width: 240px;
+}
+.jobs-banner-icon { font-size: 24px; flex-shrink: 0; }
+.jobs-banner-text strong { display: block; font-size: 13.5px; color: var(--accent); margin-bottom: 2px; }
+.jobs-banner-text span { font-size: 12.5px; color: var(--text-muted); line-height: 1.5; }
+
+/* ---- WORLD POSITIONS TABLE (vacancies page) ---- */
+.world-positions-list { display: flex; flex-direction: column; gap: 10px; }
+.world-position-row {
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  border: 0.5px solid var(--border); border-radius: var(--radius-sm);
+  padding: 14px 18px; flex-wrap: wrap; transition: border-color 0.15s;
+}
+.world-position-row:hover { border-color: #b8cfe0; }
+.world-position-row .wp-org { font-size: 13.5px; font-weight: 600; color: var(--text); }
+.world-position-row .wp-desc { font-size: 12.5px; color: var(--text-muted); margin-top: 2px; }
+.world-position-row a { font-size: 12.5px; color: var(--accent-mid); font-weight: 500; white-space: nowrap; }
+.world-position-row a:hover { text-decoration: underline; }
