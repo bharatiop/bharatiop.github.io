@@ -26,59 +26,88 @@ permalink: /events/
   <div class="events-grid" style="margin-bottom:52px;">
 
     <div class="event-card">
+      <div class="event-date-badge"><div class="month">Jun</div><div class="day">28</div></div>
+      <div class="event-info">
+        <h4>GWsNS-2026 — Gravitational Waves from Neutron Stars</h4>
+        <p class="event-meta">Jun 28 – Jul 3, 2026 · Station Biologique de Roscoff, France</p>
+        <a href="https://indico.in2p3.fr/event/37646/" target="_blank" rel="noopener">IN2P3 Indico page ↗</a>
+      </div>
+    </div>
+
+    <div class="event-card">
       <div class="event-date-badge"><div class="month">Jul</div><div class="day">5</div></div>
       <div class="event-info">
         <h4>Asian Gravitational-Wave Astronomy Meeting (AGWAM 2026)</h4>
-        <p class="event-meta">Jul 5–11, 2026 · Chiang Mai, Thailand</p>
-        <a href="https://agwam2026.org" target="_blank" rel="noopener">Conference site ↗</a>
+        <p class="event-meta">Jul 5–11, 2026 · NARIT, Chiang Mai, Thailand</p>
+        <a href="https://www.lisamission.org/news/conferences/conferences-future/" target="_blank" rel="noopener">LISA events listing ↗</a>
       </div>
     </div>
 
     <div class="event-card">
-      <div class="event-date-badge"><div class="month">Aug</div><div class="day">10</div></div>
+      <div class="event-date-badge"><div class="month">Jul</div><div class="day">6</div></div>
       <div class="event-info">
-        <h4>IGWN School 2026</h4>
-        <p class="event-meta">Aug 10–14, 2026 · Perimeter Institute, Waterloo, Canada</p>
-        <a href="https://www.ligo.org" target="_blank" rel="noopener">IGWN school info ↗</a>
+        <h4>Multimessenger Astrophysics 2026 — 9th ICE Summer School</h4>
+        <p class="event-meta">Jul 6–14, 2026 · Institute of Space Sciences (ICE-CSIC), Barcelona, Spain</p>
+        <a href="https://www.nu.to.infn.it/conf/" target="_blank" rel="noopener">Conference listing ↗</a>
       </div>
     </div>
 
     <div class="event-card">
-      <div class="event-date-badge"><div class="month">Aug</div><div class="day">30</div></div>
+      <div class="event-date-badge"><div class="month">Jul</div><div class="day">19</div></div>
       <div class="event-info">
-        <h4>Zakopane Conference on Nuclear Physics</h4>
-        <p class="event-meta">Aug 30 – Sep 6, 2026 · Zakopane, Poland</p>
-        <a href="https://www.zakopane2026.ifj.edu.pl" target="_blank" rel="noopener">Conference site ↗</a>
+        <h4>New Frontiers in Strong Gravity — Benasque Workshop</h4>
+        <p class="event-meta">Jul 19–31, 2026 · Centro de Ciencias de Benasque, Spain</p>
+        <a href="https://benasque.org/2026relativity/" target="_blank" rel="noopener">Workshop site ↗</a>
+      </div>
+    </div>
+
+    <div class="event-card">
+      <div class="event-date-badge"><div class="month">Sep</div><div class="day">16</div></div>
+      <div class="event-info">
+        <h4>Erice School — Neutrinos in Cosmology, Astro-, Particle &amp; Nuclear Physics</h4>
+        <p class="event-meta">Sep 16–22, 2026 · Erice, Italy (47th course)</p>
+        <a href="https://www.nu.to.infn.it/conf/" target="_blank" rel="noopener">Conference listing ↗</a>
       </div>
     </div>
 
     <div class="event-card">
       <div class="event-date-badge"><div class="month">Oct</div><div class="day">5</div></div>
       <div class="event-info">
-        <h4>NuSym26 — Nuclear Symmetry Energy Symposium</h4>
-        <p class="event-meta">Oct 5–9, 2026 · Venue TBA</p>
-        <a href="https://nucleartheory.org/nusym" target="_blank" rel="noopener">Series info ↗</a>
+        <h4>8th Workshop on Compound-Nuclear Reactions and Related Topics</h4>
+        <p class="event-meta">Oct 5–9, 2026 · ACROS Fukuoka Conference Room, Japan</p>
+        <a href="https://conference-service.com/conferences/nuclear-physics.html" target="_blank" rel="noopener">Conference listing ↗</a>
       </div>
     </div>
 
     <div class="event-card">
-      <div class="event-date-badge"><div class="month">Dec</div><div class="day">14</div></div>
+      <div class="event-date-badge"><div class="month">Nov</div><div class="day">2</div></div>
       <div class="event-info">
-        <h4>DAE Symposium on Nuclear Physics 2026</h4>
-        <p class="event-meta">Dec 2026 · India (host TBA)</p>
-        <a href="https://www.dae.gov.in" target="_blank" rel="noopener">DAE info ↗</a>
+        <h4>A NICER Legacy: Neutron Stars, Black Holes &amp; Time-Domain Astronomy</h4>
+        <p class="event-meta">Nov 2–4, 2026 · Royal Sonesta Hotel, Baltimore, USA (JSI Workshop)</p>
+        <a href="https://heasarc.gsfc.nasa.gov/docs/heasarc/meetings.html" target="_blank" rel="noopener">HEASARC meetings listing ↗</a>
       </div>
     </div>
 
     <div class="event-card">
-      <div class="event-date-badge"><div class="month">Jan</div><div class="day">12</div></div>
+      <div class="event-date-badge"><div class="month">~</div><div class="day">'27</div></div>
       <div class="event-info">
-        <h4>Compact Stars in the QCD Phase Diagram (CSQCD) 2027</h4>
-        <p class="event-meta">Jan 2027 · Venue TBA</p>
-        <a href="https://www.csqcd.com" target="_blank" rel="noopener">Series info ↗</a>
+        <h4>LASNPA 2026 — Latin American Symposium on Nuclear Physics</h4>
+        <p class="event-meta">2026 · Brazil (15th edition)</p>
+        <a href="https://conference-service.com/conferences/nuclear-physics.html" target="_blank" rel="noopener">Conference listing ↗</a>
       </div>
     </div>
 
+  </div>
+
+  <div style="border:0.5px solid var(--border);border-radius:var(--radius);padding:20px 24px;margin-bottom:52px;">
+    <h4 style="font-size:14px;font-weight:600;color:var(--text);margin-bottom:8px;">More listings</h4>
+    <p style="font-size:13px;color:var(--text-muted);line-height:1.75;">
+      For the full, continuously updated calendar of gravitational-wave and nuclear/astro-particle physics events, see
+      <a href="https://www.lisamission.org/news/conferences/conferences-future/" target="_blank" rel="noopener" style="color:var(--accent-mid)">LISA Consortium — Future Events ↗</a>,
+      <a href="https://www.nu.to.infn.it/conf/" target="_blank" rel="noopener" style="color:var(--accent-mid)">INFN Neutrino Unbound Conferences ↗</a>,
+      <a href="https://conference-service.com/conferences/nuclear-physics.html" target="_blank" rel="noopener" style="color:var(--accent-mid)">COMS Nuclear Physics Calendar ↗</a>, and
+      <a href="https://heasarc.gsfc.nasa.gov/docs/heasarc/meetings.html" target="_blank" rel="noopener" style="color:var(--accent-mid)">NASA HEASARC Meeting Announcements ↗</a>.
+    </p>
   </div>
 
   <hr class="divider" style="margin-bottom:48px;">

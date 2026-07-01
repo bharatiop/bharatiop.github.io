@@ -13,6 +13,9 @@ permalink: /vacancies/
     <p style="margin-top:10px;font-size:14.5px;color:var(--text-muted);max-width:640px;">
       We welcome motivated researchers at all levels with interest in nuclear physics, neutron star astrophysics, gravitational waves, or dark matter.
     </p>
+    <p style="margin-top:10px;">
+      <a href="#world-positions" style="font-size:13px;color:var(--accent-mid);">🌍 Looking elsewhere too? Jump to worldwide PhD/Postdoc listings ↓</a>
+    </p>
   </div>
 </div>
 
@@ -150,5 +153,116 @@ permalink: /vacancies/
     <a href="mailto:kumarbh@nitrkl.ac.in" class="btn btn-primary">kumarbh@nitrkl.ac.in</a>
     <a href="{{ site.url }}{{ site.baseurl }}/research" class="btn btn-secondary" style="margin-left:10px;">Our Research →</a>
   </div>
+
+  <hr class="divider" style="margin:56px 0;">
+
+  <!-- WORLD POSITIONS -->
+  <h2 class="vacancy-section-title" id="world-positions" style="margin-top:0;">🌍 PhD &amp; Postdoc Positions Worldwide</h2>
+  <p style="font-size:14px;color:var(--text-muted);line-height:1.75;margin-bottom:24px;max-width:720px;">
+    Beyond NAP Lab, here are live job boards and a few specific current openings in nuclear physics, astrophysics, and gravitational waves around the world. These boards are updated continuously — check back often.
+  </p>
+
+  <h4 style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:14px;letter-spacing:0.3px;">Live job boards (continuously updated)</h4>
+  <div class="world-positions-list" style="margin-bottom:36px;">
+    <div class="world-position-row">
+      <div>
+        <div class="wp-org">Academic Jobs Online — Physics</div>
+        <div class="wp-desc">Faculty, postdoc &amp; PhD listings across all physics subfields worldwide.</div>
+      </div>
+      <a href="https://academicjobsonline.org/ajo/physics" target="_blank" rel="noopener">Browse listings ↗</a>
+    </div>
+    <div class="world-position-row">
+      <div>
+        <div class="wp-org">Academic Jobs Online — Astrophysics</div>
+        <div class="wp-desc">Dedicated astrophysics &amp; astronomy postdoc/PhD/faculty board.</div>
+      </div>
+      <a href="https://academicjobsonline.org/ajo/Astrphys" target="_blank" rel="noopener">Browse listings ↗</a>
+    </div>
+    <div class="world-position-row">
+      <div>
+        <div class="wp-org">LIGO/LAAC Job Postings Wiki</div>
+        <div class="wp-desc">PhD &amp; postdoc openings specifically in gravitational-wave detector science and data analysis.</div>
+      </div>
+      <a href="https://wiki.ligo.org/LAAC/JobPostings" target="_blank" rel="noopener">Browse listings ↗</a>
+    </div>
+    <div class="world-position-row">
+      <div>
+        <div class="wp-org">LISA Consortium — Positions</div>
+        <div class="wp-desc">PhD &amp; postdoc openings in gravitational-wave theory, data analysis, and space-based detectors (LISA).</div>
+      </div>
+      <a href="https://www.lisamission.org/news/positions/" target="_blank" rel="noopener">Browse listings ↗</a>
+    </div>
+    <div class="world-position-row">
+      <div>
+        <div class="wp-org">Hyperspace@gu — PhD Jobs</div>
+        <div class="wp-desc">PhD positions in gravitational theory, numerical relativity, and cosmology, mostly in Europe.</div>
+      </div>
+      <a href="https://hyperspace.uni-frankfurt.de/tag/phd/" target="_blank" rel="noopener">Browse listings ↗</a>
+    </div>
+    <div class="world-position-row">
+      <div>
+        <div class="wp-org">Hyperspace@gu — Postdoc Jobs</div>
+        <div class="wp-desc">Postdoctoral positions in gravitational physics and related theory.</div>
+      </div>
+      <a href="https://hyperspace.uni-frankfurt.de/tag/postdoc/" target="_blank" rel="noopener">Browse listings ↗</a>
+    </div>
+    <div class="world-position-row">
+      <div>
+        <div class="wp-org">FRIB Theory Alliance — Jobs</div>
+        <div class="wp-desc">Faculty, postdoc &amp; INT job openings in nuclear theory and computational nuclear astrophysics.</div>
+      </div>
+      <a href="https://fribtheoryalliance.org/content/jobs.php?title=Job+Postings" target="_blank" rel="noopener">Browse listings ↗</a>
+    </div>
+    <div class="world-position-row">
+      <div>
+        <div class="wp-org">scholarshipdb.net — Gravitational Wave Positions</div>
+        <div class="wp-desc">Aggregated PhD/postdoc/faculty listings tagged specifically for gravitational-wave research.</div>
+      </div>
+      <a href="http://scholarshipdb.net/gravitational-wave-scholarships" target="_blank" rel="noopener">Browse listings ↗</a>
+    </div>
+  </div>
+
+  <h4 style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:14px;letter-spacing:0.3px;">A few specific current openings</h4>
+  <div class="world-positions-list">
+    <div class="world-position-row">
+      <div>
+        <div class="wp-org">Postdoc — INFN Rome / Virgo (Eyes-on-GR)</div>
+        <div class="wp-desc">Testing GR with multiband GW observations. Starting Fall 2026–Spring 2027.</div>
+      </div>
+      <a href="https://wiki.ligo.org/LAAC/JobPostings" target="_blank" rel="noopener">Details ↗</a>
+    </div>
+    <div class="world-position-row">
+      <div>
+        <div class="wp-org">Multiple Postdocs — ICTP-AP / UCAS, China</div>
+        <div class="wp-desc">Gravitational-wave and dark-matter physics &amp; phenomenology, with the LIGO group at UCAS.</div>
+      </div>
+      <a href="https://www.lisamission.org/news/positions/" target="_blank" rel="noopener">Details ↗</a>
+    </div>
+    <div class="world-position-row">
+      <div>
+        <div class="wp-org">Postdoc — ICCUB, University of Barcelona</div>
+        <div class="wp-desc">3-year postdoc in GW physics — parameter estimation, neutron star asteroseismology, NR simulations.</div>
+      </div>
+      <a href="https://icc.ub.edu/job-offers" target="_blank" rel="noopener">Details ↗</a>
+    </div>
+    <div class="world-position-row">
+      <div>
+        <div class="wp-org">PhD — IGFAE, Santiago de Compostela / ICE-CSIC, Spain</div>
+        <div class="wp-desc">PhD positions in theoretical astrophysics and gravitational-wave astronomy.</div>
+      </div>
+      <a href="https://academicjobsonline.org/ajo/Astrphys" target="_blank" rel="noopener">Details ↗</a>
+    </div>
+    <div class="world-position-row">
+      <div>
+        <div class="wp-org">Postdocs — Peking University (Theoretical Nuclear Physics)</div>
+        <div class="wp-desc">Ab initio nuclear theory and nuclear/particle interface, applications to dark matter &amp; nuclear astrophysics.</div>
+      </div>
+      <a href="https://fribtheoryalliance.org/content/jobs.php?title=Job+Postings" target="_blank" rel="noopener">Details ↗</a>
+    </div>
+  </div>
+
+  <p style="font-size:11.5px;color:var(--text-light);margin-top:20px;">
+    Listings change frequently — always verify deadlines and details on the official job board or institution page before applying.
+  </p>
 
 </div>

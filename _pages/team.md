@@ -47,8 +47,8 @@ permalink: /team/
       </p>
       <div style="display:flex;gap:8px;flex-wrap:wrap;">
         <a href="{{ site.url }}{{ site.baseurl }}/downloads/CV.pdf" class="btn btn-secondary btn-sm">CV (PDF)</a>
-        <a href="https://scholar.google.com/citations?user=YourGoogleScholarID" class="btn btn-secondary btn-sm" target="_blank" rel="noopener">Google Scholar ↗</a>
-        <a href="https://orcid.org/0000-0000-0000-0000" class="btn btn-secondary btn-sm" target="_blank" rel="noopener">ORCID ↗</a>
+        <a href="https://scholar.google.com/citations?user=4498IKgAAAAJ&hl=en" class="btn btn-secondary btn-sm" target="_blank" rel="noopener">Google Scholar (live citations) ↗</a>
+        <a href="https://orcid.org/0000-0000-0000-0000" data-todo="replace-with-real-orcid" class="btn btn-secondary btn-sm" target="_blank" rel="noopener">ORCID ↗</a>
         <a href="https://arxiv.org/search/?searchtype=author&query=Kumar+Bharat" class="btn btn-secondary btn-sm" target="_blank" rel="noopener">arXiv ↗</a>
         <a href="https://website.nitrkl.ac.in/PH/FacultyDetails/kumarbh" class="btn btn-secondary btn-sm" target="_blank" rel="noopener">Faculty Page ↗</a>
         <a href="mailto:kumarbh@nitrkl.ac.in" class="btn btn-secondary btn-sm">Email</a>
