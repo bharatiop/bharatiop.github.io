@@ -68,25 +68,6 @@ permalink: /team/
 
     <div class="team-card">
       <div class="team-avatar">
-        <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/pinku_pic.png" alt="Pinku Routaray"
-             onerror="this.parentElement.classList.add('initials');this.parentElement.textContent='PR';this.remove()">
-      </div>
-      <h3>Pinku Routaray</h3>
-      <div class="role">Ph.D. Student<br>Joined July 2021<br>M.Sc., Berhampur University</div>
-      <span class="tag">Dark Matter in NSs</span>
-      <div class="team-links mt-4">
-        <a href="https://arxiv.org/search/?searchtype=author&query=Routaray+Pinku" class="tag" target="_blank" rel="noopener">arXiv ↗</a>
-        <a href="mailto:routaraypinku@gmail.com" class="tag">Email</a>
-      </div>
-      <div style="margin-top:12px;text-align:left;font-size:12px;color:var(--text-light);line-height:1.65;">
-        <strong style="color:var(--text-muted);">Recent papers:</strong><br>
-        <a href="https://doi.org/10.1093/mnras/stad2628" style="color:var(--accent-mid);" target="_blank">MNRAS 25, 5492 (2023)</a><br>
-        <a href="https://iopscience.iop.org/article/10.1088/1475-7516/2023/10/073" style="color:var(--accent-mid);" target="_blank">JCAP 10, 073 (2023)</a>
-      </div>
-    </div>
-
-    <div class="team-card">
-      <div class="team-avatar">
         <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/sayantan_pic.png" alt="Sayantan Ghosh"
              onerror="this.parentElement.classList.add('initials');this.parentElement.textContent='SG';this.remove()">
       </div>
@@ -94,6 +75,7 @@ permalink: /team/
       <div class="role">Ph.D. Student<br>Joined July 2022<br>M.Sc., Banaras Hindu University</div>
       <span class="tag">Quasinormal Modes</span>
       <div class="team-links mt-4">
+        <a href="https://sites.google.com/view/sayantanns" class="tag" target="_blank" rel="noopener">Homepage ↗</a>
         <a href="https://arxiv.org/search/?searchtype=author&query=Ghosh+Sayantan" class="tag" target="_blank" rel="noopener">arXiv ↗</a>
         <a href="mailto:sayantanghosh1999@gmail.com" class="tag">Email</a>
       </div>
@@ -126,13 +108,27 @@ permalink: /team/
 
   <hr class="team-section-divider">
 
-  <!-- ===== MASTER STUDENTS ===== -->
+  <!-- ===== ALUMNI ===== -->
   <div class="section-header">
-    <span class="eyebrow">Thesis Projects</span>
-    <h2 class="section-title">Current Master Students</h2>
+    <span class="eyebrow">Former Members</span>
+    <h2 class="section-title">Alumni — Where are they now?</h2>
   </div>
 
-  <div class="team-grid" style="margin-bottom:48px;">
+  <div class="team-grid" style="margin-bottom:40px;">
+
+    <div class="team-card">
+      <div class="team-avatar">
+        <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/pinku_pic.png" alt="Pinku Routaray"
+             onerror="this.parentElement.classList.add('initials');this.parentElement.textContent='PR';this.remove()">
+      </div>
+      <h3>Pinku Routaray</h3>
+      <div class="role">Ph.D. · 2021–2026</div>
+      <span class="tag">Dark Matter in NSs</span>
+      <div class="team-links mt-4">
+        <a href="https://scholar.google.com/citations?user=d1j-L6cAAAAJ&amp;hl=en" class="tag" target="_blank" rel="noopener">Scholar ↗</a>
+        <a href="https://arxiv.org/search/?searchtype=author&amp;query=Routaray+Pinku" class="tag" target="_blank" rel="noopener">arXiv ↗</a>
+      </div>
+    </div>
 
     <div class="team-card">
       <div class="team-avatar">
@@ -140,7 +136,7 @@ permalink: /team/
              onerror="this.parentElement.classList.add('initials');this.parentElement.textContent='KK';this.remove()">
       </div>
       <h3>Kanika Karan</h3>
-      <div class="role">Ongoing MSc Thesis<br>Dept. of Physics &amp; Astronomy</div>
+      <div class="role">MSc Thesis · 2025–2026</div>
       <span class="tag">Quasinormal Modes in NSs</span>
       <div class="team-links mt-4">
         <a href="mailto:kanikakakran05062001@gmail.com" class="tag">Email</a>
@@ -153,24 +149,12 @@ permalink: /team/
              onerror="this.parentElement.classList.add('initials');this.parentElement.textContent='SS';this.remove()">
       </div>
       <h3>Shubhajit Saha</h3>
-      <div class="role">Ongoing MSc Thesis<br>Dept. of Physics &amp; Astronomy</div>
+      <div class="role">MSc Thesis · 2025–2026</div>
       <span class="tag">Quarkyonic Matter</span>
       <div class="team-links mt-4">
         <a href="mailto:shubhajitsaha80@gmail.com" class="tag">Email</a>
       </div>
     </div>
-
-  </div>
-
-  <hr class="team-section-divider">
-
-  <!-- ===== ALUMNI ===== -->
-  <div class="section-header">
-    <span class="eyebrow">Former Members</span>
-    <h2 class="section-title">Alumni — Where are they now?</h2>
-  </div>
-
-  <div class="team-grid" style="margin-bottom:40px;">
 
     <div class="team-card">
       <div class="team-avatar">

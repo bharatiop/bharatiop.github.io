@@ -135,15 +135,10 @@ permalink: /teaching/
   </div>
 
   <p style="font-size:14px;color:var(--text-muted);line-height:1.75;margin-bottom:24px;">
-    Dr. Kumar currently supervises three doctoral students at NIT Rourkela, with additional MSc/IMSc thesis students each year. Students work on computational astrophysics, nuclear theory, and gravitational wave physics. For supervision inquiries please see the <a href="{{ site.url }}{{ site.baseurl }}/vacancies" style="color:var(--accent-mid);">Openings page →</a>
+    Dr. Kumar currently supervises two doctoral students at NIT Rourkela, with additional MSc/IMSc thesis students each year. Students work on computational astrophysics, nuclear theory, and gravitational wave physics. For supervision inquiries please see the <a href="{{ site.url }}{{ site.baseurl }}/vacancies" style="color:var(--accent-mid);">Openings page →</a>
   </p>
 
   <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px;">
-    <div style="border:0.5px solid var(--border);border-radius:var(--radius-sm);padding:18px 20px;">
-      <span class="tag" style="margin-bottom:10px;display:inline-block;">Ongoing PhD</span>
-      <h4 style="font-size:14px;font-weight:600;margin-bottom:4px;">Pinku Routaray</h4>
-      <p style="font-size:12.5px;color:var(--text-muted);">Dark matter in neutron stars, universal relations, GW170817 posteriors.</p>
-    </div>
     <div style="border:0.5px solid var(--border);border-radius:var(--radius-sm);padding:18px 20px;">
       <span class="tag" style="margin-bottom:10px;display:inline-block;">Ongoing PhD</span>
       <h4 style="font-size:14px;font-weight:600;margin-bottom:4px;">Sayantan Ghosh</h4>

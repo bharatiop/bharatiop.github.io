@@ -203,19 +203,6 @@ permalink: /
   <div class="team-grid" style="margin-bottom:32px;">
     <div class="team-card">
       <div class="team-avatar">
-        <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/pinku_pic.png" alt="Pinku Routaray"
-             onerror="this.parentElement.classList.add('initials');this.parentElement.textContent='PR';this.remove()">
-      </div>
-      <h3>Pinku Routaray</h3>
-      <div class="role">Ph.D. Student · joined Jul 2021<br>M.Sc., Berhampur University</div>
-      <span class="tag">Dark Matter in NSs</span>
-      <div class="team-links mt-4">
-        <a href="https://arxiv.org/search/?searchtype=author&query=Routaray" class="tag" target="_blank" rel="noopener">arXiv ↗</a>
-        <a href="mailto:routaraypinku@gmail.com" class="tag">Email</a>
-      </div>
-    </div>
-    <div class="team-card">
-      <div class="team-avatar">
         <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/sayantan_pic.png" alt="Sayantan Ghosh"
              onerror="this.parentElement.classList.add('initials');this.parentElement.textContent='SG';this.remove()">
       </div>
@@ -223,6 +210,7 @@ permalink: /
       <div class="role">Ph.D. Student · joined Jul 2022<br>M.Sc., Banaras Hindu University</div>
       <span class="tag">Quasinormal Modes</span>
       <div class="team-links mt-4">
+        <a href="https://sites.google.com/view/sayantanns" class="tag" target="_blank" rel="noopener">Homepage ↗</a>
         <a href="https://arxiv.org/search/?searchtype=author&query=Ghosh+Sayantan" class="tag" target="_blank" rel="noopener">arXiv ↗</a>
         <a href="mailto:sayantanghosh1999@gmail.com" class="tag">Email</a>
       </div>
@@ -241,27 +229,6 @@ permalink: /
       </div>
     </div>
   </div>
-  <p class="eyebrow mb-4">Master Students</p>
-  <div class="team-grid" style="margin-bottom:28px;">
-    <div class="team-card">
-      <div class="team-avatar">
-        <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/kanika_pic.jpg" alt="Kanika Karan"
-             onerror="this.parentElement.classList.add('initials');this.parentElement.textContent='KK';this.remove()">
-      </div>
-      <h3>Kanika Karan</h3>
-      <div class="role">Ongoing MSc Thesis</div>
-      <span class="tag">Quasinormal Modes in NSs</span>
-    </div>
-    <div class="team-card">
-      <div class="team-avatar">
-        <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/Subhojit_pic.jpg" alt="Shubhajit Saha"
-             onerror="this.parentElement.classList.add('initials');this.parentElement.textContent='SS';this.remove()">
-      </div>
-      <h3>Shubhajit Saha</h3>
-      <div class="role">Ongoing MSc Thesis</div>
-      <span class="tag">Quarkyonic Matter</span>
-    </div>
-  </div>
   <a href="{{ site.url }}{{ site.baseurl }}/team" class="btn btn-secondary">View full team &amp; alumni →</a>
 </section>
 
@@ -278,7 +245,7 @@ permalink: /
       <span class="pub-year">2024</span>
       <div class="pub-info">
         <h4>Probing the Impact of Delta-Baryons on Nuclear Matter and Non-Radial Oscillations in Neutron Stars</h4>
-        <p class="pub-authors">Probit Jyoti Kalita, Pinku Routaray, Sayantan Ghosh, Bharat Kumar, Bijay K. Agrawal</p>
+        <p class="pub-authors"><a href="https://scholar.google.com/citations?user=h9DkoD4AAAAJ&amp;hl=en" target="_blank" rel="noopener">Probit Jyoti Kalita</a>, <a href="https://scholar.google.com/citations?user=d1j-L6cAAAAJ&amp;hl=en" target="_blank" rel="noopener">Pinku Routaray</a>, <a href="https://sites.google.com/view/sayantanns" target="_blank" rel="noopener">Sayantan Ghosh</a>, Bharat Kumar, Bijay K. Agrawal</p>
         <div class="pub-links"><a href="https://doi.org/10.1088/1475-7516/2024/04/065" class="pub-link" target="_blank" rel="noopener">JCAP 04, 065 (2024)</a><a href="https://arxiv.org/abs/2308.09008" class="pub-link" target="_blank" rel="noopener">arXiv</a></div>
       </div>
     </div>
@@ -286,7 +253,7 @@ permalink: /
       <span class="pub-year">2023</span>
       <div class="pub-info">
         <h4>Probing the Impact of WIMP Dark Matter on Universal Relations, GW170817 Posterior and Radial Oscillations</h4>
-        <p class="pub-authors">Pinku Routaray, Abdul Quddus, Kabir Chakravarti, Bharat Kumar</p>
+        <p class="pub-authors"><a href="https://scholar.google.com/citations?user=d1j-L6cAAAAJ&amp;hl=en" target="_blank" rel="noopener">Pinku Routaray</a>, Abdul Quddus, Kabir Chakravarti, Bharat Kumar</p>
         <div class="pub-links"><a href="https://doi.org/10.1093/mnras/stad2628" class="pub-link" target="_blank" rel="noopener">MNRAS 25, 5492 (2023)</a></div>
       </div>
     </div>
