@@ -1,3 +1,27 @@
+- name: Pinku Routaray
+  photo: pinku_pic.png
+  info: Ph.D. thesis project
+  duration: In the NAP Lab 2021-2026
+  email: routaraypinku@gmail.com
+  number_addit: 1
+  addit1: "Title: Probing Dark Matter in Neutron Stars"
+
+- name: Kanika Karan
+  photo: kanika_pic.jpg
+  info: MSc thesis project
+  duration: In the NAP Lab 2025-2026
+  email: kanikakakran05062001@gmail.com
+  number_addit: 1
+  addit1: "Title: Quasinormal modes in neutron stars"
+
+- name: Shubhajit Saha
+  photo: Subhojit_pic.jpg
+  info: MSc thesis project
+  duration: In the NAP Lab 2025-2026
+  email: shubhajitsaha80@gmail.com
+  number_addit: 1
+  addit1: "Title: Quarkyonic Matter"
+
 - name: Khokan Singhao
   photo: khokan_pic.jpeg
   info: MSc thesis project
