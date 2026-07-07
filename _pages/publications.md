@@ -27,6 +27,7 @@ permalink: /publications/
     <button class="btn btn-secondary btn-sm pub-filter" data-filter="dm" onclick="filterPubs(this,'dm')">Dark Matter</button>
     <button class="btn btn-secondary btn-sm pub-filter" data-filter="osc" onclick="filterPubs(this,'osc')">Oscillations</button>
     <button class="btn btn-secondary btn-sm pub-filter" data-filter="eos" onclick="filterPubs(this,'eos')">EoS</button>
+    <button class="btn btn-secondary btn-sm pub-filter" data-filter="2026" onclick="filterPubs(this,'2026')">2026</button>
     <button class="btn btn-secondary btn-sm pub-filter" data-filter="2025" onclick="filterPubs(this,'2025')">2025</button>
     <button class="btn btn-secondary btn-sm pub-filter" data-filter="2024" onclick="filterPubs(this,'2024')">2024</button>
     <button class="btn btn-secondary btn-sm pub-filter" data-filter="2023" onclick="filterPubs(this,'2023')">2023</button>
@@ -35,6 +36,41 @@ permalink: /publications/
   </div>
 
   <div class="pub-list" id="pubList">
+
+    <!-- 2026 -->
+    <div class="pub-item" data-year="2026" data-tags="osc eos emsg">
+      <span class="pub-year">2026</span>
+      <div class="pub-info">
+        <h4>Universal Relations and Correlation Analysis of Proto-Neutron Star Properties in Energy-Momentum Squared Gravity</h4>
+        <p class="pub-authors"><a href="https://sites.google.com/view/sayantanns" target="_blank" rel="noopener">Sayantan Ghosh</a></p>
+        <div class="pub-links">
+          <a href="https://arxiv.org/abs/2602.02069" class="pub-link" target="_blank" rel="noopener">arXiv:2602.02069</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pub-item" data-year="2026" data-tags="osc eos emsg">
+      <span class="pub-year">2026</span>
+      <div class="pub-info">
+        <h4>Spacetime Curvature as a Probe of Exotic Core Phases in Neutron Stars within Modified Gravity</h4>
+        <p class="pub-authors"><a href="https://sites.google.com/view/sayantanns" target="_blank" rel="noopener">Sayantan Ghosh</a>, Bharat Kumar, Subhash Mahapatra</p>
+        <div class="pub-links">
+          <a href="https://doi.org/10.1103/rjzl-pcr4" class="pub-link" target="_blank" rel="noopener">Phys. Rev. D 113, 024070 (2026)</a>
+          <a href="https://arxiv.org/abs/2508.08866" class="pub-link" target="_blank" rel="noopener">arXiv:2508.08866</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pub-item" data-year="2026" data-tags="osc eos emsg">
+      <span class="pub-year">2026</span>
+      <div class="pub-info">
+        <h4>Trace Anomaly and Interior Curvature of Neutron Stars in Energy-Momentum Squared Gravity</h4>
+        <p class="pub-authors">Ratikanta Swain, <a href="https://sites.google.com/view/sayantanns" target="_blank" rel="noopener">Sayantan Ghosh</a>, Bharat Kumar</p>
+        <div class="pub-links">
+          <a href="https://arxiv.org/abs/2606.20203" class="pub-link" target="_blank" rel="noopener">arXiv:2606.20203</a>
+        </div>
+      </div>
+    </div>
 
     <!-- 2025 -->
     <div class="pub-item" data-year="2025" data-tags="dm eos">
@@ -63,6 +99,52 @@ permalink: /publications/
       </div>
     </div>
 
+    <div class="pub-item" data-year="2025" data-tags="eos osc">
+      <span class="pub-year">2025</span>
+      <div class="pub-info">
+        <h4>Observable Signatures of a Quarkyonic Phase in Neutron Stars</h4>
+        <p class="pub-authors"><a href="https://scholar.google.com/citations?user=h9DkoD4AAAAJ&amp;hl=en" target="_blank" rel="noopener">Probit J Kalita</a>, Tuhin Malik, Tianqi Zhao, Bharat Kumar, James M. Lattimer</p>
+        <div class="pub-links">
+          <a href="https://arxiv.org/abs/2510.23405" class="pub-link" target="_blank" rel="noopener">arXiv:2510.23405</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pub-item" data-year="2025" data-tags="osc eos emsg">
+      <span class="pub-year">2025</span>
+      <div class="pub-info">
+        <h4>The Role of Adiabatic Sound Speeds in Neutron Star Radial Oscillations and Stability</h4>
+        <p class="pub-authors"><a href="https://sites.google.com/view/sayantanns" target="_blank" rel="noopener">Sayantan Ghosh</a>, Tianqi Zhao, Bharat Kumar, <a href="https://scholar.google.com/citations?user=mx_PbkcAAAAJ&amp;hl=en" target="_blank" rel="noopener">Sailesh Ranjan Mohanty</a></p>
+        <div class="pub-links">
+          <a href="https://doi.org/10.1088/1475-7516/2025/09/025" class="pub-link" target="_blank" rel="noopener">JCAP 09, 025 (2025)</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pub-item" data-year="2025" data-tags="osc emsg">
+      <span class="pub-year">2025</span>
+      <div class="pub-info">
+        <h4>Constraining the f-Mode Oscillations Frequency in Neutron Stars through Universal Relations in the Realm of Energy-Momentum Squared Gravity</h4>
+        <p class="pub-authors"><a href="https://sites.google.com/view/sayantanns" target="_blank" rel="noopener">Sayantan Ghosh</a></p>
+        <div class="pub-links">
+          <a href="https://doi.org/10.1007/s10714-025-03405-1" class="pub-link" target="_blank" rel="noopener">Gen. Relativ. Gravit. 57, 70 (2025)</a>
+          <a href="https://arxiv.org/abs/2412.20815" class="pub-link" target="_blank" rel="noopener">arXiv:2412.20815</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pub-item" data-year="2025" data-tags="osc">
+      <span class="pub-year">2025</span>
+      <div class="pub-info">
+        <h4>Astrophysical Constraints on Neutron Star f-Modes with a Nonparametric Equation of State Representation</h4>
+        <p class="pub-authors"><a href="https://scholar.google.com/citations?user=mx_PbkcAAAAJ&amp;hl=en" target="_blank" rel="noopener">Sailesh Ranjan Mohanty</a>, Utkarsh Mali, H.C. Das, Bharat Kumar, Philippe Landry</p>
+        <div class="pub-links">
+          <a href="https://doi.org/10.1103/5v5y-d3v8" class="pub-link" target="_blank" rel="noopener">Phys. Rev. D 112, 123043 (2025)</a>
+          <a href="https://arxiv.org/abs/2410.16689" class="pub-link" target="_blank" rel="noopener">arXiv:2410.16689</a>
+        </div>
+      </div>
+    </div>
+
     <!-- 2024 -->
 
     <div class="pub-item" data-year="2024" data-tags="delta osc eos">
@@ -81,7 +163,7 @@ permalink: /publications/
       <span class="pub-year">2024</span>
       <div class="pub-info">
         <h4>The Impact of Anisotropy on Neutron Star Properties: Insights from I–f–C Universal Relations</h4>
-        <p class="pub-authors">Sailesh Ranjan Mohanty, <a href="https://sites.google.com/view/sayantanns" target="_blank" rel="noopener">Sayantan Ghosh</a>, <a href="https://scholar.google.com/citations?user=d1j-L6cAAAAJ&amp;hl=en" target="_blank" rel="noopener">Pinku Routaray</a>, H C Das, Bharat Kumar</p>
+        <p class="pub-authors"><a href="https://scholar.google.com/citations?user=mx_PbkcAAAAJ&amp;hl=en" target="_blank" rel="noopener">Sailesh Ranjan Mohanty</a>, <a href="https://sites.google.com/view/sayantanns" target="_blank" rel="noopener">Sayantan Ghosh</a>, <a href="https://scholar.google.com/citations?user=d1j-L6cAAAAJ&amp;hl=en" target="_blank" rel="noopener">Pinku Routaray</a>, H C Das, Bharat Kumar</p>
         <div class="pub-links">
           <a href="https://doi.org/10.1088/1475-7516/2024/03/054" class="pub-link" target="_blank" rel="noopener">JCAP 03, 054 (2024)</a>
           <a href="https://arxiv.org/abs/2304.02439" class="pub-link" target="_blank" rel="noopener">arXiv:2304.02439</a>
@@ -388,7 +470,7 @@ function filterPubs(btn, filter) {
       item.style.display = '';
     } else if (filter === 'highlight') {
       item.style.display = item.dataset.highlight === '1' ? '' : 'none';
-    } else if (['2025','2024','2023','2022','older'].includes(filter)) {
+    } else if (['2026','2025','2024','2023','2022','older'].includes(filter)) {
       item.style.display = item.dataset.year === filter ? '' : 'none';
     } else {
       var tags = item.dataset.tags || '';

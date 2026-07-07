@@ -145,6 +145,10 @@ permalink: /
       </div>
       <div class="news-list">
         <div class="news-item">
+          <span class="news-date">July 2026</span>
+          <p class="news-text"><strong>Congratulations to Pinku Routaray</strong> for successfully defending his PhD thesis and joining the <strong>Kavli Institute of Astronomy and Astrophysics, China</strong> as a postdoc!</p>
+        </div>
+        <div class="news-item">
           <span class="news-date">23 Dec 2024</span>
           <p class="news-text">Congrats to Pinku for Best Poster Award at the DAE High Energy Physics Symposium, BHU. <a href="https://indico.cern.ch/event/1426931/" target="_blank" rel="noopener">Event ↗</a></p>
         </div>
@@ -155,10 +159,6 @@ permalink: /
         <div class="news-item">
           <span class="news-date">1 Sep 2023</span>
           <p class="news-text">Pinku's paper on WIMP dark matter accepted in <a href="https://shorturl.at/nBPT3" target="_blank" rel="noopener">MNRAS ↗</a></p>
-        </div>
-        <div class="news-item">
-          <span class="news-date">Jun 2020</span>
-          <p class="news-text">NAP Lab established at NIT Rourkela under Dr. Bharat Kumar.</p>
         </div>
       </div>
       <div class="mt-6"><a href="{{ site.url }}{{ site.baseurl }}/allnews.html" class="btn btn-secondary">All news →</a></div>
@@ -250,27 +250,27 @@ permalink: /
       </div>
     </div>
     <div class="pub-item highlight-pub">
-      <span class="pub-year">2023</span>
+      <span class="pub-year">2025</span>
       <div class="pub-info">
-        <h4>Probing the Impact of WIMP Dark Matter on Universal Relations, GW170817 Posterior and Radial Oscillations</h4>
-        <p class="pub-authors"><a href="https://scholar.google.com/citations?user=d1j-L6cAAAAJ&amp;hl=en" target="_blank" rel="noopener">Pinku Routaray</a>, Abdul Quddus, Kabir Chakravarti, Bharat Kumar</p>
-        <div class="pub-links"><a href="https://doi.org/10.1093/mnras/stad2628" class="pub-link" target="_blank" rel="noopener">MNRAS 25, 5492 (2023)</a></div>
+        <h4>The Role of Adiabatic Sound Speeds in Neutron Star Radial Oscillations and Stability</h4>
+        <p class="pub-authors"><a href="https://sites.google.com/view/sayantanns" target="_blank" rel="noopener">Sayantan Ghosh</a>, Tianqi Zhao, Bharat Kumar, <a href="https://scholar.google.com/citations?user=mx_PbkcAAAAJ&amp;hl=en" target="_blank" rel="noopener">Sailesh Ranjan Mohanty</a></p>
+        <div class="pub-links"><a href="https://doi.org/10.1088/1475-7516/2025/09/025" class="pub-link" target="_blank" rel="noopener">JCAP 09, 025 (2025)</a></div>
       </div>
     </div>
     <div class="pub-item highlight-pub">
-      <span class="pub-year">2022</span>
+      <span class="pub-year">2025</span>
       <div class="pub-info">
-        <h4>Impact of the Equation of State on f- and p-Mode Oscillations of Neutron Stars</h4>
-        <p class="pub-authors">Athul Kunjipurayil, Tianqi Zhao, Bharat Kumar, Bijay K. Agrawal, Madappa Prakash</p>
-        <div class="pub-links"><a href="https://doi.org/10.1103/PhysRevD.106.063005" class="pub-link" target="_blank" rel="noopener">Phys. Rev. D 106, 063005 (2022)</a></div>
+        <h4>Observable Signatures of a Quarkyonic Phase in Neutron Stars</h4>
+        <p class="pub-authors"><a href="https://scholar.google.com/citations?user=h9DkoD4AAAAJ&amp;hl=en" target="_blank" rel="noopener">Probit J Kalita</a>, Tuhin Malik, Tianqi Zhao, Bharat Kumar, James M. Lattimer</p>
+        <div class="pub-links"><a href="https://arxiv.org/abs/2510.23405" class="pub-link" target="_blank" rel="noopener">arXiv:2510.23405</a></div>
       </div>
     </div>
     <div class="pub-item highlight-pub">
-      <span class="pub-year">2019</span>
+      <span class="pub-year">2026</span>
       <div class="pub-info">
-        <h4>Inferring Neutron Star Properties from GW170817 with Universal Relations</h4>
-        <p class="pub-authors">Bharat Kumar, Philippe Landry</p>
-        <div class="pub-links"><a href="https://doi.org/10.1103/PhysRevD.99.123026" class="pub-link" target="_blank" rel="noopener">Phys. Rev. D 99, 123026 (2019)</a></div>
+        <h4>Spacetime Curvature as a Probe of Exotic Core Phases in Neutron Stars within Modified Gravity</h4>
+        <p class="pub-authors"><a href="https://sites.google.com/view/sayantanns" target="_blank" rel="noopener">Sayantan Ghosh</a>, Bharat Kumar, Subhash Mahapatra</p>
+        <div class="pub-links"><a href="https://doi.org/10.1103/rjzl-pcr4" class="pub-link" target="_blank" rel="noopener">Phys. Rev. D 113, 024070 (2026)</a></div>
       </div>
     </div>
   </div>
@@ -279,6 +279,16 @@ permalink: /
     <a href="https://scholar.google.com/citations?user=4498IKgAAAAJ&hl=en" class="btn btn-secondary" target="_blank" rel="noopener" style="margin-left:10px;">Google Scholar ↗</a>
   </div>
 </section>
+
+<!-- Pinku PhD defence group photo + congratulations -->
+<div style="max-width:820px;margin:0 auto 1rem;">
+  <div style="border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;background:var(--accent-light);">
+    <img src="{{ site.url }}{{ site.baseurl }}/images/pinku-defence-group.jpg" alt="Group photo: Pinku Routaray PhD defence seminar at NIT Rourkela with lab members" style="width:100%;display:block;">
+    <div style="padding:10px 14px;font-size:13.5px;line-height:1.55;color:var(--text);">
+      <strong>Congratulations to Pinku Routaray</strong> for successfully defending his PhD thesis on “Dark Matter Effects on Neutron Star Structure and Observables”. He will join the <strong>Kavli Institute of Astronomy and Astrophysics, China</strong> as a postdoctoral researcher.
+    </div>
+  </div>
+</div>
 
 <hr class="divider">
 

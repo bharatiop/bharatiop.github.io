@@ -81,8 +81,8 @@ permalink: /team/
       </div>
       <div style="margin-top:12px;text-align:left;font-size:12px;color:var(--text-light);line-height:1.65;">
         <strong style="color:var(--text-muted);">Recent papers:</strong><br>
-        <a href="https://arxiv.org/abs/2307.06892" style="color:var(--accent-mid);" target="_blank">arXiv:2307.06892 (2023)</a><br>
-        <a href="https://arxiv.org/abs/2401.08347" style="color:var(--accent-mid);" target="_blank">arXiv:2401.08347 (2024)</a>
+        <a href="https://doi.org/10.1103/rjzl-pcr4" style="color:var(--accent-mid);" target="_blank">Phys. Rev. D 113, 024070 (2026)</a><br>
+        <a href="https://doi.org/10.1088/1475-7516/2025/09/025" style="color:var(--accent-mid);" target="_blank">JCAP 09, 025 (2025)</a>
       </div>
     </div>
 
@@ -100,6 +100,7 @@ permalink: /team/
       </div>
       <div style="margin-top:12px;text-align:left;font-size:12px;color:var(--text-light);line-height:1.65;">
         <strong style="color:var(--text-muted);">Recent papers:</strong><br>
+        <a href="https://arxiv.org/abs/2510.23405" style="color:var(--accent-mid);" target="_blank">arXiv:2510.23405 (2025)</a><br>
         <a href="https://iopscience.iop.org/article/10.1088/1475-7516/2024/04/065" style="color:var(--accent-mid);" target="_blank">JCAP 04, 065 (2024)</a>
       </div>
     </div>
@@ -124,6 +125,7 @@ permalink: /team/
       <h3>Pinku Routaray</h3>
       <div class="role">Ph.D. · 2021–2026</div>
       <span class="tag">Dark Matter in NSs</span>
+      <div style="margin-top:4px;"><span class="tag tag-green" style="font-size:11px;">→ Postdoc at Kavli Institute of Astronomy and Astrophysics, China</span></div>
       <div class="team-links mt-4">
         <a href="https://scholar.google.com/citations?user=d1j-L6cAAAAJ&amp;hl=en" class="tag" target="_blank" rel="noopener">Scholar ↗</a>
         <a href="https://arxiv.org/search/?searchtype=author&amp;query=Routaray+Pinku" class="tag" target="_blank" rel="noopener">arXiv ↗</a>
@@ -181,7 +183,7 @@ permalink: /team/
       <div class="role">IMSc Thesis · 2022–2023</div>
       <span class="tag">Anisotropy &amp; Collapse</span>
       <div class="team-links mt-4">
-        <a href="https://arxiv.org/abs/2304.02439" class="tag" target="_blank" rel="noopener">arXiv ↗</a>
+        <a href="https://arxiv.org/abs/2410.16689" class="tag" target="_blank" rel="noopener">arXiv:2410.16689 (2025) ↗</a>
         <a href="https://iopscience.iop.org/article/10.1088/1475-7516/2024/03/054" class="tag" target="_blank" rel="noopener">JCAP 2024 ↗</a>
       </div>
     </div>
