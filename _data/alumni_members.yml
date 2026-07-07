@@ -1,16 +1,16 @@
 - name: Pinku Routaray
   photo: pinku_pic.png
   info: Ph.D. thesis project
-  duration: In the NAP Lab 2021-2026; now Postdoc at Kavli IA A, China
+  duration: In the NAP Lab 2021-2026 (PhD completed 2026)
   email: routaraypinku@gmail.com
   number_addit: 2
   addit1: "Title: Probing Dark Matter in Neutron Stars"
-  addit2: "→ Kavli Institute of Astronomy and Astrophysics, China (Postdoc)"
+  addit2: "PhD completed; seeking postdoctoral positions"
 
 - name: Kanika Karan
   photo: kanika_pic.jpg
   info: MSc thesis project
-  duration: In the NAP Lab 2025-2026
+  duration: In the NAP Lab 2025-2026 (MSc completed)
   email: kanikakakran05062001@gmail.com
   number_addit: 1
   addit1: "Title: Quasinormal modes in neutron stars"
@@ -18,75 +18,83 @@
 - name: Shubhajit Saha
   photo: Subhojit_pic.jpg
   info: MSc thesis project
-  duration: In the NAP Lab 2025-2026
+  duration: In the NAP Lab 2025-2026; now PhD at NISER Bhubaneswar
   email: shubhajitsaha80@gmail.com
-  number_addit: 1
+  number_addit: 2
   addit1: "Title: Quarkyonic Matter"
+  addit2: "→ PhD Scholar, NISER Bhubaneswar"
 
 - name: Khokan Singhao
   photo: khokan_pic.jpeg
   info: MSc thesis project
-  duration: In the NAP Lab 2022-2023 
+  duration: In the NAP Lab 2022-2023; now Senior Physics Faculty at PhysicsWallah
   email: 421ph2133@nitrkl.ac.in 
-  number_addit: 1
+  number_addit: 2
   addit1: "Title: Exploring the impact of Delta-Baryons on the Properties of Neutron Stars"
+  addit2: "→ Senior Physics Faculty, PhysicsWallah (PW)"
   
 - name: Mrityunjoy Singha
   photo: muru_pic.jpeg
   info: MSc thesis project
-  duration: In the NAP Lab 2022-2023
+  duration: In the NAP Lab 2022-2023; now PhD at S. N. Bose, Kolkata
   email: 421ph2190@nitrkl.ac.in
-  number_addit: 1
+  number_addit: 2
   addit1: "Title: Dark Compact Objects"
+  addit2: "→ PhD, S. N. Bose National Centre for Basic Sciences, Kolkata"
   
 
 - name: Sailesh Ranjan Mohanty
   photo: sailesh_pic.jpeg
   info: IMSc thesis project
-  duration: In the NAP Lab 2022-2023
+  duration: In the NAP Lab 2022-2023; now IIT-JEE Physics Faculty
   email: 418ph5026@nitrkl.ac.in 
-  number_addit: 1
+  number_addit: 2
   addit1: "Title: Impact of Anisotropy on Neutron Star Properties: Insights from Non-adiabatic Gravitational Collapse"
+  addit2: "→ IIT-JEE Physics Faculty (ex-FIITJEE, MNR etc.)"
 
 - name: Shahebaj Hasan Shaikh
   photo: shahbaj_pic.jpeg
   info: MSc thesis project 
-  duration: In the NAP Lab 2022-2023
+  duration: In the NAP Lab 2022-2023; now PhD at IIT Kanpur
   email: 421ph2139@nitrkl.ac.in
-  number_addit: 1
+  number_addit: 2
   addit1: "Title: Finite temperature dependent EoS for nucleonic core of neutron stars"
+  addit2: "→ PhD Scholar / Research Scholar, IIT Kanpur"
   
 - name: Souhardya Sen 
   photo: sen_pic.jpeg
   info: MSc thesis project 
-  duration: In the NAP Lab 2021-2022
+  duration: In the NAP Lab 2021-2022; now PhD candidate in Astrophysics
   email: 419ph2148@nitrkl.ac.in 
-  number_addit: 1
+  number_addit: 2
   addit1: "Title: Radial Oscillations in Neutron Stars from Unified EoS"
-  
+  addit2: "→ PhD candidate in Astrophysics"
+
 - name: Athul K P
   photo: athul_pic.png
   info: MSc thesis project 
-  duration: In the NAP Lab 2021-2022, now doing PhD from FSU, USA
+  duration: In the NAP Lab 2021-2022, now PhD at FSU, USA
   email: 420ph2159@nitrkl.ac.in 
   number_addit: 2
   addit1: "Title: Impact of the EoS on f- and p-mode oscillations of neutron stars"
-  addit2: "Status: doing PhD from FSU, USA"
+  addit2: "→ PhD at Florida State University, USA (with J. Piekarewicz)"
 - name: Soumya Prakash Behera 
   photo: soumya_pic.png
   info: IMSc thesis project
-  duration: In the NAP Lab 2020-2021
+  duration: In the NAP Lab 2020-2021; now PhD (Biophysics) at Johns Hopkins University (defended 2026)
   email: 416ph5041@nitrkl.ac.in 
-  number_addit: 1
+  number_addit: 2
   addit1: "Title: Nuclear constraints on gravitational waves from deformed pulsars"
+  addit2: "→ PhD, Johns Hopkins University (Biophysics); recently defended"
 
 - name: Vikram Singh Khati
   photo: vikram_pic.png
   info: MSc thesis project
-  duration: In the NAP Lab 2020-2021
+  duration: In the NAP Lab 2020-2021; now Senior Staff Engineer at Equinix
   email: 419ph2112@nitrkl.ac.in 
-  number_addit: 1
+  number_addit: 2
   addit1: "Title: Presence of dark matter in the core of Neutron star"
+  addit2: "→ Senior Staff Engineer, Equinix Bangalore"
 
 - name: Pritam Kumar Bishee 
   photo: preetam_pic.png
