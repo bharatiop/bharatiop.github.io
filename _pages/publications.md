@@ -27,6 +27,7 @@ permalink: /publications/
     <button class="btn btn-secondary btn-sm pub-filter" data-filter="dm" onclick="filterPubs(this,'dm')">Dark Matter</button>
     <button class="btn btn-secondary btn-sm pub-filter" data-filter="osc" onclick="filterPubs(this,'osc')">Oscillations</button>
     <button class="btn btn-secondary btn-sm pub-filter" data-filter="eos" onclick="filterPubs(this,'eos')">EoS</button>
+    <button class="btn btn-secondary btn-sm pub-filter" data-filter="2025" onclick="filterPubs(this,'2025')">2025</button>
     <button class="btn btn-secondary btn-sm pub-filter" data-filter="2024" onclick="filterPubs(this,'2024')">2024</button>
     <button class="btn btn-secondary btn-sm pub-filter" data-filter="2023" onclick="filterPubs(this,'2023')">2023</button>
     <button class="btn btn-secondary btn-sm pub-filter" data-filter="2022" onclick="filterPubs(this,'2022')">2022</button>
@@ -35,18 +36,34 @@ permalink: /publications/
 
   <div class="pub-list" id="pubList">
 
-    <!-- 2024 -->
-    <div class="pub-item" data-year="2024" data-tags="dm eos">
-      <span class="pub-year">2024</span>
+    <!-- 2025 -->
+    <div class="pub-item" data-year="2025" data-tags="dm eos">
+      <span class="pub-year">2025</span>
       <div class="pub-info">
-        <h4>Impact of Dark Matter and Rotation on Neutron Star Properties</h4>
-        <p class="pub-authors">Pinku Routaray, Abirbhav Chakrawarty, N. K. Patra, Bharat Kumar</p>
+        <h4>Effects of Asymmetric Dark Matter on a Magnetized Neutron Star: A Two-Fluid Approach</h4>
+        <p class="pub-authors">Pinku Routaray, Vishal Parmar, H. C. Das, Bharat Kumar, G. F. Burgio, H.-J. Schulze</p>
         <div class="pub-links">
-          <a href="https://arxiv.org/abs/2409.02131" class="pub-link" target="_blank" rel="noopener">arXiv:2409.02131</a>
-          <span style="font-size:11.5px;color:var(--text-light);">· Physics of the Dark Universe (accepted)</span>
+          <a href="https://doi.org/10.1103/PhysRevD.111.103045" class="pub-link" target="_blank" rel="noopener">Phys. Rev. D 111, 103045 (2025)</a>
+          <a href="https://arxiv.org/abs/2412.21097" class="pub-link" target="_blank" rel="noopener">arXiv:2412.21097</a>
+          <a href="/downloads/Routaray_2025_PRD_asym_dm.pdf" class="pub-link" target="_blank" rel="noopener">PDF</a>
         </div>
       </div>
     </div>
+
+    <div class="pub-item" data-year="2025" data-tags="dm eos">
+      <span class="pub-year">2025</span>
+      <div class="pub-info">
+        <h4>Decoding Dark Matter Admixed Neutron Stars: From Static Structure to Rotational Deformation</h4>
+        <p class="pub-authors">Pinku Routaray, Abirbhav Chakrawarty, N. K. Patra, Bharat Kumar</p>
+        <div class="pub-links">
+          <a href="https://doi.org/10.1016/j.dark.2025.102093" class="pub-link" target="_blank" rel="noopener">Phys. Dark Univ. 50, 102093 (2025)</a>
+          <a href="https://arxiv.org/abs/2409.02131" class="pub-link" target="_blank" rel="noopener">arXiv:2409.02131</a>
+          <a href="/downloads/Routaray_2025_PhysDarkUniv_dm_rotation.pdf" class="pub-link" target="_blank" rel="noopener">PDF</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2024 -->
 
     <div class="pub-item" data-year="2024" data-tags="delta osc eos">
       <span class="pub-year">2024</span>
@@ -68,6 +85,17 @@ permalink: /publications/
         <div class="pub-links">
           <a href="https://doi.org/10.1088/1475-7516/2024/03/054" class="pub-link" target="_blank" rel="noopener">JCAP 03, 054 (2024)</a>
           <a href="https://arxiv.org/abs/2304.02439" class="pub-link" target="_blank" rel="noopener">arXiv:2304.02439</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pub-item" data-year="2024" data-tags="osc eos">
+      <span class="pub-year">2024</span>
+      <div class="pub-info">
+        <h4>Exploring the Impact of the σ-Cut Scheme on Neutron Star Oscillations and Thermal Relaxations</h4>
+        <p class="pub-authors">Probit J. Kalita, Khokan Singha, Pinku Routaray, Bharat Kumar</p>
+        <div class="pub-links">
+          <a href="https://doi.org/10.1103/PhysRevC.110.045807" class="pub-link" target="_blank" rel="noopener">Phys. Rev. C 110, 045807 (2024)</a>
         </div>
       </div>
     </div>
@@ -125,6 +153,7 @@ permalink: /publications/
         <h4>Exploring the Macroscopic Properties and Nonradial Oscillations of Proto-Neutron Stars</h4>
         <p class="pub-authors">Sayantan Ghosh, Shahebaj Shaikh, Probit J Kalita, Pinku Routaray, Bharat Kumar, B. K. Agrawal</p>
         <div class="pub-links">
+          <a href="https://doi.org/10.1016/j.nuclphysa.2024.116697" class="pub-link" target="_blank" rel="noopener">Nucl. Phys. A 1008, 116697 (2024)</a>
           <a href="https://arxiv.org/abs/2307.06892" class="pub-link" target="_blank" rel="noopener">arXiv:2307.06892</a>
         </div>
       </div>
@@ -359,7 +388,7 @@ function filterPubs(btn, filter) {
       item.style.display = '';
     } else if (filter === 'highlight') {
       item.style.display = item.dataset.highlight === '1' ? '' : 'none';
-    } else if (['2024','2023','2022','older'].includes(filter)) {
+    } else if (['2025','2024','2023','2022','older'].includes(filter)) {
       item.style.display = item.dataset.year === filter ? '' : 'none';
     } else {
       var tags = item.dataset.tags || '';
