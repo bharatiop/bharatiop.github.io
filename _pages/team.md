@@ -123,9 +123,9 @@ permalink: /team/
              onerror="this.parentElement.classList.add('initials');this.parentElement.textContent='PR';this.remove()">
       </div>
       <h3>Pinku Routaray</h3>
-      <div class="role">Ph.D. · 2021–2026</div>
+      <div class="role">Ph.D. · 2021–2026 (defended 2026)</div>
       <span class="tag">Dark Matter in NSs</span>
-      <div style="margin-top:4px;"><span class="tag tag-green" style="font-size:11px;">→ Postdoc at Kavli Institute of Astronomy and Astrophysics, China</span></div>
+      <div style="margin-top:4px;"><span class="tag tag-green" style="font-size:11px;">→ PhD completed; seeking postdoc positions</span></div>
       <div class="team-links mt-4">
         <a href="https://scholar.google.com/citations?user=d1j-L6cAAAAJ&amp;hl=en" class="tag" target="_blank" rel="noopener">Scholar ↗</a>
         <a href="https://arxiv.org/search/?searchtype=author&amp;query=Routaray+Pinku" class="tag" target="_blank" rel="noopener">arXiv ↗</a>
@@ -138,7 +138,7 @@ permalink: /team/
              onerror="this.parentElement.classList.add('initials');this.parentElement.textContent='KK';this.remove()">
       </div>
       <h3>Kanika Karan</h3>
-      <div class="role">MSc Thesis · 2025–2026</div>
+      <div class="role">MSc Thesis · 2025–2026 (completed)</div>
       <span class="tag">Quasinormal Modes in NSs</span>
       <div class="team-links mt-4">
         <a href="mailto:kanikakakran05062001@gmail.com" class="tag">Email</a>
@@ -153,6 +153,7 @@ permalink: /team/
       <h3>Shubhajit Saha</h3>
       <div class="role">MSc Thesis · 2025–2026</div>
       <span class="tag">Quarkyonic Matter</span>
+      <div style="margin-top:4px;"><span class="tag tag-green" style="font-size:11px;">→ PhD at NISER Bhubaneswar</span></div>
       <div class="team-links mt-4">
         <a href="mailto:shubhajitsaha80@gmail.com" class="tag">Email</a>
       </div>
@@ -167,7 +168,7 @@ permalink: /team/
       <div class="role">MSc Thesis · 2021–2022</div>
       <span class="tag">f- and p-mode Oscillations</span>
       <div class="mt-4">
-        <span class="tag tag-green" style="font-size:11px;">→ PhD at Florida State University, USA</span>
+        <span class="tag tag-green" style="font-size:11px;">→ PhD at Florida State University, USA (J. Piekarewicz group)</span>
       </div>
       <div class="team-links mt-4">
         <a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.106.063005" class="tag" target="_blank" rel="noopener">Phys. Rev. D (2022) ↗</a>
@@ -182,6 +183,7 @@ permalink: /team/
       <h3>Sailesh Ranjan Mohanty</h3>
       <div class="role">IMSc Thesis · 2022–2023</div>
       <span class="tag">Anisotropy &amp; Collapse</span>
+      <div style="margin-top:4px;"><span class="tag tag-green" style="font-size:11px;">→ IIT-JEE Physics Faculty</span></div>
       <div class="team-links mt-4">
         <a href="https://arxiv.org/abs/2410.16689" class="tag" target="_blank" rel="noopener">arXiv:2410.16689 (2025) ↗</a>
         <a href="https://iopscience.iop.org/article/10.1088/1475-7516/2024/03/054" class="tag" target="_blank" rel="noopener">JCAP 2024 ↗</a>
@@ -196,6 +198,7 @@ permalink: /team/
       <h3>Shahebaj Hasan Shaikh</h3>
       <div class="role">MSc Thesis · 2022–2023</div>
       <span class="tag">Finite Temperature EoS</span>
+      <div style="margin-top:4px;"><span class="tag tag-green" style="font-size:11px;">→ PhD at IIT Kanpur</span></div>
       <div class="team-links mt-4">
         <a href="https://arxiv.org/abs/2307.06892" class="tag" target="_blank" rel="noopener">arXiv ↗</a>
       </div>
@@ -209,6 +212,7 @@ permalink: /team/
       <h3>Khokan Singhao</h3>
       <div class="role">MSc Thesis · 2022–2023</div>
       <span class="tag">Delta-Baryons in NSs</span>
+      <div style="margin-top:4px;"><span class="tag tag-green" style="font-size:11px;">→ Senior Physics Faculty, PhysicsWallah</span></div>
     </div>
 
     <div class="team-card">
@@ -219,6 +223,7 @@ permalink: /team/
       <h3>Mrityunjoy Singha</h3>
       <div class="role">MSc Thesis · 2022–2023</div>
       <span class="tag">Dark Compact Objects</span>
+      <div style="margin-top:4px;"><span class="tag tag-green" style="font-size:11px;">→ PhD at S. N. Bose, Kolkata</span></div>
     </div>
 
     <div class="team-card">
@@ -229,6 +234,7 @@ permalink: /team/
       <h3>Souhardya Sen</h3>
       <div class="role">MSc Thesis · 2021–2022</div>
       <span class="tag">Radial Oscillations</span>
+      <div style="margin-top:4px;"><span class="tag tag-green" style="font-size:11px;">→ PhD candidate in Astrophysics</span></div>
       <div class="team-links mt-4">
         <a href="https://arxiv.org/pdf/2205.02076.pdf" class="tag" target="_blank" rel="noopener">Galaxies (2023) ↗</a>
       </div>
@@ -242,6 +248,7 @@ permalink: /team/
       <h3>Soumya Prakash Behera</h3>
       <div class="role">IMSc Thesis · 2020–2021</div>
       <span class="tag">GWs from Deformed Pulsars</span>
+      <div style="margin-top:4px;"><span class="tag tag-green" style="font-size:11px;">→ PhD (Biophysics), Johns Hopkins Univ. (defended 2026)</span></div>
     </div>
 
     <div class="team-card">
@@ -252,6 +259,7 @@ permalink: /team/
       <h3>Vikram Singh Khati</h3>
       <div class="role">MSc Thesis · 2020–2021</div>
       <span class="tag">Dark Matter in NS Core</span>
+      <div style="margin-top:4px;"><span class="tag tag-green" style="font-size:11px;">→ Senior Staff Engineer, Equinix Bangalore</span></div>
     </div>
 
     <div class="team-card">
