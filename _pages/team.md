@@ -161,6 +161,81 @@ permalink: /team/
 
     <div class="team-card">
       <div class="team-avatar">
+        <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/soham_pic.jpg" alt="Soham Singh"
+             onerror="this.parentElement.classList.add('initials');this.parentElement.textContent='SS';this.remove()">
+      </div>
+      <h3>Soham Singh</h3>
+      <div class="role">IMSc Thesis · 2025–2026 (Spring)</div>
+      <span class="tag">ALP-Mediated Dark Matter in NSs</span>
+      <div class="team-links mt-4">
+        <a href="https://scholar.google.com/citations?user=4ipOCM4AAAAJ&amp;hl=en" class="tag" target="_blank" rel="noopener">Scholar ↗</a>
+      </div>
+    </div>
+
+    <div class="team-card">
+      <div class="team-avatar">
+        <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/dummy.png" alt="Yuwang Vyas"
+             onerror="this.parentElement.classList.add('initials');this.parentElement.textContent='YV';this.remove()">
+      </div>
+      <h3>Yuwang Vyas</h3>
+      <div class="role">MSc Thesis · 2025–2026 (Spring)</div>
+      <span class="tag">Dark Matter Admixed Neutron Stars</span>
+    </div>
+
+    <div class="team-card">
+      <div class="team-avatar">
+        <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/punit_pic.jpg" alt="Punit Dubey"
+             onerror="this.parentElement.classList.add('initials');this.parentElement.textContent='PD';this.remove()">
+      </div>
+      <h3>Punit Dubey</h3>
+      <div class="role">MSc Thesis · 2025–2026 (Spring)</div>
+      <span class="tag">Nuclear Burning on White Dwarfs</span>
+      <div class="team-links mt-4">
+        <a href="mailto:punitdubey214@gmail.com" class="tag">Email</a>
+        <a href="https://github.com/punitdubey214-creator" class="tag" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+    </div>
+
+    <div class="team-card">
+      <div class="team-avatar">
+        <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/dummy.png" alt="Rajesh Behera"
+             onerror="this.parentElement.classList.add('initials');this.parentElement.textContent='RB';this.remove()">
+      </div>
+      <h3>Rajesh Behera</h3>
+      <div class="role">IMSc Thesis · 2024–2025 (Spring) &amp; 2025 (Summer)</div>
+      <span class="tag">Neutron Star Parameters</span>
+    </div>
+
+    <div class="team-card">
+      <div class="team-avatar">
+        <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/dummy.png" alt="Ratikanta Swain"
+             onerror="this.parentElement.classList.add('initials');this.parentElement.textContent='RS';this.remove()">
+      </div>
+      <h3>Ratikanta Swain</h3>
+      <div class="role">IMSc Thesis · 2024–2025 (Spring) &amp; 2025 (Summer)</div>
+      <span class="tag">Non-radial Oscillations in NSs</span>
+      <div class="team-links mt-4">
+        <a href="https://arxiv.org/abs/2606.20203" class="tag" target="_blank" rel="noopener">arXiv:2606.20203 ↗</a>
+        <a href="mailto:swainratikanta2000@gmail.com" class="tag">Email</a>
+      </div>
+    </div>
+
+    <div class="team-card">
+      <div class="team-avatar">
+        <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/dummy.png" alt="Mayank Chobey"
+             onerror="this.parentElement.classList.add('initials');this.parentElement.textContent='MC';this.remove()">
+      </div>
+      <h3>Mayank Chobey</h3>
+      <div class="role">MSc Thesis · 2024–2025 (Spring)</div>
+      <span class="tag">Quarkyonic Matter &amp; NS Structure</span>
+      <div style="margin-top:4px;"><span class="tag tag-green" style="font-size:11px;">→ PhD at IIT Gandhinagar (joined 2025)</span></div>
+      <div class="team-links mt-4">
+        <a href="mailto:mayank.chobey@iitgn.ac.in" class="tag">Email</a>
+      </div>
+    </div>
+
+    <div class="team-card">
+      <div class="team-avatar">
         <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/athul_pic.png" alt="Athul K P"
              onerror="this.parentElement.classList.add('initials');this.parentElement.textContent='AK';this.remove()">
       </div>
