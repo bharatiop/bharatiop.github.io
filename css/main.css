@@ -167,8 +167,8 @@ img { max-width: 100%; display: block; }
   box-shadow: var(--shadow-sm);
 }
 .paper-fig-img {
-  background: #fafaf8;
-  border-bottom: 0.5px solid var(--border-soft);
+  background: #ffffff;
+  border-bottom: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -182,31 +182,36 @@ img { max-width: 100%; display: block; }
   display: block;
   background: transparent;
 }
-.obs-card figcaption {
+/* Soft navy caption strip under each paper figure */
+.obs-card figcaption,
+.paper-fig-card figcaption {
   padding: 14px 16px 16px;
   display: flex;
   flex-direction: column;
   gap: 8px;
+  background: linear-gradient(160deg, #1a3a5c 0%, #234a6e 55%, #1e4060 100%);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
-.obs-card figcaption strong {
+.obs-card figcaption strong,
+.paper-fig-card figcaption strong {
   font-size: 14px;
   font-weight: 600;
-  color: var(--text);
+  color: #f4f7fb;
   line-height: 1.35;
 }
 .paper-fig-link {
   font-size: 12.5px;
   font-weight: 500;
-  color: var(--accent-mid);
+  color: #9ec4e8;
   line-height: 1.4;
   display: inline-block;
   width: fit-content;
-  border-bottom: 1px solid transparent;
+  border-bottom: 1px solid rgba(158, 196, 232, 0.35);
   transition: color 0.15s, border-color 0.15s;
 }
 .paper-fig-link:hover {
-  color: var(--accent);
-  border-bottom-color: var(--accent);
+  color: #ffffff;
+  border-bottom-color: #ffffff;
 }
 
 @media (max-width: 860px) {
