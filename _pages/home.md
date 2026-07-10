@@ -43,38 +43,114 @@ permalink: /
   <div class="section-header">
     <span class="eyebrow">Focus Areas</span>
     <h2 class="section-title">What we study</h2>
+    <p class="section-sub">Figures from our publications — click any image to open the paper.</p>
   </div>
-  <div class="research-grid">
-    <div class="research-card">
+  <div class="research-grid research-grid-figures">
+
+    <div class="research-card research-card-fig">
+      <div class="focus-fig-wrap" style="--focus-delay:0s">
+        <div class="focus-fig-track">
+          <a class="focus-slide" href="https://journals.aps.org/prc/abstract/10.1103/PhysRevC.97.045806" target="_blank" rel="noopener" title="Phys. Rev. C 97, 045806 (2018)">
+            <img src="{{ site.url }}{{ site.baseurl }}/images/focus/eos_tidal.png" alt="Tidal deformability Λ1–Λ2 for G3 and IOPB-I EoS" loading="lazy">
+            <span class="focus-fig-cite">Phys. Rev. C 97, 045806 (2018) ↗</span>
+          </a>
+          <a class="focus-slide" href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.99.123026" target="_blank" rel="noopener" title="Phys. Rev. D 99, 123026 (2019)">
+            <img src="{{ site.url }}{{ site.baseurl }}/images/focus/eos_mr.png" alt="Mass–radius curves constrained by GW170817 and pulsars" loading="lazy">
+            <span class="focus-fig-cite">Phys. Rev. D 99, 123026 (2019) ↗</span>
+          </a>
+        </div>
+      </div>
       <div class="research-icon">⭐</div>
       <h3>Equation of State of Neutron Stars</h3>
       <p>Deciphering dense matter at nuclear densities using relativistic mean-field models and observational constraints from LIGO, NICER, and pulsar timing.</p>
     </div>
-    <div class="research-card">
+
+    <div class="research-card research-card-fig">
+      <div class="focus-fig-wrap" style="--focus-delay:1.2s">
+        <div class="focus-fig-track">
+          <a class="focus-slide" href="https://doi.org/10.1088/1475-7516/2024/04/065" target="_blank" rel="noopener" title="JCAP 04, 065 (2024)">
+            <img src="{{ site.url }}{{ site.baseurl }}/images/focus/hyperons_delta.png" alt="Effective mass of nucleons and deltas with coupling variations" loading="lazy">
+            <span class="focus-fig-cite">JCAP 04, 065 (2024) — Δ-baryons ↗</span>
+          </a>
+          <a class="focus-slide" href="https://doi.org/10.1088/1475-7516/2024/04/065" target="_blank" rel="noopener" title="JCAP 04, 065 (2024)">
+            <img src="{{ site.url }}{{ site.baseurl }}/images/focus/hyperons_eos.png" alt="Equation of state with delta baryons" loading="lazy">
+            <span class="focus-fig-cite">JCAP 04, 065 (2024) — EoS ↗</span>
+          </a>
+        </div>
+      </div>
       <div class="research-icon">🔮</div>
       <h3>Hyperons &amp; Exotic Matter</h3>
       <p>Exploring strangeness-bearing particles — hyperons, delta baryons, and quarkyonic matter — and their effects on stellar structure, stability, and GW emission.</p>
     </div>
-    <div class="research-card">
+
+    <div class="research-card research-card-fig">
+      <div class="focus-fig-wrap" style="--focus-delay:2.4s">
+        <div class="focus-fig-track">
+          <a class="focus-slide" href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.106.063005" target="_blank" rel="noopener" title="Phys. Rev. D 106, 063005 (2022)">
+            <img src="{{ site.url }}{{ site.baseurl }}/images/focus/gw_fmode.png" alt="Correlation matrix of f- and p-mode frequencies with nuclear EoS parameters" loading="lazy">
+            <span class="focus-fig-cite">Phys. Rev. D 106, 063005 (2022) ↗</span>
+          </a>
+          <a class="focus-slide" href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.99.123026" target="_blank" rel="noopener" title="Phys. Rev. D 99, 123026 (2019)">
+            <img src="{{ site.url }}{{ site.baseurl }}/images/focus/gw_tidal.png" alt="Tidal deformability from GW170817 universal relations" loading="lazy">
+            <span class="focus-fig-cite">Phys. Rev. D 99, 123026 (2019) ↗</span>
+          </a>
+        </div>
+      </div>
       <div class="research-icon">🌊</div>
       <h3>Gravitational Waves &amp; Oscillations</h3>
       <p>Computing quasinormal modes, f- and p-mode frequencies, tidal deformability, and I-Love-Q relations linking to GW170817 and Einstein Telescope.</p>
     </div>
-    <div class="research-card">
+
+    <div class="research-card research-card-fig">
+      <div class="focus-fig-wrap" style="--focus-delay:0.6s">
+        <div class="focus-fig-track">
+          <a class="focus-slide" href="https://doi.org/10.1093/mnras/stad2628" target="_blank" rel="noopener" title="MNRAS 525, 5492 (2023)">
+            <img src="{{ site.url }}{{ site.baseurl }}/images/focus/dm_posterior.jpeg" alt="Mass–radius posteriors for dark matter admixed neutron stars" loading="lazy">
+            <span class="focus-fig-cite">MNRAS 525, 5492 (2023) ↗</span>
+          </a>
+          <a class="focus-slide" href="https://doi.org/10.1103/PhysRevD.107.103039" target="_blank" rel="noopener" title="Phys. Rev. D 107, 103039 (2023)">
+            <img src="{{ site.url }}{{ site.baseurl }}/images/focus/dm_radial.png" alt="Radial oscillations of dark matter admixed neutron stars" loading="lazy">
+            <span class="focus-fig-cite">Phys. Rev. D 107, 103039 (2023) ↗</span>
+          </a>
+        </div>
+      </div>
       <div class="research-icon">🌑</div>
       <h3>Dark Matter in Neutron Stars</h3>
       <p>Using neutron stars as cosmic dark matter laboratories — constraining WIMP, fermionic, and self-interacting dark matter through mass, radius, and oscillation observables.</p>
     </div>
-    <div class="research-card">
+
+    <div class="research-card research-card-fig">
+      <div class="focus-fig-wrap focus-fig-single" style="--focus-delay:1.8s">
+        <div class="focus-fig-track">
+          <a class="focus-slide" href="https://doi.org/10.1140/epjc/s10052-020-8353-4" target="_blank" rel="noopener" title="Eur. Phys. J. C 80, 775 (2020)">
+            <img src="{{ site.url }}{{ site.baseurl }}/images/focus/thermal_neutrino.png" alt="Neutrino emissivity vs density at finite temperature for NL3, G3, IU-FSU" loading="lazy">
+            <span class="focus-fig-cite">Eur. Phys. J. C 80, 775 (2020) ↗</span>
+          </a>
+        </div>
+      </div>
       <div class="research-icon">🌡</div>
       <h3>Thermal Evolution</h3>
       <p>Investigating neutron star cooling, proto-NS evolution, and the role of temperature, entropy, and lepton fraction on nuclear matter properties.</p>
     </div>
-    <div class="research-card">
+
+    <div class="research-card research-card-fig">
+      <div class="focus-fig-wrap" style="--focus-delay:3s">
+        <div class="focus-fig-track">
+          <a class="focus-slide" href="https://iopscience.iop.org/article/10.3847/2041-8213/aaee76" target="_blank" rel="noopener" title="ApJ Lett. 868, L22 (2018)">
+            <img src="{{ site.url }}{{ site.baseurl }}/images/focus/mm_moi.png" alt="Moment of inertia constraints from GW170817 universal relations" loading="lazy">
+            <span class="focus-fig-cite">ApJ Lett. 868, L22 (2018) ↗</span>
+          </a>
+          <a class="focus-slide" href="https://doi.org/10.1103/PhysRevC.95.015801" target="_blank" rel="noopener" title="Phys. Rev. C 95, 015801 (2017)">
+            <img src="{{ site.url }}{{ site.baseurl }}/images/focus/mm_tidal.png" alt="Tidal Love number with and without hyperons" loading="lazy">
+            <span class="focus-fig-cite">Phys. Rev. C 95, 015801 (2017) ↗</span>
+          </a>
+        </div>
+      </div>
       <div class="research-icon">🔭</div>
       <h3>Multi-Messenger Astrophysics</h3>
       <p>Bridging nuclear theory with EM, gravitational wave, and neutrino observations to constrain the neutron star equation of state at extreme densities.</p>
     </div>
+
   </div>
 
   <!-- GLOBAL JOBS BANNER -->
