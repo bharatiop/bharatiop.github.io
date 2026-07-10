@@ -112,17 +112,113 @@ img { max-width: 100%; display: block; }
 
 /* ---- RESEARCH CARDS ---- */
 .research-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 16px; }
+.research-grid-figures { grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
+.section-sub { font-size: 13.5px; color: var(--text-muted); margin-top: 8px; line-height: 1.5; }
 .research-card {
   border: 0.5px solid var(--border); border-radius: var(--radius);
-  padding: 24px; transition: border-color 0.15s;
+  padding: 24px; transition: border-color 0.15s, box-shadow 0.2s;
   position: relative; overflow: hidden;
+  background: var(--white);
 }
 .research-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--accent-mid); opacity: 0; transition: opacity 0.2s; }
-.research-card:hover { border-color: #b8cfe0; }
+.research-card:hover { border-color: #b8cfe0; box-shadow: var(--shadow-sm); }
 .research-card:hover::before { opacity: 1; }
 .research-icon { width: 40px; height: 40px; border-radius: var(--radius-sm); background: var(--accent-light); display: flex; align-items: center; justify-content: center; margin-bottom: 16px; font-size: 20px; }
 .research-card h3 { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 8px; }
 .research-card p { font-size: 13px; color: var(--text-muted); line-height: 1.7; }
+
+/* Publication figure strips (movable auto-slide + ken burns) */
+.research-card-fig { padding: 0 0 20px; display: flex; flex-direction: column; }
+.research-card-fig .research-icon { margin: 16px 20px 12px; }
+.research-card-fig h3 { padding: 0 20px; margin-bottom: 8px; }
+.research-card-fig p { padding: 0 20px; flex: 1; }
+
+.focus-fig-wrap {
+  position: relative;
+  margin: 0 0 4px;
+  border-radius: var(--radius) var(--radius) 0 0;
+  overflow: hidden;
+  background: #fafaf8;
+  border-bottom: 0.5px solid var(--border);
+}
+.focus-fig-track {
+  position: relative;
+  height: 180px;
+  overflow: hidden;
+}
+.focus-slide {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  opacity: 0;
+  transform: scale(1.08);
+  animation: focus-slide-a 10s ease-in-out infinite;
+  animation-delay: var(--focus-delay, 0s);
+  background: #fafaf8;
+}
+.focus-slide:nth-child(1) { animation-name: focus-slide-a; z-index: 2; }
+.focus-slide:nth-child(2) { animation-name: focus-slide-b; z-index: 1; }
+.focus-fig-single .focus-slide:nth-child(1) {
+  opacity: 1;
+  animation-name: focus-kenburns;
+  animation-duration: 14s;
+}
+.focus-slide img {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  object-fit: contain;
+  padding: 12px 12px 4px;
+  background: #fafaf8;
+}
+.focus-fig-cite {
+  display: block;
+  flex-shrink: 0;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--accent-mid);
+  background: linear-gradient(to top, #fafaf8 70%, transparent);
+  padding: 18px 12px 10px;
+  margin-top: -16px;
+  line-height: 1.35;
+  transition: color 0.15s;
+  position: relative;
+  z-index: 2;
+}
+.focus-slide:hover .focus-fig-cite { color: var(--accent); text-decoration: underline; }
+.focus-fig-wrap:hover .focus-slide { animation-play-state: paused; }
+.focus-fig-wrap:hover .focus-slide:nth-child(1) { opacity: 1; z-index: 3; }
+.focus-fig-wrap:hover .focus-slide:nth-child(2) { opacity: 0; }
+
+@keyframes focus-slide-a {
+  0%, 42% { opacity: 1; transform: scale(1.04) translateX(0); }
+  48%, 92% { opacity: 0; transform: scale(1.1) translateX(-5%); }
+  100% { opacity: 1; transform: scale(1.04) translateX(0); }
+}
+@keyframes focus-slide-b {
+  0%, 42% { opacity: 0; transform: scale(1.1) translateX(5%); }
+  48%, 92% { opacity: 1; transform: scale(1.04) translateX(0); }
+  100% { opacity: 0; transform: scale(1.1) translateX(5%); }
+}
+@keyframes focus-kenburns {
+  0%, 100% { opacity: 1; transform: scale(1.03) translate(0, 0); }
+  50% { opacity: 1; transform: scale(1.1) translate(-2%, -1%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .focus-slide {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    position: relative;
+  }
+  .focus-fig-track { height: auto; display: flex; flex-direction: column; gap: 8px; padding: 8px; }
+  .focus-slide:nth-child(2) { display: flex; opacity: 1 !important; }
+  .focus-slide img { height: 120px; }
+}
 
 /* ---- TEAM ---- */
 .team-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 16px; }
