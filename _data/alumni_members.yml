@@ -24,6 +24,56 @@
   addit1: "Title: Quarkyonic Matter"
   addit2: "→ PhD Scholar, NISER Bhubaneswar"
 
+- name: Soham Singh
+  photo: soham_pic.jpg
+  info: IMSc thesis project
+  duration: In the NAP Lab 2025-2026 (Spring); 421PH5073
+  email: 421ph5073@nitrkl.ac.in
+  number_addit: 1
+  addit1: "Title: Probing properties of axion-like particle (ALP) mediated dark matter using neutron star"
+
+- name: Yuwang Vyas
+  photo: dummy.png
+  info: MSc thesis project
+  duration: In the NAP Lab 2025-2026 (Spring); 424PH2020
+  email: 424ph2020@nitrkl.ac.in
+  number_addit: 1
+  addit1: "Title: Structural Properties of Dark Matter Admixed Neutron Stars"
+
+- name: Punit Dubey
+  photo: punit_pic.jpg
+  info: MSc thesis project
+  duration: In the NAP Lab 2025-2026 (Spring); 424PH2026
+  email: punitdubey214@gmail.com
+  number_addit: 1
+  addit1: "Title: Time-dependent Study of Nuclear Burning on the Surfaces of White Dwarfs"
+
+- name: Rajesh Behera
+  photo: dummy.png
+  info: IMSc thesis project
+  duration: In the NAP Lab 2024-2025 (Spring) and 2025 (Summer); 420PH5022
+  email: 420ph5022@nitrkl.ac.in
+  number_addit: 1
+  addit1: "Title: Calculation of Neutron Star parameters"
+
+- name: Ratikanta Swain
+  photo: dummy.png
+  info: IMSc thesis project
+  duration: In the NAP Lab 2024-2025 (Spring) and 2025 (Summer); 420PH5060
+  email: swainratikanta2000@gmail.com
+  number_addit: 2
+  addit1: "Title: Non-radial Oscillations in Neutron Stars for realistic Equation of State"
+  addit2: "arXiv:2606.20203 (with S. Ghosh & B. Kumar)"
+
+- name: Mayank Chobey
+  photo: dummy.png
+  info: MSc thesis project
+  duration: In the NAP Lab 2024-2025 (Spring); now PhD at IIT Gandhinagar; 423PH2182
+  email: mayank.chobey@iitgn.ac.in
+  number_addit: 2
+  addit1: "Title: Quarkyonic Matter and Its Implications on Neutron Star Structure"
+  addit2: "→ PhD Scholar, IIT Gandhinagar (joined 2025)"
+
 - name: Khokan Singhao
   photo: khokan_pic.jpeg
   info: MSc thesis project
