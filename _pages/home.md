@@ -36,132 +36,135 @@ permalink: /
   </div>
 </section>
 
-<!-- OBSERVATIONAL IMAGE MOSAIC -->
-<section class="obs-section" aria-label="Observational science">
+<!-- SELECTED PAPER FIGURES -->
+<section class="obs-section" aria-label="Selected paper figures">
   <div class="obs-inner">
     <div class="section-header">
-      <span class="eyebrow">Multi-Messenger Universe</span>
-      <h2 class="section-title">What the sky tells us</h2>
-      <p class="obs-lead">Binary neutron star mergers, gravitational waves, and compact-object observations that guide our theory work.</p>
+      <span class="eyebrow">From Our Papers</span>
+      <h2 class="section-title">Selected results</h2>
+      <p class="obs-lead">Figures from NAP Lab publications — click a paper link below each image to open the work.</p>
     </div>
 
-    <div class="obs-grid">
-      <figure class="obs-card obs-card-wide">
-        <img src="{{ site.url }}{{ site.baseurl }}/images/observational/bns_merger.jpg"
-             alt="Artist’s impression of two neutron stars merging"
-             loading="lazy" width="1400" height="916">
+    <div class="obs-grid paper-fig-grid">
+      <figure class="obs-card paper-fig-card">
+        <div class="paper-fig-img">
+          <img src="{{ site.url }}{{ site.baseurl }}/images/papers/eos_tidal.png"
+               alt="Tidal deformability Λ1–Λ2 for G3 and IOPB-I EoS"
+               loading="lazy">
+        </div>
         <figcaption>
-          <strong>Binary neutron star merger</strong>
-          <span>Artist’s impression of two neutron stars colliding — source of GWs, kilonovae, and heavy elements (ESO / L. Calçada).</span>
+          <strong>Tidal deformability from RMF EoS</strong>
+          <a class="paper-fig-link" href="https://journals.aps.org/prc/abstract/10.1103/PhysRevC.97.045806" target="_blank" rel="noopener">Phys. Rev. C 97, 045806 (2018) ↗</a>
         </figcaption>
       </figure>
 
-      <figure class="obs-card">
-        <img src="{{ site.url }}{{ site.baseurl }}/images/observational/gravitational_waves.jpg"
-             alt="Artist’s impression of gravitational waves from a compact binary"
-             loading="lazy" width="1400" height="788">
+      <figure class="obs-card paper-fig-card">
+        <div class="paper-fig-img">
+          <img src="{{ site.url }}{{ site.baseurl }}/images/papers/eos_mr.png"
+               alt="Mass–radius curves constrained by GW170817 and pulsars"
+               loading="lazy">
+        </div>
         <figcaption>
-          <strong>Gravitational waves</strong>
-          <span>Spacetime ripples from compact-binary coalescence, as detected by LIGO–Virgo–KAGRA.</span>
+          <strong>Mass–radius of neutron stars</strong>
+          <a class="paper-fig-link" href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.99.123026" target="_blank" rel="noopener">Phys. Rev. D 99, 123026 (2019) ↗</a>
         </figcaption>
       </figure>
 
-      <figure class="obs-card">
-        <img src="{{ site.url }}{{ site.baseurl }}/images/observational/gw_strain.jpg"
-             alt="GW150914 gravitational-wave strain measurements from LIGO"
-             loading="lazy" width="1400" height="1750">
+      <figure class="obs-card paper-fig-card">
+        <div class="paper-fig-img">
+          <img src="{{ site.url }}{{ site.baseurl }}/images/papers/hyperons_delta.png"
+               alt="Effective mass of nucleons and delta baryons"
+               loading="lazy">
+        </div>
         <figcaption>
-          <strong>LIGO strain signal</strong>
-          <span>Measured gravitational-wave strain from a compact binary merger (LIGO / Caltech / MIT).</span>
+          <strong>Δ-baryons in dense matter</strong>
+          <a class="paper-fig-link" href="https://doi.org/10.1088/1475-7516/2024/04/065" target="_blank" rel="noopener">JCAP 04, 065 (2024) ↗</a>
         </figcaption>
       </figure>
 
-      <figure class="obs-card">
-        <img src="{{ site.url }}{{ site.baseurl }}/images/observational/bns_collision.jpg"
-             alt="NASA illustration of neutron stars ripping each other apart"
-             loading="lazy" width="1280" height="1024">
+      <figure class="obs-card paper-fig-card">
+        <div class="paper-fig-img">
+          <img src="{{ site.url }}{{ site.baseurl }}/images/papers/gw_fmode.png"
+               alt="Correlation matrix of f- and p-mode frequencies with nuclear parameters"
+               loading="lazy">
+        </div>
         <figcaption>
-          <strong>Neutron star collision</strong>
-          <span>Dynamical disruption and black-hole formation after a BNS merger (NASA GSFC).</span>
+          <strong>f- and p-mode correlations</strong>
+          <a class="paper-fig-link" href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.106.063005" target="_blank" rel="noopener">Phys. Rev. D 106, 063005 (2022) ↗</a>
         </figcaption>
       </figure>
 
-      <figure class="obs-card">
-        <img src="{{ site.url }}{{ site.baseurl }}/images/observational/ligo_hanford.jpg"
-             alt="Aerial view of the LIGO Hanford Observatory"
-             loading="lazy" width="1400" height="933">
+      <figure class="obs-card paper-fig-card">
+        <div class="paper-fig-img">
+          <img src="{{ site.url }}{{ site.baseurl }}/images/papers/dm_posterior.jpeg"
+               alt="Mass–radius posteriors for dark matter admixed neutron stars"
+               loading="lazy">
+        </div>
         <figcaption>
-          <strong>LIGO Hanford</strong>
-          <span>One of the laser-interferometer detectors that listen for gravitational waves (LIGO Laboratory).</span>
+          <strong>WIMP dark matter in NSs</strong>
+          <a class="paper-fig-link" href="https://doi.org/10.1093/mnras/stad2628" target="_blank" rel="noopener">MNRAS 525, 5492 (2023) ↗</a>
         </figcaption>
       </figure>
 
-      <figure class="obs-card">
-        <img src="{{ site.url }}{{ site.baseurl }}/images/observational/ns_structure.jpg"
-             alt="Cross-section illustration of a neutron star interior"
-             loading="lazy" width="1280" height="1024">
+      <figure class="obs-card paper-fig-card">
+        <div class="paper-fig-img">
+          <img src="{{ site.url }}{{ site.baseurl }}/images/papers/dm_radial.png"
+               alt="Radial oscillations of dark matter admixed neutron stars"
+               loading="lazy">
+        </div>
         <figcaption>
-          <strong>Neutron star interior</strong>
-          <span>Schematic structure of dense matter from crust to core — the regime our EoS models probe.</span>
+          <strong>Radial modes with dark matter</strong>
+          <a class="paper-fig-link" href="https://doi.org/10.1103/PhysRevD.107.103039" target="_blank" rel="noopener">Phys. Rev. D 107, 103039 (2023) ↗</a>
+        </figcaption>
+      </figure>
+
+      <figure class="obs-card paper-fig-card">
+        <div class="paper-fig-img">
+          <img src="{{ site.url }}{{ site.baseurl }}/images/papers/mm_moi.png"
+               alt="Moment of inertia constraints from GW170817"
+               loading="lazy">
+        </div>
+        <figcaption>
+          <strong>I of PSR J0737−3039A</strong>
+          <a class="paper-fig-link" href="https://iopscience.iop.org/article/10.3847/2041-8213/aaee76" target="_blank" rel="noopener">ApJ Lett. 868, L22 (2018) ↗</a>
+        </figcaption>
+      </figure>
+
+      <figure class="obs-card paper-fig-card">
+        <div class="paper-fig-img">
+          <img src="{{ site.url }}{{ site.baseurl }}/images/papers/mm_tidal.png"
+               alt="Tidal Love number with and without hyperons"
+               loading="lazy">
+        </div>
+        <figcaption>
+          <strong>Tidal Love numbers &amp; hyperons</strong>
+          <a class="paper-fig-link" href="https://doi.org/10.1103/PhysRevC.95.015801" target="_blank" rel="noopener">Phys. Rev. C 95, 015801 (2017) ↗</a>
+        </figcaption>
+      </figure>
+
+      <figure class="obs-card paper-fig-card">
+        <div class="paper-fig-img">
+          <img src="{{ site.url }}{{ site.baseurl }}/images/papers/gw_tidal.png"
+               alt="Universal relations for tidal deformability from GW170817"
+               loading="lazy">
+        </div>
+        <figcaption>
+          <strong>Universal relations from GW170817</strong>
+          <a class="paper-fig-link" href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.99.123026" target="_blank" rel="noopener">Phys. Rev. D 99, 123026 (2019) ↗</a>
         </figcaption>
       </figure>
     </div>
 
-    <p class="obs-credit">Image credits: ESO / L. Calçada; NASA Goddard; LIGO Laboratory / Caltech / MIT. Used for educational purposes.</p>
-  </div>
-</section>
-
-<hr class="divider">
-
-<!-- RESEARCH AREAS -->
-<section class="section" aria-label="Research areas">
-  <div class="section-header">
-    <span class="eyebrow">Focus Areas</span>
-    <h2 class="section-title">What we study</h2>
-  </div>
-  <div class="research-grid">
-    <div class="research-card">
-      <div class="research-icon">⭐</div>
-      <h3>Equation of State of Neutron Stars</h3>
-      <p>Deciphering dense matter at nuclear densities using relativistic mean-field models and observational constraints from LIGO, NICER, and pulsar timing.</p>
-    </div>
-    <div class="research-card">
-      <div class="research-icon">🔮</div>
-      <h3>Hyperons &amp; Exotic Matter</h3>
-      <p>Exploring strangeness-bearing particles — hyperons, delta baryons, and quarkyonic matter — and their effects on stellar structure, stability, and GW emission.</p>
-    </div>
-    <div class="research-card">
-      <div class="research-icon">🌊</div>
-      <h3>Gravitational Waves &amp; Oscillations</h3>
-      <p>Computing quasinormal modes, f- and p-mode frequencies, tidal deformability, and I-Love-Q relations linking to GW170817 and Einstein Telescope.</p>
-    </div>
-    <div class="research-card">
-      <div class="research-icon">🌑</div>
-      <h3>Dark Matter in Neutron Stars</h3>
-      <p>Using neutron stars as cosmic dark matter laboratories — constraining WIMP, fermionic, and self-interacting dark matter through mass, radius, and oscillation observables.</p>
-    </div>
-    <div class="research-card">
-      <div class="research-icon">🌡</div>
-      <h3>Thermal Evolution</h3>
-      <p>Investigating neutron star cooling, proto-NS evolution, and the role of temperature, entropy, and lepton fraction on nuclear matter properties.</p>
-    </div>
-    <div class="research-card">
-      <div class="research-icon">🔭</div>
-      <h3>Multi-Messenger Astrophysics</h3>
-      <p>Bridging nuclear theory with EM, gravitational wave, and neutrino observations to constrain the neutron star equation of state at extreme densities.</p>
-    </div>
-  </div>
-
-  <!-- GLOBAL JOBS BANNER -->
-  <div class="jobs-banner">
-    <div class="jobs-banner-text">
-      <span class="jobs-banner-icon">🌍</span>
-      <div>
-        <strong>Looking for a PhD or Postdoc elsewhere too?</strong>
-        <span>Browse current openings worldwide in nuclear physics, astrophysics &amp; gravitational waves.</span>
+    <div class="jobs-banner" style="margin-top:28px;">
+      <div class="jobs-banner-text">
+        <span class="jobs-banner-icon">🌍</span>
+        <div>
+          <strong>Looking for a PhD or Postdoc elsewhere too?</strong>
+          <span>Browse current openings worldwide in nuclear physics, astrophysics &amp; gravitational waves.</span>
+        </div>
       </div>
+      <a href="{{ site.url }}{{ site.baseurl }}/vacancies#world-positions" class="btn btn-secondary btn-sm">See global listings →</a>
     </div>
-    <a href="{{ site.url }}{{ site.baseurl }}/vacancies#world-positions" class="btn btn-secondary btn-sm">See global listings →</a>
   </div>
 </section>
 
