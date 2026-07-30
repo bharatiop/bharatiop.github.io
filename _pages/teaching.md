@@ -32,6 +32,9 @@ permalink: /teaching/
         <h4>Nuclear Physics</h4>
         <p>Postgraduate core course for M.Sc. Physics. Covers nuclear structure, nuclear forces, radioactive decay, nuclear reactions, fission/fusion, and introductory nuclear astrophysics (nucleosynthesis, neutron stars).</p>
         <span class="course-sem">Semester: Even · M.Sc. Physics, NIT Rourkela</span>
+        <p style="margin-top:8px;font-size:13.5px;">
+          <a href="{{ site.url }}{{ site.baseurl }}/lecture-notes/#nuclear-physics" style="color:var(--accent-mid);">Lecture notes →</a>
+        </p>
       </div>
     </div>
 
