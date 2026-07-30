@@ -75,6 +75,30 @@ permalink: /teaching/
 
   <hr class="divider" style="margin-bottom:48px;">
 
+  <!-- LECTURE NOTES PDF -->
+  <div class="section-header">
+    <span class="eyebrow">Materials</span>
+    <h2 class="section-title">Lecture notes (PDF)</h2>
+  </div>
+
+  <p style="font-size:14px;color:var(--text-muted);line-height:1.75;margin-bottom:20px;max-width:640px;">
+    Downloadable PDF notes for courses (including nuclear physics) are collected on a dedicated page.
+    New PDFs placed under <code>downloads/nuclearphysics/</code> appear there automatically after a push.
+  </p>
+
+  <div class="join-banner" style="margin-bottom:52px;">
+    <div class="join-banner-text">
+      <p>Lecture notes library</p>
+      <span>Nuclear physics and other course PDFs · open access downloads</span>
+    </div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;">
+      <a class="btn btn-primary" href="{{ site.url }}{{ site.baseurl }}/lecture-notes/">Browse all notes →</a>
+      <a class="btn btn-secondary" href="{{ site.url }}{{ site.baseurl }}/lecture-notes/#nuclear-physics">Nuclear physics →</a>
+    </div>
+  </div>
+
+  <hr class="divider" style="margin-bottom:48px;">
+
   <!-- INVITED LECTURES -->
   <div class="section-header">
     <span class="eyebrow">Outreach &amp; Schools</span>
