@@ -448,6 +448,81 @@ address a:hover { text-decoration: underline; }
 }
 .notes-empty code { font-size:12.5px; background:var(--accent-light); padding:1px 6px; border-radius:4px; color:var(--accent); }
 
+/* ---- COURSE HOMEPAGE (professor-style) ---- */
+.course-hero .course-hero-codes { display:flex; gap:8px; flex-wrap:wrap; margin:12px 0 10px; }
+.course-hero-meta { margin-top:12px; font-size:14.5px; color:var(--text-muted); line-height:1.75; max-width:640px; }
+.course-hero-meta strong { color:var(--text); font-weight:600; }
+.course-toc {
+  display:flex; flex-wrap:wrap; gap:8px; margin-top:22px;
+}
+.course-toc a {
+  font-size:13px; font-weight:500; color:var(--accent-mid);
+  background:var(--white); border:0.5px solid var(--border);
+  border-radius:999px; padding:7px 14px; transition:border-color .15s, background .15s;
+}
+.course-toc a:hover { border-color:#b8cfe0; background:var(--accent-light); text-decoration:none; }
+.course-toc-count {
+  display:inline-block; min-width:1.4em; margin-left:4px;
+  font-size:11px; font-weight:600; color:var(--accent);
+  background:var(--accent-light); border-radius:999px; padding:1px 6px;
+}
+.course-overview-grid {
+  display:grid; grid-template-columns:1.4fr 0.9fr; gap:28px; align-items:start;
+  margin-bottom:8px;
+}
+.course-overview-main p { font-size:14.5px; color:var(--text-muted); line-height:1.8; margin-bottom:18px; }
+.course-subhead { font-size:15px; font-weight:600; color:var(--text); margin:8px 0 10px; }
+.course-topic-list {
+  margin:0; padding-left:1.15rem; font-size:13.5px; color:var(--text-muted); line-height:1.75;
+}
+.course-topic-list li { margin-bottom:4px; }
+.course-info-card {
+  border:0.5px solid var(--border); border-radius:var(--radius);
+  padding:22px 22px 20px; background:var(--off-white);
+}
+.course-info-card h3 { font-size:14px; font-weight:600; color:var(--text); margin-bottom:14px; }
+.course-info-dl { margin:0 0 18px; }
+.course-info-dl dt {
+  font-size:11px; font-weight:600; letter-spacing:0.6px; text-transform:uppercase;
+  color:var(--text-light); margin-top:10px;
+}
+.course-info-dl dt:first-child { margin-top:0; }
+.course-info-dl dd { font-size:13.5px; color:var(--text-muted); margin:3px 0 0; line-height:1.5; }
+.course-info-dl dd a { color:var(--accent-mid); }
+.course-section-lead {
+  font-size:14px; color:var(--text-muted); line-height:1.7; margin-top:8px; max-width:640px;
+}
+.course-section-lead code {
+  font-size:12.5px; background:var(--accent-light); padding:1px 6px; border-radius:4px; color:var(--accent);
+}
+.course-table-wrap {
+  border:0.5px solid var(--border); border-radius:var(--radius); overflow:hidden; background:var(--white);
+}
+.course-table { width:100%; border-collapse:collapse; font-size:13.5px; }
+.course-table thead th {
+  text-align:left; font-size:11.5px; font-weight:600; letter-spacing:0.4px;
+  text-transform:uppercase; color:var(--text-light);
+  background:var(--off-white); border-bottom:0.5px solid var(--border);
+  padding:12px 16px;
+}
+.course-table tbody td {
+  padding:12px 16px; border-bottom:0.5px solid var(--border); color:var(--text-muted); vertical-align:middle;
+}
+.course-table tbody tr:last-child td { border-bottom:none; }
+.course-table tbody tr:hover { background:var(--off-white); }
+.course-table .col-num { width:52px; font-variant-numeric:tabular-nums; color:var(--accent-mid); font-weight:600; }
+.course-table .col-file { max-width:220px; }
+.course-table .col-file code { font-size:12px; word-break:break-all; color:var(--text-light); }
+.course-table .col-action { width:100px; text-align:right; }
+.course-table tbody td strong { color:var(--text); font-weight:600; }
+.course-dl { color:var(--accent-mid); font-weight:500; white-space:nowrap; }
+.course-dl:hover { text-decoration:underline; }
+.course-refs { margin-top:8px; max-width:640px; }
+@media (max-width: 800px) {
+  .course-overview-grid { grid-template-columns:1fr; }
+  .course-table .col-file { display:none; }
+}
+
 .news-year-group { margin-bottom:40px; }
 .news-year-label { font-family:var(--serif); font-size:22px; color:var(--accent); border-bottom:0.5px solid var(--border); padding-bottom:10px; margin-bottom:16px; }
 .vacancies-hero { background:var(--accent); color:white; border-radius:var(--radius-lg); padding:52px 48px; margin-bottom:52px; }
