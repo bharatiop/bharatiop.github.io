@@ -23,12 +23,6 @@ permalink: /lecture-notes/
   <div class="section-header" id="nuclear-physics">
     <span class="eyebrow">Course notes</span>
     <h2 class="section-title">Nuclear Physics</h2>
-    <p style="font-size:14px;color:var(--text-muted);margin-top:8px;max-width:640px;line-height:1.7;">
-      Expanded notes for <strong>PH5001 / nuclear physics</strong> topics: nuclear structure,
-      the shell model, radioactivity (\(\alpha\), \(\beta\), \(\gamma\)), reactions, fission, and fusion.
-      Source folder on the site:
-      <code>downloads/nuclearphysics/</code>.
-    </p>
   </div>
 
   {% assign np_pdfs = site.static_files | where_exp: "f", "f.path contains '/downloads/nuclearphysics/'" | where_exp: "f", "f.extname == '.pdf'" %}
@@ -37,7 +31,13 @@ permalink: /lecture-notes/
   {% if np_sorted.size > 0 %}
   <div class="notes-grid" style="margin-bottom:52px;">
     {% for file in np_sorted %}
-    {% assign label = file.name | replace: '.pdf', '' | replace: '_', ' ' | replace: '-', ' ' %}
+    {% assign basename = file.name | replace: '.pdf', '' %}
+    {% if basename contains 'Lecture' %}
+      {% assign lec_num = basename | remove: 'Lecture' %}
+      {% assign label = 'Lecture ' | append: lec_num %}
+    {% else %}
+      {% assign label = basename | replace: '_', ' ' | replace: '-', ' ' %}
+    {% endif %}
     <a class="note-card" href="{{ site.url }}{{ site.baseurl }}{{ file.path }}" target="_blank" rel="noopener">
       <div class="note-card-icon" aria-hidden="true">PDF</div>
       <div class="note-card-body">
@@ -61,46 +61,6 @@ permalink: /lecture-notes/
     </p>
   </div>
   {% endif %}
-
-  <hr class="divider" style="margin-bottom:48px;">
-
-  <!-- HOW TO ADD -->
-  <div class="section-header">
-    <span class="eyebrow">For site maintainers</span>
-    <h2 class="section-title">How to upload new notes</h2>
-  </div>
-
-  <div class="course-list" style="margin-bottom:40px;">
-    <div class="course-item">
-      <span class="course-code">1</span>
-      <div>
-        <h4>Add the PDF</h4>
-        <p>
-          Copy the file into the repository folder
-          <code>downloads/nuclearphysics/</code>
-          (for nuclear physics notes).
-        </p>
-      </div>
-    </div>
-    <div class="course-item">
-      <span class="course-code">2</span>
-      <div>
-        <h4>Commit and push</h4>
-        <p>
-          <code>git add downloads/nuclearphysics/</code> then commit and <code>git push</code>
-        </p>
-      </div>
-    </div>
-    <div class="course-item">
-      <span class="course-code">3</span>
-      <div>
-        <h4>Automatic listing</h4>
-        <p>
-          After GitHub Pages rebuilds, the PDF appears in the list above—no HTML edit required.
-        </p>
-      </div>
-    </div>
-  </div>
 
   <p style="font-size:13.5px;color:var(--text-muted);line-height:1.7;">
     Related course list:
