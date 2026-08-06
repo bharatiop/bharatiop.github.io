@@ -29,11 +29,13 @@ permalink: /teaching/
     <div class="course-item">
       <span class="course-code">PH 5202</span>
       <div>
-        <h4>Nuclear Physics</h4>
+        <h4>Nuclear &amp; Particle Physics</h4>
         <p>Postgraduate core course for M.Sc. Physics. Covers nuclear structure, nuclear forces, radioactive decay, nuclear reactions, fission/fusion, and introductory nuclear astrophysics (nucleosynthesis, neutron stars).</p>
         <span class="course-sem">Semester: Even · M.Sc. Physics, NIT Rourkela</span>
-        <p style="margin-top:8px;font-size:13.5px;">
-          <a href="{{ site.url }}{{ site.baseurl }}/lecture-notes/#nuclear-physics" style="color:var(--accent-mid);">Lecture notes →</a>
+        <p style="margin-top:10px;display:flex;gap:12px;flex-wrap:wrap;font-size:13.5px;">
+          <a href="{{ site.url }}{{ site.baseurl }}/teaching/nuclear-physics/" style="color:var(--accent-mid);font-weight:500;">Course homepage →</a>
+          <a href="{{ site.url }}{{ site.baseurl }}/teaching/nuclear-physics/#lectures" style="color:var(--accent-mid);">Lectures</a>
+          <a href="{{ site.url }}{{ site.baseurl }}/teaching/nuclear-physics/#assignments" style="color:var(--accent-mid);">Assignments</a>
         </p>
       </div>
     </div>
@@ -78,25 +80,25 @@ permalink: /teaching/
 
   <hr class="divider" style="margin-bottom:48px;">
 
-  <!-- LECTURE NOTES PDF -->
+  <!-- COURSE HOMEPAGES -->
   <div class="section-header">
-    <span class="eyebrow">Materials</span>
-    <h2 class="section-title">Lecture notes (PDF)</h2>
+    <span class="eyebrow">Course materials</span>
+    <h2 class="section-title">Course homepages</h2>
   </div>
 
   <p style="font-size:14px;color:var(--text-muted);line-height:1.75;margin-bottom:20px;max-width:640px;">
-    Downloadable PDF notes for courses (including nuclear physics) are collected on a dedicated page.
-    New PDFs placed under <code>downloads/nuclearphysics/</code> appear there automatically after a push.
+    Dedicated pages with lectures, assignments, and resources — structured like a standard course site.
   </p>
 
   <div class="join-banner" style="margin-bottom:52px;">
     <div class="join-banner-text">
-      <p>Lecture notes library</p>
-      <span>Nuclear physics and other course PDFs · open access downloads</span>
+      <p>Nuclear &amp; Particle Physics</p>
+      <span>PH 5202 / PH 5001 · lectures &amp; full notes password-protected · assignments open</span>
     </div>
     <div style="display:flex;gap:10px;flex-wrap:wrap;">
-      <a class="btn btn-primary" href="{{ site.url }}{{ site.baseurl }}/lecture-notes/">Browse all notes →</a>
-      <a class="btn btn-secondary" href="{{ site.url }}{{ site.baseurl }}/lecture-notes/#nuclear-physics">Nuclear physics →</a>
+      <a class="btn btn-primary" href="{{ site.url }}{{ site.baseurl }}/teaching/nuclear-physics/">Open course page →</a>
+      <a class="btn btn-secondary" href="{{ site.url }}{{ site.baseurl }}/teaching/nuclear-physics/#lectures">Lectures</a>
+      <a class="btn btn-secondary" href="{{ site.url }}{{ site.baseurl }}/teaching/nuclear-physics/#assignments">Assignments</a>
     </div>
   </div>
 
