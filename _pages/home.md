@@ -9,29 +9,31 @@ permalink: /
 <!-- HERO -->
 <section aria-label="Introduction">
   <div class="hero">
-    <div class="hero-left">
-      <span class="hero-eyebrow">Nuclear Astrophysics &amp; Physics Lab</span>
-      <h1>Probing the densest objects in the universe</h1>
-      <p class="hero-desc">
-        We are a research group at the
-        <a href="https://www.nitrkl.ac.in/" style="color:var(--accent-mid);text-decoration:underline">National Institute of Technology, Rourkela</a>,
-        India — working at the intersection of nuclear physics, astrophysics,
-        gravitational waves, and dark matter to unravel the mysteries of neutron stars.
-      </p>
-      <div class="hero-cta">
-        <a href="{{ site.url }}{{ site.baseurl }}/publications" class="btn btn-primary">Publications</a>
-        <a href="{{ site.url }}{{ site.baseurl }}/team" class="btn btn-secondary">Meet the Team</a>
-        <a href="https://scholar.google.com/citations?user=4498IKgAAAAJ&hl=en" class="btn btn-secondary" target="_blank" rel="noopener">Google Scholar ↗</a>
+    <div class="hero-inner">
+      <div class="hero-left">
+        <span class="hero-eyebrow">Nuclear Astrophysics &amp; Physics Lab · NIT Rourkela</span>
+        <h1>Probing the <em>densest objects</em> in the universe</h1>
+        <p class="hero-desc">
+          We are a research group at the
+          <a href="https://www.nitrkl.ac.in/" style="color:var(--gold-light);text-decoration:underline">National Institute of Technology, Rourkela</a>,
+          India — working at the intersection of nuclear physics, astrophysics,
+          gravitational waves, and dark matter to unravel the mysteries of neutron stars.
+        </p>
+        <div class="hero-cta">
+          <a href="{{ site.url }}{{ site.baseurl }}/publications" class="btn btn-primary">Publications</a>
+          <a href="{{ site.url }}{{ site.baseurl }}/team" class="btn btn-secondary">Meet the Team</a>
+          <a href="https://scholar.google.com/citations?user=4498IKgAAAAJ&hl=en" class="btn btn-secondary" target="_blank" rel="noopener">Scholar ↗</a>
+        </div>
       </div>
-    </div>
-    <div class="hero-right">
-      <div class="hero-stats-grid">
-        <div class="stat-box"><div class="stat-num">30+</div><div class="stat-label">Publications</div></div>
-        <div class="stat-box"><div class="stat-num">3</div><div class="stat-label">PhD Students</div></div>
-        <div class="stat-box"><div class="stat-num">2020</div><div class="stat-label">Founded</div></div>
-      </div>
+      <div class="hero-right">
+        <div class="hero-stats-grid">
+          <div class="stat-box"><div class="stat-num">30+</div><div class="stat-label">Publications</div></div>
+          <div class="stat-box"><div class="stat-num">3</div><div class="stat-label">PhD Students</div></div>
+          <div class="stat-box"><div class="stat-num">2020</div><div class="stat-label">Founded</div></div>
+        </div>
 
-      {% include datetime-widget.html %}
+        {% include datetime-widget.html %}
+      </div>
     </div>
   </div>
 </section>
@@ -363,7 +365,7 @@ permalink: /
   <div style="border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;background:var(--accent-light);">
     <img src="{{ site.url }}{{ site.baseurl }}/images/pinku-defence-group.jpg" alt="Group photo: Pinku Routaray PhD defence seminar at NIT Rourkela with lab members" style="width:100%;display:block;">
     <div style="padding:10px 14px;font-size:13.5px;line-height:1.55;color:var(--text);">
-      <strong>Congratulations to Pinku Routaray</strong> for successfully defending his PhD thesis on “Dark Matter Effects on Neutron Star Structure and Observables”. He will join the <strong>Kavli Institute of Astronomy and Astrophysics, China</strong> as a postdoctoral researcher.
+      <strong>Congratulations to Pinku Routaray</strong> for successfully defending his PhD thesis on "Dark Matter Effects on Neutron Star Structure and Observables". He will join the <strong>Kavli Institute of Astronomy and Astrophysics, China</strong> as a postdoctoral researcher.
     </div>
   </div>
 </div>
