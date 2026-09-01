@@ -99,7 +99,8 @@ permalink: /
 
   <div class="rows">
     {% for row in site.data.research_rows %}
-    <article class="row-item{% if forloop.index0 is odd %} reverse{% endif %} reveal">
+    {% assign row_is_odd = forloop.index0 | modulo: 2 %}
+    <article class="row-item{% if row_is_odd == 1 %} reverse{% endif %} reveal">
       <div class="row-media">
         <img src="{{ site.url }}{{ site.baseurl }}{{ row.image }}" alt="{{ row.alt }}" loading="lazy">
         {% if row.citation %}<span class="row-media-tag">{{ row.citation }}</span>{% endif %}
