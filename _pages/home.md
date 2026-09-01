@@ -1,437 +1,510 @@
 ---
 title: "NAP Lab"
 layout: homelay
-excerpt: "Nuclear Astrophysics & Physics Lab @ NIT Rourkela"
+excerpt: "Nuclear Astrophysics & Physics Lab at NIT Rourkela — modelling dense matter, neutron-star oscillations, dark matter and multi-messenger signals."
 sitemap: true
 permalink: /
 ---
 
-<!-- HERO -->
-<section aria-label="Introduction">
-  <div class="hero">
-    <div class="hero-inner">
-      <div class="hero-left">
-        <span class="hero-eyebrow">Nuclear Astrophysics &amp; Physics Lab · NIT Rourkela</span>
-        <h1>Probing the <em>densest objects</em> in the universe</h1>
-        <p class="hero-desc">
-          We are a research group at the
-          <a href="https://www.nitrkl.ac.in/" style="color:var(--gold-light);text-decoration:underline">National Institute of Technology, Rourkela</a>,
-          India — working at the intersection of nuclear physics, astrophysics,
-          gravitational waves, and dark matter to unravel the mysteries of neutron stars.
-        </p>
-        <div class="hero-cta">
-          <a href="{{ site.url }}{{ site.baseurl }}/publications" class="btn btn-primary">Publications</a>
-          <a href="{{ site.url }}{{ site.baseurl }}/team" class="btn btn-secondary">Meet the Team</a>
-          <a href="https://scholar.google.com/citations?user=4498IKgAAAAJ&hl=en" class="btn btn-secondary" target="_blank" rel="noopener">Scholar ↗</a>
-        </div>
-      </div>
-      <div class="hero-right">
-        <div class="hero-stats-grid">
-          <div class="stat-box"><div class="stat-num">30+</div><div class="stat-label">Publications</div></div>
-          <div class="stat-box"><div class="stat-num">3</div><div class="stat-label">PhD Students</div></div>
-          <div class="stat-box"><div class="stat-num">2020</div><div class="stat-label">Founded</div></div>
-        </div>
+<!-- ═══════════════════════════════════════════════════════════
+     HERO — full viewport
+     ═══════════════════════════════════════════════════════════ -->
+<section class="hero" aria-label="Introduction">
+  <div class="hero-orb" aria-hidden="true"></div>
 
-        {% include datetime-widget.html %}
+  <div class="hero-inner">
+    <span class="hero-eyebrow">Nuclear Astrophysics &amp; Physics Lab</span>
+
+    <h1>Reading the physics of <em>matter at its limit</em>.</h1>
+
+    <p class="hero-desc">
+      Inside a neutron star, matter is squeezed past anything we can make on Earth.
+      At the <a href="https://www.nitrkl.ac.in/" target="_blank" rel="noopener">National Institute of Technology, Rourkela</a>
+      we build the nuclear models — and test them against gravitational waves,
+      pulsar timing and X-ray data — to work out what that matter actually is.
+    </p>
+
+    <div class="hero-cta">
+      <a href="{{ site.url }}{{ site.baseurl }}/research" class="btn btn-primary">Explore the research</a>
+      <a href="{{ site.url }}{{ site.baseurl }}/publications" class="btn btn-ghost">Publications</a>
+    </div>
+
+    <div class="hero-meta">
+      <div class="hero-meta-item">
+        <div class="hero-meta-num">30<span>+</span></div>
+        <div class="hero-meta-label">Publications</div>
+      </div>
+      <div class="hero-meta-item">
+        <div class="hero-meta-num">1.5<span>k+</span></div>
+        <div class="hero-meta-label">Citations</div>
+      </div>
+      <div class="hero-meta-item">
+        <div class="hero-meta-num">3</div>
+        <div class="hero-meta-label">PhD researchers</div>
+      </div>
+      <div class="hero-meta-item">
+        <div class="hero-meta-num">2020</div>
+        <div class="hero-meta-label">Lab founded</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-cue" aria-hidden="true">
+    <span>Scroll</span>
+    <span class="scroll-cue-line"></span>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     MISSION
+     ═══════════════════════════════════════════════════════════ -->
+<section class="mission" aria-label="Mission">
+  <div class="mission-inner">
+    <div class="mission-grid">
+      <div class="reveal">
+        <span class="eyebrow">What we do</span>
+        <p class="mission-statement">
+          We use the <em>densest objects in the universe</em> as laboratories for
+          nuclear physics we can never build on Earth.
+        </p>
+      </div>
+      <div class="mission-aside reveal">
+        <p>
+          A neutron star packs more than the Sun's mass into a sphere the width of a city.
+          Its core reaches several times the density of an atomic nucleus — a regime no
+          accelerator on Earth can reproduce.
+        </p>
+        <p>
+          That makes every merger LIGO hears, every pulsar NICER times, and every
+          glitch we observe a measurement of nuclear physics. Our work is building the
+          theory precise enough to read those measurements.
+        </p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SELECTED PAPER FIGURES -->
+<!-- ═══════════════════════════════════════════════════════════
+     RESEARCH ROWS — question-driven
+     ═══════════════════════════════════════════════════════════ -->
+<section class="section" aria-label="Research areas">
+  <div class="section-header reveal">
+    <span class="eyebrow">Research</span>
+    <h2 class="section-title wide">Four questions driving the lab</h2>
+    <p class="section-lead">
+      Each one connects a piece of nuclear theory to something a telescope or
+      detector can actually measure.
+    </p>
+  </div>
+
+  <div class="rows">
+    {% for row in site.data.research_rows %}
+    <article class="row-item{% if forloop.index0 is odd %} reverse{% endif %} reveal">
+      <div class="row-media">
+        <img src="{{ site.url }}{{ site.baseurl }}{{ row.image }}" alt="{{ row.alt }}" loading="lazy">
+        {% if row.citation %}<span class="row-media-tag">{{ row.citation }}</span>{% endif %}
+      </div>
+      <div class="row-body">
+        <span class="row-num">{{ row.number }} — {{ row.label }}</span>
+        <h3>{{ row.question }}</h3>
+        {% for para in row.body %}<p>{{ para }}</p>{% endfor %}
+        {% if row.tags %}
+        <div class="row-tags">
+          {% for t in row.tags %}<span class="tag">{{ t }}</span>{% endfor %}
+        </div>
+        {% endif %}
+        <a href="{{ site.url }}{{ site.baseurl }}{{ row.link_url | default: '/research' }}" class="row-link">{{ row.link_text | default: "Read more →" }}</a>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     METRICS BAND
+     ═══════════════════════════════════════════════════════════ -->
+<section class="band-dark" aria-label="Lab at a glance">
+  <div class="section">
+    <div class="section-header reveal">
+      <span class="eyebrow">At a glance</span>
+      <h2 class="section-title">The lab in numbers</h2>
+    </div>
+    <div class="metrics reveal">
+      <div class="metric">
+        <div class="metric-num">30+</div>
+        <div class="metric-label">Peer-reviewed papers</div>
+      </div>
+      <div class="metric">
+        <div class="metric-num">1,540+</div>
+        <div class="metric-label">Citations</div>
+      </div>
+      <div class="metric">
+        <div class="metric-num">6</div>
+        <div class="metric-label">Researchers &amp; students</div>
+      </div>
+      <div class="metric">
+        <div class="metric-num">1</div>
+        <div class="metric-label">PhD awarded</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     SELECTED FIGURES
+     ═══════════════════════════════════════════════════════════ -->
 <section class="obs-section" aria-label="Selected paper figures">
   <div class="obs-inner">
-    <div class="section-header">
-      <span class="eyebrow">From Our Papers</span>
-      <h2 class="section-title">Selected results</h2>
-      <p class="obs-lead">Figures from NAP Lab publications — click a paper link below each image to open the work.</p>
+    <div class="section-header reveal">
+      <span class="eyebrow">From our papers</span>
+      <h2 class="section-title wide">Selected results</h2>
+      <p class="obs-lead">
+        Figures taken directly from NAP Lab publications. Follow the citation under each
+        one to open the paper.
+      </p>
     </div>
 
-    <div class="obs-grid paper-fig-grid">
+    <div class="obs-grid paper-fig-grid" data-stagger>
+      {% for fig in site.data.paper_figures %}
       <figure class="obs-card paper-fig-card">
         <div class="paper-fig-img">
-          <img src="{{ site.url }}{{ site.baseurl }}/images/papers/eos_tidal.png"
-               alt="Tidal deformability Λ1–Λ2 for G3 and IOPB-I EoS"
-               loading="lazy">
+          <img src="{{ site.url }}{{ site.baseurl }}{{ fig.image }}" alt="{{ fig.alt }}" loading="lazy">
         </div>
         <figcaption>
-          <strong>Tidal deformability from RMF EoS</strong>
-          <a class="paper-fig-link" href="https://journals.aps.org/prc/abstract/10.1103/PhysRevC.97.045806" target="_blank" rel="noopener">Phys. Rev. C 97, 045806 (2018) ↗</a>
+          <strong>{{ fig.title }}</strong>
+          <a class="paper-fig-link" href="{{ fig.url }}" target="_blank" rel="noopener">{{ fig.citation }} ↗</a>
         </figcaption>
       </figure>
-
-      <figure class="obs-card paper-fig-card">
-        <div class="paper-fig-img">
-          <img src="{{ site.url }}{{ site.baseurl }}/images/papers/eos_mr.png"
-               alt="Mass–radius curves constrained by GW170817 and pulsars"
-               loading="lazy">
-        </div>
-        <figcaption>
-          <strong>Mass–radius of neutron stars</strong>
-          <a class="paper-fig-link" href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.99.123026" target="_blank" rel="noopener">Phys. Rev. D 99, 123026 (2019) ↗</a>
-        </figcaption>
-      </figure>
-
-      <figure class="obs-card paper-fig-card">
-        <div class="paper-fig-img">
-          <img src="{{ site.url }}{{ site.baseurl }}/images/papers/hyperons_delta.png"
-               alt="Effective mass of nucleons and delta baryons"
-               loading="lazy">
-        </div>
-        <figcaption>
-          <strong>Δ-baryons in dense matter</strong>
-          <a class="paper-fig-link" href="https://doi.org/10.1088/1475-7516/2024/04/065" target="_blank" rel="noopener">JCAP 04, 065 (2024) ↗</a>
-        </figcaption>
-      </figure>
-
-      <figure class="obs-card paper-fig-card">
-        <div class="paper-fig-img">
-          <img src="{{ site.url }}{{ site.baseurl }}/images/papers/gw_fmode.png"
-               alt="Correlation matrix of f- and p-mode frequencies with nuclear parameters"
-               loading="lazy">
-        </div>
-        <figcaption>
-          <strong>f- and p-mode correlations</strong>
-          <a class="paper-fig-link" href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.106.063005" target="_blank" rel="noopener">Phys. Rev. D 106, 063005 (2022) ↗</a>
-        </figcaption>
-      </figure>
-
-      <figure class="obs-card paper-fig-card">
-        <div class="paper-fig-img">
-          <img src="{{ site.url }}{{ site.baseurl }}/images/papers/dm_posterior.jpeg"
-               alt="Mass–radius posteriors for dark matter admixed neutron stars"
-               loading="lazy">
-        </div>
-        <figcaption>
-          <strong>WIMP dark matter in NSs</strong>
-          <a class="paper-fig-link" href="https://doi.org/10.1093/mnras/stad2628" target="_blank" rel="noopener">MNRAS 525, 5492 (2023) ↗</a>
-        </figcaption>
-      </figure>
-
-      <figure class="obs-card paper-fig-card">
-        <div class="paper-fig-img">
-          <img src="{{ site.url }}{{ site.baseurl }}/images/papers/dm_radial.png"
-               alt="Radial oscillations of dark matter admixed neutron stars"
-               loading="lazy">
-        </div>
-        <figcaption>
-          <strong>Radial modes with dark matter</strong>
-          <a class="paper-fig-link" href="https://doi.org/10.1103/PhysRevD.107.103039" target="_blank" rel="noopener">Phys. Rev. D 107, 103039 (2023) ↗</a>
-        </figcaption>
-      </figure>
-
-      <figure class="obs-card paper-fig-card">
-        <div class="paper-fig-img">
-          <img src="{{ site.url }}{{ site.baseurl }}/images/papers/mm_moi.png"
-               alt="Moment of inertia constraints from GW170817"
-               loading="lazy">
-        </div>
-        <figcaption>
-          <strong>I of PSR J0737−3039A</strong>
-          <a class="paper-fig-link" href="https://iopscience.iop.org/article/10.3847/2041-8213/aaee76" target="_blank" rel="noopener">ApJ Lett. 868, L22 (2018) ↗</a>
-        </figcaption>
-      </figure>
-
-      <figure class="obs-card paper-fig-card">
-        <div class="paper-fig-img">
-          <img src="{{ site.url }}{{ site.baseurl }}/images/papers/mm_tidal.png"
-               alt="Tidal Love number with and without hyperons"
-               loading="lazy">
-        </div>
-        <figcaption>
-          <strong>Tidal Love numbers &amp; hyperons</strong>
-          <a class="paper-fig-link" href="https://doi.org/10.1103/PhysRevC.95.015801" target="_blank" rel="noopener">Phys. Rev. C 95, 015801 (2017) ↗</a>
-        </figcaption>
-      </figure>
-
-      <figure class="obs-card paper-fig-card">
-        <div class="paper-fig-img">
-          <img src="{{ site.url }}{{ site.baseurl }}/images/papers/gw_tidal.png"
-               alt="Universal relations for tidal deformability from GW170817"
-               loading="lazy">
-        </div>
-        <figcaption>
-          <strong>Universal relations from GW170817</strong>
-          <a class="paper-fig-link" href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.99.123026" target="_blank" rel="noopener">Phys. Rev. D 99, 123026 (2019) ↗</a>
-        </figcaption>
-      </figure>
-    </div>
-
-    <div class="jobs-banner" style="margin-top:28px;">
-      <div class="jobs-banner-text">
-        <span class="jobs-banner-icon">🌍</span>
-        <div>
-          <strong>Looking for a PhD or Postdoc elsewhere too?</strong>
-          <span>Browse current openings worldwide in nuclear physics, astrophysics &amp; gravitational waves.</span>
-        </div>
-      </div>
-      <a href="{{ site.url }}{{ site.baseurl }}/vacancies#world-positions" class="btn btn-secondary btn-sm">See global listings →</a>
+      {% endfor %}
     </div>
   </div>
 </section>
 
-<hr class="divider">
-
-<!-- PI SECTION -->
+<!-- ═══════════════════════════════════════════════════════════
+     PRINCIPAL INVESTIGATOR
+     ═══════════════════════════════════════════════════════════ -->
 <section class="section" aria-label="Principal Investigator">
-  <div class="section-header">
+  <div class="section-header reveal">
     <span class="eyebrow">Principal Investigator</span>
-    <h2 class="section-title">Dr. Bharat Kumar</h2>
+    <h2 class="section-title">Who runs the lab</h2>
   </div>
-  <div class="scholar-card">
-    <div class="team-avatar" style="width:100px;height:100px;flex-shrink:0;border-radius:50%;overflow:hidden;border:2px solid var(--border);">
-      <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/bk_pic.jpeg" alt="Dr. Bharat Kumar"
-           style="width:100%;height:100%;object-fit:cover;"
-           onerror="this.parentElement.style.background='var(--accent-light)';this.style.display='none';this.parentElement.innerHTML='<span style=\'font-family:var(--serif);font-size:28px;color:var(--accent-mid);display:flex;align-items:center;justify-content:center;height:100%\'>BK</span>'">
+
+  <div class="pi-card reveal">
+    <div class="pi-photo">
+      <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/bk_pic.jpeg"
+           alt="Dr. Bharat Kumar" loading="lazy"
+           onerror="this.parentElement.innerHTML='<span style=&quot;font-family:var(--display);font-size:3rem;font-weight:700;color:var(--plasma-deep);display:flex;align-items:center;justify-content:center;height:100%&quot;>BK</span>'">
     </div>
-    <div style="flex:1;">
-      <p style="font-size:15.5px;font-weight:500;color:var(--text);margin-bottom:4px;">Bharat Kumar</p>
-      <p style="font-size:13.5px;color:var(--text-muted);margin-bottom:12px;">Assistant Professor · Department of Physics &amp; Astronomy, NIT Rourkela · <em>since June 2020</em></p>
-      <p style="font-size:13.5px;color:var(--text-muted);line-height:1.75;margin-bottom:14px;">
-        M.Sc. Physics, AMU Aligarh &nbsp;·&nbsp; Ph.D. with S K Patra, IOP Bhubaneswar &nbsp;·&nbsp;
-        Postdoc with Sukanta Bose (LIGO-India, IUCAA) &nbsp;·&nbsp; Postdoc with Takashi Nakatsukasa, University of Tsukuba, Japan
+
+    <div>
+      <span class="pi-badge">Assistant Professor</span>
+      <h3 class="pi-name">Dr. Bharat Kumar</h3>
+      <p class="pi-role">Department of Physics &amp; Astronomy, NIT Rourkela — since June 2020</p>
+
+      <p class="pi-bio">
+        Bharat works on the nuclear equation of state and what it implies for compact
+        objects — from relativistic mean-field models of dense matter through to
+        gravitational-wave signatures of neutron star oscillations. He founded NAP Lab
+        in 2020 and supervises its PhD and Masters researchers.
       </p>
-      <div style="display:flex;gap:10px;flex-wrap:wrap;">
-        <a href="{{ site.url }}{{ site.baseurl }}/downloads/CV.pdf" class="btn btn-secondary btn-sm">CV (PDF)</a>
-        <a href="https://scholar.google.com/citations?user=4498IKgAAAAJ&hl=en" class="btn btn-secondary btn-sm" target="_blank" rel="noopener">Google Scholar ↗</a>
-        <a href="https://orcid.org/0000-0000-0000-0000" data-todo="replace-with-real-orcid" class="btn btn-secondary btn-sm" target="_blank" rel="noopener">ORCID ↗</a>
-        <a href="mailto:kumarbh@nitrkl.ac.in" class="btn btn-secondary btn-sm">Email</a>
+
+      <div class="pi-track">
+        <div class="pi-track-item"><strong>M.Sc. Physics</strong> — Aligarh Muslim University</div>
+        <div class="pi-track-item"><strong>Ph.D.</strong> — with S. K. Patra, Institute of Physics, Bhubaneswar</div>
+        <div class="pi-track-item"><strong>Postdoc</strong> — LIGO-India group of Sukanta Bose, IUCAA Pune</div>
+        <div class="pi-track-item"><strong>Postdoc</strong> — with Takashi Nakatsukasa, University of Tsukuba, Japan</div>
       </div>
-      <div id="scholarStatsHome" class="scholar-stats" style="max-width:360px;">
-        <div class="scholar-stat"><div class="n">30+</div><div class="l">Papers</div></div>
-        <div class="scholar-stat"><div class="n">1,540+</div><div class="l">Citations</div></div>
-        <div class="scholar-stat"><div class="n">—</div><div class="l">h-index</div></div>
+
+      <div class="pi-links">
+        <a href="{{ site.url }}{{ site.baseurl }}/downloads/CV.pdf" class="btn btn-outline btn-sm">Curriculum Vitae</a>
+        <a href="https://scholar.google.com/citations?user=4498IKgAAAAJ&hl=en" class="btn btn-outline btn-sm" target="_blank" rel="noopener">Google Scholar ↗</a>
+        <a href="mailto:kumarbh@nitrkl.ac.in" class="btn btn-outline btn-sm">Email</a>
       </div>
-      <p style="font-size:11px;color:var(--text-light);margin-top:8px;">
-        Citation count last verified via <a href="https://scholar.google.com/citations?user=4498IKgAAAAJ&hl=en" target="_blank" rel="noopener" style="color:var(--accent-mid)">Google Scholar ↗</a> — click through for live, up-to-the-minute numbers.
-      </p>
     </div>
   </div>
 </section>
 
-<hr class="divider">
+<!-- ═══════════════════════════════════════════════════════════
+     TEAM
+     ═══════════════════════════════════════════════════════════ -->
+<section class="band" aria-label="Team">
+  <div class="section">
+    <div class="section-header-row reveal">
+      <div>
+        <span class="eyebrow">People</span>
+        <h2 class="section-title">The researchers</h2>
+      </div>
+      <a href="{{ site.url }}{{ site.baseurl }}/team" class="btn btn-outline">Full team &amp; alumni →</a>
+    </div>
 
-{% include field-news-widget.html %}
+    <div class="team-grid" data-stagger>
+      {% for person in site.data.home_team %}
+      <div class="team-card">
+        <div class="team-avatar">
+          <img src="{{ site.url }}{{ site.baseurl }}{{ person.photo }}" alt="{{ person.name }}" loading="lazy"
+               onerror="this.parentElement.classList.add('initials');this.parentElement.textContent='{{ person.initials }}';this.remove()">
+        </div>
+        <h3>{{ person.name }}</h3>
+        <div class="role">{{ person.role }}</div>
+        <span class="tag{% if person.tag_class %} {{ person.tag_class }}{% endif %}">{{ person.tag }}</span>
+        <div class="team-links">
+          {% for link in person.links %}<a href="{{ link.url }}" class="tag" target="_blank" rel="noopener">{{ link.label }}</a>{% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
 
-<hr class="divider">
-
-<!-- NEWS + EVENTS -->
-<section class="section" aria-label="News and Events">
+<!-- ═══════════════════════════════════════════════════════════
+     NEWS + EVENTS
+     ═══════════════════════════════════════════════════════════ -->
+<section class="section" aria-label="News and events">
   <div class="two-col">
-    <div>
-      <div class="section-header">
-        <span class="eyebrow">Lab Updates</span>
-        <h2 class="section-title">News</h2>
+
+    <div class="reveal">
+      <div class="section-header-row" style="margin-bottom:2rem;">
+        <div>
+          <span class="eyebrow">Lab updates</span>
+          <h2 class="section-title" style="font-size:clamp(1.5rem,2.6vw,2.1rem)">News</h2>
+        </div>
       </div>
       <div class="news-list">
         <div class="news-item">
           <span class="news-date">July 2026</span>
-          <p class="news-text"><strong>Congratulations to Pinku Routaray</strong> for successfully defending his PhD thesis and joining the <strong>Kavli Institute of Astronomy and Astrophysics, China</strong> as a postdoc!</p>
+          <p class="news-text">
+            <strong>Pinku Routaray defends his PhD</strong> on “Dark Matter Effects on Neutron
+            Star Structure and Observables”, and moves to the Kavli Institute for Astronomy
+            and Astrophysics, China, as a postdoctoral fellow.
+          </p>
         </div>
         <div class="news-item">
-          <span class="news-date">23 Dec 2024</span>
-          <p class="news-text">Congrats to Pinku for Best Poster Award at the DAE High Energy Physics Symposium, BHU. <a href="https://indico.cern.ch/event/1426931/" target="_blank" rel="noopener">Event ↗</a></p>
+          <span class="news-date">Feb 2026</span>
+          <p class="news-text">
+            New paper on spacetime curvature as a probe of exotic core phases in modified
+            gravity — <a href="https://doi.org/10.1103/rjzl-pcr4" target="_blank" rel="noopener">Phys. Rev. D 113, 024070 ↗</a>
+          </p>
         </div>
         <div class="news-item">
-          <span class="news-date">Apr 2024</span>
-          <p class="news-text">Paper by Kalita, Routaray, Ghosh &amp; Kumar on delta-baryons published in <a href="https://iopscience.iop.org/article/10.1088/1475-7516/2024/04/065" target="_blank">JCAP ↗</a></p>
+          <span class="news-date">Sep 2025</span>
+          <p class="news-text">
+            Work on adiabatic sound speeds and radial-oscillation stability published in
+            <a href="https://doi.org/10.1088/1475-7516/2025/09/025" target="_blank" rel="noopener">JCAP 09, 025 ↗</a>
+          </p>
         </div>
         <div class="news-item">
-          <span class="news-date">1 Sep 2023</span>
-          <p class="news-text">Pinku's paper on WIMP dark matter accepted in <a href="https://shorturl.at/nBPT3" target="_blank" rel="noopener">MNRAS ↗</a></p>
+          <span class="news-date">Dec 2024</span>
+          <p class="news-text">
+            Pinku wins <strong>Best Poster</strong> at the DAE High Energy Physics Symposium, BHU.
+            <a href="https://indico.cern.ch/event/1426931/" target="_blank" rel="noopener">Event ↗</a>
+          </p>
         </div>
       </div>
-      <div class="mt-6"><a href="{{ site.url }}{{ site.baseurl }}/allnews.html" class="btn btn-secondary">All news →</a></div>
+      <div class="mt-8">
+        <a href="{{ site.url }}{{ site.baseurl }}/allnews.html" class="btn btn-outline btn-sm">All news →</a>
+      </div>
     </div>
-    <div>
-      <div class="section-header">
-        <span class="eyebrow">Field Conferences &amp; Schools</span>
-        <h2 class="section-title">Upcoming events</h2>
+
+    <div class="reveal">
+      <div class="section-header-row" style="margin-bottom:2rem;">
+        <div>
+          <span class="eyebrow">Conferences &amp; schools</span>
+          <h2 class="section-title" style="font-size:clamp(1.5rem,2.6vw,2.1rem)">Upcoming</h2>
+        </div>
       </div>
       <div class="news-list">
         <div class="news-item">
-          <span class="news-date">Jun 28–Jul 3, 2026</span>
+          <span class="news-date">28 Jun – 3 Jul 2026</span>
           <p class="news-text"><strong>GWsNS-2026</strong> — Gravitational Waves from Neutron Stars school, Roscoff, France.</p>
         </div>
         <div class="news-item">
-          <span class="news-date">Jul 5–11, 2026</span>
-          <p class="news-text"><strong>Asian GW Astronomy Meeting (AGWAM 2026)</strong> — Chiang Mai, Thailand.</p>
+          <span class="news-date">5–11 Jul 2026</span>
+          <p class="news-text"><strong>AGWAM 2026</strong> — Asian Gravitational Wave Astronomy Meeting, Chiang Mai, Thailand.</p>
         </div>
         <div class="news-item">
-          <span class="news-date">Jul 6–14, 2026</span>
+          <span class="news-date">6–14 Jul 2026</span>
           <p class="news-text"><strong>Multimessenger Astrophysics 2026</strong> — 9th ICE Summer School, Barcelona, Spain.</p>
         </div>
         <div class="news-item">
-          <span class="news-date">Sep 16–22, 2026</span>
-          <p class="news-text"><strong>Erice School</strong> — Neutrinos in Cosmology, Astro-, Particle &amp; Nuclear Physics, Erice, Italy.</p>
+          <span class="news-date">16–22 Sep 2026</span>
+          <p class="news-text"><strong>Erice School</strong> — Neutrinos in Cosmology, Astro-, Particle &amp; Nuclear Physics, Sicily.</p>
         </div>
       </div>
-      <div class="mt-6"><a href="{{ site.url }}{{ site.baseurl }}/events" class="btn btn-secondary">All events →</a></div>
+      <div class="mt-8">
+        <a href="{{ site.url }}{{ site.baseurl }}/events" class="btn btn-outline btn-sm">All events →</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     SELECTED PUBLICATIONS
+     ═══════════════════════════════════════════════════════════ -->
+<section class="band" aria-label="Publications">
+  <div class="section">
+    <div class="section-header-row reveal">
+      <div>
+        <span class="eyebrow">Research output</span>
+        <h2 class="section-title">Recent publications</h2>
+      </div>
+      <a href="{{ site.url }}{{ site.baseurl }}/publications" class="btn btn-outline">All publications →</a>
+    </div>
+
+    <div class="pub-list reveal">
+      <div class="pub-item highlight-pub">
+        <span class="pub-year">2026</span>
+        <div class="pub-info">
+          <h4>Spacetime Curvature as a Probe of Exotic Core Phases in Neutron Stars within Modified Gravity</h4>
+          <p class="pub-authors">
+            <a href="https://sites.google.com/view/sayantanns" target="_blank" rel="noopener">Sayantan Ghosh</a>,
+            Bharat Kumar, Subhash Mahapatra
+          </p>
+          <div class="pub-links">
+            <a href="https://doi.org/10.1103/rjzl-pcr4" class="pub-link" target="_blank" rel="noopener">Phys. Rev. D 113, 024070</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-item highlight-pub">
+        <span class="pub-year">2025</span>
+        <div class="pub-info">
+          <h4>Observable Signatures of a Quarkyonic Phase in Neutron Stars</h4>
+          <p class="pub-authors">
+            <a href="https://scholar.google.com/citations?user=h9DkoD4AAAAJ&hl=en" target="_blank" rel="noopener">Probit J. Kalita</a>,
+            Tuhin Malik, Tianqi Zhao, Bharat Kumar, James M. Lattimer
+          </p>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/2510.23405" class="pub-link" target="_blank" rel="noopener">arXiv:2510.23405</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-item highlight-pub">
+        <span class="pub-year">2025</span>
+        <div class="pub-info">
+          <h4>The Role of Adiabatic Sound Speeds in Neutron Star Radial Oscillations and Stability</h4>
+          <p class="pub-authors">
+            <a href="https://sites.google.com/view/sayantanns" target="_blank" rel="noopener">Sayantan Ghosh</a>,
+            Tianqi Zhao, Bharat Kumar,
+            <a href="https://scholar.google.com/citations?user=mx_PbkcAAAAJ&hl=en" target="_blank" rel="noopener">Sailesh Ranjan Mohanty</a>
+          </p>
+          <div class="pub-links">
+            <a href="https://doi.org/10.1088/1475-7516/2025/09/025" class="pub-link" target="_blank" rel="noopener">JCAP 09, 025</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-item highlight-pub">
+        <span class="pub-year">2024</span>
+        <div class="pub-info">
+          <h4>Probing the Impact of Delta-Baryons on Nuclear Matter and Non-Radial Oscillations in Neutron Stars</h4>
+          <p class="pub-authors">
+            <a href="https://scholar.google.com/citations?user=h9DkoD4AAAAJ&hl=en" target="_blank" rel="noopener">Probit Jyoti Kalita</a>,
+            <a href="https://scholar.google.com/citations?user=d1j-L6cAAAAJ&hl=en" target="_blank" rel="noopener">Pinku Routaray</a>,
+            <a href="https://sites.google.com/view/sayantanns" target="_blank" rel="noopener">Sayantan Ghosh</a>,
+            Bharat Kumar, Bijay K. Agrawal
+          </p>
+          <div class="pub-links">
+            <a href="https://doi.org/10.1088/1475-7516/2024/04/065" class="pub-link" target="_blank" rel="noopener">JCAP 04, 065</a>
+            <a href="https://arxiv.org/abs/2308.09008" class="pub-link" target="_blank" rel="noopener">arXiv</a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<hr class="divider">
+<!-- ═══════════════════════════════════════════════════════════
+     JOIN THE LAB
+     ═══════════════════════════════════════════════════════════ -->
+<section class="band-dark" aria-label="Open positions">
+  <div class="section">
+    <div class="section-header reveal">
+      <span class="eyebrow">Opportunities</span>
+      <h2 class="section-title wide">Join the lab</h2>
+      <p class="section-lead">
+        We take students and postdocs who want to work at the boundary between nuclear
+        theory and observational astrophysics. Prior experience with numerical methods
+        helps; curiosity matters more.
+      </p>
+    </div>
 
-<!-- TEAM SNAPSHOT -->
-<section class="section" aria-label="Team">
-  <div class="section-header">
-    <span class="eyebrow">People</span>
-    <h2 class="section-title">Current team members</h2>
-  </div>
-  <p class="eyebrow mb-4">PhD Students</p>
-  <div class="team-grid" style="margin-bottom:32px;">
-    <div class="team-card">
-      <div class="team-avatar">
-        <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/sayantan_pic.png" alt="Sayantan Ghosh"
-             onerror="this.parentElement.classList.add('initials');this.parentElement.textContent='SG';this.remove()">
+    <div class="openings-grid" data-stagger>
+      <div class="opening-card">
+        <span class="opening-type">PhD</span>
+        <h4>PhD Fellowship — DST WISE</h4>
+        <p>
+          Projects in neutron-star asteroseismology, dark-matter admixed stars, and
+          multi-messenger constraints on the equation of state.
+        </p>
+        <a href="https://onlinedst.gov.in/Projectproposalformat.aspx" target="_blank" rel="noopener">Apply via DST WISE →</a>
       </div>
-      <h3>Sayantan Ghosh</h3>
-      <div class="role">Ph.D. Student · joined Jul 2022<br>M.Sc., Banaras Hindu University</div>
-      <span class="tag">Quasinormal Modes</span>
-      <div class="team-links mt-4">
-        <a href="https://sites.google.com/view/sayantanns" class="tag" target="_blank" rel="noopener">Homepage ↗</a>
-        <a href="https://arxiv.org/search/?searchtype=author&query=Ghosh+Sayantan" class="tag" target="_blank" rel="noopener">arXiv ↗</a>
-        <a href="mailto:sayantanghosh1999@gmail.com" class="tag">Email</a>
-      </div>
-    </div>
-    <div class="team-card">
-      <div class="team-avatar">
-        <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/probit_pic.png" alt="Probit J. Kalita"
-             onerror="this.parentElement.classList.add('initials');this.parentElement.textContent='PK';this.remove()">
-      </div>
-      <h3>Probit J. Kalita</h3>
-      <div class="role">Ph.D. Student · joined Jul 2022<br>M.Sc., Tezpur University</div>
-      <span class="tag">NS Composition</span>
-      <div class="team-links mt-4">
-        <a href="https://arxiv.org/search/?searchtype=author&query=Kalita+Probit" class="tag" target="_blank" rel="noopener">arXiv ↗</a>
-        <a href="mailto:probit.kalita@gmail.com" class="tag">Email</a>
-      </div>
-    </div>
-  </div>
-  <a href="{{ site.url }}{{ site.baseurl }}/team" class="btn btn-secondary">View full team &amp; alumni →</a>
-</section>
 
-<hr class="divider">
+      <div class="opening-card">
+        <span class="opening-type">Postdoc</span>
+        <h4>SERB National Postdoctoral Fellowship</h4>
+        <p>
+          Postdoctoral work in nuclear astrophysics, gravitational-wave oscillation modes,
+          or EoS inference from LIGO and NICER data.
+        </p>
+        <a href="https://serbonline.in/SERB/npdf" target="_blank" rel="noopener">Apply via SERB →</a>
+      </div>
 
-<!-- SELECTED PUBLICATIONS -->
-<section class="section" aria-label="Publications">
-  <div class="section-header">
-    <span class="eyebrow">Research Output</span>
-    <h2 class="section-title">Selected publications</h2>
-  </div>
-  <div class="pub-list">
-    <div class="pub-item highlight-pub">
-      <span class="pub-year">2024</span>
-      <div class="pub-info">
-        <h4>Probing the Impact of Delta-Baryons on Nuclear Matter and Non-Radial Oscillations in Neutron Stars</h4>
-        <p class="pub-authors"><a href="https://scholar.google.com/citations?user=h9DkoD4AAAAJ&amp;hl=en" target="_blank" rel="noopener">Probit Jyoti Kalita</a>, <a href="https://scholar.google.com/citations?user=d1j-L6cAAAAJ&amp;hl=en" target="_blank" rel="noopener">Pinku Routaray</a>, <a href="https://sites.google.com/view/sayantanns" target="_blank" rel="noopener">Sayantan Ghosh</a>, Bharat Kumar, Bijay K. Agrawal</p>
-        <div class="pub-links"><a href="https://doi.org/10.1088/1475-7516/2024/04/065" class="pub-link" target="_blank" rel="noopener">JCAP 04, 065 (2024)</a><a href="https://arxiv.org/abs/2308.09008" class="pub-link" target="_blank" rel="noopener">arXiv</a></div>
+      <div class="opening-card">
+        <span class="opening-type">Any time</span>
+        <h4>Bring your own fellowship</h4>
+        <p>
+          Already hold external funding, or planning to apply? Write with a short note on
+          what you want to work on and we will take it from there.
+        </p>
+        <a href="mailto:kumarbh@nitrkl.ac.in">kumarbh@nitrkl.ac.in →</a>
       </div>
     </div>
-    <div class="pub-item highlight-pub">
-      <span class="pub-year">2025</span>
-      <div class="pub-info">
-        <h4>The Role of Adiabatic Sound Speeds in Neutron Star Radial Oscillations and Stability</h4>
-        <p class="pub-authors"><a href="https://sites.google.com/view/sayantanns" target="_blank" rel="noopener">Sayantan Ghosh</a>, Tianqi Zhao, Bharat Kumar, <a href="https://scholar.google.com/citations?user=mx_PbkcAAAAJ&amp;hl=en" target="_blank" rel="noopener">Sailesh Ranjan Mohanty</a></p>
-        <div class="pub-links"><a href="https://doi.org/10.1088/1475-7516/2025/09/025" class="pub-link" target="_blank" rel="noopener">JCAP 09, 025 (2025)</a></div>
-      </div>
+
+    <div class="mt-8 reveal">
+      <a href="{{ site.url }}{{ site.baseurl }}/vacancies" class="btn btn-primary">All openings &amp; details →</a>
     </div>
-    <div class="pub-item highlight-pub">
-      <span class="pub-year">2025</span>
-      <div class="pub-info">
-        <h4>Observable Signatures of a Quarkyonic Phase in Neutron Stars</h4>
-        <p class="pub-authors"><a href="https://scholar.google.com/citations?user=h9DkoD4AAAAJ&amp;hl=en" target="_blank" rel="noopener">Probit J Kalita</a>, Tuhin Malik, Tianqi Zhao, Bharat Kumar, James M. Lattimer</p>
-        <div class="pub-links"><a href="https://arxiv.org/abs/2510.23405" class="pub-link" target="_blank" rel="noopener">arXiv:2510.23405</a></div>
-      </div>
-    </div>
-    <div class="pub-item highlight-pub">
-      <span class="pub-year">2026</span>
-      <div class="pub-info">
-        <h4>Spacetime Curvature as a Probe of Exotic Core Phases in Neutron Stars within Modified Gravity</h4>
-        <p class="pub-authors"><a href="https://sites.google.com/view/sayantanns" target="_blank" rel="noopener">Sayantan Ghosh</a>, Bharat Kumar, Subhash Mahapatra</p>
-        <div class="pub-links"><a href="https://doi.org/10.1103/rjzl-pcr4" class="pub-link" target="_blank" rel="noopener">Phys. Rev. D 113, 024070 (2026)</a></div>
-      </div>
-    </div>
-  </div>
-  <div class="mt-6">
-    <a href="{{ site.url }}{{ site.baseurl }}/publications" class="btn btn-secondary">All publications →</a>
-    <a href="https://scholar.google.com/citations?user=4498IKgAAAAJ&hl=en" class="btn btn-secondary" target="_blank" rel="noopener" style="margin-left:10px;">Google Scholar ↗</a>
   </div>
 </section>
 
-<!-- Pinku PhD defence group photo + congratulations -->
-<div style="max-width:820px;margin:0 auto 1rem;">
-  <div style="border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;background:var(--accent-light);">
-    <img src="{{ site.url }}{{ site.baseurl }}/images/pinku-defence-group.jpg" alt="Group photo: Pinku Routaray PhD defence seminar at NIT Rourkela with lab members" style="width:100%;display:block;">
-    <div style="padding:10px 14px;font-size:13.5px;line-height:1.55;color:var(--text);">
-      <strong>Congratulations to Pinku Routaray</strong> for successfully defending his PhD thesis on "Dark Matter Effects on Neutron Star Structure and Observables". He will join the <strong>Kavli Institute of Astronomy and Astrophysics, China</strong> as a postdoctoral researcher.
-    </div>
-  </div>
-</div>
-
-<hr class="divider">
-
-<!-- OPENINGS TEASER -->
-<section class="section" aria-label="Open positions">
-  <div class="section-header">
-    <span class="eyebrow">Opportunities</span>
-    <h2 class="section-title">Join us</h2>
-  </div>
-  <div class="openings-grid">
-    <div class="opening-card">
-      <span class="opening-type">PhD Position</span>
-      <h4>PhD Fellowship (DST WISE)</h4>
-      <p>Positions in neutron star asteroseismology, dark matter admixed NSs, and multi-messenger astrophysics.</p>
-      <a href="https://onlinedst.gov.in/Projectproposalformat.aspx" target="_blank" rel="noopener">Apply via DST WISE ↗</a>
-    </div>
-    <div class="opening-card">
-      <span class="opening-type">Postdoc</span>
-      <h4>SERB-NPDF Fellowship</h4>
-      <p>Postdoc in nuclear astrophysics, GW oscillations, or EoS constraints with LIGO/NICER data.</p>
-      <a href="https://serbonline.in/SERB/npdf" target="_blank" rel="noopener">Apply via SERB ↗</a>
-    </div>
-    <div class="opening-card" style="background:var(--accent-light);border-color:#c0d8ee;">
-      <span class="opening-type" style="background:var(--accent);color:white;">External Fellowship</span>
-      <h4>Own Fellowship? Join Us</h4>
-      <p>If you have an external fellowship and wish to pursue research with us, get in touch directly.</p>
-      <a href="mailto:kumarbh@nitrkl.ac.in">kumarbh@nitrkl.ac.in ↗</a>
-    </div>
-  </div>
-  <div class="mt-8"><a href="{{ site.url }}{{ site.baseurl }}/vacancies" class="btn btn-primary">All openings &amp; details →</a></div>
-</section>
-
-<hr class="divider">
-
-<!-- CONTACT -->
-<section class="section-sm section" aria-label="Contact">
+<!-- ═══════════════════════════════════════════════════════════
+     CONTACT
+     ═══════════════════════════════════════════════════════════ -->
+<section class="section" aria-label="Contact">
   <div class="two-col">
-    <div>
-      <span class="eyebrow" style="margin-bottom:10px;">Find us</span>
-      <h2 class="section-title" style="margin-bottom:16px;">Contact</h2>
-      <address style="font-style:normal;font-size:14px;color:var(--text-muted);line-height:2;">
-        <strong>Dr. Bharat Kumar</strong><br>
+    <div class="reveal">
+      <span class="eyebrow">Find us</span>
+      <h2 class="section-title" style="font-size:clamp(1.5rem,2.6vw,2.1rem)">Contact</h2>
+      <address class="mt-6">
+        <strong style="color:var(--ink)">Dr. Bharat Kumar</strong><br>
         MC202, Department of Physics &amp; Astronomy<br>
         National Institute of Technology, Rourkela<br>
         Odisha 769008, India<br><br>
-        Email: <a href="mailto:kumarbh@nitrkl.ac.in" style="color:var(--accent-mid)">kumarbh@nitrkl.ac.in</a><br>
-        <a href="https://shorturl.at/hxMY5" target="_blank" rel="noopener" style="color:var(--accent-mid)">Maps ↗</a>
+        <a href="mailto:kumarbh@nitrkl.ac.in">kumarbh@nitrkl.ac.in</a><br>
+        <a href="https://shorturl.at/hxMY5" target="_blank" rel="noopener">Campus map ↗</a>
       </address>
     </div>
-    <div>
-      <span class="eyebrow" style="margin-bottom:10px;">Funding &amp; Affiliation</span>
-      <h2 class="section-title" style="margin-bottom:16px;">Support</h2>
-      <p style="font-size:14px;color:var(--text-muted);line-height:1.75;">
-        Supported by the <a href="https://www.serbonline.in/" target="_blank" rel="noopener" style="color:var(--accent-mid)">Science and Engineering Research Board (SERB)</a>, Government of India.<br><br>
-        Part of the <a href="https://website.nitrkl.ac.in/PH/" target="_blank" rel="noopener" style="color:var(--accent-mid)">Department of Physics and Astronomy</a>, NIT Rourkela.
+
+    <div class="reveal">
+      <span class="eyebrow">Funding &amp; affiliation</span>
+      <h2 class="section-title" style="font-size:clamp(1.5rem,2.6vw,2.1rem)">Support</h2>
+      <p style="font-size:15.5px;color:var(--ink-2);line-height:1.85;margin-top:1.5rem;">
+        Our work is supported by the
+        <a href="https://www.serbonline.in/" target="_blank" rel="noopener" style="color:var(--plasma-deep)">Science and Engineering Research Board (SERB)</a>,
+        Government of India.
       </p>
-      <div class="footer-logos mt-6">
-        <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/nitrlogo.svg" alt="NIT Rourkela" style="height:44px;" onerror="this.style.display='none'">
-        <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/serblogo.png" alt="SERB" style="height:40px;" onerror="this.style.display='none'">
+      <p style="font-size:15.5px;color:var(--ink-2);line-height:1.85;margin-top:1em;">
+        NAP Lab is part of the
+        <a href="https://website.nitrkl.ac.in/PH/" target="_blank" rel="noopener" style="color:var(--plasma-deep)">Department of Physics and Astronomy</a>
+        at NIT Rourkela.
+      </p>
+      <div class="footer-logos mt-8" style="filter:none;">
+        <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/nitrlogo.svg" alt="NIT Rourkela"
+             style="height:52px;opacity:1;filter:none;" onerror="this.style.display='none'">
+        <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/serblogo.png" alt="SERB"
+             style="height:46px;opacity:1;filter:none;" onerror="this.style.display='none'">
       </div>
     </div>
   </div>
 </section>
-
-<!-- Clock/calendar and AI field-news JS now live in their respective includes -->
-
