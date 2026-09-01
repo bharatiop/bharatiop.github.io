@@ -1,0 +1,68 @@
+# ==========================================================================
+# "Selected results" figure gallery on the homepage.
+#
+# To add a new paper figure: drop the image in /images/papers/ and add a
+# block below. To remove one, delete its block. Order here is display order.
+# No HTML editing required — the gallery grid rebuilds itself.
+#
+# Fields:
+#   image     - path relative to the site root
+#   alt       - describe the figure (screen readers / SEO)
+#   title     - short caption shown in bold under the image
+#   citation  - text shown on the link, e.g. "Phys. Rev. D 99, 123026 (2019)"
+#   url       - link target, usually the DOI or journal page
+# ==========================================================================
+
+- image: /images/papers/eos_tidal.png
+  alt: "Tidal deformability Λ1–Λ2 for G3 and IOPB-I equations of state"
+  title: "Tidal deformability from RMF models"
+  citation: "Phys. Rev. C 97, 045806 (2018)"
+  url: "https://journals.aps.org/prc/abstract/10.1103/PhysRevC.97.045806"
+
+- image: /images/papers/eos_mr.png
+  alt: "Mass–radius curves constrained by GW170817 and pulsar measurements"
+  title: "Mass–radius of neutron stars"
+  citation: "Phys. Rev. D 99, 123026 (2019)"
+  url: "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.99.123026"
+
+- image: /images/papers/hyperons_delta.png
+  alt: "Effective mass of nucleons and delta baryons in dense matter"
+  title: "Δ-baryons in dense matter"
+  citation: "JCAP 04, 065 (2024)"
+  url: "https://doi.org/10.1088/1475-7516/2024/04/065"
+
+- image: /images/papers/gw_fmode.png
+  alt: "Correlation matrix of f- and p-mode frequencies with nuclear parameters"
+  title: "f- and p-mode correlations"
+  citation: "Phys. Rev. D 106, 063005 (2022)"
+  url: "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.106.063005"
+
+- image: /images/papers/dm_posterior.jpeg
+  alt: "Mass–radius posteriors for dark matter admixed neutron stars"
+  title: "WIMP dark matter in neutron stars"
+  citation: "MNRAS 525, 5492 (2023)"
+  url: "https://doi.org/10.1093/mnras/stad2628"
+
+- image: /images/papers/dm_radial.png
+  alt: "Radial oscillation modes of dark matter admixed neutron stars"
+  title: "Radial modes with dark matter"
+  citation: "Phys. Rev. D 107, 103039 (2023)"
+  url: "https://doi.org/10.1103/PhysRevD.107.103039"
+
+- image: /images/papers/mm_moi.png
+  alt: "Moment of inertia constraints from GW170817"
+  title: "Moment of inertia of PSR J0737−3039A"
+  citation: "ApJ Lett. 868, L22 (2018)"
+  url: "https://iopscience.iop.org/article/10.3847/2041-8213/aaee76"
+
+- image: /images/papers/mm_tidal.png
+  alt: "Tidal Love number with and without hyperons"
+  title: "Tidal Love numbers & hyperons"
+  citation: "Phys. Rev. C 95, 015801 (2017)"
+  url: "https://doi.org/10.1103/PhysRevC.95.015801"
+
+- image: /images/papers/gw_tidal.png
+  alt: "Universal relations for tidal deformability from GW170817"
+  title: "Universal relations from GW170817"
+  citation: "Phys. Rev. D 99, 123026 (2019)"
+  url: "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.99.123026"
