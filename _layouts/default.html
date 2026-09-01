@@ -3,31 +3,92 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{% if page.title %}{{ page.title }} — {% endif %}NAP Lab @ NIT Rourkela</title>
-  <meta name="description" content="{{ page.excerpt | default: site.description }}">
+  <title>{% if page.title %}{{ page.title }} — {% endif %}NAP Lab · Nuclear Astrophysics @ NIT Rourkela</title>
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | truncate: 160 }}">
+  <meta name="theme-color" content="#04060c">
+
+  <!-- Social preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{% if page.title %}{{ page.title }} — {% endif %}NAP Lab @ NIT Rourkela">
+  <meta property="og:description" content="{{ page.excerpt | default: site.description | strip_html | truncate: 160 }}">
+  <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/images/papers/gw_fmode.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="{{ site.url }}{{ site.baseurl }}/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/main.css">
   {% seo %}
 </head>
-<body>
+
+<body{% unless page.permalink == '/' %} class="solid-nav"{% endunless %}>
 
 {% include header.html %}
 
-<main class="page-content">
+<main class="page-content" id="main">
   {{ content }}
 </main>
 
 {% include footer.html %}
 
 <script>
-  const menuBtn = document.getElementById('menuBtn');
-  const navLinks = document.getElementById('navLinks');
-  if (menuBtn) menuBtn.addEventListener('click', () => {
-    navLinks.classList.toggle('open');
-    menuBtn.setAttribute('aria-expanded', navLinks.classList.contains('open'));
+(function () {
+  /* ---- Mobile menu ---- */
+  var menuBtn  = document.getElementById('menuBtn');
+  var navLinks = document.getElementById('navLinks');
+  if (menuBtn && navLinks) {
+    menuBtn.addEventListener('click', function () {
+      var open = navLinks.classList.toggle('open');
+      menuBtn.classList.toggle('open', open);
+      menuBtn.setAttribute('aria-expanded', String(open));
+      document.body.classList.toggle('nav-open', open);
+    });
+    /* Close menu when a link is tapped */
+    navLinks.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () {
+        navLinks.classList.remove('open');
+        menuBtn.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded', 'false');
+        document.body.classList.remove('nav-open');
+      });
+    });
+  }
+
+  /* ---- Nav goes solid after scrolling past the hero ---- */
+  var nav = document.getElementById('siteNav');
+  if (nav) {
+    var onScroll = function () {
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+    };
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+  }
+
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---- Tag grid children for staggered reveal (must run BEFORE the query below) ---- */
+  document.querySelectorAll('[data-stagger]').forEach(function (group) {
+    Array.prototype.forEach.call(group.children, function (child, i) {
+      child.classList.add('reveal');
+      child.style.transitionDelay = Math.min(i * 60, 400) + 'ms';
+    });
   });
+
+  /* ---- Reveal on scroll ---- */
+  var targets = document.querySelectorAll('.reveal');
+  if (reduce || !('IntersectionObserver' in window)) {
+    targets.forEach(function (el) { el.classList.add('in'); });
+  } else {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+    targets.forEach(function (el) { io.observe(el); });
+  }
+})();
 </script>
+
 </body>
 </html>
