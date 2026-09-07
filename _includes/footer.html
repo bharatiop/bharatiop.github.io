@@ -1,0 +1,50 @@
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo">NAP&nbsp;Lab<span class="dot">.</span></div>
+      <p class="footer-desc">
+        Nuclear Astrophysics &amp; Physics Laboratory at NIT Rourkela — modelling dense
+        matter, neutron-star oscillations, dark matter and multi-messenger signals from
+        the most extreme objects in the universe.
+      </p>
+      <div class="footer-logos">
+        <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/nitrlogo.svg" alt="NIT Rourkela" onerror="this.style.display='none'">
+        <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/serblogo.png" alt="SERB" onerror="this.style.display='none'">
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <a href="{{ site.url }}{{ site.baseurl }}/research">Research</a>
+      <a href="{{ site.url }}{{ site.baseurl }}/publications">Publications</a>
+      <a href="{{ site.url }}{{ site.baseurl }}/team">People</a>
+      <a href="{{ site.url }}{{ site.baseurl }}/teaching">Teaching</a>
+      <a href="{{ site.url }}{{ site.baseurl }}/teaching/nuclear-physics/">Nuclear Physics course</a>
+      <a href="{{ site.url }}{{ site.baseurl }}/events">Events</a>
+      <a href="{{ site.url }}{{ site.baseurl }}/allnews.html">All news</a>
+      <a href="{{ site.url }}{{ site.baseurl }}/vacancies">Join the lab</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Find us</h4>
+      <address>
+        MC202, Dept. of Physics &amp; Astronomy<br>
+        NIT Rourkela, Odisha 769008, India<br><br>
+        <a href="mailto:kumarbh@nitrkl.ac.in">kumarbh@nitrkl.ac.in</a><br>
+        <a href="https://shorturl.at/hxMY5" target="_blank" rel="noopener">Campus map ↗</a><br>
+        <a href="https://scholar.google.com/citations?user=4498IKgAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar ↗</a><br>
+        <a href="https://github.com/bharatiop" target="_blank" rel="noopener">GitHub ↗</a>
+      </address>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© <span id="fyear"></span> NAP Lab, NIT Rourkela · Supported by <a href="https://www.serbonline.in/" target="_blank" rel="noopener">SERB</a>, Government of India</p>
+    <div style="display:flex;gap:20px;">
+      <a href="{{ site.url }}{{ site.baseurl }}/aboutwebsite.html">About this site</a>
+      <a href="https://github.com/bharatiop/bharatiop.github.io" target="_blank" rel="noopener">Source ↗</a>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('fyear').textContent = new Date().getFullYear();</script>

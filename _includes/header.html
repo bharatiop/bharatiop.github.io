@@ -1,0 +1,31 @@
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="brand-bar">
+    <div class="brand-inner">
+      <a href="{{ site.url }}{{ site.baseurl }}/" class="nav-logo" aria-label="NAP Lab — Home">
+        <span class="nav-logo-text">NAP Lab</span>
+        <span class="nav-logo-sub">Nuclear Astrophysics · NIT Rourkela</span>
+      </a>
+    </div>
+  </div>
+
+  <nav class="site-nav" id="siteNav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <div class="nav-links" id="navLinks">
+        <a href="{{ site.url }}{{ site.baseurl }}/"             {% if page.permalink == '/' %}class="active"{% endif %}>Home</a>
+        <a href="{{ site.url }}{{ site.baseurl }}/research"     {% if page.permalink == '/research/' %}class="active"{% endif %}>Research</a>
+        <a href="{{ site.url }}{{ site.baseurl }}/team"         {% if page.permalink == '/team/' %}class="active"{% endif %}>People</a>
+        <a href="{{ site.url }}{{ site.baseurl }}/publications" {% if page.permalink == '/publications/' %}class="active"{% endif %}>Publications</a>
+        <a href="{{ site.url }}{{ site.baseurl }}/events"       {% if page.permalink == '/events/' %}class="active"{% endif %}>Events</a>
+        <a href="{{ site.url }}{{ site.baseurl }}/teaching"     {% if page.permalink == '/teaching/' or page.permalink == '/teaching/nuclear-physics/' %}class="active"{% endif %}>Teaching</a>
+        <a href="{{ site.url }}{{ site.baseurl }}/vacancies"    {% if page.permalink == '/vacancies/' %}class="active nav-cta"{% else %}class="nav-cta"{% endif %}>Vacancies</a>
+        <a href="{{ site.url }}{{ site.baseurl }}/#contact">Contact</a>
+      </div>
+
+      <button class="hamburger" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>

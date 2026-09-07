@@ -1,0 +1,39 @@
+<div class="field-news-section">
+  <div class="field-news-inner">
+    <div class="news-feed-header">
+      <div>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px;flex-wrap:wrap;">
+          <span class="eyebrow" style="margin-bottom:0">Field Intelligence</span>
+          <span class="live-badge" id="fieldNewsBadge"><span class="live-dot"></span>Loading</span>
+        </div>
+        <h2 class="section-title">Latest in neutron-star &amp; GW astrophysics</h2>
+        <p class="section-lead" style="margin-top:8px;font-size:16px;">
+          Pulled live from <a href="https://inspirehep.net" target="_blank" rel="noopener">INSPIRE HEP</a>
+          on each page load — recent papers, then only meetings that have not yet started.
+        </p>
+        <p class="field-stamp" id="fieldNewsStamp"></p>
+      </div>
+    </div>
+
+    <div class="news-feed-grid" id="fieldNewsGrid" aria-live="polite">
+      <div class="feed-skeleton"><div class="skel skel-title"></div><div class="skel skel-text"></div><div class="skel skel-text w60"></div></div>
+      <div class="feed-skeleton"><div class="skel skel-title"></div><div class="skel skel-text"></div><div class="skel skel-text w60"></div></div>
+      <div class="feed-skeleton"><div class="skel skel-title"></div><div class="skel skel-text"></div><div class="skel skel-text w60"></div></div>
+    </div>
+
+    <div class="field-conf-block">
+      <h3 class="course-subhead">Upcoming meetings</h3>
+      <p class="section-lead" style="margin-top:0;font-size:15px;">INSPIRE conference records with an opening date on or after today. Past schools are dropped automatically.</p>
+      <div class="field-conf-list" id="fieldConfList">
+        <p class="field-conf-empty">Checking INSPIRE…</p>
+      </div>
+    </div>
+
+    <p style="font-size:13px;color:var(--ink-3);margin-top:18px;">
+      Also: <a href="https://arxiv.org/list/astro-ph.HE/recent" target="_blank" rel="noopener">arXiv:astro-ph.HE ↗</a>,
+      <a href="https://arxiv.org/list/nucl-th/recent" target="_blank" rel="noopener">nucl-th ↗</a>,
+      <a href="https://www.ligo.caltech.edu/news" target="_blank" rel="noopener">LIGO News ↗</a>
+    </p>
+  </div>
+</div>
+<script src="{{ site.url }}{{ site.baseurl }}/js/field-intel.js"></script>
