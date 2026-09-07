@@ -1,0 +1,55 @@
+# ==========================================================================
+# "The researchers" snapshot grid on the homepage.
+#
+# Add, remove, or reorder team members by editing this list — no HTML
+# editing needed. Photos go in /images/teampic/. If a photo is missing or
+# fails to load, the initials in `initials:` are shown instead automatically.
+#
+# Fields:
+#   name      - full display name
+#   photo     - path relative to site root
+#   initials  - 2-letter fallback shown if the photo fails to load
+#   role      - shown under the name (use <br> for a line break)
+#   tag       - single topic tag (use tag_class: tag-amber for alumni, etc.)
+#   tag_class - optional, e.g. "tag-amber" (defaults to plain "tag")
+#   links     - list of {label, url}
+# ==========================================================================
+
+- name: "Sayantan Ghosh"
+  photo: /images/teampic/sayantan_pic.png
+  initials: "SG"
+  role: "Ph.D. Researcher · since Jul 2022<br>M.Sc., Banaras Hindu University"
+  tag: "Quasinormal modes"
+  links:
+    - label: "Site ↗"
+      url: "https://sites.google.com/view/sayantanns"
+    - label: "arXiv ↗"
+      url: "https://arxiv.org/a/ghosh_s_1"
+
+- name: "Probit J. Kalita"
+  photo: /images/teampic/probit_pic.png
+  initials: "PK"
+  role: "Ph.D. Researcher · since Jul 2022<br>M.Sc., Tezpur University"
+  tag: "NS composition"
+  links:
+    - label: "Scholar ↗"
+      url: "https://scholar.google.com/citations?user=h9DkoD4AAAAJ&hl=en"
+
+- name: "Sailesh R. Mohanty"
+  photo: /images/teampic/sailesh_pic.jpeg
+  initials: "SM"
+  role: "Ph.D. Researcher"
+  tag: "Dense matter"
+  links:
+    - label: "Scholar ↗"
+      url: "https://scholar.google.com/citations?user=mx_PbkcAAAAJ&hl=en"
+
+- name: "Dr. Pinku Routaray"
+  photo: /images/teampic/pinku_pic.png
+  initials: "PR"
+  role: "Ph.D. 2026 · now postdoc at Kavli Institute for Astronomy &amp; Astrophysics, China"
+  tag: "Alumnus"
+  tag_class: "tag-amber"
+  links:
+    - label: "Scholar ↗"
+      url: "https://scholar.google.com/citations?user=d1j-L6cAAAAJ&hl=en"

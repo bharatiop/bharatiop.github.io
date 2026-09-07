@@ -1,0 +1,45 @@
+# ==========================================================================
+# Homepage research-theme cards.
+# Images are observational photographs (ICTS-style), not paper plots.
+# Paper figures remain on /research/ and /publications/.
+# ==========================================================================
+
+- image: /images/observational/ligo_hanford.jpg
+  alt: "LIGO Hanford Observatory, one of the detectors that recorded GW170817"
+  citation: "Phys. Rev. D 99, 123026 (2019)"
+  number: "01"
+  label: "Equation of State"
+  question: "Equation of state of dense matter"
+  body:
+    - "G3, IOPB-I and the NITR family are RMF interactions fitted to nuclei and saturation properties. Neutron-star mass, radius and tidal deformability are then compared with the two-solar-mass pulsar limit and with GW170817. EoS-insensitive relations convert that tidal measurement into a bound on the moment of inertia of PSR J0737−3039A."
+  tags: ["RMF theory", "GW170817", "Tidal deformability"]
+
+- image: /images/observational/gravitational_waves.jpg
+  alt: "Illustration of a compact-binary merger emitting gravitational waves"
+  citation: "Phys. Rev. D 106, 063005 (2022)"
+  number: "02"
+  label: "Oscillations"
+  question: "f- and p-modes of neutron stars"
+  body:
+    - "f- and p-mode frequencies, in the Cowling approximation and in linearized general relativity, track nuclear parameters — in particular the slope of the symmetry energy L0 and the pressure of β-equilibrated matter near saturation. Universal relations between quasinormal modes and tidal deformability give an EoS-insensitive handle for the next generation of detectors."
+  tags: ["f-modes", "p-modes", "Universal relations"]
+
+- image: /images/observational/bns_merger.jpg
+  alt: "Artist's impression of two neutron stars at merger"
+  citation: "MNRAS 525, 5492 (2023)"
+  number: "03"
+  label: "Dark Matter"
+  question: "Dark matter admixed neutron stars"
+  body:
+    - "A second fluid of WIMPs or fermionic dark matter, treated as a two-fluid TOV problem, softens the hadronic equation of state. Mass–radius posteriors, tidal deformability and radial frequencies all shift. Those shifts have been compared with GW170817 and with compact objects such as PSR J0952−0607 and HESS J1731−347."
+  tags: ["WIMPs", "Two-fluid TOV", "Radial oscillations"]
+
+- image: /images/observational/bns_collision.jpg
+  alt: "Simulation snapshot of a neutron-star merger remnant"
+  citation: "JCAP 04, 065 (2024)"
+  number: "04"
+  label: "Exotic composition"
+  question: "Hyperons and Δ-baryons in the core"
+  body:
+    - "Hyperon stars and Δ-admixed matter change the same global observables. Effective masses of nucleons and deltas are followed into the non-radial spectrum; earlier RMF calculations of tidal deformability already included hyperons. The test is which compositions still satisfy the two-solar-mass and GW170817 bounds."
+  tags: ["Hyperons", "Δ-baryons", "Tidal deformability"]

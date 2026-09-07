@@ -1,0 +1,21 @@
+# ==========================================================================
+# Homepage "Codes" cards. Copied from the existing Research page tools
+# list — do not add a repository that is not already public.
+#
+# Fields:
+#   title - short name
+#   body  - one-paragraph description
+#   url   - link (GitHub org if a dedicated repo is not listed)
+# ==========================================================================
+
+- title: "TOV Solver & compact-common"
+  body: "General-relativistic TOV integration code for computing mass-radius relations, tidal deformabilities, and moment of inertia for arbitrary EoS tables."
+  url: "https://github.com/bharatiop"
+
+- title: "Oscillation Mode Solver"
+  body: "Radial and non-radial oscillation mode calculation (f-, p-, w-modes) using Cowling approximation and full GR perturbation equations."
+  url: "https://github.com/bharatiop"
+
+- title: "Two-Fluid Dark Matter TOV"
+  body: "Modified TOV solver for dark matter admixed neutron stars. Supports WIMP and fermionic dark matter with varying interaction cross-sections."
+  url: "https://github.com/bharatiop"
