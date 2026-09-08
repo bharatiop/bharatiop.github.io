@@ -1,7 +1,7 @@
 ---
 title: "Nuclear & Particle Physics"
 layout: default
-excerpt: "PH 5202 / PH 5001 — Nuclear and Particle Physics course homepage: lectures, assignments, and resources"
+excerpt: "PH 5001 — Nuclear and Particle Physics course homepage: lectures, assignments, and resources"
 sitemap: true
 permalink: /teaching/nuclear-physics/
 ---
@@ -14,7 +14,6 @@ permalink: /teaching/nuclear-physics/
   <div class="page-hero-inner">
     <span class="eyebrow">Course homepage · Teaching</span>
     <div class="course-hero-codes">
-      <span class="course-code">PH 5202</span>
       <span class="course-code">PH 5001</span>
     </div>
     <h1>Nuclear &amp; Particle Physics</h1>
