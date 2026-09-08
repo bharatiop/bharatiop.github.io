@@ -6,9 +6,9 @@ sitemap: true
 permalink: /teaching/nuclear-physics/
 ---
 
-{% assign lec_pdfs = site.static_files | where_exp: "f", "f.path contains '/downloads/nuclearphysics/lectures/'" | where_exp: "f", "f.extname == '.pdf'" | sort: "name" %}
-{% assign asg_pdfs = site.static_files | where_exp: "f", "f.path contains '/downloads/nuclearphysics/assignments/'" | where_exp: "f", "f.extname == '.pdf'" | sort: "name" %}
-{% assign res_pdfs = site.static_files | where_exp: "f", "f.path contains '/downloads/nuclearphysics/resources/'" | where_exp: "f", "f.extname == '.pdf'" | sort: "name" %}
+{% assign lec_pdfs = site.static_files | where_exp: "f", "f.path contains '/downloads/lectures/'" | where_exp: "f", "f.extname == '.pdf'" | sort: "name" %}
+{% assign asg_pdfs = site.static_files | where_exp: "f", "f.path contains '/downloads/assignments/'" | where_exp: "f", "f.extname == '.pdf'" | sort: "name" %}
+{% assign res_pdfs = site.static_files | where_exp: "f", "f.path contains '/downloads/resources/'" | where_exp: "f", "f.extname == '.pdf'" | sort: "name" %}
 
 <div class="page-hero course-hero">
   <div class="page-hero-inner">
