@@ -32,3 +32,9 @@ exclude:
   - vendor
   - .bundle
   - .sass-cache
+  - index.html
+  - css/main.scss
+  - research.md
+  - "research 2.md"
+  - DESIGN.md
+  - README.md

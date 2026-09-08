@@ -9,7 +9,8 @@ Website for the **Nuclear Astrophysics & Physics (NAP) Lab**, led by Dr. Bharat 
 - [Jekyll](https://jekyllrb.com) static site generator
 - Hosted on GitHub Pages
 - Custom CSS (no framework) — `css/main.css`
-- Fonts: Inter + DM Serif Display (Google Fonts)
+- Fonts: DM Serif Display (H1/H2) + Inter (body)
+- How to add a paper, person, or news item: see `DESIGN.md`
 
 ## Structure
 
@@ -43,7 +44,7 @@ Submit a pull request — most changes are simple YAML/Markdown edits and don't 
 ## Homepage features
 
 - Live clock (IST) and mini calendar with upcoming conference highlights
-- AI-curated "Field Intelligence" panel summarizing recent neutron-star / GW astrophysics developments (calls the Anthropic API client-side)
+- Curated "Field Intelligence" panel of recent neutron-star / GW developments (static; restyle only)
 
 ## License
 
