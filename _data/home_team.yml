@@ -15,17 +15,6 @@
 #   links     - list of {label, url}
 # ==========================================================================
 
-- name: "Sayantan Ghosh"
-  photo: /images/teampic/sayantan_pic.png
-  initials: "SG"
-  role: "Ph.D. Researcher · since Jul 2022<br>M.Sc., Banaras Hindu University"
-  tag: "Quasinormal modes"
-  links:
-    - label: "Site ↗"
-      url: "https://sites.google.com/view/sayantanns"
-    - label: "arXiv ↗"
-      url: "https://arxiv.org/a/ghosh_s_1"
-
 - name: "Probit J. Kalita"
   photo: /images/teampic/probit_pic.png
   initials: "PK"
@@ -35,14 +24,23 @@
     - label: "Scholar ↗"
       url: "https://scholar.google.com/citations?user=h9DkoD4AAAAJ&hl=en"
 
-- name: "Sailesh R. Mohanty"
-  photo: /images/teampic/sailesh_pic.jpeg
+- name: "Subha Mitra"
+  photo: /images/teampic/subha_pic.jpg
   initials: "SM"
-  role: "Ph.D. Researcher"
-  tag: "Dense matter"
+  role: "Ph.D. Researcher · since Aug 2026<br>M.Sc., University of Calcutta"
+  tag: "Ph.D. student"
+
+- name: "Sayantan Ghosh"
+  photo: /images/teampic/sayantan_pic.png
+  initials: "SG"
+  role: "Ph.D. · Jul 2022 – Oct 2026 (defended 5 Oct 2026)<br>M.Sc., Banaras Hindu University"
+  tag: "Alumnus"
+  tag_class: "tag-amber"
   links:
-    - label: "Scholar ↗"
-      url: "https://scholar.google.com/citations?user=mx_PbkcAAAAJ&hl=en"
+    - label: "Site ↗"
+      url: "https://sites.google.com/view/sayantanns"
+    - label: "arXiv ↗"
+      url: "https://arxiv.org/a/ghosh_s_1"
 
 - name: "Dr. Pinku Routaray"
   photo: /images/teampic/pinku_pic.png
