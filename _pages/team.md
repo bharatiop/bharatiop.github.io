@@ -62,26 +62,6 @@ permalink: /team/
 
     <div class="team-card">
       <div class="team-avatar">
-        <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/sayantan_pic.png" alt="Sayantan Ghosh"
-             onerror="this.parentElement.classList.add('initials');this.parentElement.textContent='SG';this.remove()">
-      </div>
-      <h3>Sayantan Ghosh</h3>
-      <div class="role">Ph.D. Student<br>Joined July 2022<br>M.Sc., Banaras Hindu University</div>
-      <span class="tag">Quasinormal Modes</span>
-      <div class="team-links mt-4">
-        <a href="https://sites.google.com/view/sayantanns" class="tag" target="_blank" rel="noopener">Homepage ↗</a>
-        <a href="https://arxiv.org/search/?searchtype=author&query=Ghosh+Sayantan" class="tag" target="_blank" rel="noopener">arXiv ↗</a>
-        <a href="mailto:sayantanghosh1999@gmail.com" class="tag">Email</a>
-      </div>
-      <div style="margin-top:12px;text-align:left;font-size:12px;color:var(--text-light);line-height:1.65;">
-        <strong style="color:var(--text-muted);">Recent papers:</strong><br>
-        <a href="https://doi.org/10.1103/rjzl-pcr4" style="color:var(--accent-mid);" target="_blank">Phys. Rev. D 113, 024070 (2026)</a><br>
-        <a href="https://doi.org/10.1088/1475-7516/2025/09/025" style="color:var(--accent-mid);" target="_blank">JCAP 09, 025 (2025)</a>
-      </div>
-    </div>
-
-    <div class="team-card">
-      <div class="team-avatar">
         <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/probit_pic.png" alt="Probit J. Kalita"
              onerror="this.parentElement.classList.add('initials');this.parentElement.textContent='PK';this.remove()">
       </div>
@@ -99,6 +79,16 @@ permalink: /team/
       </div>
     </div>
 
+    <div class="team-card">
+      <div class="team-avatar">
+        <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/subha_pic.jpg" alt="Subha Mitra"
+             onerror="this.parentElement.classList.add('initials');this.parentElement.textContent='SM';this.remove()">
+      </div>
+      <h3>Subha Mitra</h3>
+      <div class="role">Ph.D. Student<br>Joined August 2026<br>M.Sc., University of Calcutta</div>
+      <span class="tag">Ph.D. researcher</span>
+    </div>
+
   </div>
 
   <hr class="team-section-divider">
@@ -110,6 +100,26 @@ permalink: /team/
   </div>
 
   <div class="team-grid" style="margin-bottom:40px;">
+
+    <div class="team-card">
+      <div class="team-avatar">
+        <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/sayantan_pic.png" alt="Sayantan Ghosh"
+             onerror="this.parentElement.classList.add('initials');this.parentElement.textContent='SG';this.remove()">
+      </div>
+      <h3>Sayantan Ghosh</h3>
+      <div class="role">Ph.D. · July 2022 – October 2026 (defended 5 Oct 2026)</div>
+      <span class="tag">Quasinormal Modes</span>
+      <div class="team-links mt-4">
+        <a href="https://sites.google.com/view/sayantanns" class="tag" target="_blank" rel="noopener">Homepage ↗</a>
+        <a href="https://arxiv.org/search/?searchtype=author&query=Ghosh+Sayantan" class="tag" target="_blank" rel="noopener">arXiv ↗</a>
+        <a href="mailto:sayantanghosh1999@gmail.com" class="tag">Email</a>
+      </div>
+      <div style="margin-top:12px;text-align:left;font-size:12px;color:var(--text-light);line-height:1.65;">
+        <strong style="color:var(--text-muted);">Recent papers:</strong><br>
+        <a href="https://doi.org/10.1103/rjzl-pcr4" style="color:var(--accent-mid);" target="_blank">Phys. Rev. D 113, 024070 (2026)</a><br>
+        <a href="https://doi.org/10.1088/1475-7516/2025/09/025" style="color:var(--accent-mid);" target="_blank">JCAP 09, 025 (2025)</a>
+      </div>
+    </div>
 
     <div class="team-card">
       <div class="team-avatar">

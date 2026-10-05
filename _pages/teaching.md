@@ -171,13 +171,13 @@ permalink: /teaching/
   <div class="teach-notes">
     <div class="teach-mini">
       <span class="tag">Ongoing PhD</span>
-      <h4>Sayantan Ghosh</h4>
-      <p>Quasinormal modes, proto-neutron star oscillations, finite-temperature EoS.</p>
+      <h4>Probit J. Kalita</h4>
+      <p>Delta-baryons, exotic composition, and non-radial oscillations of neutron stars.</p>
     </div>
     <div class="teach-mini">
       <span class="tag">Ongoing PhD</span>
-      <h4>Probit J. Kalita</h4>
-      <p>Delta-baryons, exotic composition, and non-radial oscillations of neutron stars.</p>
+      <h4>Subha Mitra</h4>
+      <p>Joined August 2026. M.Sc., University of Calcutta.</p>
     </div>
   </div>
 

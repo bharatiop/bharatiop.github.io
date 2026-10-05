@@ -19,6 +19,14 @@ permalink: /allnews/
     <div class="news-year-label">2026</div>
     <div class="news-list">
       <div class="news-item">
+        <span class="news-date">5 October 2026</span>
+        <p class="news-text">🎉 <strong>Congratulations to Sayantan Ghosh</strong> for successfully defending his PhD thesis. He joined NAP Lab in July 2022 and worked on quasinormal modes of neutron stars.</p>
+      </div>
+      <div class="news-item">
+        <span class="news-date">August 2026</span>
+        <p class="news-text"><strong>Subha Mitra</strong> joins NAP Lab as a PhD researcher. He completed his M.Sc. at the University of Calcutta. Welcome!</p>
+      </div>
+      <div class="news-item">
         <span class="news-date">July 2026</span>
         <p class="news-text">🎉 <strong>Congratulations to Pinku Routaray</strong> for successfully defending his PhD thesis "Dark Matter Effects on Neutron Star Structure and Observables". He will join the <strong>Kavli Institute of Astronomy and Astrophysics, China</strong> as a postdoctoral researcher.</p>
       </div>

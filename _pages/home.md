@@ -38,7 +38,7 @@ permalink: /
           <div class="hero-meta-label">Citations</div>
         </div>
         <div class="hero-meta-item">
-          <div class="hero-meta-num">3</div>
+          <div class="hero-meta-num">2</div>
           <div class="hero-meta-label">PhD researchers</div>
         </div>
         <div class="hero-meta-item">
@@ -169,6 +169,20 @@ permalink: /
       </div>
       <div class="news-list">
         <div class="news-item">
+          <span class="news-date">5 Oct 2026</span>
+          <p class="news-text">
+            <strong>Sayantan Ghosh defends his PhD thesis</strong>. He joined the lab in
+            July 2022 and worked on quasinormal modes of neutron stars.
+          </p>
+        </div>
+        <div class="news-item">
+          <span class="news-date">Aug 2026</span>
+          <p class="news-text">
+            <strong>Subha Mitra</strong> joins the group as a PhD researcher.
+            M.Sc., University of Calcutta.
+          </p>
+        </div>
+        <div class="news-item">
           <span class="news-date">July 2026</span>
           <p class="news-text">
             <strong>Pinku Routaray defends his PhD</strong> on “Dark Matter Effects on Neutron
@@ -183,20 +197,7 @@ permalink: /
             gravity — <a href="https://doi.org/10.1103/rjzl-pcr4" target="_blank" rel="noopener">Phys. Rev. D 113, 024070 ↗</a>
           </p>
         </div>
-        <div class="news-item">
-          <span class="news-date">Sep 2025</span>
-          <p class="news-text">
-            Work on adiabatic sound speeds and radial-oscillation stability published in
-            <a href="https://doi.org/10.1088/1475-7516/2025/09/025" target="_blank" rel="noopener">JCAP 09, 025 ↗</a>
-          </p>
-        </div>
-        <div class="news-item">
-          <span class="news-date">Dec 2024</span>
-          <p class="news-text">
-            Pinku wins <strong>Best Poster</strong> at the DAE High Energy Physics Symposium, BHU.
-            <a href="https://indico.cern.ch/event/1426931/" target="_blank" rel="noopener">Event ↗</a>
-          </p>
-        </div>
+
       </div>
   </div>
 </section>
