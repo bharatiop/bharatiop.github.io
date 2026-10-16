@@ -37,4 +37,6 @@ exclude:
   - research.md
   - "research 2.md"
   - DESIGN.md
+  - scripts
+  - .github
   - README.md

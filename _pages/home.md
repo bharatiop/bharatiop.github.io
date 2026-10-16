@@ -3,6 +3,7 @@ title: "NAP Lab"
 layout: homelay
 excerpt: "Nuclear Astrophysics & Physics Lab at NIT Rourkela — modelling dense matter, neutron-star oscillations, dark matter and multi-messenger signals."
 sitemap: true
+feeds: true
 permalink: /
 ---
 
@@ -106,6 +107,28 @@ permalink: /
 </section>
 
 <!-- ═══════════════════════════════════════════════════════════
+     OPEN PROBLEMS  (data: _data/open_problems.yml)
+     ═══════════════════════════════════════════════════════════ -->
+<section class="band-paper" id="open-problems" aria-label="Open research problems">
+  <div class="section">
+    <div class="section-header reveal">
+      <span class="eyebrow">Where we want to go next</span>
+      <h2 class="section-title wide">Open problems we are working towards</h2>
+      <p class="section-lead">
+        Six questions at the edge of what neutron-star data and dense-matter theory can answer today.
+        Each is a starting point for a PhD, postdoc or master&rsquo;s project; none is a finished result.
+      </p>
+    </div>
+    {% include open-problems.html %}
+    <div class="op-cta reveal">
+      <a href="mailto:kumarbh@nitrkl.ac.in?subject=Research%20problem%20at%20NAP%20Lab" class="btn btn-primary">Discuss a problem</a>
+      <a href="{{ site.url }}{{ site.baseurl }}/research" class="btn btn-outline">Current research →</a>
+      <p>Have your own idea that fits? Write with a paragraph on it &mdash; we are happy to consider it.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
      PEOPLE
      ═══════════════════════════════════════════════════════════ -->
 <section class="band" aria-label="People">
@@ -203,6 +226,45 @@ permalink: /
 </section>
 
 {% include field-news-widget.html %}
+
+<!-- ═══════════════════════════════════════════════════════════
+     UPCOMING CONFERENCES & SCHOOLS  (auto-updating)
+     ═══════════════════════════════════════════════════════════ -->
+<section class="section" id="upcoming" aria-label="Upcoming conferences and schools">
+  <div class="section-header-row reveal">
+    <div>
+      <span class="eyebrow">Meetings</span>
+      <h2 class="section-title">Upcoming conferences &amp; schools</h2>
+      <p class="section-lead" style="margin-top:10px;">
+        Neutron stars, dense matter, nuclear astrophysics and gravitational waves.
+        The list updates itself: finished meetings drop off, new ones are pulled from INSPIRE HEP.
+      </p>
+    </div>
+    <a href="{{ site.url }}{{ site.baseurl }}/events" class="btn btn-outline">Full calendar →</a>
+  </div>
+  {% include conferences-widget.html limit=5 filters=false %}
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     POSITIONS WORLDWIDE  (auto-updating)
+     ═══════════════════════════════════════════════════════════ -->
+<section class="band" id="positions" aria-label="PhD and postdoc positions worldwide">
+  <div class="section">
+    <div class="section-header-row reveal">
+      <div>
+        <span class="eyebrow">Careers</span>
+        <h2 class="section-title">PhD &amp; postdoc positions worldwide</h2>
+        <p class="section-lead" style="margin-top:10px;">
+          Open calls in our research field. Posts disappear on their deadline; new ones appear
+          from INSPIRE HEP jobs and a weekly-refreshed curated list. Always confirm details on the advertiser&rsquo;s page.
+        </p>
+      </div>
+      <a href="{{ site.url }}{{ site.baseurl }}/vacancies#world-positions" class="btn btn-outline">All positions &amp; boards →</a>
+    </div>
+    {% include positions-widget.html limit=6 %}
+  </div>
+</section>
+
 
 <!-- ═══════════════════════════════════════════════════════════
      JOIN THE LAB

@@ -1,8 +1,9 @@
 ---
 title: "Events"
 layout: default
-excerpt: "Upcoming conferences, schools, and events relevant to NAP Lab's research"
+excerpt: "Upcoming conferences, schools and workshops in neutron-star, dense-matter, nuclear-astrophysics and gravitational-wave physics — plus NAP Lab milestones."
 sitemap: true
+feeds: true
 permalink: /events/
 ---
 
@@ -10,128 +11,100 @@ permalink: /events/
   <div class="page-hero-inner">
     <span class="eyebrow">Conferences &amp; Schools</span>
     <h1>Events</h1>
-    <p style="margin-top:10px;font-size:14.5px;color:var(--text-muted);">
-      Conferences, schools, and meetings relevant to nuclear astrophysics, gravitational waves, and dark matter — plus our own lab milestones.
+    <p>
+      Meetings relevant to nuclear astrophysics, neutron stars, gravitational waves and dark matter,
+      plus NAP Lab milestones. The calendar refreshes itself: finished meetings drop off and new ones
+      are pulled from INSPIRE HEP.
     </p>
+    <div class="ev-hero-stats" aria-label="Calendar summary">
+      <div><b id="evCount">–</b><span>Upcoming meetings</span></div>
+      <div><b id="evNext">–</b><span>Next one starts</span></div>
+    </div>
   </div>
 </div>
 
 <div class="section">
 
   <div class="section-header">
-    <span class="eyebrow">Field-Wide</span>
+    <span class="eyebrow">Field-wide</span>
     <h2 class="section-title">Upcoming conferences &amp; schools</h2>
   </div>
 
-  <div class="events-grid" style="margin-bottom:52px;">
+  {% include conferences-widget.html limit=0 filters=true %}
 
-    <div class="event-card">
-      <div class="event-date-badge"><div class="month">Jun</div><div class="day">28</div></div>
-      <div class="event-info">
-        <h4>GWsNS-2026 — Gravitational Waves from Neutron Stars</h4>
-        <p class="event-meta">Jun 28 – Jul 3, 2026 · Station Biologique de Roscoff, France</p>
-        <a href="https://indico.in2p3.fr/event/37646/" target="_blank" rel="noopener">IN2P3 Indico page ↗</a>
-      </div>
-    </div>
-
-    <div class="event-card">
-      <div class="event-date-badge"><div class="month">Jul</div><div class="day">5</div></div>
-      <div class="event-info">
-        <h4>Asian Gravitational-Wave Astronomy Meeting (AGWAM 2026)</h4>
-        <p class="event-meta">Jul 5–11, 2026 · NARIT, Chiang Mai, Thailand</p>
-        <a href="https://www.lisamission.org/news/conferences/conferences-future/" target="_blank" rel="noopener">LISA events listing ↗</a>
-      </div>
-    </div>
-
-    <div class="event-card">
-      <div class="event-date-badge"><div class="month">Jul</div><div class="day">6</div></div>
-      <div class="event-info">
-        <h4>Multimessenger Astrophysics 2026 — 9th ICE Summer School</h4>
-        <p class="event-meta">Jul 6–14, 2026 · Institute of Space Sciences (ICE-CSIC), Barcelona, Spain</p>
-        <a href="https://www.nu.to.infn.it/conf/" target="_blank" rel="noopener">Conference listing ↗</a>
-      </div>
-    </div>
-
-    <div class="event-card">
-      <div class="event-date-badge"><div class="month">Jul</div><div class="day">19</div></div>
-      <div class="event-info">
-        <h4>New Frontiers in Strong Gravity — Benasque Workshop</h4>
-        <p class="event-meta">Jul 19–31, 2026 · Centro de Ciencias de Benasque, Spain</p>
-        <a href="https://benasque.org/2026relativity/" target="_blank" rel="noopener">Workshop site ↗</a>
-      </div>
-    </div>
-
-    <div class="event-card">
-      <div class="event-date-badge"><div class="month">Sep</div><div class="day">16</div></div>
-      <div class="event-info">
-        <h4>Erice School — Neutrinos in Cosmology, Astro-, Particle &amp; Nuclear Physics</h4>
-        <p class="event-meta">Sep 16–22, 2026 · Erice, Italy (47th course)</p>
-        <a href="https://www.nu.to.infn.it/conf/" target="_blank" rel="noopener">Conference listing ↗</a>
-      </div>
-    </div>
-
-    <div class="event-card">
-      <div class="event-date-badge"><div class="month">Oct</div><div class="day">5</div></div>
-      <div class="event-info">
-        <h4>8th Workshop on Compound-Nuclear Reactions and Related Topics</h4>
-        <p class="event-meta">Oct 5–9, 2026 · ACROS Fukuoka Conference Room, Japan</p>
-        <a href="https://conference-service.com/conferences/nuclear-physics.html" target="_blank" rel="noopener">Conference listing ↗</a>
-      </div>
-    </div>
-
-    <div class="event-card">
-      <div class="event-date-badge"><div class="month">Nov</div><div class="day">2</div></div>
-      <div class="event-info">
-        <h4>A NICER Legacy: Neutron Stars, Black Holes &amp; Time-Domain Astronomy</h4>
-        <p class="event-meta">Nov 2–4, 2026 · Royal Sonesta Hotel, Baltimore, USA (JSI Workshop)</p>
-        <a href="https://heasarc.gsfc.nasa.gov/docs/heasarc/meetings.html" target="_blank" rel="noopener">HEASARC meetings listing ↗</a>
-      </div>
-    </div>
-
-    <div class="event-card">
-      <div class="event-date-badge"><div class="month">~</div><div class="day">'27</div></div>
-      <div class="event-info">
-        <h4>LASNPA 2026 — Latin American Symposium on Nuclear Physics</h4>
-        <p class="event-meta">2026 · Brazil (15th edition)</p>
-        <a href="https://conference-service.com/conferences/nuclear-physics.html" target="_blank" rel="noopener">Conference listing ↗</a>
-      </div>
-    </div>
-
+  <div class="section-header" style="margin-top:3.5rem;">
+    <span class="eyebrow">Keep looking</span>
+    <h2 class="section-title">Where new meetings are announced</h2>
+  </div>
+  <div class="ev-sources">
+    <a class="ev-source" href="https://inspirehep.net/conferences" target="_blank" rel="noopener"><b>INSPIRE conferences ↗</b><span>Searchable database of HEP, nuclear and astro meetings.</span></a>
+    <a class="ev-source" href="https://www.lisamission.org/news/conferences/conferences-future/" target="_blank" rel="noopener"><b>LISA Consortium events ↗</b><span>Conferences, schools and workshops in GW physics.</span></a>
+    <a class="ev-source" href="https://www.iucaa.in/en/iucaa-events/events-outside-iucaa" target="_blank" rel="noopener"><b>IUCAA events ↗</b><span>Meetings and schools in India (LIGO-India, GW).</span></a>
+    <a class="ev-source" href="https://www.astron-soc.in/announcement" target="_blank" rel="noopener"><b>Astronomical Society of India ↗</b><span>National events and notifications.</span></a>
+    <a class="ev-source" href="https://heasarc.gsfc.nasa.gov/docs/heasarc/meetings.html" target="_blank" rel="noopener"><b>NASA HEASARC meetings ↗</b><span>High-energy astrophysics, NICER, X-ray timing.</span></a>
+    <a class="ev-source" href="https://www.nu.to.infn.it/conf/" target="_blank" rel="noopener"><b>INFN Neutrino Unbound ↗</b><span>Astroparticle and neutrino conferences.</span></a>
   </div>
 
-  <div style="border:0.5px solid var(--border);border-radius:var(--radius);padding:20px 24px;margin-bottom:52px;">
-    <h4 style="font-size:14px;font-weight:600;color:var(--text);margin-bottom:8px;">More listings</h4>
-    <p style="font-size:13px;color:var(--text-muted);line-height:1.75;">
-      For the full, continuously updated calendar of gravitational-wave and nuclear/astro-particle physics events, see
-      <a href="https://www.lisamission.org/news/conferences/conferences-future/" target="_blank" rel="noopener" style="color:var(--accent-mid)">LISA Consortium — Future Events ↗</a>,
-      <a href="https://www.nu.to.infn.it/conf/" target="_blank" rel="noopener" style="color:var(--accent-mid)">INFN Neutrino Unbound Conferences ↗</a>,
-      <a href="https://conference-service.com/conferences/nuclear-physics.html" target="_blank" rel="noopener" style="color:var(--accent-mid)">COMS Nuclear Physics Calendar ↗</a>, and
-      <a href="https://heasarc.gsfc.nasa.gov/docs/heasarc/meetings.html" target="_blank" rel="noopener" style="color:var(--accent-mid)">NASA HEASARC Meeting Announcements ↗</a>.
-    </p>
-  </div>
-
-  <hr class="divider" style="margin-bottom:48px;">
+  <hr class="divider" style="margin:3.5rem 0 2.5rem;">
 
   <div class="section-header">
     <span class="eyebrow">NAP Lab</span>
     <h2 class="section-title">Lab milestones &amp; talks</h2>
   </div>
 
-  <div class="news-list">
-    <div class="news-item">
-      <span class="news-date">23 Dec 2024</span>
-      <p class="news-text">Pinku Routaray wins Best Poster Award at the DAE High Energy Physics Symposium, BHU.</p>
+  <div class="ev-timeline">
+    <div class="ev-tl-item">
+      <div class="ev-tl-date">5 Oct 2026</div>
+      <p>Sayantan Ghosh successfully defends his PhD thesis on quasinormal modes of neutron stars.</p>
     </div>
-    <div class="news-item">
-      <span class="news-date">2023</span>
-      <p class="news-text">Invited lecture on dark matter admixed neutron stars at DAE-BRNS National Symposium.</p>
+    <div class="ev-tl-item">
+      <div class="ev-tl-date">Jul 2026</div>
+      <p>Pinku Routaray defends his PhD thesis on dark-matter effects on neutron-star structure and joins the Kavli Institute for Astronomy and Astrophysics, China, as a postdoctoral fellow.</p>
     </div>
-    <div class="news-item">
-      <span class="news-date">2022</span>
-      <p class="news-text">Dr. Kumar served as resource person for the SERB School on Nuclear Astrophysics, NIT Rourkela.</p>
+    <div class="ev-tl-item">
+      <div class="ev-tl-date">23 Dec 2024</div>
+      <p>Pinku Routaray wins the Best Poster Award at the DAE High Energy Physics Symposium, BHU.</p>
+    </div>
+    <div class="ev-tl-item">
+      <div class="ev-tl-date">2023</div>
+      <p>Invited lecture on dark-matter admixed neutron stars at the DAE-BRNS National Symposium.</p>
+    </div>
+    <div class="ev-tl-item">
+      <div class="ev-tl-date">2022</div>
+      <p>Dr. Kumar serves as resource person for the SERB School on Nuclear Astrophysics, NIT Rourkela.</p>
     </div>
   </div>
-
   <div class="mt-6"><a href="{{ site.url }}{{ site.baseurl }}/allnews.html" class="btn btn-secondary">All lab news →</a></div>
 
+  <details class="ev-archive">
+    <summary>Earlier in 2026 (archive)</summary>
+    <ul>
+      <li><span>Oct 5–9, 2026</span><div><a href="https://conference-service.com/conferences/nuclear-physics.html" target="_blank" rel="noopener">8th Workshop on Compound-Nuclear Reactions and Related Topics</a><br>ACROS Fukuoka, Japan</div></li>
+      <li><span>Sep 16–22, 2026</span><div><a href="https://www.nu.to.infn.it/conf/" target="_blank" rel="noopener">Erice School — Neutrinos in Cosmology, Astro-, Particle &amp; Nuclear Physics</a><br>Erice, Italy</div></li>
+      <li><span>Jul 19–31, 2026</span><div><a href="https://benasque.org/2026relativity/" target="_blank" rel="noopener">New Frontiers in Strong Gravity</a><br>Benasque, Spain</div></li>
+      <li><span>Jul 6–14, 2026</span><div><a href="https://www.nu.to.infn.it/conf/" target="_blank" rel="noopener">Multimessenger Astrophysics 2026 — 9th ICE Summer School</a><br>ICE-CSIC, Barcelona, Spain</div></li>
+      <li><span>Jul 5–11, 2026</span><div><a href="https://www.lisamission.org/news/conferences/conferences-future/" target="_blank" rel="noopener">Asian Gravitational-Wave Astronomy Meeting (AGWAM 2026)</a><br>NARIT, Chiang Mai, Thailand</div></li>
+      <li><span>Jun 28 – Jul 3, 2026</span><div><a href="https://indico.in2p3.fr/event/37646/" target="_blank" rel="noopener">GWsNS-2026 — Gravitational Waves from Neutron Stars</a><br>Roscoff, France</div></li>
+    </ul>
+  </details>
+
 </div>
+
+<script>
+/* Hero summary: read the rendered calendar once the live feed has populated it. */
+(function () {
+  function summarise() {
+    var cards = document.querySelectorAll('.lf-conf');
+    var c = document.getElementById('evCount'), n = document.getElementById('evNext');
+    var pressed = document.querySelector('[data-feed="conferences"] [aria-pressed="true"]');
+    if (!c || !cards.length || (pressed && pressed.getAttribute('data-f') !== 'all')) return;
+    c.textContent = cards.length;
+    var first = cards[0].querySelector('.lf-chip-when, .lf-chip-live');
+    n.textContent = first ? first.textContent : '–';
+  }
+  var box = document.querySelector('[data-feed="conferences"]');
+  if (!box) return;
+  new MutationObserver(summarise).observe(box.querySelector('[data-role="list"]'), { childList: true });
+  setTimeout(summarise, 800);
+})();
+</script>

@@ -1,0 +1,5 @@
+{%- comment -%}
+  Seed data for js/live-feeds.js: curated lists + the weekly bot snapshot.
+  Added once per page by _layouts/default.html when the page sets `feeds: true`.
+{%- endcomment -%}
+<script type="application/json" id="feed-seed">{"conferences": {{ site.data.conferences | jsonify }}, "positions": {{ site.data.positions | jsonify }}, "snapshot": {{ site.data.live_feeds | jsonify }}}</script>

@@ -148,3 +148,15 @@ bundle exec jekyll serve
 - Do not invent citation counts, vacancies, or ORCID/emails.
 - Do not set body copy to `--plasma`.
 - Do not add a second fusion highlight in the same viewport.
+
+## Live feeds (conferences, positions, journal papers)
+
+| Feature | Where | How it updates |
+|---|---|---|
+| Upcoming conferences & schools | `_includes/conferences-widget.html`, `/events/`, homepage | Curated seeds in `_data/conferences.yml` + live INSPIRE HEP; past meetings are hidden by date |
+| PhD / postdoc positions worldwide | `_includes/positions-widget.html`, `/vacancies/`, homepage | Curated seeds in `_data/positions.yml` + live INSPIRE jobs; passed deadlines hidden |
+| Journal papers (APS, AAS, MNRAS/JCAP/PDU) | `field-news-widget.html` tabs | Live Crossref query by ISSN (`js/live-feeds.js`, `JOURNALS`) |
+| Weekly snapshot fallback | `_data/live_feeds.json` | `.github/workflows/update-feeds.yml` runs `scripts/update_feeds.py` Mondays |
+| Open problems | `_data/open_problems.yml` -> `_includes/open-problems.html` | Hand-edited |
+
+A page that uses a widget needs `feeds: true` in its front matter. To pin a meeting or post, add it to the YAML seed file (ISO dates). Styles live in `css/live.css`.

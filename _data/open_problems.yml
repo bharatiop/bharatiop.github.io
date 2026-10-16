@@ -1,0 +1,52 @@
+# ==========================================================================
+# "Open problems" shown on the homepage. Each is a prospective project, not a
+# result. Edit freely; order = display order.
+# ==========================================================================
+
+- num: "01"
+  area: "Dark matter · Oscillations"
+  title: "Can f-mode universality tell dark matter from nuclear softening?"
+  why: "Dark-matter admixture, hyperons and Δ-baryons all soften the equation of state, so mass–radius and tidal data alone cannot separate them. Universal relations (f-mode–tidal, I-Love-Q) are calibrated on single-fluid stars; in two-fluid stars they may bend in a way that is specific to dark matter."
+  first_step: "Build a two-fluid f-mode solver and map how far dark-matter core and halo configurations leave the single-fluid universal band, across RMF families."
+  tools: ["Two-fluid TOV", "Cowling / full GR modes", "G3 · IOPB-I · NITR"]
+  horizon: "Short term"
+
+- num: "02"
+  area: "Gravitational waves · EoS inference"
+  title: "GW170817 at ten years: a nuclear-physics-first posterior"
+  why: "Most EoS inference uses piecewise or spectral parametrisations that forget the nuclear Lagrangian. Sampling the RMF couplings directly, with NICER and the O4 neutron-star events, would turn each new detection into a bound on L₀, K₀ and the symmetry-energy curvature."
+  first_step: "Re-run the joint LVK + NICER likelihood with RMF couplings as the sampled parameters and compare the posterior on L₀ with finite-nuclei constraints."
+  tools: ["Bayesian inference", "NICER pulse-profile posteriors", "LVK public data"]
+  horizon: "Short term"
+
+- num: "03"
+  area: "Hot dense matter · Supernovae"
+  title: "Proto-neutron-star modes as a clock for core-collapse gravitational waves"
+  why: "The f- and g-mode frequency of a cooling proto-neutron star sweeps upward in time. Mapping that track to temperature, entropy and lepton fraction would turn a Galactic supernova signal into a measurement of finite-temperature EoS physics."
+  first_step: "Extend the finite-T non-radial oscillation calculation to evolving snapshots and produce a frequency-versus-time template band for Einstein Telescope and Cosmic Explorer sensitivity."
+  tools: ["Finite-T RMF EoS", "Non-radial modes", "3G detector noise curves"]
+  horizon: "Medium term"
+
+- num: "04"
+  area: "Exotic matter · Phase transitions"
+  title: "Slow conversion and slow-stable stars: do they leave a GW fingerprint?"
+  why: "When the quark–hadron conversion timescale is long compared with an oscillation period, the radial spectrum and the stability boundary change. Whether this shifts post-merger or ringdown frequencies measurably is unexplored."
+  first_step: "Quantify the shift of the radial-mode frequency with conversion rate for slow-stable hybrid stars and check which part of it survives in the observable f-mode."
+  tools: ["Radial oscillations", "Hybrid EoS", "Twin-star branches"]
+  horizon: "Medium term"
+
+- num: "05"
+  area: "Modified gravity · Degeneracy"
+  title: "Modified gravity or exotic core? Curvature invariants as a discriminator"
+  why: "Energy-momentum-squared gravity and a stiff or softened core can produce nearly the same mass–radius curve. Interior curvature and the trace anomaly respond differently to each, but whether that difference reaches any observable is open."
+  first_step: "Find pairs of (EoS, gravity) models with identical M–R and tidal curves, then compute where their oscillation spectra and curvature profiles part ways."
+  tools: ["EMSG", "Trace anomaly", "Universal relations"]
+  horizon: "Medium term"
+
+- num: "06"
+  area: "Dark matter · Rotation"
+  title: "Do dark-matter cores change the r-mode instability window?"
+  why: "Rotating, magnetised dark-matter admixed stars have been built, but their dissipation and the r-mode growth timescale have not. A dark-matter component could move the instability boundary that limits millisecond-pulsar spin."
+  first_step: "Add the dark-matter fluid to the r-mode growth and damping timescales and compare the spin-frequency ceiling with observed fast pulsars."
+  tools: ["Slow-rotation formalism", "Viscous damping", "Pulsar spin catalogues"]
+  horizon: "Long term"
