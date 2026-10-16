@@ -10,11 +10,16 @@ permalink: /publications/
   <div class="page-hero-inner">
     <span class="eyebrow">Research Output</span>
     <h1>Publications</h1>
-    <p style="margin-top:10px;font-size:14.5px;color:var(--text-muted);">
-      Full list of papers from the Nuclear Astrophysics &amp; Physics Lab, NIT Rourkela. &nbsp;
-      <a href="https://scholar.google.com/citations?user=4498IKgAAAAJ&hl=en" target="_blank" rel="noopener" style="color:var(--accent-mid);">Google Scholar (live citations) ↗</a> &nbsp;
-      <a href="https://arxiv.org/a/kumar_b_1" target="_blank" rel="noopener" style="color:var(--accent-mid);">arXiv listing ↗</a>
+    <p>
+      Papers from the Nuclear Astrophysics &amp; Physics Lab, NIT Rourkela &mdash; dense-matter equation of state,
+      neutron-star oscillations, dark matter in compact stars and multi-messenger constraints.
     </p>
+    <div class="pubs-stats" id="pubsStats" aria-label="Publication summary"></div>
+    <div class="pubs-links">
+      <a class="btn btn-primary btn-sm" href="https://scholar.google.com/citations?user=4498IKgAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar ↗</a>
+      <a class="btn btn-outline btn-sm" href="https://arxiv.org/a/kumar_b_1" target="_blank" rel="noopener">arXiv listing ↗</a>
+      <a class="btn btn-outline btn-sm" href="https://inspirehep.net/literature?q=a%20Kumar%2C%20Bharat%20and%20aff%20NIT%20Rourkela" target="_blank" rel="noopener">INSPIRE ↗</a>
+    </div>
   </div>
 </div>
 
@@ -46,19 +51,13 @@ permalink: /publications/
 
 <div class="section">
 
-  <!-- FILTER TABS -->
-  <div class="pub-filter-bar" role="tablist">
-    <button class="btn btn-primary btn-sm pub-filter" data-filter="all" onclick="filterPubs(this,'all')">All Papers</button>
-    <button class="btn btn-secondary btn-sm pub-filter" data-filter="highlight" onclick="filterPubs(this,'highlight')">★ Highlights</button>
-    <button class="btn btn-secondary btn-sm pub-filter" data-filter="dm" onclick="filterPubs(this,'dm')">Dark Matter</button>
-    <button class="btn btn-secondary btn-sm pub-filter" data-filter="osc" onclick="filterPubs(this,'osc')">Oscillations</button>
-    <button class="btn btn-secondary btn-sm pub-filter" data-filter="eos" onclick="filterPubs(this,'eos')">EoS</button>
-    <button class="btn btn-secondary btn-sm pub-filter" data-filter="2026" onclick="filterPubs(this,'2026')">2026</button>
-    <button class="btn btn-secondary btn-sm pub-filter" data-filter="2025" onclick="filterPubs(this,'2025')">2025</button>
-    <button class="btn btn-secondary btn-sm pub-filter" data-filter="2024" onclick="filterPubs(this,'2024')">2024</button>
-    <button class="btn btn-secondary btn-sm pub-filter" data-filter="2023" onclick="filterPubs(this,'2023')">2023</button>
-    <button class="btn btn-secondary btn-sm pub-filter" data-filter="2022" onclick="filterPubs(this,'2022')">2022</button>
-    <button class="btn btn-secondary btn-sm pub-filter" data-filter="older" onclick="filterPubs(this,'older')">2021 &amp; Earlier</button>
+  <!-- TOOLBAR: search + filters (built by script below) -->
+  <div class="pubs-toolbar" role="region" aria-label="Filter publications">
+    <label class="pubs-search"><span class="sr-only">Search publications</span>
+      <input type="search" id="pubSearch" placeholder="Search title, author, journal…" autocomplete="off">
+    </label>
+    <div class="pubs-filters" id="pubFilters"></div>
+    <span class="pubs-count" id="pubCount" aria-live="polite"></span>
   </div>
 
   <div class="pub-list" id="pubList">
@@ -474,34 +473,103 @@ permalink: /publications/
 
   </div><!-- end pub-list -->
 
-  <div style="margin-top:32px;padding:20px 24px;background:var(--accent-light);border-radius:var(--radius);border:0.5px solid #c0d8ee;">
-    <p style="font-size:13.5px;color:var(--accent);">
-      ★ = Highlighted publication &nbsp;|&nbsp;
-      For the complete and most current list visit
-      <a href="https://scholar.google.com/citations?user=4498IKgAAAAJ&hl=en" target="_blank" rel="noopener" style="color:var(--accent-mid);">Google Scholar (live) ↗</a> or
-      <a href="https://arxiv.org/a/kumar_b_1" target="_blank" rel="noopener" style="color:var(--accent-mid);">arXiv ↗</a>
-    </p>
+  <p class="pub-empty" id="pubEmpty" hidden>No papers match this filter.</p>
+
+  <div class="pubs-note">
+    &#9733; = highlighted publication. For the complete, current list with citation counts see
+    <a href="https://scholar.google.com/citations?user=4498IKgAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar ↗</a> or
+    <a href="https://arxiv.org/a/kumar_b_1" target="_blank" rel="noopener">arXiv ↗</a>.
   </div>
 
 </div>
 
 <script>
-function filterPubs(btn, filter) {
-  document.querySelectorAll('.pub-filter').forEach(function(b) {
-    b.classList.remove('btn-primary'); b.classList.add('btn-secondary');
-  });
-  btn.classList.add('btn-primary'); btn.classList.remove('btn-secondary');
-  document.querySelectorAll('.pub-item').forEach(function(item) {
-    if (filter === 'all') {
-      item.style.display = '';
-    } else if (filter === 'highlight') {
-      item.style.display = item.dataset.highlight === '1' ? '' : 'none';
-    } else if (['2026','2025','2024','2023','2022','older'].includes(filter)) {
-      item.style.display = item.dataset.year === filter ? '' : 'none';
-    } else {
-      var tags = item.dataset.tags || '';
-      item.style.display = tags.includes(filter) ? '' : 'none';
+(function () {
+  var items = Array.prototype.slice.call(document.querySelectorAll('#pubList .pub-item'));
+  var list = document.getElementById('pubList');
+  var TAGS = { dm: 'Dark matter', osc: 'Oscillations', eos: 'EoS', emsg: 'Modified gravity', delta: 'Δ-baryons' };
+  var state = { f: 'all', q: '' };
+
+  /* year of each paper (from the visible year label) */
+  items.forEach(function (it) {
+    var y = (it.querySelector('.pub-year') || {}).textContent || '';
+    it.dataset.y = y.trim();
+    it.dataset.text = it.textContent.toLowerCase().replace(/\s+/g, ' ');
+    var links = it.querySelector('.pub-links');
+    if (links) {
+      if (it.dataset.highlight === '1') {
+        var st = document.createElement('span'); st.className = 'pub-star'; st.textContent = '★ Highlight';
+        links.insertBefore(st, links.firstChild);
+      }
+      (it.dataset.tags || '').split(/\s+/).filter(function (t) { return TAGS[t]; }).forEach(function (t) {
+        var tg = document.createElement('span'); tg.className = 'pub-tag'; tg.textContent = TAGS[t]; links.appendChild(tg);
+      });
     }
   });
-}
+
+  /* year headings */
+  var years = [];
+  items.forEach(function (it) { if (years.indexOf(it.dataset.y) < 0) years.push(it.dataset.y); });
+  var heads = {};
+  years.forEach(function (y) {
+    var h = document.createElement('h3'); h.className = 'pub-year-head'; h.dataset.y = y;
+    var first = items.filter(function (i) { return i.dataset.y === y; })[0];
+    list.insertBefore(h, first); heads[y] = h;
+  });
+
+  /* stats */
+  var yrs = items.map(function (i) { return parseInt(i.dataset.y, 10); }).filter(Boolean);
+  var stats = document.getElementById('pubsStats');
+  var hl = items.filter(function (i) { return i.dataset.highlight === '1'; }).length;
+  stats.innerHTML = '<div><b>' + items.length + '</b><span>Papers listed</span></div>' +
+    '<div><b>' + Math.min.apply(null, yrs) + '–' + Math.max.apply(null, yrs) + '</b><span>Years covered</span></div>' +
+    '<div><b>' + hl + '</b><span>Highlights</span></div>';
+
+  /* filter chips with counts */
+  var defs = [['all', 'All'], ['highlight', '★ Highlights'], ['dm', 'Dark matter'], ['osc', 'Oscillations'], ['eos', 'EoS'], ['emsg', 'Modified gravity']];
+  var recent = ['2026', '2025', '2024', '2023', '2022'];
+  recent.forEach(function (y) { defs.push([y, y]); });
+  defs.push(['older', '2021 & earlier']);
+  function matchFilter(it, f) {
+    if (f === 'all') return true;
+    if (f === 'highlight') return it.dataset.highlight === '1';
+    if (f === 'older') return it.dataset.year === 'older';
+    if (/^\d{4}$/.test(f)) return it.dataset.year === f;
+    return (' ' + (it.dataset.tags || '') + ' ').indexOf(' ' + f + ' ') >= 0;
+  }
+  var bar = document.getElementById('pubFilters');
+  defs.forEach(function (d) {
+    var n = items.filter(function (i) { return matchFilter(i, d[0]); }).length;
+    if (!n && d[0] !== 'all') return;
+    var b = document.createElement('button'); b.type = 'button'; b.dataset.f = d[0];
+    b.setAttribute('aria-pressed', d[0] === 'all' ? 'true' : 'false');
+    b.innerHTML = d[1].replace('&', '&amp;') + '<i>' + n + '</i>';
+    bar.appendChild(b);
+  });
+
+  function apply() {
+    var shown = 0, perYear = {};
+    items.forEach(function (it) {
+      var ok = matchFilter(it, state.f) && (!state.q || it.dataset.text.indexOf(state.q) >= 0);
+      it.hidden = !ok;
+      if (ok) { shown++; perYear[it.dataset.y] = (perYear[it.dataset.y] || 0) + 1; }
+    });
+    years.forEach(function (y) {
+      var h = heads[y]; var n = perYear[y] || 0; h.hidden = !n;
+      h.innerHTML = y + ' <small>' + n + (n === 1 ? ' paper' : ' papers') + '</small>';
+    });
+    document.getElementById('pubCount').textContent = shown + ' of ' + items.length;
+    document.getElementById('pubEmpty').hidden = shown > 0;
+    Array.prototype.forEach.call(bar.querySelectorAll('button'), function (b) {
+      b.setAttribute('aria-pressed', b.dataset.f === state.f ? 'true' : 'false');
+    });
+  }
+  bar.addEventListener('click', function (e) {
+    var b = e.target.closest('button[data-f]'); if (!b) return; state.f = b.dataset.f; apply();
+  });
+  document.getElementById('pubSearch').addEventListener('input', function () {
+    state.q = this.value.trim().toLowerCase(); apply();
+  });
+  apply();
+})();
 </script>

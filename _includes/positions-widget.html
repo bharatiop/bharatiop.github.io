@@ -1,0 +1,26 @@
+{%- comment -%}
+  Worldwide PhD / postdoc openings. Passed deadlines disappear automatically.
+  Params: limit (0 = all), search (true/false)
+{%- endcomment -%}
+<div class="lf-widget" data-feed="positions" data-limit="{{ include.limit | default: 0 }}">
+  <div class="lf-toolbar">
+    <div class="lf-filters" data-role="filters" role="group" aria-label="Filter positions">
+      <button type="button" data-f="all" aria-pressed="true">All</button>
+      <button type="button" data-f="phd" aria-pressed="false">PhD</button>
+      <button type="button" data-f="postdoc" aria-pressed="false">Postdoc</button>
+      <button type="button" data-f="core" aria-pressed="false">Neutron-star / dense-matter core</button>
+    </div>
+    {% if include.search %}
+    <label class="lf-search"><span class="sr-only">Search positions</span>
+      <input type="search" data-role="search" placeholder="Search institution, country, topic…" autocomplete="off">
+    </label>
+    {% endif %}
+    <p class="lf-status" data-role="status" aria-live="polite"></p>
+  </div>
+  <div class="lf-job-list" data-role="list">
+    <div class="feed-skeleton"><div class="skel skel-title"></div><div class="skel skel-text"></div><div class="skel skel-text w60"></div></div>
+  </div>
+  <noscript><p class="lf-empty">Enable JavaScript to see the live list, or browse
+    <a href="https://inspirehep.net/jobs">INSPIRE jobs</a> and the
+    <a href="https://aas.org/jobregister">AAS Job Register</a>.</p></noscript>
+</div>

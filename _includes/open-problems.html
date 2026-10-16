@@ -1,0 +1,17 @@
+<div class="op-grid" data-stagger>
+  {% for p in site.data.open_problems %}
+  <article class="op-card">
+    <header class="op-head">
+      <span class="op-num">{{ p.num }}</span>
+      <span class="op-area">{{ p.area }}</span>
+      <span class="op-horizon">{{ p.horizon }}</span>
+    </header>
+    <h3>{{ p.title }}</h3>
+    <p class="op-why">{{ p.why }}</p>
+    <p class="op-step"><strong>First step.</strong> {{ p.first_step }}</p>
+    <ul class="op-tools" aria-label="Methods">
+      {% for t in p.tools %}<li>{{ t }}</li>{% endfor %}
+    </ul>
+  </article>
+  {% endfor %}
+</div>

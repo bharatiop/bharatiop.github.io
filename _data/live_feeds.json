@@ -1,0 +1,7 @@
+{
+  "updated": null,
+  "note": "Regenerated weekly by .github/workflows/update-feeds.yml (scripts/update_feeds.py). Safe to leave empty.",
+  "conferences": [],
+  "positions": [],
+  "papers": { "aps": [], "aas": [], "other": [] }
+}

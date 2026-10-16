@@ -44,7 +44,9 @@ Submit a pull request — most changes are simple YAML/Markdown edits and don't 
 ## Homepage features
 
 - Live clock (IST) and mini calendar with upcoming conference highlights
-- Curated "Field Intelligence" panel of recent neutron-star / GW developments (static; restyle only)
+- Live "Field Intelligence": arXiv (INSPIRE) plus APS, AAS and MNRAS/JCAP/PDU papers (Crossref)
+- Auto-updating upcoming conferences & schools and worldwide PhD/postdoc positions (see DESIGN.md, "Live feeds")
+- Open problems section (`_data/open_problems.yml`)
 
 ## License
 

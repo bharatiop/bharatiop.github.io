@@ -1,0 +1,132 @@
+# ==========================================================================
+# Curated upcoming conferences, schools and workshops.
+#
+# These are SEEDS. The site (a) hides anything whose end date has passed and
+# (b) merges in extra meetings fetched live from INSPIRE HEP, and (c) the
+# weekly GitHub Action (.github/workflows/update-feeds.yml) refreshes
+# _data/live_feeds.json. You only need to edit this file to pin a meeting
+# you care about.
+#
+# type: conference | school | workshop | meeting
+# Dates are ISO (YYYY-MM-DD). Verified against the organisers' pages on 2026-10-16.
+# ==========================================================================
+
+- title: "Ringdown in Lisbon"
+  start: 2026-10-19
+  end: 2026-10-21
+  place: "Lisbon, Portugal"
+  type: workshop
+  tags: [gw, qnm]
+  url: https://www.lisamission.org/ringdown-in-lisbon-october-19-21-2026/
+
+- title: "IAU Webinar Series — Gravitational-Wave Astrophysics & Multimessenger Astronomy"
+  start: 2026-10-29
+  end: 2026-10-30
+  place: "Online"
+  type: meeting
+  tags: [gw, multimessenger]
+  url: https://www.lisamission.org/iau-webinar-series-october-29-30-2026-gravitational-wave-astrophysics-multimessenger-astronomy/
+
+- title: "A NICER Legacy: Neutron Stars, Black Holes & Time-Domain Astronomy"
+  start: 2026-11-02
+  end: 2026-11-04
+  place: "Baltimore, USA"
+  type: workshop
+  tags: [ns, nicer]
+  url: https://heasarc.gsfc.nasa.gov/docs/heasarc/meetings.html
+
+- title: "Theory Meets Experiment 2026 — Gravitational-Wave Physics: From Fundamental Principles to Next-Generation Observatories"
+  start: 2026-11-09
+  end: 2026-11-20
+  place: "Galileo Galilei Institute, Florence, Italy"
+  type: school
+  tags: [gw, 3g]
+  url: https://www.lisamission.org/theory-meets-experiment-2026-gravitational-wave-physics-from-fundamental-principles-to-next-generation-observatories-november-9-20-2026-at-ggi-florence/
+
+- title: "5th Einstein Telescope Annual Meeting"
+  start: 2026-11-23
+  end: 2026-11-27
+  place: "Prague, Czech Republic"
+  type: meeting
+  tags: [gw, 3g]
+  url: https://www.lisamission.org/5th-einstein-telescope-annual-meeting-november-23-27-2026-in-prague/
+
+- title: "RESCEU–NBIA Workshop on Gravitational-Wave Sources 2026"
+  start: 2026-11-25
+  end: 2026-12-04
+  place: "Tokyo, Japan"
+  type: workshop
+  tags: [gw]
+  url: https://www.lisamission.org/resceu-nbia-workshop-on-gravitational-wave-sources-2026-november-25-december-4-in-tokyo/
+
+- title: "Gravitational Wave Instrumentation Workshop — Winter Edition 2026"
+  start: 2026-11-30
+  end: 2026-12-11
+  place: "IUCAA, Pune, India"
+  type: school
+  tags: [gw, india]
+  url: https://www.astron-soc.in/announcement
+
+- title: "Workshop on Gravitational Waves and LIGO-India"
+  start: 2026-12-14
+  end: 2026-12-18
+  place: "India"
+  type: workshop
+  tags: [gw, india]
+  url: https://www.iucaa.in/en/iucaa-events/events-outside-iucaa
+
+- title: "Madrid Winter Workshop on Gravitational Physics 2026"
+  start: 2026-12-14
+  end: 2026-12-16
+  place: "Madrid, Spain"
+  type: workshop
+  tags: [gw]
+  url: https://www.lisamission.org/madrid-winter-workshop-on-gravitational-physics-2026-december-14-16/
+
+- title: "Gravitational Waves at the Fin del Mundo"
+  start: 2027-01-11
+  end: 2027-01-22
+  place: "Universidad Central, La Serena, Chile"
+  type: school
+  tags: [gw]
+  url: https://www.lisamission.org/gravitational-waves-at-the-fin-del-mundo-january-11-22-2027-universidad-central-la-serena/
+
+- title: "After the Avalanche: Astrophysical Lessons from the Fourth GW Observing Run"
+  start: 2027-02-22
+  end: 2027-02-26
+  place: "Sexten, Italy"
+  type: workshop
+  tags: [gw, ns]
+  url: https://www.lisamission.org/after-the-avalanche-astrophysical-lessons-from-the-fourth-gw-observing-run-february-22-26-2027-in-sexten/
+
+- title: "61st Rencontres de Moriond — Gravitation"
+  start: 2027-03-14
+  end: 2027-03-21
+  place: "La Thuile, Italy"
+  type: conference
+  tags: [gw]
+  url: https://www.lisamission.org/61st-rencontres-de-moriond-march-14-21-2027-in-la-thuile/
+
+- title: "The School on Gravity: From Commotion to Locomotion"
+  start: 2027-06-21
+  end: 2027-06-25
+  place: "Niels Bohr Institute, Copenhagen, Denmark"
+  type: school
+  tags: [gw]
+  url: https://www.lisamission.org/the-school-on-gravity-from-commotion-to-locomotion-june-21-25-2027-at-nbi-copenhagen/
+
+- title: "GW170817: 10 Years Later"
+  start: 2027-08-16
+  end: 2027-08-20
+  place: "See event page"
+  type: conference
+  tags: [ns, gw, multimessenger]
+  url: https://www.lisamission.org/gw170817-10-years-later-august-16-20-2027/
+
+- title: "34th Texas Symposium on Relativistic Astrophysics"
+  start: 2027-12-13
+  end: 2027-12-17
+  place: "Melbourne, Australia"
+  type: conference
+  tags: [astro]
+  url: https://www.lisamission.org/34th-texas-symposium-on-relativistic-astrophysics-december-13-17-2027-in-melbourne/

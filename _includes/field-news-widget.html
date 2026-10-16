@@ -1,4 +1,4 @@
-<div class="field-news-section">
+<div class="field-news-section" data-feed="journals">
   <div class="field-news-inner">
     <div class="news-feed-header">
       <div>
@@ -8,30 +8,40 @@
         </div>
         <h2 class="section-title">Latest in neutron-star &amp; GW astrophysics</h2>
         <p class="section-lead" style="margin-top:8px;font-size:16px;">
-          Pulled live from <a href="https://inspirehep.net" target="_blank" rel="noopener">INSPIRE HEP</a>
-          on each page load — recent papers, then only meetings that have not yet started.
+          Fetched live in your browser. Preprints come from
+          <a href="https://inspirehep.net" target="_blank" rel="noopener">INSPIRE HEP</a> (arXiv);
+          published papers come from <a href="https://www.crossref.org" target="_blank" rel="noopener">Crossref</a>
+          for the APS, AAS and other journals. Nothing here is hand-written.
         </p>
         <p class="field-stamp" id="fieldNewsStamp"></p>
       </div>
     </div>
 
-    <div class="news-feed-grid" id="fieldNewsGrid" aria-live="polite">
-      <div class="feed-skeleton"><div class="skel skel-title"></div><div class="skel skel-text"></div><div class="skel skel-text w60"></div></div>
-      <div class="feed-skeleton"><div class="skel skel-title"></div><div class="skel skel-text"></div><div class="skel skel-text w60"></div></div>
-      <div class="feed-skeleton"><div class="skel skel-title"></div><div class="skel skel-text"></div><div class="skel skel-text w60"></div></div>
+    <div class="lf-tabs" role="tablist" aria-label="Paper sources" data-role="tabs">
+      <button type="button" role="tab" data-tab="arxiv" aria-selected="true">arXiv preprints</button>
+      <button type="button" role="tab" data-tab="aps" aria-selected="false" tabindex="-1">Physical Review <small>APS</small></button>
+      <button type="button" role="tab" data-tab="aas" aria-selected="false" tabindex="-1">AAS journals <small>ApJ · ApJL · ApJS</small></button>
+      <button type="button" role="tab" data-tab="other" aria-selected="false" tabindex="-1">MNRAS · JCAP · PDU</button>
     </div>
 
-    <div class="field-conf-block">
-      <h3 class="course-subhead">Upcoming meetings</h3>
-      <p class="section-lead" style="margin-top:0;font-size:15px;">INSPIRE conference records with an opening date on or after today. Past schools are dropped automatically.</p>
-      <div class="field-conf-list" id="fieldConfList">
-        <p class="field-conf-empty">Checking INSPIRE…</p>
+    <div data-pane="arxiv">
+      <div class="news-feed-grid" id="fieldNewsGrid" aria-live="polite">
+        <div class="feed-skeleton"><div class="skel skel-title"></div><div class="skel skel-text"></div><div class="skel skel-text w60"></div></div>
+        <div class="feed-skeleton"><div class="skel skel-title"></div><div class="skel skel-text"></div><div class="skel skel-text w60"></div></div>
+        <div class="feed-skeleton"><div class="skel skel-title"></div><div class="skel skel-text"></div><div class="skel skel-text w60"></div></div>
       </div>
+    </div>
+
+    <div data-pane="journal" hidden>
+      <div class="news-feed-grid" data-role="journal-grid" aria-live="polite"></div>
+      <p class="field-stamp" data-role="journal-note"></p>
     </div>
 
     <p style="font-size:13px;color:var(--ink-3);margin-top:18px;">
       Also: <a href="https://arxiv.org/list/astro-ph.HE/recent" target="_blank" rel="noopener">arXiv:astro-ph.HE ↗</a>,
       <a href="https://arxiv.org/list/nucl-th/recent" target="_blank" rel="noopener">nucl-th ↗</a>,
+      <a href="https://journals.aps.org/prd/" target="_blank" rel="noopener">Phys. Rev. D ↗</a>,
+      <a href="https://iopscience.iop.org/journal/0004-637X" target="_blank" rel="noopener">ApJ ↗</a>,
       <a href="https://www.ligo.caltech.edu/news" target="_blank" rel="noopener">LIGO News ↗</a>
     </p>
   </div>

@@ -3,6 +3,7 @@ title: "Join Us"
 layout: default
 excerpt: "Open positions at NAP Lab, NIT Rourkela — PhD, Postdoc, and MSc opportunities in nuclear astrophysics"
 sitemap: true
+feeds: true
 permalink: /vacancies/
 ---
 
@@ -222,44 +223,12 @@ permalink: /vacancies/
     </div>
   </div>
 
-  <h4 style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:14px;letter-spacing:0.3px;">A few specific current openings</h4>
-  <div class="world-positions-list">
-    <div class="world-position-row">
-      <div>
-        <div class="wp-org">Postdoc — INFN Rome / Virgo (Eyes-on-GR)</div>
-        <div class="wp-desc">Testing GR with multiband GW observations. Starting Fall 2026–Spring 2027.</div>
-      </div>
-      <a href="https://wiki.ligo.org/LAAC/JobPostings" target="_blank" rel="noopener">Details ↗</a>
-    </div>
-    <div class="world-position-row">
-      <div>
-        <div class="wp-org">Multiple Postdocs — ICTP-AP / UCAS, China</div>
-        <div class="wp-desc">Gravitational-wave and dark-matter physics &amp; phenomenology, with the LIGO group at UCAS.</div>
-      </div>
-      <a href="https://www.lisamission.org/news/positions/" target="_blank" rel="noopener">Details ↗</a>
-    </div>
-    <div class="world-position-row">
-      <div>
-        <div class="wp-org">Postdoc — ICCUB, University of Barcelona</div>
-        <div class="wp-desc">3-year postdoc in GW physics — parameter estimation, neutron star asteroseismology, NR simulations.</div>
-      </div>
-      <a href="https://icc.ub.edu/job-offers" target="_blank" rel="noopener">Details ↗</a>
-    </div>
-    <div class="world-position-row">
-      <div>
-        <div class="wp-org">PhD — IGFAE, Santiago de Compostela / ICE-CSIC, Spain</div>
-        <div class="wp-desc">PhD positions in theoretical astrophysics and gravitational-wave astronomy.</div>
-      </div>
-      <a href="https://academicjobsonline.org/ajo/Astrphys" target="_blank" rel="noopener">Details ↗</a>
-    </div>
-    <div class="world-position-row">
-      <div>
-        <div class="wp-org">Postdocs — Peking University (Theoretical Nuclear Physics)</div>
-        <div class="wp-desc">Ab initio nuclear theory and nuclear/particle interface, applications to dark matter &amp; nuclear astrophysics.</div>
-      </div>
-      <a href="https://fribtheoryalliance.org/content/jobs.php?title=Job+Postings" target="_blank" rel="noopener">Details ↗</a>
-    </div>
-  </div>
+  <h4 style="font-size:13px;font-weight:600;color:var(--text);margin:0 0 14px;letter-spacing:0.3px;">Current openings in our field (auto-updating)</h4>
+  <p class="lf-note" style="margin:0 0 1rem;">
+    Curated calls plus live records from INSPIRE HEP jobs. Each post disappears on its deadline.
+    &ldquo;Core field&rdquo; marks neutron-star, dense-matter and nuclear-astrophysics posts.
+  </p>
+  {% include positions-widget.html limit=0 search=true %}
 
   <p style="font-size:11.5px;color:var(--text-light);margin-top:20px;">
     Listings change frequently — always verify deadlines and details on the official job board or institution page before applying.

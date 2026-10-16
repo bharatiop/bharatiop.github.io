@@ -1,0 +1,80 @@
+# ==========================================================================
+# Curated PhD / postdoc openings (global) in neutron-star, dense-matter,
+# nuclear-astrophysics and gravitational-wave physics.
+#
+# These are SEEDS. The site hides every entry whose deadline has passed and
+# merges in live INSPIRE HEP job records (status = open). The weekly GitHub
+# Action refreshes _data/live_feeds.json. Edit this file only to pin a post.
+#
+# level: phd | postdoc
+# deadline: ISO date ("" = open until filled / see posting)
+# core: true when the topic is neutron stars / dense matter / nuclear astro.
+# Verified against the advertisers' pages on 2026-10-16 — always re-check the
+# posting before applying; deadlines can move.
+# ==========================================================================
+
+- title: "Postdoctoral positions in gravitational-wave science (ERC Synergy 'GWSky', Simons, Center of Gravity)"
+  org: "Max Planck Institute for Gravitational Physics (AEI), Potsdam"
+  region: Europe
+  country: Germany
+  level: postdoc
+  deadline: 2026-11-23
+  start: "Fall 2027"
+  topics: "GW modelling, numerical relativity, compact-object astrophysics, ML inference"
+  core: false
+  url: https://www.aei.mpg.de/1513474/acr-postdoc-2027
+
+- title: "Postdoctoral fellowships in gravitational-wave astrophysics (up to 3+1 years)"
+  org: "Center of Gravity, Niels Bohr Institute, Copenhagen"
+  region: Europe
+  country: Denmark
+  level: postdoc
+  deadline: 2026-11-15
+  start: "Fall 2027"
+  topics: "Environmental effects in GW physics, GW data analysis, self-force waveforms"
+  core: false
+  url: https://academicjobsonline.org/ajo/jobs/32641
+
+- title: "PhD fellowship in gravitational-wave theory and the relativistic two-body problem"
+  org: "Center of Gravity, Niels Bohr Institute, Copenhagen"
+  region: Europe
+  country: Denmark
+  level: phd
+  deadline: 2026-12-15
+  start: "Fall 2027"
+  topics: "GW theory, GWSky (ERC Synergy)"
+  core: false
+  url: https://the-center-of-gravity.com/news/positions-in-gravitational-physics-at-cog/
+
+- title: "PhD fellowships in gravitational physics (3 years)"
+  org: "Center of Gravity, Niels Bohr Institute, Copenhagen"
+  region: Europe
+  country: Denmark
+  level: phd
+  deadline: 2026-12-01
+  start: "Apr–Sep 2027"
+  topics: "Gravitational physics and GW astrophysics"
+  core: false
+  url: https://academicjobsonline.org/ajo/jobs/32719
+
+- title: "PhD positions in GW astrophysics & dark matter (ERC Advanced Grant 'De Tenebris')"
+  org: "GRAPPA, University of Amsterdam"
+  region: Europe
+  country: Netherlands
+  level: phd
+  deadline: 2026-12-01
+  start: "Spring–Fall 2027"
+  topics: "Compact binaries in dark-matter environments, GW interpretation (LISA / 3G)"
+  core: false
+  url: https://academicprogramsonline.org/ajo/programs/32885
+
+- title: "Postdoc (Juan de la Cierva, 3 yr) — expressions of interest, GW group"
+  org: "IGFAE, Universidade de Santiago de Compostela"
+  region: Europe
+  country: Spain
+  level: postdoc
+  deadline: 2026-11-26
+  start: "2027"
+  topics: "Gravitational-wave physics; requires PhD awarded 2024–2026; contact the group first"
+  core: false
+  url: https://www.aei.gob.es/convocatorias/buscador-convocatorias/ayudas-contratos-juan-cierva-2026

@@ -1,0 +1,24 @@
+{%- comment -%}
+  Upcoming conferences & schools. Past meetings disappear automatically.
+  Params: limit (0 = all), filters (true/false)
+{%- endcomment -%}
+<div class="lf-widget" data-feed="conferences" data-limit="{{ include.limit | default: 0 }}">
+  <div class="lf-toolbar">
+    {% if include.filters %}
+    <div class="lf-filters" data-role="filters" role="group" aria-label="Filter meetings by type">
+      <button type="button" data-f="all" aria-pressed="true">All</button>
+      <button type="button" data-f="school" aria-pressed="false">Schools</button>
+      <button type="button" data-f="workshop" aria-pressed="false">Workshops &amp; meetings</button>
+      <button type="button" data-f="conference" aria-pressed="false">Conferences</button>
+      <button type="button" data-f="india" aria-pressed="false">In India</button>
+    </div>
+    {% endif %}
+    <p class="lf-status" data-role="status" aria-live="polite"></p>
+  </div>
+  <div class="lf-conf-list" data-role="list">
+    <div class="feed-skeleton"><div class="skel skel-title"></div><div class="skel skel-text"></div><div class="skel skel-text w60"></div></div>
+  </div>
+  <noscript><p class="lf-empty">Enable JavaScript to see the live list, or browse
+    <a href="https://www.lisamission.org/news/conferences/conferences-future/">LISA events</a> and
+    <a href="https://inspirehep.net/conferences">INSPIRE conferences</a>.</p></noscript>
+</div>
