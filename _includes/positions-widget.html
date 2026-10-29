@@ -1,5 +1,5 @@
 {%- comment -%}
-  Worldwide PhD / postdoc openings. Passed deadlines disappear automatically.
+  Worldwide PhD / postdoc / faculty openings (India faculty calls included). Passed deadlines disappear automatically.
   Params: limit (0 = all), search (true/false)
 {%- endcomment -%}
 <div class="lf-widget" data-feed="positions" data-limit="{{ include.limit | default: 0 }}">
@@ -8,6 +8,8 @@
       <button type="button" data-f="all" aria-pressed="true">All</button>
       <button type="button" data-f="phd" aria-pressed="false">PhD</button>
       <button type="button" data-f="postdoc" aria-pressed="false">Postdoc</button>
+      <button type="button" data-f="faculty" aria-pressed="false">Faculty</button>
+      <button type="button" data-f="india" aria-pressed="false">India</button>
       <button type="button" data-f="core" aria-pressed="false">Neutron-star / dense-matter core</button>
     </div>
     {% if include.search %}

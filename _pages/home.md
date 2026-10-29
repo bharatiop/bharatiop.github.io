@@ -248,14 +248,14 @@ permalink: /
 <!-- ═══════════════════════════════════════════════════════════
      POSITIONS WORLDWIDE  (auto-updating)
      ═══════════════════════════════════════════════════════════ -->
-<section class="band" id="positions" aria-label="PhD and postdoc positions worldwide">
+<section class="band" id="positions" aria-label="PhD, postdoc and faculty positions">
   <div class="section">
     <div class="section-header-row reveal">
       <div>
         <span class="eyebrow">Careers</span>
-        <h2 class="section-title">PhD &amp; postdoc positions worldwide</h2>
+        <h2 class="section-title">PhD, postdoc &amp; faculty positions</h2>
         <p class="section-lead" style="margin-top:10px;">
-          Open calls in our research field. Posts disappear on their deadline; new ones appear
+          Open calls in our research field, including faculty posts in India. Posts disappear on their deadline; new ones appear
           from INSPIRE HEP jobs and a weekly-refreshed curated list. Always confirm details on the advertiser&rsquo;s page.
         </p>
       </div>

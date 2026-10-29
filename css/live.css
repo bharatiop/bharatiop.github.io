@@ -53,6 +53,7 @@
 .lf-t-workshop { background: var(--plasma-glow); color: var(--plasma-deep); border-color: rgba(179,29,15,.25); }
 .lf-t-conference { background: var(--paper-3); color: var(--ink-2); }
 .lf-lvl-phd { background: var(--ink); color: var(--white); border-color: var(--ink); }
+.lf-lvl-faculty { background: var(--fusion-deep); color: var(--white); border-color: var(--fusion-deep); }
 .lf-lvl-postdoc { background: var(--plasma); color: var(--white); border-color: var(--plasma); }
 .lf-chip-core { background: var(--fusion-glow); color: var(--fusion-deep); border-color: rgba(248,136,38,.35); }
 
@@ -90,6 +91,7 @@
   padding: 18px 20px; display: flex; flex-direction: column;
 }
 .lf-job[data-level="postdoc"] { border-top-color: var(--plasma); }
+.lf-job[data-level="faculty"] { border-top-color: var(--fusion); }
 .lf-job h3 { font-family: var(--display); font-size: 1.08rem; font-weight: 700; line-height: 1.3; margin: 0 0 6px; }
 .lf-job h3 a { color: var(--ink); }
 .lf-job h3 a:hover { color: var(--plasma); }
@@ -261,3 +263,58 @@
 
 /* [hidden] must win over display:grid / flex set above */
 .pub-list .pub-item[hidden], .pub-year-head[hidden], .pub-empty[hidden] { display: none !important; }
+
+/* ==========================================================================
+   Teaching page (tch-*)
+   ========================================================================== */
+.tch-jump { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+.tch-jump a {
+  font-family: var(--navfont); font-size: 12.5px; font-weight: 700; letter-spacing: .03em;
+  padding: 6px 14px; border: 1px solid var(--line-2); background: rgba(255,255,255,.9);
+  color: var(--ink-2); border-radius: 999px; transition: border-color .15s, color .15s;
+}
+.tch-jump a:hover { border-color: var(--plasma); color: var(--plasma); }
+
+.tch-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 18px; }
+.tch-card {
+  display: flex; flex-direction: column; background: var(--white);
+  border: 1px solid var(--line); border-top: 3px solid var(--line-2); padding: 20px 22px 18px;
+  transition: border-color .15s, box-shadow .15s, transform .15s;
+}
+.tch-card:hover { border-top-color: var(--fusion); box-shadow: 0 8px 22px rgba(35,35,35,.08); transform: translateY(-2px); }
+.tch-card[hidden] { display: none; }
+.tch-card-feature { grid-column: 1 / -1; border-top-color: var(--plasma); background: var(--paper-2); }
+.tch-card-top { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 10px; }
+.tch-card h3 { font-family: var(--display); font-size: 1.3rem; font-weight: 700; color: var(--ink); margin: 0 0 8px; }
+.tch-card p { font-size: 16px; line-height: 1.65; color: var(--ink); margin: 0 0 12px; max-width: 72ch; }
+.tch-chip {
+  font-family: var(--mono); font-size: 11.5px; letter-spacing: .02em; color: var(--ink-2);
+  border: 1px solid var(--line-2); padding: 2px 9px; border-radius: 999px; background: var(--white);
+}
+.tch-chip-sem { color: var(--fusion-deep); border-color: var(--fusion); background: var(--fusion-glow); }
+.tch-topics { list-style: none; display: flex; flex-wrap: wrap; gap: 6px; margin: auto 0 0; padding: 0; }
+.tch-topics li { font-size: 12.5px; padding: 3px 10px; background: var(--paper-3); color: var(--ink-2); border-radius: 999px; }
+.tch-links { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 18px; margin-top: 16px; font-size: 14px; }
+.tch-links a:not(.btn) { color: var(--link); font-weight: 700; }
+.tch-links a:not(.btn):hover { color: var(--link-hover); }
+
+.tch-talks { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+.tch-talks li { display: grid; grid-template-columns: 76px 1fr; gap: 6px 20px; padding: 16px 0; border-bottom: 1px solid var(--line); }
+.tch-year { font-family: var(--mono); font-size: 14px; color: var(--ink-3); padding-top: 3px; }
+.tch-kind {
+  display: inline-block; font-family: var(--navfont); font-size: 11.5px; font-weight: 700; letter-spacing: .06em;
+  text-transform: uppercase; color: var(--plasma); margin-bottom: 4px;
+}
+.tch-talks p { font-size: 16.5px; line-height: 1.6; color: var(--ink); margin: 0; max-width: 74ch; }
+
+.tch-people { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 250px), 1fr)); gap: 16px; }
+.tch-person { display: block; background: var(--white); border: 1px solid var(--line); border-left: 3px solid var(--plasma); padding: 16px 18px; }
+.tch-person h4 { font-family: var(--display); font-size: 1.1rem; font-weight: 700; color: var(--ink); margin: 8px 0 4px; }
+.tch-person p { font-size: 15.5px; line-height: 1.6; color: var(--ink); margin: 0; }
+.tch-person-cta { border-left-color: var(--fusion); background: var(--paper-2); transition: border-color .15s, transform .15s; }
+.tch-person-cta:hover { border-color: var(--fusion); transform: translateY(-2px); }
+
+@media (max-width: 560px) {
+  .tch-talks li { grid-template-columns: 1fr; }
+  .tch-card-feature { grid-column: auto; }
+}

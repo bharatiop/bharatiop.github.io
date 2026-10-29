@@ -15,7 +15,7 @@ permalink: /vacancies/
       We welcome motivated researchers at all levels with interest in nuclear physics, neutron star astrophysics, gravitational waves, or dark matter.
     </p>
     <p style="margin-top:10px;">
-      <a href="#world-positions" style="font-size:13px;color:var(--accent-mid);">🌍 Looking elsewhere too? Jump to worldwide PhD/Postdoc listings ↓</a>
+      <a href="#world-positions" style="font-size:13px;color:var(--accent-mid);">🌍 Looking elsewhere too? Jump to PhD, postdoc and faculty listings (incl. India) ↓</a>
     </p>
   </div>
 </div>
@@ -158,13 +158,27 @@ permalink: /vacancies/
   <hr class="divider" style="margin:56px 0;">
 
   <!-- WORLD POSITIONS -->
-  <h2 class="vacancy-section-title" id="world-positions" style="margin-top:0;">🌍 PhD &amp; Postdoc Positions Worldwide</h2>
+  <h2 class="vacancy-section-title" id="world-positions" style="margin-top:0;">🌍 PhD, Postdoc &amp; Faculty Positions</h2>
   <p style="font-size:14px;color:var(--text-muted);line-height:1.75;margin-bottom:24px;max-width:720px;">
     Beyond NAP Lab, here are live job boards and a few specific current openings in nuclear physics, astrophysics, and gravitational waves around the world. These boards are updated continuously — check back often.
   </p>
 
   <h4 style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:14px;letter-spacing:0.3px;">Live job boards (continuously updated)</h4>
   <div class="world-positions-list" style="margin-bottom:36px;">
+    <div class="world-position-row">
+      <div>
+        <div class="wp-org">Astronomical Society of India — Job list</div>
+        <div class="wp-desc">Faculty, postdoc and PhD openings at Indian institutes in astronomy and astrophysics.</div>
+      </div>
+      <a href="https://www.astron-soc.in/list-of-jobs" target="_blank" rel="noopener">Browse listings ↗</a>
+    </div>
+    <div class="world-position-row">
+      <div>
+        <div class="wp-org">IUCAA — Opportunities</div>
+        <div class="wp-desc">Faculty, postdoctoral and student openings at IUCAA, Pune.</div>
+      </div>
+      <a href="https://www.iucaa.in/en/opportunities" target="_blank" rel="noopener">Browse listings ↗</a>
+    </div>
     <div class="world-position-row">
       <div>
         <div class="wp-org">Academic Jobs Online — Physics</div>

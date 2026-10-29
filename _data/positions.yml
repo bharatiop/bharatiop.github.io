@@ -6,8 +6,9 @@
 # merges in live INSPIRE HEP job records (status = open). The weekly GitHub
 # Action refreshes _data/live_feeds.json. Edit this file only to pin a post.
 #
-# level: phd | postdoc
+# level: phd | postdoc | faculty
 # deadline: ISO date ("" = open until filled / see posting)
+# alt_urls: other URLs of the same post (so live feeds don't list it twice)
 # core: true when the topic is neutron stars / dense matter / nuclear astro.
 # Verified against the advertisers' pages on 2026-10-16 — always re-check the
 # posting before applying; deadlines can move.
@@ -78,3 +79,54 @@
   topics: "Gravitational-wave physics; requires PhD awarded 2024–2026; contact the group first"
   core: false
   url: https://www.aei.gob.es/convocatorias/buscador-convocatorias/ayudas-contratos-juan-cierva-2026
+
+# --------------------------------------------------------------------------
+# Faculty posts in India (astrophysics / nuclear / physics). Curated by hand:
+# check each advert for the physics areas; nuclear physics is not always named.
+# Verified against the institutes' pages on 2026-10-29.
+# --------------------------------------------------------------------------
+
+- title: "Assistant Professor, Associate Professor & Professor, Department of Physics (areas include Astronomy & Astrophysics)"
+  org: "Indian Institute of Technology Hyderabad"
+  region: Asia
+  country: India
+  level: faculty
+  deadline: 2026-11-12
+  start: ""
+  topics: "Advt. IITH/HR/Faculty Rectt (R)/1/2026-27 of 16 Oct 2026. Physics areas: high-energy, condensed matter, optics, astronomy & astrophysics, quantum technologies. Nuclear physics is not a listed area."
+  core: false
+  url: https://faculty.recruitment.iith.ac.in/
+
+- title: "Assistant Professor (all fields incl. Physics; seeking to grow astronomy & gravitation group)"
+  org: "IISER Mohali"
+  region: Asia
+  country: India
+  level: faculty
+  deadline: 2026-11-20
+  start: ""
+  topics: "Direct recruitment across Physics, Chemistry, Mathematics, Biology, Earth & Environmental Sciences and others; strong astronomy and gravitation group. Contact: J. S. Bagla."
+  core: false
+  url: https://www.iisermohali.ac.in/faculty-positions
+  alt_urls: ["https://www.astron-soc.in/jobdetails/122"]
+
+- title: "Assistant Professor, Physics (special recruitment drive for SC/ST/OBC/PwD/EWS candidates)"
+  org: "Indian Institute of Technology Kanpur"
+  region: Asia
+  country: India
+  level: faculty
+  deadline: 2026-10-31
+  start: ""
+  topics: "Special Recruitment Drive 2026-001; Grade I (regular) and Grade II (3-year contract, then regularisation). Apply on the Pingala portal. Open only to the listed reserved categories."
+  core: false
+  url: https://www.iitk.ac.in/dofa/index.php/special-recruitment-drive-2026-001
+
+- title: "Assistant / Associate / Full Professor, Physics (rolling advertisement L-10/25-26)"
+  org: "Indian Institute of Technology Bombay"
+  region: Asia
+  country: India
+  level: faculty
+  deadline: 2026-12-31
+  start: ""
+  topics: "Rolling advert, applications processed periodically. Physics areas are in the linked Areas-of-Specialization PDF. Apply on the Pragati portal."
+  core: false
+  url: https://www.iitb.ac.in/job-vacancy-ad/rolling-advertisement-no-l-1025-26

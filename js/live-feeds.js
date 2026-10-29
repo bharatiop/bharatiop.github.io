@@ -163,11 +163,47 @@
     };
   }
 
+  /* ---------- India faculty posts (INSPIRE ranks JUNIOR / SENIOR, Asia) ---------- */
+  var FAC_QUERY = 'status:open and ranks:(JUNIOR or SENIOR) and regions:Asia';
+  var FAC_TITLE = /professor|faculty|reader|lecturer|tenure|scientist[ -]?(e|f|g|h)\b/i;
+  var INDIA_ORG = /\bIIT\b|\bIISER\b|\bNISER\b|\bIISc\b|\bTIFR\b|\bIUCAA\b|\bNCRA\b|\bIIA\b|\bPRL\b|\bSINP\b|\bVECC\b|\bRRI\b|\bIMSc\b|\bICTS\b|\bHRI\b|\bBARC\b|\bHBNI\b|\bIPR\b|\bARIES\b|\bIoP\b|India|Bhubaneswar|Kolkata|Delhi|Mumbai|Bombay|Pune|Bangalore|Bengaluru|Chennai|Madras|Hyderabad|Kanpur|Kharagpur|Roorkee|Guwahati|Mohali|Ahmedabad|Gurugram|Gurgaon|Rourkela|Varanasi|Indore|Bhopal|Tirupati|Trivandrum|Thiruvananthapuram|Allahabad|Prayagraj|Jaipur|Lucknow|Chandigarh|Gandhinagar|Raipur|Patna|Nagpur|Jodhpur|Mandi|Ropar|Dharwad|Goa|Kerala|Cochin|Kochi|Mysore|Manipal|Dehradun|Jammu|Silchar|Shillong|Tezpur|Bhilai|Palakkad|Kozhikode|Warangal|Surathkal|Trichy|Tiruchirappalli/;
+  var FAC_AREA = /astro|nuclear|neutron|gravit|cosmolog|hadron|compact|relativ|pulsar|supernova|quark|multi-?messenger/i;
+  var FAC_GENERIC = /all (areas|fields|disciplines|branches)|any (area|field)|open to (all|any)|department of physics|school of physics|physics department|physical sciences?/i;
+
+  function parseFaculty(hit, today) {
+    var m = (hit && hit.metadata) || {};
+    if (m.status && m.status !== 'open') return null;
+    var ranks = (m.ranks || []).map(function (r) { return String(r).toUpperCase(); });
+    if (ranks.indexOf('JUNIOR') < 0 && ranks.indexOf('SENIOR') < 0) return null;
+    var title = m.position || '';
+    var org = ((m.institutions || [])[0] || {}).value || '';
+    var desc = stripTags(m.description || '');
+    if (!title || !FAC_TITLE.test(title)) return null;
+    var text = title + ' ' + desc;
+    if (!(INDIA_ORG.test(org) || /\bIndia(n)?\b/.test(title + ' ' + desc.slice(0, 400)))) return null;
+    if (!(FAC_AREA.test(text) || FAC_GENERIC.test(text))) return null;
+    var deadline = iso10(m.deadline_date);
+    if (deadline && deadline < today) return null;
+    if (!deadline) {
+      var upd = iso10(hit.updated || hit.created);
+      if (!upd || daysBetween(upd, today) > 120) return null;
+    }
+    var id = m.control_number || hit.id;
+    return {
+      title: title, org: org || 'See posting', region: 'Asia', country: 'India',
+      level: 'faculty', deadline: deadline, start: '',
+      topics: desc.slice(0, 150) + (desc.length > 150 ? '…' : ''),
+      core: CORE_FIELD.test(text),
+      url: id ? 'https://inspirehep.net/jobs/' + id : 'https://inspirehep.net/jobs',
+      source: 'INSPIRE'
+    };
+  }
+
   function normJob(p, source) {
     if (!p.title) return null;
     return { title: p.title, org: p.org || '', region: p.region || '', country: p.country || '',
              level: p.level, deadline: iso10(p.deadline), start: p.start || '', topics: p.topics || '',
-             core: !!p.core, url: p.url, source: p.source || source };
+             core: !!p.core, url: p.url, alt: p.alt_urls || p.alt || [], source: p.source || source };
   }
 
   function mergeJobs(lists, today) {
@@ -179,6 +215,7 @@
         var k = norm(p.org).slice(0, 18) + norm(p.title).slice(0, 26) + p.level;
         if (seen[k] || (p.url && seen[p.url])) return;
         seen[k] = 1; if (p.url) seen[p.url] = 1;
+        (p.alt || []).forEach(function (u) { seen[u] = 1; });
         out.push(p);
       });
     });
@@ -286,7 +323,7 @@
         ' · ' + (left <= 0 ? 'today' : when(left)) + '</span>'
       : '<span class="lf-deadline">Open until filled — check posting</span>';
     return '<article class="lf-job" data-level="' + esc(p.level) + '" data-region="' + esc(p.region) + '" data-core="' + (p.core ? 1 : 0) + '">' +
-      '<div class="lf-chips"><span class="lf-chip lf-lvl-' + esc(p.level) + '">' + (p.level === 'phd' ? 'PhD' : 'Postdoc') + '</span>' +
+      '<div class="lf-chips"><span class="lf-chip lf-lvl-' + esc(p.level) + '">' + (p.level === 'phd' ? 'PhD' : p.level === 'faculty' ? 'Faculty' : 'Postdoc') + '</span>' +
         (p.core ? '<span class="lf-chip lf-chip-core">Core field</span>' : '') +
         (p.region ? '<span class="lf-chip lf-chip-region">' + esc(p.region) + '</span>' : '') + '</div>' +
       '<h3><a href="' + esc(safeUrl(p.url)) + '" target="_blank" rel="noopener">' + esc(p.title) + '</a></h3>' +
@@ -395,7 +432,8 @@
 
     function visible() {
       var items = state.items.filter(function (p) {
-        if (state.level === 'phd' || state.level === 'postdoc') { if (p.level !== state.level) return false; }
+        if (state.level === 'phd' || state.level === 'postdoc' || state.level === 'faculty') { if (p.level !== state.level) return false; }
+        else if (state.level === 'india') { if (String(p.country).toLowerCase() !== 'india') return false; }
         else if (state.level === 'core') { if (!p.core) return false; }
         if (state.q) {
           var hay = (p.title + ' ' + p.org + ' ' + p.country + ' ' + p.region + ' ' + p.topics).toLowerCase();
@@ -427,13 +465,19 @@
     });
     if (qEl) qEl.addEventListener('input', function () { state.q = qEl.value.trim().toLowerCase(); render(); });
 
-    Promise.all(JOB_QUERIES.map(function (q) {
-      var url = 'https://inspirehep.net/api/jobs?sort=mostrecent&size=40&q=' + encodeURIComponent(q) +
-                '&fields=position,institutions,ranks,regions,deadline_date,status,description,arxiv_categories,control_number';
+    var jobFields = '&fields=position,institutions,ranks,regions,deadline_date,status,description,arxiv_categories,control_number';
+    var fetchers = JOB_QUERIES.map(function (q) {
+      var url = 'https://inspirehep.net/api/jobs?sort=mostrecent&size=40&q=' + encodeURIComponent(q) + jobFields;
       return getJSON(url, 60 * 60 * 1000).then(function (j) {
         return (((j || {}).hits || {}).hits || []).map(function (h) { return parseJob(h, today); }).filter(Boolean);
       }).catch(function () { return null; });
-    })).then(function (res) {
+    });
+    fetchers.push(getJSON('https://inspirehep.net/api/jobs?sort=mostrecent&size=100&q=' + encodeURIComponent(FAC_QUERY) + jobFields,
+                          60 * 60 * 1000).then(function (j) {
+      return (((j || {}).hits || {}).hits || []).map(function (h) { return parseFaculty(h, today); }).filter(Boolean);
+    }).catch(function () { return null; }));
+    Promise.all(fetchers
+    ).then(function (res) {
       var ok = res.filter(Boolean);
       if (!ok.length) { setStatus(state.items.length + ' open posts from the curated list (live INSPIRE jobs feed unreachable just now).'); return; }
       var live = [].concat.apply([], ok);
