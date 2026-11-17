@@ -13,12 +13,43 @@ permalink: /research/
     <p class="page-hero-lead">
       We work at the frontier of nuclear theory and astrophysical observation — using neutron stars as natural laboratories for matter at extreme densities, gravitational waves, and dark matter.
     </p>
+    <div class="ev-hero-stats" aria-label="Research at a glance">
+      <div><b>6</b><span>Research themes</span></div>
+      <div><b>3</b><span>Open codes</span></div>
+      <div><b>{{ site.data.open_problems | size }}</b><span>Open problems</span></div>
+      <div><b>8</b><span>Collaborating groups</span></div>
+    </div>
   </div>
 </div>
 
 <div class="section">
 
   <div class="section-header">
+    <span class="eyebrow">The big picture</span>
+    <h2 class="section-title">One chain, from the nucleus to the detector</h2>
+    <p class="section-lead">
+      Every project starts from a nuclear-physics question and ends at something LIGO, NICER or a radio telescope can measure. The six themes below are links in the same chain.
+    </p>
+  </div>
+
+  <ol class="rs-flow" aria-label="How the research themes connect">
+    <li><b>Nuclear interaction</b><span>RMF models fitted to nuclei and saturation properties</span></li>
+    <li><b>Equation of state</b><span>Pressure versus density, with exotic matter and dark matter</span></li>
+    <li><b>Stellar structure</b><span>TOV and two-fluid TOV: mass, radius, moment of inertia</span></li>
+    <li><b>Oscillations &amp; tides</b><span>f-, p-, w-modes and tidal deformability</span></li>
+    <li><b>Observables</b><span>GW170817, NICER, pulsar masses, next-generation detectors</span></li>
+  </ol>
+
+  <div class="rs-index" id="themes">
+    <a href="#theme-01"><span class="rs-n">01</span><b>Equation of state</b><span>Which interactions survive both laboratory and astrophysical bounds?</span></a>
+    <a href="#theme-02"><span class="rs-n">02</span><b>Oscillations &amp; GW</b><span>Can mode frequencies read the nuclear parameters of the core?</span></a>
+    <a href="#theme-03"><span class="rs-n">03</span><b>Dark matter</b><span>How does a second, dark fluid change what we measure?</span></a>
+    <a href="#theme-04"><span class="rs-n">04</span><b>Exotic matter</b><span>Which compositions still satisfy the two-solar-mass and GW170817 bounds?</span></a>
+    <a href="#theme-thermal"><span class="rs-n">05</span><b>Thermal evolution</b><span>How does a hot, lepton-rich proto-neutron star differ from a cold one?</span></a>
+    <a href="#theme-mm"><span class="rs-n">06</span><b>Multi-messenger</b><span>What do joint GW and electromagnetic data teach us about dense matter?</span></a>
+  </div>
+
+  <div class="section-header" style="margin-top:3.5rem;">
     <span class="eyebrow">Focus areas</span>
     <h2 class="section-title">What we actually compute</h2>
     <p class="section-lead">
@@ -30,6 +61,7 @@ permalink: /research/
   <article class="theme-block">
     <span class="row-num">01 — Equation of State</span>
     <h2>Equation of State of Dense Matter</h2>
+    <p class="rs-q">Which nuclear interactions survive both laboratory data and astrophysical bounds?</p>
     <p>
       The equation of state (EoS) — how pressure relates to density — governs every observable property of a neutron star. We develop relativistic mean-field (RMF) models calibrated to nuclear laboratory data, then confront them with astrophysical observations: LIGO tidal deformability, NICER X-ray mass-radius measurements, and pulsar maximum masses. Key models include the NITR EoS family, G3, IOPB-I, and BigApple parameter sets.
     </p>
@@ -56,6 +88,7 @@ permalink: /research/
   <article class="theme-block">
     <span class="row-num">02 — Asteroseismology</span>
     <h2>Gravitational Waves &amp; Stellar Oscillations</h2>
+    <p class="rs-q">Can oscillation frequencies read the nuclear parameters of the core?</p>
     <p>
       Oscillating neutron stars emit continuous gravitational waves. We compute quasinormal mode frequencies (f-modes, p-modes, w-modes) in full general relativity, and derive universal I-Love-Q and oscillation–tidal-deformability relations insensitive to the EoS. These provide direct tests with next-generation detectors (Einstein Telescope, Cosmic Explorer) and are comparable to post-merger GW signals.
     </p>
@@ -82,6 +115,7 @@ permalink: /research/
   <article class="theme-block">
     <span class="row-num">03 — Dark Matter</span>
     <h2>Dark Matter in Neutron Stars</h2>
+    <p class="rs-q">How does a second, dark fluid change what we measure, and can data tell it apart?</p>
     <p>
       Neutron stars can capture and accumulate dark matter over their lifetime. We model WIMP, fermionic, and self-interacting dark matter effects on neutron star structure through two-fluid TOV equations. Mass, radius, tidal deformability, and oscillation frequencies shift in characteristic ways that constrain the dark matter–nucleon cross-section and particle mass, connecting to PSR J0952-0607 and HESS J1731-347.
     </p>
@@ -108,6 +142,7 @@ permalink: /research/
   <article class="theme-block">
     <span class="row-num">04 — Exotic phases</span>
     <h2>Hyperons, Delta-Baryons &amp; Exotic Matter</h2>
+    <p class="rs-q">Which exotic compositions still satisfy the two-solar-mass and GW170817 bounds?</p>
     <p>
       Beyond protons and neutrons, the cores of massive neutron stars may harbour strange baryons (Λ, Σ, Ξ hyperons), delta-baryons (Δ), or even deconfined quark matter. We investigate how these exotic degrees of freedom soften or stiffen the EoS, their role in the "hyperon puzzle," and twin-star signatures from strong first-order phase transitions.
     </p>
@@ -133,6 +168,7 @@ permalink: /research/
   <article class="theme-block">
     <span class="row-num">05 — Thermal evolution</span>
     <h2>Thermal Evolution &amp; Proto-Neutron Stars</h2>
+    <p class="rs-q">How does a hot, lepton-rich proto-neutron star differ from a cold one?</p>
     <p>
       Newly born proto-neutron stars are hot (~50 MeV) and lepton-rich. We study how finite temperature and trapped neutrinos modify the EoS, alter composition, and affect macroscopic structure. Our work also covers neutron star cooling: the Urca processes, modified Urca, pair-breaking-formation, and how they constrain the density-dependence of nuclear symmetry energy and superfluid pairing gaps.
     </p>
@@ -158,6 +194,7 @@ permalink: /research/
   <article class="theme-block">
     <span class="row-num">06 — Multi-messenger</span>
     <h2>Multi-Messenger Astrophysics</h2>
+    <p class="rs-q">What do joint gravitational-wave and electromagnetic observations teach us about dense matter?</p>
     <p>
       The 2017 neutron star merger GW170817 ushered in the era of multi-messenger nuclear astrophysics. We use simultaneous GW + EM constraints to infer the EoS, tidal deformability, moment of inertia, and nuclear symmetry energy. We also study how future observations with LIGO-India, AstroSat, and SKA can disentangle different EoS models and detect exotic phases of matter.
     </p>
@@ -178,6 +215,20 @@ permalink: /research/
     <img src="{{ site.url }}{{ site.baseurl }}/images/papers/mm_moi.png" alt="Moment of inertia constraints from GW170817" loading="lazy">
     <figcaption><a href="https://iopscience.iop.org/article/10.3847/2041-8213/aaee76" target="_blank" rel="noopener">ApJ Lett. 868, L22 (2018) ↗</a></figcaption>
   </figure>
+  </div>
+
+  <div class="rs-next">
+    <div>
+      <span class="eyebrow">What comes next</span>
+      <h2 class="section-title">Open problems we would like to work on</h2>
+      <p class="section-lead">Six prospective projects for PhD, postdoc and master&rsquo;s students, each with a concrete first step.</p>
+    </div>
+    <ul class="rs-next-list">
+      {% for p in site.data.open_problems limit:3 %}
+      <li><span class="rs-n">{{ p.num }}</span><a href="{{ site.url }}{{ site.baseurl }}/#open-problems">{{ p.title }}</a></li>
+      {% endfor %}
+    </ul>
+    <a class="btn btn-primary" href="{{ site.url }}{{ site.baseurl }}/#open-problems">See all open problems →</a>
   </div>
 
   <hr class="divider" style="margin: 3rem 0;">
