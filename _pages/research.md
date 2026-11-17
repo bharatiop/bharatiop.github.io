@@ -40,17 +40,40 @@ permalink: /research/
     <li><b>Observables</b><span>GW170817, NICER, pulsar masses, next-generation detectors</span></li>
   </ol>
 
-  <div class="rs-index" id="themes">
-    <a href="#theme-01"><span class="rs-n">01</span><b>Equation of state</b><span>Which interactions survive both laboratory and astrophysical bounds?</span></a>
-    <a href="#theme-02"><span class="rs-n">02</span><b>Oscillations &amp; GW</b><span>Can mode frequencies read the nuclear parameters of the core?</span></a>
-    <a href="#theme-03"><span class="rs-n">03</span><b>Dark matter</b><span>How does a second, dark fluid change what we measure?</span></a>
-    <a href="#theme-04"><span class="rs-n">04</span><b>Exotic matter</b><span>Which compositions still satisfy the two-solar-mass and GW170817 bounds?</span></a>
-    <a href="#theme-thermal"><span class="rs-n">05</span><b>Thermal evolution</b><span>How does a hot, lepton-rich proto-neutron star differ from a cold one?</span></a>
-    <a href="#theme-mm"><span class="rs-n">06</span><b>Multi-messenger</b><span>What do joint GW and electromagnetic data teach us about dense matter?</span></a>
+  <div class="rs-head" id="topics">
+    <div>
+      <span class="eyebrow">What we work on</span>
+      <h2 class="section-title">Research</h2>
+    </div>
+    <a class="rs-more" href="{{ site.url }}{{ site.baseurl }}/publications/">All publications <span aria-hidden="true">→</span></a>
   </div>
 
-  <div class="section-header" style="margin-top:3.5rem;">
-    <span class="eyebrow">Focus areas</span>
+  <div class="rs-areas" id="rsAreas" role="group" aria-label="Filter by area">
+    <span class="rs-areas-label">Main areas</span>
+    <button type="button" data-f="eos" aria-pressed="false">Equation of state</button>
+    <button type="button" data-f="osc" aria-pressed="false">Oscillations</button>
+    <button type="button" data-f="gw" aria-pressed="false">Gravitational waves</button>
+    <button type="button" data-f="dm" aria-pressed="false">Dark matter</button>
+    <button type="button" data-f="exo" aria-pressed="false">Exotic matter</button>
+    <button type="button" data-f="therm" aria-pressed="false">Thermal evolution</button>
+    <button type="button" data-f="mm" aria-pressed="false">Multi-messenger</button>
+  </div>
+
+  <div class="rs-tiles" id="rsTiles">
+    {% for t in site.data.research_tiles %}
+    <article class="rs-tile" data-a="{{ t.areas }}">
+      <a class="rs-thumb" href="#{{ t.anchor }}" aria-label="Read more: {{ t.title }}"><img src="{{ site.url }}{{ site.baseurl }}/images/research/{{ t.slug }}.svg" alt="" loading="lazy"></a>
+      <h3>{{ t.title }}</h3>
+      <p>{{ t.body }}</p>
+      <div class="rs-pp"><b>{% if t.papers.size > 1 %}Papers{% else %}Paper{% endif %}</b>
+        {% for p in t.papers %}<a href="{{ p.url }}" target="_blank" rel="noopener">{{ p.label }}</a> <span class="rs-venue">({{ p.venue }})</span>{% unless forloop.last %}, {% endunless %}{% endfor %}
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+
+  <div class="section-header" style="margin-top:4rem;">
+    <span class="eyebrow">In depth</span>
     <h2 class="section-title">What we actually compute</h2>
     <p class="section-lead">
       Six themes. Each is a nuclear-physics question tied to an observable LIGO, NICER, or a radio telescope can measure.
@@ -312,3 +335,19 @@ permalink: /research/
   </div>
 
 </div>
+
+<script>
+(function () {
+  var box = document.getElementById('rsAreas'), grid = document.getElementById('rsTiles');
+  if (!box || !grid) return;
+  var tiles = grid.querySelectorAll('.rs-tile');
+  function show(f) {
+    box.querySelectorAll('button').forEach(function (b) { b.setAttribute('aria-pressed', b.getAttribute('data-f') === f ? 'true' : 'false'); });
+    tiles.forEach(function (t) { t.hidden = !(!f || (' ' + t.getAttribute('data-a') + ' ').indexOf(' ' + f + ' ') > -1); });
+  }
+  box.addEventListener('click', function (e) {
+    var b = e.target.closest('button[data-f]'); if (!b) return;
+    show(b.getAttribute('aria-pressed') === 'true' ? null : b.getAttribute('data-f'));   /* second click clears */
+  });
+})();
+</script>
