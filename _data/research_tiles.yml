@@ -1,13 +1,12 @@
 # ==========================================================================
 # Research tiles on /research/. One card per topic; `areas` drive the
-# "Main areas" filter. Paper links are the ones already listed on this site.
+# "Main areas" filter chips. Paper links are the ones already on this site.
 # ==========================================================================
 
 - slug: eos
   title: "Equation of state of dense matter"
-  body: "Relativistic mean-field models fitted to nuclei, tested against two-solar-mass pulsars, NICER and GW170817."
+  body: "Which relativistic mean-field interactions fitted to nuclei survive two-solar-mass pulsars, NICER and GW170817?"
   areas: "eos mm"
-  anchor: "theme-01"
   papers:
     - { label: "IOPB-I", venue: "PRC", url: "https://doi.org/10.1103/PhysRevC.97.045806" }
     - { label: "G3", venue: "NPA", url: "https://doi.org/10.1016/j.nuclphysa.2017.07.001" }
@@ -15,9 +14,8 @@
 
 - slug: oscillations
   title: "f- and p-modes of neutron stars"
-  body: "How mode frequencies track the symmetry-energy slope and the pressure near saturation, in Cowling and full general relativity."
+  body: "Do mode frequencies track the symmetry-energy slope and the pressure near saturation, in Cowling and in full general relativity?"
   areas: "osc gw eos"
-  anchor: "theme-02"
   papers:
     - { label: "f- and p-modes vs EoS", venue: "PRD", url: "https://doi.org/10.1103/PhysRevD.106.063005" }
 
@@ -25,51 +23,45 @@
   title: "Universal relations"
   body: "EoS-insensitive links between quasinormal modes, tidal deformability, I-Love-Q and the moment of inertia."
   areas: "osc gw mm"
-  anchor: "theme-02"
   papers:
     - { label: "GW170817 relations", venue: "PRD", url: "https://doi.org/10.1103/PhysRevD.99.123026" }
     - { label: "QNM–tidal", venue: "PRD", url: "https://doi.org/10.1103/PhysRevD.104.123002" }
 
 - slug: dark-matter
   title: "Dark-matter admixed neutron stars"
-  body: "Two-fluid TOV models of WIMP and fermionic dark matter, and how mass, radius and tides shift."
+  body: "How do WIMP and fermionic dark matter, treated as a second fluid, shift mass, radius and tidal deformability?"
   areas: "dm eos"
-  anchor: "theme-03"
   papers:
     - { label: "WIMP universal relations", venue: "MNRAS", url: "https://doi.org/10.1093/mnras/stad2628" }
     - { label: "NITR EoS + WIMP", venue: "JCAP", url: "https://doi.org/10.1088/1475-7516/2023/10/073" }
 
 - slug: radial-modes
   title: "Radial oscillations with dark matter"
-  body: "Radial-mode spectra and stability of dark-matter admixed stars, a second handle on the dark fluid."
+  body: "How do radial-mode frequencies and stability change when the star carries a dark-matter core or halo?"
   areas: "dm osc"
-  anchor: "theme-03"
   papers:
     - { label: "DM radial oscillations", venue: "PRD", url: "https://doi.org/10.1103/PhysRevD.107.103039" }
 
 - slug: exotic-matter
   title: "Hyperons, Δ-baryons and exotic cores"
-  body: "Which compositions soften the equation of state, and which still satisfy the two-solar-mass and GW170817 bounds."
+  body: "Which hyperon and Δ-baryon compositions still satisfy the two-solar-mass and GW170817 bounds?"
   areas: "exo eos"
-  anchor: "theme-04"
   papers:
     - { label: "Δ-baryons & f-modes", venue: "JCAP", url: "https://doi.org/10.1088/1475-7516/2024/04/065" }
     - { label: "Hyperon-star tides", venue: "PRC", url: "https://doi.org/10.1103/PhysRevC.95.015801" }
 
 - slug: thermal
   title: "Proto-neutron stars and cooling"
-  body: "Finite temperature and trapped neutrinos in a newborn star; Urca processes and what cooling says about the symmetry energy."
+  body: "How do finite temperature and trapped neutrinos reshape a newborn star, and what do Urca cooling processes say about the symmetry energy?"
   areas: "therm exo"
-  anchor: "theme-thermal"
   papers:
     - { label: "Proto-NS oscillations", venue: "arXiv", url: "https://arxiv.org/abs/2307.06892" }
     - { label: "Warm dense matter", venue: "EPJC", url: "https://doi.org/10.1140/epjc/s10052-020-8353-4" }
 
 - slug: multimessenger
   title: "Multi-messenger constraints"
-  body: "Joint gravitational-wave and electromagnetic data to infer the EoS, tidal deformability and moment of inertia."
+  body: "What can joint gravitational-wave and electromagnetic observations tell us about the EoS, tidal deformability and moment of inertia?"
   areas: "mm gw"
-  anchor: "theme-mm"
   papers:
     - { label: "MOI of J0737−3039A", venue: "ApJL", url: "https://doi.org/10.3847/2041-8213/aaee76" }
     - { label: "Tides & GW170817", venue: "PRC", url: "https://doi.org/10.1103/PhysRevC.98.035804" }
