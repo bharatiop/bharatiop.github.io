@@ -1,0 +1,184 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  bkcv.sty -- a clean academic CV style
+%  Single column, year-gutter entries, letterspaced section rules.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ProvidesPackage{bkcv}[2026/09/21 Academic CV style]
+
+\RequirePackage[a4paper,hmargin=1.9cm,top=1.6cm,bottom=2.2cm,includefoot]{geometry}
+\RequirePackage[T1]{fontenc}
+\RequirePackage{amsmath,amssymb}
+\RequirePackage{microtype}
+\RequirePackage[dvipsnames,svgnames]{xcolor}
+\RequirePackage{graphicx}
+\RequirePackage{tikz}
+\RequirePackage{tabularx}
+\RequirePackage{colortbl}
+\RequirePackage{enumitem}
+\RequirePackage{needspace}
+\RequirePackage{fancyhdr}
+\RequirePackage{etoolbox}
+\RequirePackage[fixed]{fontawesome5}
+\RequirePackage[hyphens]{url}
+\RequirePackage[colorlinks=true,allcolors=black,breaklinks=true]{hyperref}
+
+% ---------- Palette ---------------------------------------------------
+\definecolor{Primary}{HTML}{14395B}   % deep navy: names, headings
+\definecolor{Accent}{HTML}{A23B2A}    % brick: rules, markers
+\definecolor{LinkColour}{HTML}{1A5FA8}
+\definecolor{MetaGrey}{HTML}{6B6B6B}
+\definecolor{PanelColour}{HTML}{F4F6F9}
+\definecolor{RuleGrey}{HTML}{D8DDE4}
+
+% ---------- Typography ------------------------------------------------
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\raggedright
+\urlstyle{tt}
+\newcommand{\caps}[1]{\textls[140]{\MakeUppercase{#1}}}
+
+% ---------- Page furniture --------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[L]{\footnotesize\sffamily\color{MetaGrey}Bharat Kumar\ \ \textbullet\ \ Curriculum Vitae}
+\fancyfoot[R]{\footnotesize\sffamily\color{MetaGrey}\thepage}
+
+% ---------- Header ----------------------------------------------------
+% \cvheader{name}{tagline}{address block}{contact block}{photo file}
+\newcommand{\photodisc}[2]{%
+  \begin{tikzpicture}
+    \clip (0,0) circle (#2);
+    \node at (0,0) {\includegraphics[width=2.05\dimexpr#2\relax]{#1}};
+  \end{tikzpicture}}
+
+\newcommand{\cvheader}[5]{%
+  \noindent
+  \begin{minipage}[b]{0.755\textwidth}
+    {\sffamily\bfseries\fontsize{26}{30}\selectfont\color{Primary}#1}\\[3pt]
+    {\sffamily\fontsize{10.5}{13}\selectfont\color{Accent}\caps{#2}}\\[5pt]
+    {\fontsize{9.4}{12.4}\selectfont\color{black!78}#3}
+  \end{minipage}%
+  \hfill
+  \begin{minipage}[b]{0.20\textwidth}
+    \raggedleft\photodisc{#5}{1.55cm}
+  \end{minipage}
+
+  \vspace{7pt}
+  {\color{Accent}\rule{\textwidth}{1.4pt}}\\[-2pt]
+  {\color{RuleGrey}\rule{\textwidth}{0.5pt}}
+
+  \vspace{6pt}
+  {\fontsize{9.2}{13}\selectfont #4}
+  \vspace{2pt}
+}
+
+\newcommand{\cvfield}[2]{%
+  \mbox{{\color{Accent}#1}\hspace{0.45em}#2}\hspace{1.4em}}
+
+\newcommand{\weblink}[2]{\href{#1}{\textcolor{LinkColour}{#2}}}
+
+% ---------- Sections --------------------------------------------------
+\newcommand{\cvsection}[1]{%
+  \needspace{3\baselineskip}%
+  \par\vspace{15pt}%
+  {\sffamily\bfseries\fontsize{12}{14}\selectfont\color{Primary}\caps{#1}}%
+  \par\vspace{3pt}%
+  {\color{Accent}\rule{\textwidth}{1pt}}%
+  \par\vspace{7pt}}
+
+\newcommand{\cvsubsection}[1]{%
+  \needspace{4\baselineskip}%
+  \par\vspace{9pt}%
+  {\sffamily\bfseries\fontsize{10.2}{12}\selectfont\color{Primary}#1}%
+  \par\vspace{1pt}%
+  {\color{RuleGrey}\rule{\textwidth}{0.5pt}}%
+  \par\vspace{5pt}}
+
+% Subsection with a right-aligned count, e.g. "44 papers"
+\newcommand{\cvsubsectionx}[2]{%
+  \needspace{4\baselineskip}%
+  \par\vspace{9pt}%
+  {\sffamily\bfseries\fontsize{10.2}{12}\selectfont\color{Primary}#1}%
+  \hfill{\sffamily\fontsize{9}{11}\selectfont\color{MetaGrey}#2}%
+  \par\vspace{1pt}%
+  {\color{RuleGrey}\rule{\textwidth}{0.5pt}}%
+  \par\vspace{5pt}}
+
+% ---------- Year-gutter entries ---------------------------------------
+\newlength{\cvgutter}\setlength{\cvgutter}{0.155\textwidth}
+\newlength{\cvgap}\setlength{\cvgap}{0.028\textwidth}
+\newlength{\cvbody}
+\setlength{\cvbody}{\dimexpr\textwidth-\cvgutter-\cvgap\relax}
+
+% \cventry{left gutter}{body}
+\newcommand{\cventry}[2]{%
+  \par\needspace{2.2\baselineskip}%
+  \noindent
+  \begin{minipage}[t]{\cvgutter}%
+    \raggedleft\sffamily\fontsize{9}{11.5}\selectfont\color{MetaGrey}\strut #1%
+  \end{minipage}%
+  \hspace{\cvgap}%
+  \begin{minipage}[t]{\cvbody}%
+    \raggedright\strut #2%
+  \end{minipage}%
+  \par\vspace{5pt}}
+
+% Same, but the gutter holds a name rather than a date
+\newcommand{\cvnamed}[2]{%
+  \par\needspace{2.2\baselineskip}%
+  \noindent
+  \begin{minipage}[t]{\cvgutter}%
+    \raggedleft\sffamily\fontsize{8.8}{11}\selectfont\color{Primary}\strut\textbf{#1}%
+  \end{minipage}%
+  \hspace{\cvgap}%
+  \begin{minipage}[t]{\cvbody}%
+    \raggedright\strut #2%
+  \end{minipage}%
+  \par\vspace{4pt}}
+
+\newcommand{\note}[1]{{\fontsize{9}{11.5}\selectfont\color{MetaGrey}#1}}
+
+% ---------- KPI strip -------------------------------------------------
+\newcommand{\kpi}[2]{%
+  \begin{minipage}[t]{0.188\textwidth}\centering
+    {\sffamily\bfseries\fontsize{19}{21}\selectfont\color{Primary}#1}\\[3pt]
+    {\sffamily\fontsize{7.4}{9}\selectfont\color{MetaGrey}\caps{#2}}
+  \end{minipage}}
+
+\newcommand{\kpistrip}[1]{%
+  \par\vspace{4pt}
+  \noindent\colorbox{PanelColour}{%
+    \begin{minipage}{\dimexpr\textwidth-2\fboxsep\relax}
+      \vspace{7pt}\centering #1 \vspace{8pt}
+    \end{minipage}}
+  \par\vspace{4pt}}
+
+% ---------- Publication identifiers and entries -----------------------
+\newcommand{\pdoi}[1]{\href{https://doi.org/#1}{\textcolor{LinkColour}{%
+  \raisebox{-0.12ex}{\fontsize{6.5}{7}\selectfont\faLink}\,\texttt{\fontsize{8}{9}\selectfont #1}}}}
+\newcommand{\pdoix}[2]{\href{https://doi.org/#1}{\textcolor{LinkColour}{%
+  \raisebox{-0.12ex}{\fontsize{6.5}{7}\selectfont\faLink}\,\texttt{\fontsize{8}{9}\selectfont #2}}}}
+\newcommand{\parxiv}[1]{\href{https://arxiv.org/abs/#1}{\textcolor{LinkColour}{%
+  \texttt{\fontsize{8}{9}\selectfont arXiv:#1}}}}
+\newcommand{\pipe}{\,{\color{RuleGrey}\rule[-0.2ex]{0.5pt}{1.5ex}}\,}
+
+\newcommand{\me}{\textbf{\color{Accent}Bharat Kumar}}
+\newcommand{\jref}[1]{{\color{Primary}\bfseries #1}}
+\newcommand{\impact}[1]{{\fontsize{8}{9}\selectfont\color{MetaGrey}IF\,#1}}
+\newcommand{\lead}{\textcolor{Accent}{\raisebox{0.3ex}{\fontsize{7}{7}\selectfont$\bigstar$}}\,}
+\newcommand{\citecount}[1]{{\sffamily\fontsize{8}{9}\selectfont\color{Accent}#1 citations}}
+
+% \pub{title}{authors}{journal ref}{links}{impact factor or empty}
+\newcommand{\pub}[5]{%
+  \item #1\\%
+  \note{#2}\\%
+  \jref{#3}\ \ #4%
+  \ifstrempty{#5}{}{\ \ \impact{#5}}%
+}
+
+\setlist[enumerate,1]{itemsep=5pt,topsep=3pt,parsep=0pt,leftmargin=2.4em,
+  labelsep=0.7em,font=\sffamily\bfseries\color{MetaGrey}\footnotesize}
+\setlist[itemize,1]{itemsep=3pt,topsep=3pt,parsep=0pt,leftmargin=1.2em,
+  label=\textcolor{Accent}{\footnotesize$\blacktriangleright$}}
+
+\endinput

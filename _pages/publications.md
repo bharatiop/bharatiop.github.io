@@ -6,570 +6,120 @@ sitemap: true
 permalink: /publications/
 ---
 
-<div class="page-hero">
-  <div class="page-hero-inner">
-    <span class="eyebrow">Research Output</span>
-    <h1>Publications</h1>
-    <p>
-      Papers from the Nuclear Astrophysics &amp; Physics Lab, NIT Rourkela &mdash; dense-matter equation of state,
-      neutron-star oscillations, dark matter in compact stars and multi-messenger constraints.
-    </p>
-    <div class="pubs-stats" id="pubsStats" aria-label="Publication summary"></div>
-    <div class="pubs-links">
-      <a class="btn btn-primary btn-sm" href="https://scholar.google.com/citations?user=4498IKgAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar ↗</a>
-      <a class="btn btn-outline btn-sm" href="https://arxiv.org/a/kumar_b_1" target="_blank" rel="noopener">arXiv listing ↗</a>
-      <a class="btn btn-outline btn-sm" href="https://inspirehep.net/literature?q=a%20Kumar%2C%20Bharat%20and%20aff%20NIT%20Rourkela" target="_blank" rel="noopener">INSPIRE ↗</a>
-    </div>
-  </div>
-</div>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Literata:wght@600&display=swap">
 
-<section class="obs-section" aria-label="Selected paper figures" style="border-top:none;">
-  <div class="obs-inner" style="padding-top:clamp(2.5rem,5vw,4rem);">
-    <div class="section-header">
-      <span class="eyebrow">From our papers</span>
-      <h2 class="section-title wide">Selected results</h2>
-      <p class="obs-lead">
-        Figures taken directly from NAP Lab publications. Follow the citation under each
-        one to open the paper.
-      </p>
-    </div>
-    <div class="obs-grid paper-fig-grid">
-      {% for fig in site.data.paper_figures %}
-      <figure class="obs-card paper-fig-card">
-        <div class="paper-fig-img">
-          <img src="{{ site.url }}{{ site.baseurl }}{{ fig.image }}" alt="{{ fig.alt }}" loading="lazy">
+{% assign all_bk = site.data.papers | where: "bk", true %}
+{% assign pubd = all_bk | where: "preprint", false %}
+{% assign pres = all_bk | where: "preprint", true %}
+{% assign leads = all_bk | where: "lead", true %}
+
+<div class="pr-p">
+
+  <header class="pr-p-hero" style="background-image: linear-gradient(180deg, rgba(11,18,34,.35) 0%, rgba(11,18,34,.92) 100%), url('{{ site.url }}{{ site.baseurl }}/images/research/banner.svg');">
+    <div class="pr-p-hero-in">
+      <h1>Publications</h1>
+      <div class="pr-p-hero-row">
+        <div class="pr-p-stats">
+          <div><b>{{ all_bk.size }}</b><span><strong>papers</strong>{{ pubd.size }} published · {{ pres.size }} preprints</span></div>
+          <div><b>{{ leads.size }}</b><span><strong>lead or corresponding author</strong>marked ★ below</span></div>
+          <div><b>20</b><span><strong>h-index</strong>~1700 citations, INSPIRE-HEP</span></div>
         </div>
-        <figcaption>
-          <strong>{{ fig.title }}</strong>
-          <a class="paper-fig-link" href="{{ fig.url }}" target="_blank" rel="noopener">{{ fig.citation }} ↗</a>
-        </figcaption>
-      </figure>
+        <div class="pr-p-ext">
+          <a href="https://scholar.google.com/citations?user=4498IKgAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h4v4M13 3L7 9M6 4H4a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1v-2"/></svg></a>
+          <a href="https://inspirehep.net/literature?q=a%20Kumar%2C%20Bharat%20and%20aff%20NIT%20Rourkela" target="_blank" rel="noopener">INSPIRE-HEP <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h4v4M13 3L7 9M6 4H4a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1v-2"/></svg></a>
+          <a href="https://arxiv.org/a/kumar_b_1" target="_blank" rel="noopener">arXiv <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h4v4M13 3L7 9M6 4H4a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1v-2"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="pr-p-wrap" id="papers">
+    <div class="pr-p-head">
+      <h2>Papers</h2>
+      <a class="pr-p-more" href="{{ site.url }}{{ site.baseurl }}/research/">Research topics <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+    </div>
+
+    <div class="pr-p-chips" id="ppChips" role="group" aria-label="Filter papers by topic">
+      <button type="button" data-f="all" aria-pressed="true"><span>All</span><i>{{ site.data.papers.size }}</i></button>
+      {% assign defs = "eos|Equation of state,osc|Neutron-star oscillations,dm|Dark matter,exo|Exotic matter,mg|Modified gravity,gw|GW &amp; multi-messenger,nuc|Nuclear structure,pre|Preprints" | split: "," %}
+      {% for d in defs %}
+        {% assign kv = d | split: "|" %}
+        {% assign sel = site.data.papers | where_exp: "p", "p.tags contains kv[0]" %}
+        <button type="button" data-f="{{ kv[0] }}" aria-pressed="false"><span>{{ kv[1] }}</span><i>{{ sel.size }}</i></button>
       {% endfor %}
     </div>
-  </div>
-</section>
 
-<div class="section">
-
-  <!-- TOOLBAR: search + filters (built by script below) -->
-  <div class="pubs-toolbar" role="region" aria-label="Filter publications">
-    <label class="pubs-search"><span class="sr-only">Search publications</span>
-      <input type="search" id="pubSearch" placeholder="Search title, author, journal…" autocomplete="off">
-    </label>
-    <div class="pubs-filters" id="pubFilters"></div>
-    <span class="pubs-count" id="pubCount" aria-live="polite"></span>
-  </div>
-
-  <div class="pub-list" id="pubList">
-
-    <!-- 2026 -->
-    <div class="pub-item" data-year="2026" data-tags="osc eos emsg">
-      <span class="pub-year">2026</span>
-      <div class="pub-info">
-        <h4>Universal Relations and Correlation Analysis of Proto-Neutron Star Properties in Energy-Momentum Squared Gravity</h4>
-        <p class="pub-authors"><a href="https://sites.google.com/view/sayantanns" target="_blank" rel="noopener">Sayantan Ghosh</a></p>
-        <div class="pub-links">
-          <a href="https://arxiv.org/abs/2602.02069" class="pub-link" target="_blank" rel="noopener">arXiv:2602.02069</a>
-        </div>
-      </div>
+    <div class="pr-p-tools">
+      <label class="pr-p-search"><span class="pr-p-sr">Search papers</span>
+        <input type="search" id="ppSearch" placeholder="Search title, author, journal…" autocomplete="off">
+      </label>
+      <span class="pr-p-count" id="ppCount" aria-live="polite"></span>
     </div>
 
-    <div class="pub-item" data-year="2026" data-tags="osc eos emsg">
-      <span class="pub-year">2026</span>
-      <div class="pub-info">
-        <h4>Spacetime Curvature as a Probe of Exotic Core Phases in Neutron Stars within Modified Gravity</h4>
-        <p class="pub-authors"><a href="https://sites.google.com/view/sayantanns" target="_blank" rel="noopener">Sayantan Ghosh</a>, Bharat Kumar, Subhash Mahapatra</p>
-        <div class="pub-links">
-          <a href="https://doi.org/10.1103/rjzl-pcr4" class="pub-link" target="_blank" rel="noopener">Phys. Rev. D 113, 024070 (2026)</a>
-          <a href="https://arxiv.org/abs/2508.08866" class="pub-link" target="_blank" rel="noopener">arXiv:2508.08866</a>
+    <div class="pr-p-list" id="ppList">
+      {% for p in site.data.papers %}
+      <article class="pr-p-item" data-a="{{ p.tags | join: ' ' }}">
+        <span class="pr-p-year">{{ p.year }}</span>
+        <div class="pr-p-body">
+          <h3>{{ p.title }}</h3>
+          <div class="pr-p-meta">
+            {% if p.preprint %}<span class="pr-p-badge pre">Preprint</span>{% else %}{% if p.doi != "" %}<a class="pr-p-badge jr" href="https://doi.org/{{ p.doi }}" target="_blank" rel="noopener">{{ p.journal }}</a>{% elsif p.arxiv != "" %}<a class="pr-p-badge jr" href="https://arxiv.org/abs/{{ p.arxiv }}" target="_blank" rel="noopener">{{ p.journal }}</a>{% else %}<span class="pr-p-badge jr">{{ p.journal }}</span>{% endif %}{% endif %}
+            {% if p.arxiv != "" %}<a class="pr-p-badge ax" href="https://arxiv.org/abs/{{ p.arxiv }}" target="_blank" rel="noopener">arXiv:{{ p.arxiv }}</a>{% endif %}
+            {% if p.pdf != "" %}<a class="pr-p-badge pdf" href="{{ p.pdf }}" target="_blank" rel="noopener">PDF</a>{% endif %}
+            <span class="pr-p-au">{% for a in p.authors %}{% if a == "Bharat Kumar" %}<b>{{ a }}</b>{% else %}{{ a }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}{% if p.lead %} <em class="pr-p-star" title="Lead or corresponding author">★</em>{% endif %}</span>
+          </div>
         </div>
+      </article>
+      {% endfor %}
+      <p class="pr-p-empty" id="ppEmpty" hidden>No papers match this filter.</p>
+    </div>
+  </section>
+
+  <section class="pr-p-figs" aria-label="Selected paper figures">
+    <div class="pr-p-wrap">
+      <div class="pr-p-head"><h2>Selected results</h2></div>
+      <p class="pr-p-lead">Figures taken directly from NAP Lab publications. Follow the citation under each one to open the paper.</p>
+      <div class="obs-grid paper-fig-grid">
+        {% for fig in site.data.paper_figures %}
+        <figure class="obs-card paper-fig-card">
+          <div class="paper-fig-img"><img src="{{ site.url }}{{ site.baseurl }}{{ fig.image }}" alt="{{ fig.alt }}" loading="lazy"></div>
+          <figcaption>
+            <strong>{{ fig.title }}</strong>
+            <a class="paper-fig-link" href="{{ fig.url }}" target="_blank" rel="noopener">{{ fig.citation }} ↗</a>
+          </figcaption>
+        </figure>
+        {% endfor %}
       </div>
     </div>
-
-    <div class="pub-item" data-year="2026" data-tags="osc eos emsg">
-      <span class="pub-year">2026</span>
-      <div class="pub-info">
-        <h4>Trace Anomaly and Interior Curvature of Neutron Stars in Energy-Momentum Squared Gravity</h4>
-        <p class="pub-authors">Ratikanta Swain, <a href="https://sites.google.com/view/sayantanns" target="_blank" rel="noopener">Sayantan Ghosh</a>, Bharat Kumar</p>
-        <div class="pub-links">
-          <a href="https://arxiv.org/abs/2606.20203" class="pub-link" target="_blank" rel="noopener">arXiv:2606.20203</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- 2025 -->
-    <div class="pub-item" data-year="2025" data-tags="dm eos">
-      <span class="pub-year">2025</span>
-      <div class="pub-info">
-        <h4>Effects of Asymmetric Dark Matter on a Magnetized Neutron Star: A Two-Fluid Approach</h4>
-        <p class="pub-authors"><a href="https://scholar.google.com/citations?user=d1j-L6cAAAAJ&amp;hl=en" target="_blank" rel="noopener">Pinku Routaray</a>, Vishal Parmar, H. C. Das, Bharat Kumar, G. F. Burgio, H.-J. Schulze</p>
-        <div class="pub-links">
-          <a href="https://doi.org/10.1103/PhysRevD.111.103045" class="pub-link" target="_blank" rel="noopener">Phys. Rev. D 111, 103045 (2025)</a>
-          <a href="https://arxiv.org/abs/2412.21097" class="pub-link" target="_blank" rel="noopener">arXiv:2412.21097</a>
-          <a href="/downloads/Routaray_2025_PRD_asym_dm.pdf" class="pub-link" target="_blank" rel="noopener">PDF</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="pub-item" data-year="2025" data-tags="dm eos">
-      <span class="pub-year">2025</span>
-      <div class="pub-info">
-        <h4>Decoding Dark Matter Admixed Neutron Stars: From Static Structure to Rotational Deformation</h4>
-        <p class="pub-authors"><a href="https://scholar.google.com/citations?user=d1j-L6cAAAAJ&amp;hl=en" target="_blank" rel="noopener">Pinku Routaray</a>, Abirbhav Chakrawarty, N. K. Patra, Bharat Kumar</p>
-        <div class="pub-links">
-          <a href="https://doi.org/10.1016/j.dark.2025.102093" class="pub-link" target="_blank" rel="noopener">Phys. Dark Univ. 50, 102093 (2025)</a>
-          <a href="https://arxiv.org/abs/2409.02131" class="pub-link" target="_blank" rel="noopener">arXiv:2409.02131</a>
-          <a href="/downloads/Routaray_2025_PhysDarkUniv_dm_rotation.pdf" class="pub-link" target="_blank" rel="noopener">PDF</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="pub-item" data-year="2025" data-tags="eos osc">
-      <span class="pub-year">2025</span>
-      <div class="pub-info">
-        <h4>Observable Signatures of a Quarkyonic Phase in Neutron Stars</h4>
-        <p class="pub-authors"><a href="https://scholar.google.com/citations?user=h9DkoD4AAAAJ&amp;hl=en" target="_blank" rel="noopener">Probit J Kalita</a>, Tuhin Malik, Tianqi Zhao, Bharat Kumar, James M. Lattimer</p>
-        <div class="pub-links">
-          <a href="https://arxiv.org/abs/2510.23405" class="pub-link" target="_blank" rel="noopener">arXiv:2510.23405</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="pub-item" data-year="2025" data-tags="osc eos emsg">
-      <span class="pub-year">2025</span>
-      <div class="pub-info">
-        <h4>The Role of Adiabatic Sound Speeds in Neutron Star Radial Oscillations and Stability</h4>
-        <p class="pub-authors"><a href="https://sites.google.com/view/sayantanns" target="_blank" rel="noopener">Sayantan Ghosh</a>, Tianqi Zhao, Bharat Kumar, <a href="https://scholar.google.com/citations?user=mx_PbkcAAAAJ&amp;hl=en" target="_blank" rel="noopener">Sailesh Ranjan Mohanty</a></p>
-        <div class="pub-links">
-          <a href="https://doi.org/10.1088/1475-7516/2025/09/025" class="pub-link" target="_blank" rel="noopener">JCAP 09, 025 (2025)</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="pub-item" data-year="2025" data-tags="osc emsg">
-      <span class="pub-year">2025</span>
-      <div class="pub-info">
-        <h4>Constraining the f-Mode Oscillations Frequency in Neutron Stars through Universal Relations in the Realm of Energy-Momentum Squared Gravity</h4>
-        <p class="pub-authors"><a href="https://sites.google.com/view/sayantanns" target="_blank" rel="noopener">Sayantan Ghosh</a></p>
-        <div class="pub-links">
-          <a href="https://doi.org/10.1007/s10714-025-03405-1" class="pub-link" target="_blank" rel="noopener">Gen. Relativ. Gravit. 57, 70 (2025)</a>
-          <a href="https://arxiv.org/abs/2412.20815" class="pub-link" target="_blank" rel="noopener">arXiv:2412.20815</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="pub-item" data-year="2025" data-tags="osc">
-      <span class="pub-year">2025</span>
-      <div class="pub-info">
-        <h4>Astrophysical Constraints on Neutron Star f-Modes with a Nonparametric Equation of State Representation</h4>
-        <p class="pub-authors"><a href="https://scholar.google.com/citations?user=mx_PbkcAAAAJ&amp;hl=en" target="_blank" rel="noopener">Sailesh Ranjan Mohanty</a>, Utkarsh Mali, H.C. Das, Bharat Kumar, Philippe Landry</p>
-        <div class="pub-links">
-          <a href="https://doi.org/10.1103/5v5y-d3v8" class="pub-link" target="_blank" rel="noopener">Phys. Rev. D 112, 123043 (2025)</a>
-          <a href="https://arxiv.org/abs/2410.16689" class="pub-link" target="_blank" rel="noopener">arXiv:2410.16689</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- 2024 -->
-
-    <div class="pub-item" data-year="2024" data-tags="delta osc eos">
-      <span class="pub-year">2024</span>
-      <div class="pub-info">
-        <h4>Probing the Impact of Delta-Baryons on Nuclear Matter and Non-Radial Oscillations in Neutron Stars</h4>
-        <p class="pub-authors"><a href="https://scholar.google.com/citations?user=h9DkoD4AAAAJ&amp;hl=en" target="_blank" rel="noopener">Probit Jyoti Kalita</a>, <a href="https://scholar.google.com/citations?user=d1j-L6cAAAAJ&amp;hl=en" target="_blank" rel="noopener">Pinku Routaray</a>, <a href="https://sites.google.com/view/sayantanns" target="_blank" rel="noopener">Sayantan Ghosh</a>, Bharat Kumar, Bijay K. Agrawal</p>
-        <div class="pub-links">
-          <a href="https://doi.org/10.1088/1475-7516/2024/04/065" class="pub-link" target="_blank" rel="noopener">JCAP 04, 065 (2024)</a>
-          <a href="https://arxiv.org/abs/2308.09008" class="pub-link" target="_blank" rel="noopener">arXiv:2308.09008</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="pub-item" data-year="2024" data-tags="osc eos">
-      <span class="pub-year">2024</span>
-      <div class="pub-info">
-        <h4>The Impact of Anisotropy on Neutron Star Properties: Insights from I–f–C Universal Relations</h4>
-        <p class="pub-authors"><a href="https://scholar.google.com/citations?user=mx_PbkcAAAAJ&amp;hl=en" target="_blank" rel="noopener">Sailesh Ranjan Mohanty</a>, <a href="https://sites.google.com/view/sayantanns" target="_blank" rel="noopener">Sayantan Ghosh</a>, <a href="https://scholar.google.com/citations?user=d1j-L6cAAAAJ&amp;hl=en" target="_blank" rel="noopener">Pinku Routaray</a>, H C Das, Bharat Kumar</p>
-        <div class="pub-links">
-          <a href="https://doi.org/10.1088/1475-7516/2024/03/054" class="pub-link" target="_blank" rel="noopener">JCAP 03, 054 (2024)</a>
-          <a href="https://arxiv.org/abs/2304.02439" class="pub-link" target="_blank" rel="noopener">arXiv:2304.02439</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="pub-item" data-year="2024" data-tags="osc eos">
-      <span class="pub-year">2024</span>
-      <div class="pub-info">
-        <h4>Exploring the Impact of the σ-Cut Scheme on Neutron Star Oscillations and Thermal Relaxations</h4>
-        <p class="pub-authors"><a href="https://scholar.google.com/citations?user=h9DkoD4AAAAJ&amp;hl=en" target="_blank" rel="noopener">Probit J. Kalita</a>, Khokan Singha, <a href="https://scholar.google.com/citations?user=d1j-L6cAAAAJ&amp;hl=en" target="_blank" rel="noopener">Pinku Routaray</a>, Bharat Kumar</p>
-        <div class="pub-links">
-          <a href="https://doi.org/10.1103/PhysRevC.110.045807" class="pub-link" target="_blank" rel="noopener">Phys. Rev. C 110, 045807 (2024)</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- 2023 -->
-    <div class="pub-item highlight-pub" data-year="2023" data-highlight="1" data-tags="dm osc">
-      <span class="pub-year">2023</span>
-      <div class="pub-info">
-        <h4>★ Probing the Impact of WIMP Dark Matter on Universal Relations, GW170817 Posterior and Radial Oscillations</h4>
-        <p class="pub-authors"><a href="https://scholar.google.com/citations?user=d1j-L6cAAAAJ&amp;hl=en" target="_blank" rel="noopener">Pinku Routaray</a>, Abdul Quddus, Kabir Chakravarti, Bharat Kumar</p>
-        <div class="pub-links">
-          <a href="https://doi.org/10.1093/mnras/stad2628" class="pub-link" target="_blank" rel="noopener">MNRAS 25, 5492 (2023)</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="pub-item highlight-pub" data-year="2023" data-highlight="1" data-tags="dm osc">
-      <span class="pub-year">2023</span>
-      <div class="pub-info">
-        <h4>★ Radial Oscillations of Dark Matter Admixed Neutron Stars</h4>
-        <p class="pub-authors"><a href="https://scholar.google.com/citations?user=d1j-L6cAAAAJ&amp;hl=en" target="_blank" rel="noopener">Pinku Routray</a>, H. C. Das, Souhardya Sen, Bharat Kumar, Grigoris Panotopoulos, Tianqi Zhao</p>
-        <div class="pub-links">
-          <a href="https://doi.org/10.1103/PhysRevD.107.103039" class="pub-link" target="_blank" rel="noopener">Phys. Rev. D 107, 103039 (2023)</a>
-          <a href="https://arxiv.org/abs/2211.12808" class="pub-link" target="_blank" rel="noopener">arXiv:2211.12808</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="pub-item" data-year="2023" data-tags="dm eos">
-      <span class="pub-year">2023</span>
-      <div class="pub-info">
-        <h4>Investigating Dark Matter-Admixed Neutron Stars with NITR EoS in Light of PSR J0952-0607</h4>
-        <p class="pub-authors"><a href="https://scholar.google.com/citations?user=d1j-L6cAAAAJ&amp;hl=en" target="_blank" rel="noopener">Pinku Routaray</a>, Sailesh Ranjan Mohanty, H.C. Das, <a href="https://sites.google.com/view/sayantanns" target="_blank" rel="noopener">Sayantan Ghosh</a>, <a href="https://scholar.google.com/citations?user=h9DkoD4AAAAJ&amp;hl=en" target="_blank" rel="noopener">P.J. Kalita</a>, V. Parmar, Bharat Kumar</p>
-        <div class="pub-links">
-          <a href="https://doi.org/10.1088/1475-7516/2023/10/073" class="pub-link" target="_blank" rel="noopener">JCAP 10, 073 (2023)</a>
-          <a href="https://arxiv.org/abs/2304.05100" class="pub-link" target="_blank" rel="noopener">arXiv:2304.05100</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="pub-item" data-year="2023" data-tags="dm eos">
-      <span class="pub-year">2023</span>
-      <div class="pub-info">
-        <h4>Dark Matter Admixed Neutron Star in the Light of HESS J1731-347 and PSR J0952-0607</h4>
-        <p class="pub-authors"><a href="https://scholar.google.com/citations?user=d1j-L6cAAAAJ&amp;hl=en" target="_blank" rel="noopener">Pinku Routaray</a>, H C Das, Jeet Amrit Pattnaik, Bharat Kumar</p>
-        <div class="pub-links">
-          <a href="https://arxiv.org/abs/2307.12748" class="pub-link" target="_blank" rel="noopener">arXiv:2307.12748</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="pub-item" data-year="2023" data-tags="osc eos">
-      <span class="pub-year">2023</span>
-      <div class="pub-info">
-        <h4>Exploring the Macroscopic Properties and Nonradial Oscillations of Proto-Neutron Stars</h4>
-        <p class="pub-authors"><a href="https://sites.google.com/view/sayantanns" target="_blank" rel="noopener">Sayantan Ghosh</a>, Shahebaj Shaikh, <a href="https://scholar.google.com/citations?user=h9DkoD4AAAAJ&amp;hl=en" target="_blank" rel="noopener">Probit J Kalita</a>, <a href="https://scholar.google.com/citations?user=d1j-L6cAAAAJ&amp;hl=en" target="_blank" rel="noopener">Pinku Routaray</a>, Bharat Kumar, B. K. Agrawal</p>
-        <div class="pub-links">
-          <a href="https://doi.org/10.1016/j.nuclphysa.2024.116697" class="pub-link" target="_blank" rel="noopener">Nucl. Phys. A 1008, 116697 (2024)</a>
-          <a href="https://arxiv.org/abs/2307.06892" class="pub-link" target="_blank" rel="noopener">arXiv:2307.06892</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="pub-item" data-year="2023" data-tags="osc eos">
-      <span class="pub-year">2023</span>
-      <div class="pub-info">
-        <h4>Radial Oscillations in Neutron Stars from Unified Equation of States</h4>
-        <p class="pub-authors">Souhardya Sen, Shubham Kumar, Athul Kunjipurayil, <a href="https://scholar.google.com/citations?user=d1j-L6cAAAAJ&amp;hl=en" target="_blank" rel="noopener">Pinku Routaray</a>, <a href="https://sites.google.com/view/sayantanns" target="_blank" rel="noopener">Sayantan Ghosh</a>, <a href="https://scholar.google.com/citations?user=h9DkoD4AAAAJ&amp;hl=en" target="_blank" rel="noopener">Probit J. Kalita</a>, Tianqi Zhao, Bharat Kumar</p>
-        <div class="pub-links">
-          <a href="https://doi.org/10.3390/galaxies11030060" class="pub-link" target="_blank" rel="noopener">Galaxies 11, 60 (2023)</a>
-          <a href="https://arxiv.org/abs/2205.02076" class="pub-link" target="_blank" rel="noopener">arXiv:2205.02076</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="pub-item" data-year="2023" data-tags="osc eos">
-      <span class="pub-year">2023</span>
-      <div class="pub-info">
-        <h4>Exploring Radial Oscillations in Slow Stable and Hybrid Neutron Stars</h4>
-        <p class="pub-authors"><a href="https://sites.google.com/view/sayantanns" target="_blank" rel="noopener">Sayantan Ghosh</a>, Sailesh Ranjan Mohanty, Tianqi Zhao, Bharat Kumar</p>
-        <div class="pub-links">
-          <a href="https://arxiv.org/abs/2401.08347" class="pub-link" target="_blank" rel="noopener">arXiv:2401.08347</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="pub-item" data-year="2023" data-tags="eos">
-      <span class="pub-year">2023</span>
-      <div class="pub-info">
-        <h4>Theoretical Studies on Structural Properties and Decay Modes of Z=119 Isotopes</h4>
-        <p class="pub-authors">Asloob A. Rather, M. Ikram, Ishfaq A. Rather, A. A. Usmani, Bharat Kumar, K. P. Santhosh, S. K. Patra</p>
-        <div class="pub-links">
-          <a href="https://doi.org/10.1140/epjp/s13360-023-04096-9" class="pub-link" target="_blank" rel="noopener">Eur. Phys. J. Plus 138, 467 (2023)</a>
-          <a href="https://arxiv.org/abs/1709.07311" class="pub-link" target="_blank" rel="noopener">arXiv:1709.07311</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- 2022 -->
-    <div class="pub-item highlight-pub" data-year="2022" data-highlight="1" data-tags="osc eos">
-      <span class="pub-year">2022</span>
-      <div class="pub-info">
-        <h4>★ Impact of the Equation of State on f- and p-Mode Oscillations of Neutron Stars</h4>
-        <p class="pub-authors">Athul Kunjipurayil, Tianqi Zhao, Bharat Kumar, Bijay K. Agrawal, Madappa Prakash</p>
-        <div class="pub-links">
-          <a href="https://doi.org/10.1103/PhysRevD.106.063005" class="pub-link" target="_blank" rel="noopener">Phys. Rev. D 106, 063005 (2022)</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="pub-item" data-year="2022" data-tags="dm eos">
-      <span class="pub-year">2022</span>
-      <div class="pub-info">
-        <h4>Dark Matter Effects on the Compact Star Properties [Invited Review]</h4>
-        <p class="pub-authors">H C Das, Ankit Kumar, Bharat Kumar, S K Patra</p>
-        <div class="pub-links">
-          <a href="https://doi.org/10.3390/galaxies10010014" class="pub-link" target="_blank" rel="noopener">Galaxies 10, 14 (2022)</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- 2021 and earlier -->
-    <div class="pub-item" data-year="older" data-tags="osc eos">
-      <span class="pub-year">2021</span>
-      <div class="pub-info">
-        <h4>Universal Relations between the Quasinormal Modes of Neutron Stars and Tidal Deformability</h4>
-        <p class="pub-authors">Hajime Sotani, Bharat Kumar</p>
-        <div class="pub-links">
-          <a href="https://doi.org/10.1103/PhysRevD.104.123002" class="pub-link" target="_blank" rel="noopener">Phys. Rev. D 104, 123002 (2021)</a>
-          <a href="https://arxiv.org/abs/2109.08145" class="pub-link" target="_blank" rel="noopener">arXiv:2109.08145</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="pub-item" data-year="older" data-tags="eos">
-      <span class="pub-year">2021</span>
-      <div class="pub-info">
-        <h4>The BigApple Force and Its Implications to Finite Nuclei and Astrophysical Objects</h4>
-        <p class="pub-authors">H C Das, Ankit Kumar, Bharat Kumar, S K Biswal, S K Patra</p>
-        <div class="pub-links">
-          <a href="https://doi.org/10.1142/S0218301321500880" class="pub-link" target="_blank" rel="noopener">Int. J. Mod. Phys. E 30, 2150088 (2021)</a>
-          <a href="https://arxiv.org/abs/2009.10690" class="pub-link" target="_blank" rel="noopener">arXiv:2009.10690</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="pub-item" data-year="older" data-tags="dm eos">
-      <span class="pub-year">2021</span>
-      <div class="pub-info">
-        <h4>Impacts of Dark Matter on the Curvature of the Neutron Star</h4>
-        <p class="pub-authors">H C Das, Ankit Kumar, Bharat Kumar, S K Biswal, S K Patra</p>
-        <div class="pub-links">
-          <a href="https://doi.org/10.1088/1475-7516/2021/01/007" class="pub-link" target="_blank" rel="noopener">JCAP 01, 007 (2021)</a>
-          <a href="https://arxiv.org/abs/2007.05382" class="pub-link" target="_blank" rel="noopener">arXiv:2007.05382</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="pub-item" data-year="older" data-tags="eos">
-      <span class="pub-year">2020</span>
-      <div class="pub-info">
-        <h4>Warm Dense Matter and Cooling of Supernovae Remnants</h4>
-        <p class="pub-authors">Ankit Kumar, H C Das, S K Biswal, Bharat Kumar, S K Patra</p>
-        <div class="pub-links">
-          <a href="https://doi.org/10.1140/epjc/s10052-020-8353-4" class="pub-link" target="_blank" rel="noopener">Eur. Phys. J. C 80, 775 (2020)</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="pub-item" data-year="older" data-tags="dm eos">
-      <span class="pub-year">2020</span>
-      <div class="pub-info">
-        <h4>GW170817 Constraints on the Properties of a Neutron Star in the Presence of WIMP Dark Matter</h4>
-        <p class="pub-authors">Abdul Quddus, Grigorios Panotopoulos, Bharat Kumar, Shakeb Ahmad, S K Patra</p>
-        <div class="pub-links">
-          <a href="https://doi.org/10.1088/1361-6471/ab9d36" class="pub-link" target="_blank" rel="noopener">J. Phys. G 47, 095202 (2020)</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="pub-item" data-year="older" data-tags="dm eos">
-      <span class="pub-year">2020</span>
-      <div class="pub-info">
-        <h4>Effects of Dark Matter on the Nuclear and Neutron Star Matter</h4>
-        <p class="pub-authors">H C Das, Ankit Kumar, Bharat Kumar, S K Biswal, Takashi Nakatsukasa, Ang Li, S K Patra</p>
-        <div class="pub-links">
-          <a href="https://doi.org/10.1093/mnras/staa1435" class="pub-link" target="_blank" rel="noopener">MNRAS 495, 4893 (2020)</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="pub-item highlight-pub" data-year="older" data-highlight="1" data-tags="eos">
-      <span class="pub-year">2019</span>
-      <div class="pub-info">
-        <h4>★ Inferring Neutron Star Properties from GW170817 with Universal Relations</h4>
-        <p class="pub-authors">Bharat Kumar, Philippe Landry</p>
-        <div class="pub-links">
-          <a href="https://doi.org/10.1103/PhysRevD.99.123026" class="pub-link" target="_blank" rel="noopener">Phys. Rev. D 99, 123026 (2019)</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="pub-item highlight-pub" data-year="older" data-highlight="1" data-tags="eos">
-      <span class="pub-year">2018</span>
-      <div class="pub-info">
-        <h4>★ New Relativistic Effective Interaction for Finite Nuclei, Infinite Nuclear Matter, and Neutron Stars</h4>
-        <p class="pub-authors">Bharat Kumar, S K Patra, B K Agrawal</p>
-        <div class="pub-links">
-          <a href="https://doi.org/10.1103/PhysRevC.97.045806" class="pub-link" target="_blank" rel="noopener">Phys. Rev. C 97, 045806 (2018)</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="pub-item highlight-pub" data-year="older" data-highlight="1" data-tags="eos">
-      <span class="pub-year">2018</span>
-      <div class="pub-info">
-        <h4>★ Constraints on the Moment of Inertia of PSR J0737-3039A from GW170817</h4>
-        <p class="pub-authors">Philippe Landry, Bharat Kumar</p>
-        <div class="pub-links">
-          <a href="https://doi.org/10.3847/2041-8213/aaee76" class="pub-link" target="_blank" rel="noopener">ApJ Letters 868, L22 (2018)</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="pub-item" data-year="older" data-tags="eos">
-      <span class="pub-year">2018</span>
-      <div class="pub-info">
-        <h4>GW170817: Constraining the Nuclear Matter EoS from the Neutron Star Tidal Deformability</h4>
-        <p class="pub-authors">Tuhin Malik, N. Alam, M. Fortin, C. Providencia, B. K. Agrawal, T. K. Jha, Bharat Kumar, S K Patra</p>
-        <div class="pub-links">
-          <a href="https://doi.org/10.1103/PhysRevC.98.035804" class="pub-link" target="_blank" rel="noopener">Phys. Rev. C 98, 035804 (2018)</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="pub-item" data-year="older" data-tags="eos">
-      <span class="pub-year">2017</span>
-      <div class="pub-info">
-        <h4>New Parameterization of the Effective Field Theory Motivated Relativistic Mean-Field Model</h4>
-        <p class="pub-authors">Bharat Kumar, S. K. Singh, B. K. Agrawal, S. K. Patra</p>
-        <div class="pub-links">
-          <a href="https://doi.org/10.1016/j.nuclphysa.2017.07.001" class="pub-link" target="_blank" rel="noopener">Nucl. Phys. A 966, 197 (2017)</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="pub-item" data-year="older" data-tags="eos">
-      <span class="pub-year">2017</span>
-      <div class="pub-info">
-        <h4>Tidal Deformability of Neutron and Hyperon Stars with Relativistic Mean-Field Equations of State</h4>
-        <p class="pub-authors">Bharat Kumar, S. K. Biswal, S. K. Patra</p>
-        <div class="pub-links">
-          <a href="https://doi.org/10.1103/PhysRevC.95.015801" class="pub-link" target="_blank" rel="noopener">Phys. Rev. C 95, 015801 (2017)</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="pub-item" data-year="older" data-tags="eos">
-      <span class="pub-year">2015</span>
-      <div class="pub-info">
-        <h4>Examining the Stability of Thermally Fissile Th and U Isotopes</h4>
-        <p class="pub-authors">Bharat Kumar, S. K. Biswal, S. K. Singh, S. K. Patra</p>
-        <div class="pub-links">
-          <a href="https://doi.org/10.1103/PhysRevC.92.054314" class="pub-link" target="_blank" rel="noopener">Phys. Rev. C 92, 054314 (2015)</a>
-        </div>
-      </div>
-    </div>
-
-  </div><!-- end pub-list -->
-
-  <p class="pub-empty" id="pubEmpty" hidden>No papers match this filter.</p>
-
-  <div class="pubs-note">
-    &#9733; = highlighted publication. For the complete, current list with citation counts see
-    <a href="https://scholar.google.com/citations?user=4498IKgAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar ↗</a> or
-    <a href="https://arxiv.org/a/kumar_b_1" target="_blank" rel="noopener">arXiv ↗</a>.
-  </div>
+  </section>
 
 </div>
 
 <script>
 (function () {
-  var items = Array.prototype.slice.call(document.querySelectorAll('#pubList .pub-item'));
-  var list = document.getElementById('pubList');
-  var TAGS = { dm: 'Dark matter', osc: 'Oscillations', eos: 'EoS', emsg: 'Modified gravity', delta: 'Δ-baryons' };
+  var chips = document.getElementById('ppChips'), list = document.getElementById('ppList');
+  if (!chips || !list) return;
+  var items = Array.prototype.slice.call(list.querySelectorAll('.pr-p-item'));
+  items.forEach(function (it) { it.dataset.text = it.textContent.toLowerCase().replace(/\s+/g, ' '); });
   var state = { f: 'all', q: '' };
-
-  /* year of each paper (from the visible year label) */
-  items.forEach(function (it) {
-    var y = (it.querySelector('.pub-year') || {}).textContent || '';
-    it.dataset.y = y.trim();
-    it.dataset.text = it.textContent.toLowerCase().replace(/\s+/g, ' ');
-    var links = it.querySelector('.pub-links');
-    if (links) {
-      if (it.dataset.highlight === '1') {
-        var st = document.createElement('span'); st.className = 'pub-star'; st.textContent = '★ Highlight';
-        links.insertBefore(st, links.firstChild);
-      }
-      (it.dataset.tags || '').split(/\s+/).filter(function (t) { return TAGS[t]; }).forEach(function (t) {
-        var tg = document.createElement('span'); tg.className = 'pub-tag'; tg.textContent = TAGS[t]; links.appendChild(tg);
-      });
-    }
-  });
-
-  /* year headings */
-  var years = [];
-  items.forEach(function (it) { if (years.indexOf(it.dataset.y) < 0) years.push(it.dataset.y); });
-  var heads = {};
-  years.forEach(function (y) {
-    var h = document.createElement('h3'); h.className = 'pub-year-head'; h.dataset.y = y;
-    var first = items.filter(function (i) { return i.dataset.y === y; })[0];
-    list.insertBefore(h, first); heads[y] = h;
-  });
-
-  /* stats */
-  var yrs = items.map(function (i) { return parseInt(i.dataset.y, 10); }).filter(Boolean);
-  var stats = document.getElementById('pubsStats');
-  var hl = items.filter(function (i) { return i.dataset.highlight === '1'; }).length;
-  stats.innerHTML = '<div><b>' + items.length + '</b><span>Papers listed</span></div>' +
-    '<div><b>' + Math.min.apply(null, yrs) + '–' + Math.max.apply(null, yrs) + '</b><span>Years covered</span></div>' +
-    '<div><b>' + hl + '</b><span>Highlights</span></div>';
-
-  /* filter chips with counts */
-  var defs = [['all', 'All'], ['highlight', '★ Highlights'], ['dm', 'Dark matter'], ['osc', 'Oscillations'], ['eos', 'EoS'], ['emsg', 'Modified gravity']];
-  var recent = ['2026', '2025', '2024', '2023', '2022'];
-  recent.forEach(function (y) { defs.push([y, y]); });
-  defs.push(['older', '2021 & earlier']);
-  function matchFilter(it, f) {
-    if (f === 'all') return true;
-    if (f === 'highlight') return it.dataset.highlight === '1';
-    if (f === 'older') return it.dataset.year === 'older';
-    if (/^\d{4}$/.test(f)) return it.dataset.year === f;
-    return (' ' + (it.dataset.tags || '') + ' ').indexOf(' ' + f + ' ') >= 0;
-  }
-  var bar = document.getElementById('pubFilters');
-  defs.forEach(function (d) {
-    var n = items.filter(function (i) { return matchFilter(i, d[0]); }).length;
-    if (!n && d[0] !== 'all') return;
-    var b = document.createElement('button'); b.type = 'button'; b.dataset.f = d[0];
-    b.setAttribute('aria-pressed', d[0] === 'all' ? 'true' : 'false');
-    b.innerHTML = d[1].replace('&', '&amp;') + '<i>' + n + '</i>';
-    bar.appendChild(b);
-  });
-
   function apply() {
-    var shown = 0, perYear = {};
+    var shown = 0;
     items.forEach(function (it) {
-      var ok = matchFilter(it, state.f) && (!state.q || it.dataset.text.indexOf(state.q) >= 0);
-      it.hidden = !ok;
-      if (ok) { shown++; perYear[it.dataset.y] = (perYear[it.dataset.y] || 0) + 1; }
+      var okF = state.f === 'all' || (' ' + it.dataset.a + ' ').indexOf(' ' + state.f + ' ') > -1;
+      var ok = okF && (!state.q || it.dataset.text.indexOf(state.q) > -1);
+      it.hidden = !ok; if (ok) shown++;
     });
-    years.forEach(function (y) {
-      var h = heads[y]; var n = perYear[y] || 0; h.hidden = !n;
-      h.innerHTML = y + ' <small>' + n + (n === 1 ? ' paper' : ' papers') + '</small>';
-    });
-    document.getElementById('pubCount').textContent = shown + ' of ' + items.length;
-    document.getElementById('pubEmpty').hidden = shown > 0;
-    Array.prototype.forEach.call(bar.querySelectorAll('button'), function (b) {
-      b.setAttribute('aria-pressed', b.dataset.f === state.f ? 'true' : 'false');
-    });
+    document.getElementById('ppCount').textContent = shown + ' of ' + items.length;
+    document.getElementById('ppEmpty').hidden = shown > 0;
+    chips.querySelectorAll('button').forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.f === state.f ? 'true' : 'false'); });
   }
-  bar.addEventListener('click', function (e) {
-    var b = e.target.closest('button[data-f]'); if (!b) return; state.f = b.dataset.f; apply();
+  chips.addEventListener('click', function (e) {
+    var b = e.target.closest('button[data-f]'); if (!b) return;
+    state.f = (b.dataset.f !== 'all' && state.f === b.dataset.f) ? 'all' : b.dataset.f; apply();   /* second click clears */
   });
-  document.getElementById('pubSearch').addEventListener('input', function () {
-    state.q = this.value.trim().toLowerCase(); apply();
-  });
+  document.getElementById('ppSearch').addEventListener('input', function () { state.q = this.value.trim().toLowerCase(); apply(); });
   apply();
 })();
 </script>
